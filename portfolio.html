@@ -1,189 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Professional Portfolio – Gonzalo Moscoso Pacheco</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      color: #333;
-      background: #f9f9f9;
-    }
-    header {
-      background: #004080;
-      color: #fff;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.8rem;
-    }
-    header p {
-      margin: 0.5rem 0 0 0;
-      font-size: 1rem;
-    }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem 2rem;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #004080;
-      margin-top: 1.2rem;
-    }
-    h3 {
-      color: #333;
-      margin-top: 1rem;
-    }
-    ul {
-      margin: 0.5rem 0 1rem 1.2rem;
-    }
-    li {
-      margin-bottom: 0.5rem;
-    }
-    p {
-      margin-bottom: 1rem;
-    }
-    strong {
-      color: #004080;
-    }
-    .contact {
-      margin-top: 2rem;
-      padding-top: 1rem;
-      border-top: 1px solid #ddd;
-    }
-    .contact a {
-      display: inline-block;
-      margin-right: 1rem;
-      color: #004080;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      padding: 1rem;
-      color: #666;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gonzalo Moscoso – Data & IT Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f6f8;
+    color: #333;
+  }
+
+  header {
+    background: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    color: #ffcc00;
+    font-weight: 500;
+  }
+
+  section {
+    max-width: 1000px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    color: #004080;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #004080;
+    display: inline-block;
+    padding-bottom: 0.2rem;
+  }
+
+  h3 {
+    color: #333;
+    margin-top: 1.5rem;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  .skill {
+    width: 48%;
+    margin: 1%;
+  }
+
+  .skill-name {
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+  }
+
+  .skill-bar {
+    height: 12px;
+    border-radius: 6px;
+    background: #e0e0e0;
+    overflow: hidden;
+  }
+
+  .skill-level {
+    height: 100%;
+    border-radius: 6px;
+  }
+
+  .python { background: #306998; width: 30%; }
+  .sql { background: #f29111; width: 100%; }
+  .etl { background: #4caf50; width: 100%; }
+  .salesforce { background: #00a1e0; width: 100%; }
+  .swift { background: #f05138; width: 60%; }
+  .c { background: #555555; width: 50%; }
+
+  .experience li, .education li {
+    margin-bottom: 0.6rem;
+  }
+
+  .experience, .education {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+  }
+
+  .contact {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .contact a {
+    text-decoration: none;
+    color: #004080;
+    font-weight: 700;
+    margin: 0 1rem;
+    transition: 0.3s;
+  }
+
+  .contact a:hover {
+    color: #ff6600;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  @media(max-width: 768px){
+    .skill { width: 100%; margin-bottom: 1rem; }
+  }
+</style>
 </head>
 <body>
-  <header>
-    <h1>Gonzalo Moscoso Pacheco – Professional Portfolio</h1>
-    <p>Senior Engineer & Data/Technical Consultant | IT, Telecommunications & Data Engineering</p>
-  </header>
 
-  <section>
-    <h2>Professional Summary</h2>
-    <p>Client-focused Senior Engineer and Technical Consultant with over 10 years of experience leading IT and Telecommunications operations, managing enterprise-scale projects, and coordinating multicultural teams.</p>
-    <p>Proven ability to design, implement, and maintain complex technical systems, optimize processes, and deliver high-quality solutions in multicultural and remote environments.</p>
-    <p>Strong experience with Python, SQL, ETL processes, and cloud-based data platforms, combined with consultative skills to translate business requirements into actionable technical solutions.</p>
-    <p>Recognized for analytical precision, forensic attention to detail, and a proactive, outcome-driven approach to problem-solving and delivery.</p>
-  </section>
+<header>
+  <h1>Gonzalo Moscoso Pacheco</h1>
+  <p>Senior Engineer & Technical Consultant – Data, Python, Salesforce & IT</p>
+</header>
 
-  <section>
-    <h2>Areas of Expertise</h2>
-    <ul>
-      <li>Data Engineering & ETL Pipelines</li>
-      <li>Python Programming & SQL</li>
-      <li>Snowflake & Cloud Data Platforms</li>
-      <li>Power BI & Data Visualization</li>
-      <li>Technical Consulting & Solution Design</li>
-      <li>Project & Operations Management</li>
-      <li>Agile/Scrum Methodologies & ITIL Foundations</li>
-      <li>Team Leadership & Multicultural Collaboration</li>
-      <li>Client Engagement & Salesforce Reporting</li>
-      <li>Advanced English (B1)</li>
-    </ul>
-  </section>
+<section>
+  <h2>Professional Summary</h2>
+  <p>Client-focused Senior Engineer and Technical Consultant with over 10 years leading IT and Telecommunications operations, managing enterprise clients, and coordinating multicultural teams in complex projects. Skilled at translating business requirements into actionable technical solutions and optimizing operational processes.</p>
+  <p>Known for analytical precision, forensic attention to detail, and a proactive, outcome-driven approach to problem-solving and delivery.</p>
+</section>
 
-  <section>
-    <h2>Core Competencies</h2>
-
-    <h3>Data Engineering & ETL</h3>
-    <ul>
-      <li>Hands-on experience building and maintaining ETL pipelines to aggregate, transform, and load data for enterprise reporting and analytics.</li>
-      <li>Proficient in SQL for querying, data manipulation, and integration across multiple databases.</li>
-      <li>Experience with Snowflake, cloud-based data storage, and data architecture best practices.</li>
-      <li>Ability to generate insights through Power BI dashboards and data visualization.</li>
-    </ul>
-
-    <h3>Programming & Technical Tools</h3>
-    <ul>
-      <li>Strong proficiency in Python for scripting, automation, and data manipulation tasks.</li>
-      <li>Experience in cloud environments and integrating third-party systems for operational efficiency.</li>
-      <li>Extensive experience with Salesforce, creating custom reports and dashboards to support client engagement and business insights.</li>
-      <li>Ability to create and maintain continuous integration and delivery of technical solutions.</li>
-    </ul>
-
-    <h3>Project & Operations Management</h3>
-    <ul>
-      <li>Managed complex IT and telecommunications projects with large-scale deployments and cross-functional teams.</li>
-      <li>Applied Agile/Scrum practices to enhance productivity, operational efficiency, and delivery quality.</li>
-      <li>Designed workflows, KPIs, and reporting systems to ensure SLA compliance and continuous improvement.</li>
-    </ul>
-
-    <h3>Client Engagement & Team Leadership</h3>
-    <ul>
-      <li>Translate client needs into actionable technical solutions and align internal teams to deliver results.</li>
-      <li>Lead multidisciplinary teams and vendors to ensure technical standards, deadlines, and cost optimization.</li>
-      <li>Foster a culture of accountability, extreme ownership, and collaboration across multicultural environments.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Professional Experience</h2>
-
-    <h3>Telefónica International (Telco)</h3>
-    <p><strong>Senior B2B Engineer</strong> | 2020–2025</p>
-    <ul>
-      <li>Led enterprise-level delivery operations and managed technical engagements for major clients across Latin America.</li>
-      <li>Defined technical scopes, managed deployments, and coordinated field teams and vendor integrations.</li>
-      <li>Implemented data-driven monitoring and reporting of operational KPIs for network and system performance.</li>
-      <li>Pre-Sales Engineer for Government Projects: coordinated data requirements, compliance, and reporting for national tenders.</li>
-    </ul>
-
-    <p><strong>Pre-Sales Engineer – Government Projects</strong> | 2010–2019</p>
-    <ul>
-      <li>Managed technical proposals, compliance documentation, and data requirements for government contracts under SEACE.</li>
-      <li>Coordinated internal and external teams to ensure accurate data collection, reporting, and project execution.</li>
-      <li>Analyzed project data to optimize budgets, schedules, and operational performance.</li>
-    </ul>
-
-    <p><strong>Account Manager</strong> | 2005–2009</p>
-    <ul>
-      <li>Managed enterprise accounts across southern Peru, translating client requirements into scalable technical and operational solutions.</li>
-      <li>Monitored performance metrics, operational data, and client feedback to drive improvements and retention.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Education and Certifications</h2>
-    <ul>
-      <li><strong>Bachelor’s Degree in Electronic Engineering</strong> – Universidad Nacional de San Agustín (2001)</li>
-      <li><strong>Diploma in Business Unit Management</strong> – Universidad Católica San Pablo (2005)</li>
-      <li><strong>ITIL Foundations Certification</strong> – Axelos Global Best Practices (2017)</li>
-      <li><strong>Emotional Agility and Working with Resilient Teams</strong> – Universidad del Pacífico (2025)</li>
-    </ul>
-  </section>
-
-  <div class="contact">
-    📞 <strong>Contact:</strong> Gonzalo Moscoso  
-    <a href="mailto:gonzalomoscoso@icloud.com">Email</a>  
-    <a href="https://www.linkedin.com/in/gonzalomoscosoperu" target="_blank">LinkedIn</a>  
-    <a href="https://wa.me/51959651415" target="_blank">WhatsApp</a>
+<section>
+  <h2>Skills & Expertise</h2>
+  <div class="skills-container">
+    <div class="skill">
+      <div class="skill-name">SQL</div>
+      <div class="skill-bar"><div class="skill-level sql"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Python</div>
+      <div class="skill-bar"><div class="skill-level python"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">ETL / Data Mining</div>
+      <div class="skill-bar"><div class="skill-level etl"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Salesforce</div>
+      <div class="skill-bar"><div class="skill-level salesforce"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Swift Programming</div>
+      <div class="skill-bar"><div class="skill-level swift"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">C Programming</div>
+      <div class="skill-bar"><div class="skill-level c"></div></div>
+    </div>
   </div>
+</section>
 
-  <footer>
-    © 2025 Gonzalo Moscoso Pacheco
-  </footer>
+<section>
+  <h2>Professional Experience</h2>
+  <ul class="experience">
+    <li><strong>Senior B2B Engineer – Telefónica International</strong> | 2020–2025
+      <ul>
+        <li>Led enterprise delivery operations and managed technical engagements for major clients across Latin America.</li>
+        <li>Defined technical scopes, managed deployments, and coordinated field teams and vendor integrations.</li>
+        <li>Implemented data-driven monitoring and reporting of operational KPIs.</li>
+      </ul>
+    </li>
+    <li><strong>Pre-Sales Engineer – Government Projects</strong> | 2010–2019
+      <ul>
+        <li>Managed technical proposals, compliance documentation, and data requirements for government contracts under SEACE.</li>
+        <li>Coordinated internal and external teams to ensure accurate data collection and reporting.</li>
+      </ul>
+    </li>
+    <li><strong>Account Manager</strong> | 2005–2009
+      <ul>
+        <li>Managed enterprise accounts across southern Peru, translating client requirements into scalable technical and operational solutions.</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>Education & Certifications</h2>
+  <ul class="education">
+    <li><strong>Bachelor’s Degree in Electronic Engineering</strong> – Universidad Nacional de San Agustín (2001)</li>
+    <li><strong>Diploma in Business Unit Management</strong> – Universidad Católica San Pablo (2005)</li>
+    <li><strong>ITIL Foundations Certification</strong> – Axelos Global Best Practices (2017)</li>
+    <li><strong>Emotional Agility and Working with Resilient Teams</strong> – Universidad del Pacífico (2025)</li>
+  </ul>
+</section>
+
+<section class="contact">
+  <strong>Contact:</strong>
+  <a href="mailto:gonzalomoscoso@icloud.com">Email</a>
+  <a href="https://www.linkedin.com/in/gonzalomoscosoperu" target="_blank">LinkedIn</a>
+  <a href="https://wa.me/51959651415" target="_blank">WhatsApp</a>
+</section>
+
+<footer>
+  © 2025 Gonzalo Moscoso
+</footer>
+
 </body>
 </html>
