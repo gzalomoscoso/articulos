@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gonzalo Moscoso – Data & IT Portfolio</title>
+<title>Gonzalo Moscoso – Interactive Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
   body {
@@ -12,25 +12,43 @@
     padding: 0;
     background: #f4f6f8;
     color: #333;
+    scroll-behavior: smooth;
   }
 
   header {
-    background: #004080;
+    position: relative;
+    height: 400px;
+    background: url('fotoportada.jpg') center center/cover no-repeat;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    padding: 3rem 1rem 2rem;
+    padding: 0 1rem;
+  }
+
+  header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 64, 128, 0.5);
+  }
+
+  header h1, header p {
+    position: relative;
+    z-index: 1;
   }
 
   header h1 {
+    font-size: 2.2rem;
     margin: 0;
-    font-size: 2rem;
   }
 
   header p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-top: 0.5rem;
-    color: #ffcc00;
     font-weight: 500;
+    color: #ffcc00;
   }
 
   section {
@@ -53,55 +71,15 @@
 
   h3 {
     color: #333;
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
   }
 
   p {
     line-height: 1.6;
   }
 
-  .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 1rem;
-  }
-
-  .skill {
-    width: 48%;
-    margin: 1%;
-  }
-
-  .skill-name {
-    font-weight: 700;
-    margin-bottom: 0.3rem;
-  }
-
-  .skill-bar {
-    height: 12px;
-    border-radius: 6px;
-    background: #e0e0e0;
-    overflow: hidden;
-  }
-
-  .skill-level {
-    height: 100%;
-    border-radius: 6px;
-  }
-
-  .python { background: #306998; width: 30%; }
-  .sql { background: #f29111; width: 100%; }
-  .etl { background: #4caf50; width: 100%; }
-  .salesforce { background: #00a1e0; width: 100%; }
-  .swift { background: #f05138; width: 60%; }
-  .c { background: #555555; width: 50%; }
-
-  .experience li, .education li {
+  ul li {
     margin-bottom: 0.6rem;
-  }
-
-  .experience, .education {
-    margin-top: 1rem;
-    padding-left: 1.2rem;
   }
 
   .contact {
@@ -128,16 +106,55 @@
     color: #666;
   }
 
-  @media(max-width: 768px){
-    .skill { width: 100%; margin-bottom: 1rem; }
+  /* Skills Section */
+  .skills-section {
+    max-width: 1000px;
+    margin: 2rem auto 4rem;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
   }
+
+  .skill-bar-container {
+    margin: 1.5rem 0;
+  }
+
+  .skill-title {
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+  }
+
+  .skill-bar-background {
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 10px;
+    height: 20px;
+    overflow: hidden;
+  }
+
+  .skill-bar-fill {
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    background: #004080;
+    transition: width 2s ease;
+  }
+
+  .skill-python { background: #306998; }
+  .skill-sql { background: #f29111; }
+  .skill-etl { background: #4caf50; }
+  .skill-salesforce { background: #00a1e0; }
+  .skill-swift { background: #f05138; }
+  .skill-c { background: #555555; }
+
 </style>
 </head>
 <body>
 
 <header>
   <h1>Gonzalo Moscoso Pacheco</h1>
-  <p>Senior Engineer & Technical Consultant – Data, Python, Salesforce & IT</p>
+  <p>Senior Engineer of Telecommunication – IT Projects Integration, Data, Python, Salesforce</p>
 </header>
 
 <section>
@@ -147,38 +164,8 @@
 </section>
 
 <section>
-  <h2>Skills & Expertise</h2>
-  <div class="skills-container">
-    <div class="skill">
-      <div class="skill-name">SQL</div>
-      <div class="skill-bar"><div class="skill-level sql"></div></div>
-    </div>
-    <div class="skill">
-      <div class="skill-name">Python</div>
-      <div class="skill-bar"><div class="skill-level python"></div></div>
-    </div>
-    <div class="skill">
-      <div class="skill-name">ETL / Data Mining</div>
-      <div class="skill-bar"><div class="skill-level etl"></div></div>
-    </div>
-    <div class="skill">
-      <div class="skill-name">Salesforce</div>
-      <div class="skill-bar"><div class="skill-level salesforce"></div></div>
-    </div>
-    <div class="skill">
-      <div class="skill-name">Swift Programming</div>
-      <div class="skill-bar"><div class="skill-level swift"></div></div>
-    </div>
-    <div class="skill">
-      <div class="skill-name">C Programming</div>
-      <div class="skill-bar"><div class="skill-level c"></div></div>
-    </div>
-  </div>
-</section>
-
-<section>
   <h2>Professional Experience</h2>
-  <ul class="experience">
+  <ul>
     <li><strong>Senior B2B Engineer – Telefónica International</strong> | 2020–2025
       <ul>
         <li>Led enterprise delivery operations and managed technical engagements for major clients across Latin America.</li>
@@ -202,12 +189,40 @@
 
 <section>
   <h2>Education & Certifications</h2>
-  <ul class="education">
+  <ul>
     <li><strong>Bachelor’s Degree in Electronic Engineering</strong> – Universidad Nacional de San Agustín (2001)</li>
     <li><strong>Diploma in Business Unit Management</strong> – Universidad Católica San Pablo (2005)</li>
     <li><strong>ITIL Foundations Certification</strong> – Axelos Global Best Practices (2017)</li>
     <li><strong>Emotional Agility and Working with Resilient Teams</strong> – Universidad del Pacífico (2025)</li>
   </ul>
+</section>
+
+<section class="skills-section">
+  <h2>Technical Skills</h2>
+  <div class="skill-bar-container">
+    <div class="skill-title">SQL – 10+ years</div>
+    <div class="skill-bar-background"><div class="skill-bar-fill skill-sql"></div></div>
+  </div>
+  <div class="skill-bar-container">
+    <div class="skill-title">Python – 3 years</div>
+    <div class="skill-bar-background"><div class="skill-bar-fill skill-python"></div></div>
+  </div>
+  <div class="skill-bar-container">
+    <div class="skill-title">ETL / Data Mining – 10+ years</div>
+    <div class="skill-bar-background"><div class="skill-bar-fill skill-etl"></div></div>
+  </div>
+  <div class="skill-bar-container">
+    <div class="skill-title">Salesforce – Extensive Experience</div>
+    <div class="skill-bar-background"><div class="skill-bar-fill skill-salesforce"></div></div>
+  </div>
+  <div class="skill-bar-container">
+    <div class="skill-title">Swift Programming – Intermediate</div>
+    <div class="skill-bar-background"><div class="skill-bar-fill skill-swift"></div></div>
+  </div>
+  <div class="skill-bar-container">
+    <div class="skill-title">C Programming – Intermediate</div>
+    <div class="skill-bar-background"><div class="skill-bar-fill skill-c"></div></div>
+  </div>
 </section>
 
 <section class="contact">
@@ -220,6 +235,26 @@
 <footer>
   © 2025 Gonzalo Moscoso
 </footer>
+
+<script>
+  // Animate skill bars when they enter viewport
+  const skillBars = document.querySelectorAll('.skill-bar-fill');
+  const options = { threshold: 0.5 };
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.style.width = entry.target.classList.contains('skill-sql') ? '100%' :
+                                 entry.target.classList.contains('skill-python') ? '30%' :
+                                 entry.target.classList.contains('skill-etl') ? '100%' :
+                                 entry.target.classList.contains('skill-salesforce') ? '100%' :
+                                 entry.target.classList.contains('skill-swift') ? '60%' :
+                                 entry.target.classList.contains('skill-c') ? '50%' : '0%';
+      }
+    });
+  }, options);
+
+  skillBars.forEach(bar => observer.observe(bar));
+</script>
 
 </body>
 </html>
