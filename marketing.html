@@ -3,174 +3,220 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio – Gonzalo Moscoso Pacheco</title>
+  <title>Portafolio Profesional – Gonzalo Moscoso Pacheco</title>
   <style>
-    /* General */
     body {
+      font-family: 'Arial', sans-serif;
       margin: 0;
-      font-family: "Poppins", Arial, sans-serif;
-      background-color: #0e0e0e;
-      color: #e4e4e4;
+      padding: 0;
       line-height: 1.6;
+      background: #0f1116;
+      color: #ddd;
     }
 
-    h1, h2, h3 {
-      color: #4da6ff;
-      margin-bottom: 0.5rem;
-    }
-
-    a {
-      color: #4da6ff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Header */
     header {
       text-align: center;
-      padding: 3rem 1rem 1rem;
-      background: linear-gradient(180deg, #001f3f 0%, #000000 100%);
-    }
-
-    header h1 {
-      font-size: 2.2rem;
-      margin-bottom: 0.3rem;
-    }
-
-    header p {
-      color: #ccc;
-      font-size: 1.1rem;
-    }
-
-    /* Nav */
-    nav {
-      text-align: center;
-      margin-top: 1rem;
-    }
-
-    nav a {
-      margin: 0 1rem;
-      font-weight: 600;
-      color: #4da6ff;
-    }
-
-    nav a:hover {
+      padding: 2rem 1rem;
+      background: linear-gradient(135deg, #001a33, #002b55);
       color: #fff;
     }
 
-    /* Secciones */
-    section {
-      max-width: 900px;
-      margin: 2.5rem auto;
-      padding: 2rem;
-      background-color: #181818;
+    header img {
+      width: 80%;
+      max-width: 1000px;
       border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    }
-
-    p {
       margin-bottom: 1rem;
     }
 
-    /* Galería */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1rem;
-      margin-top: 1.5rem;
-    }
-
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.03);
-      box-shadow: 0 0 15px rgba(77,166,255,0.4);
-    }
-
-    /* Contacto */
-    .contact {
-      text-align: center;
-      margin-top: 2rem;
-    }
-
-    .contact a {
-      margin: 0 0.5rem;
+    .header-frame {
+      margin: auto;
       display: inline-block;
-      padding: 0.6rem 1.2rem;
-      border-radius: 8px;
-      background-color: #004080;
-      color: #fff;
-      transition: background 0.3s ease;
+      text-align: center;
+      padding: 1.5rem 2rem;
+      background-color: #002b55;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
     }
 
-    .contact a:hover {
-      background-color: #007bff;
+    .header-frame h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .header-frame p {
+      margin: 0.5rem 0 0;
+      font-size: 1.1rem;
+      color: #cfe0ff;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #1a1d23;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      color: #4da3ff;
+      border-bottom: 2px solid #4da3ff;
+      padding-bottom: 0.3rem;
+    }
+
+    h3 {
+      color: #69b9ff;
+    }
+
+    .meta {
+      font-style: italic;
+      color: #aaa;
+    }
+
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .project {
+      display: flex;
+      flex-direction: row;
+      background: #222831;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    .project img {
+      width: 40%;
+      object-fit: cover;
+      border-right: 4px solid #004080;
+    }
+
+    .proj-body {
+      padding: 1.2rem 1.5rem;
+      flex: 1;
+    }
+
+    .proj-body h4 {
+      color: #4da3ff;
+      margin-bottom: 0.5rem;
+    }
+
+    .proj-meta {
+      margin-top: 0.7rem;
+    }
+
+    .proj-meta .tag {
+      display: inline-block;
+      background: #004080;
+      color: #fff;
+      padding: 0.3rem 0.7rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      margin-right: 0.5rem;
+      margin-top: 0.3rem;
     }
 
     footer {
       text-align: center;
-      color: #777;
       font-size: 0.9rem;
-      padding: 1rem 0;
-      border-top: 1px solid #333;
+      padding: 1.5rem;
+      color: #888;
     }
   </style>
 </head>
+
 <body>
 
-  <header>
+<header>
+  <img src="1.jpg" alt="Imagen de portada">
+  <div class="header-frame">
     <h1>Gonzalo Moscoso Pacheco</h1>
-    <p>Ingeniero Senior en Telecomunicaciones | Integración de Proyectos IT | Data | Python | Salesforce</p>
-    <nav>
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
+    <p>Productor y Coordinador Audiovisual – Dirección de proyectos, campañas y contenidos</p>
+  </div>
+</header>
 
-  <section id="sobre-mi">
-    <h2>Sobre mí</h2>
-    <p>
-      Ingeniero Senior con más de una década de experiencia liderando operaciones de telecomunicaciones e integración de proyectos IT.
-      Combino una mentalidad analítica y estratégica con habilidades de comunicación y liderazgo técnico.
-      Mi enfoque está en la precisión, la eficiencia y la creación de soluciones escalables que conecten tecnología con propósito.
-    </p>
-  </section>
+<section>
+  <h2>Resumen Profesional</h2>
+  <p>Profesional en comunicación audiovisual con sólida experiencia en la producción y dirección de campañas, videos, transmisiones y eventos institucionales. Mi enfoque combina planificación rigurosa, sensibilidad narrativa y gestión precisa de recursos para lograr piezas con impacto visual y emocional.</p>
+  <p>Dirigí equipos creativos y técnicos en entornos exigentes, garantizando el cumplimiento de los estándares de comunicación, legalidad y derechos de autor. Mi compromiso es total: trabajo con energía, ideas frescas y la convicción de que cada proyecto puede inspirar si se ejecuta con propósito y pasión.</p>
+  <p>Recientemente lideré la campaña de lanzamiento de la app iOS <strong>Spotiactions</strong>, gestionando estrategias de promoción en redes, comunicación con influencers, segmentación de audiencias y campañas de vistas en TikTok e Instagram. El resultado: una expansión orgánica del alcance, reforzando la conexión emocional con la audiencia y fortaleciendo la marca desde la autenticidad.</p>
+</section>
 
-  <section id="proyectos">
-    <h2>Proyectos destacados</h2>
-    <p>
-      Algunos de los proyectos audiovisuales, técnicos y de integración de sistemas que reflejan la variedad de mi experiencia:
-    </p>
+<section>
+  <h2>Proyectos Destacados</h2>
+  <p class="meta">Selección representativa de campañas, spots, eventos y producciones audiovisuales dirigidas o coordinadas.</p>
 
-    <div class="gallery">
-      <img src="https://i.imgur.com/2I8hThL.jpg" alt="Proyecto 1">
-      <img src="https://i.imgur.com/CSQH7bW.jpg" alt="Proyecto 2">
-      <img src="https://i.imgur.com/Zm8sOE8.jpg" alt="Proyecto 3">
-      <img src="https://i.imgur.com/nLd4zso.jpg" alt="Proyecto 4">
-    </div>
-  </section>
+  <div class="projects">
+    <article class="project">
+      <img src="2.webp" alt="Spot institucional">
+      <div class="proj-body">
+        <h4>Spot institucional: Campaña de sensibilización</h4>
+        <p>Coordinación integral de producción y dirección de rodaje. Gestión de proveedores, control de presupuesto y validación de guion con el equipo ejecutivo, asegurando coherencia entre el mensaje institucional y la estética visual.</p>
+        <div class="proj-meta">
+          <span class="tag">Duración: 00:45</span>
+          <span class="tag">Presupuesto: Medio</span>
+          <span class="tag">Formato: TV / Web</span>
+        </div>
+      </div>
+    </article>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>Podés contactarme directamente o seguir mis publicaciones profesionales:</p>
-    <div class="contact">
-      <a href="mailto:gonzalo.moscoso@example.com">Email</a>
-      <a href="https://www.linkedin.com/in/gonzalom" target="_blank">LinkedIn</a>
-      <a href="https://github.com/gonzalom" target="_blank">GitHub</a>
-    </div>
-  </section>
+    <article class="project">
+      <img src="3.webp" alt="Transmisión en vivo">
+      <div class="proj-body">
+        <h4>Transmisión en vivo: Evento institucional</h4>
+        <p>Producción técnica y coordinación de streaming multicanal. Supervisé la conexión con panelistas, mesa ejecutiva y público remoto, garantizando la continuidad y calidad del flujo audiovisual en tiempo real.</p>
+        <div class="proj-meta">
+          <span class="tag">Formato: Streaming</span>
+          <span class="tag">Alcance: Nacional</span>
+        </div>
+      </div>
+    </article>
 
-  <footer>
-    © 2025 Gonzalo Moscoso Pacheco — Todos los derechos reservados
-  </footer>
+    <article class="project">
+      <img src="4.webp" alt="Serie de microvideos">
+      <div class="proj-body">
+        <h4>Serie de microvideos para redes sociales</h4>
+        <p>Producción integral de clips adaptados a Facebook, Instagram y YouTube. Diseño de narrativa breve y visualmente poderosa. Supervisión de métricas y optimización de engagement post-lanzamiento.</p>
+        <div class="proj-meta">
+          <span class="tag">Formato: Social</span>
+          <span class="tag">Optimización: Sí</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project">
+      <img src="5.jpg" alt="Documental corto">
+      <div class="proj-body">
+        <h4>Documental corto: Proyecto institucional B2B</h4>
+        <p>Coordinación de producción y postproducción. Gestión de derechos musicales, aprobación de guion y cumplimiento normativo. El enfoque narrativo priorizó la conexión emocional con el espectador sin perder rigurosidad técnica.</p>
+        <div class="proj-meta">
+          <span class="tag">Duración: 12:00</span>
+          <span class="tag">Distribución: Web institucional</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section>
+  <h2>Estrategias de Comunicación y Marketing Digital</h2>
+  <p>En lugar de enfocarse en ventas directas, el objetivo fue expandir el alcance y visibilidad de los contenidos. Para lograrlo, se aplicó un enfoque humanizado centrado en la conexión con la audiencia y la autenticidad del mensaje:</p>
+  <ul>
+    <li><strong>Campañas de vistas y engagement:</strong> uso de publicidad segmentada en redes para amplificar la exposición y fomentar la interacción genuina con el contenido.</li>
+    <li><strong>Colaboración con influencers y microcreadores:</strong> selección de perfiles alineados con los valores de la marca para generar confianza y ampliar el público objetivo.</li>
+    <li><strong>Contenido emocional y orgánico:</strong> microvideos adaptados a tendencias, con narrativas breves y visuales naturales que impulsaron la identificación del espectador.</li>
+    <li><strong>Promoción inteligente:</strong> uso de TikTok e Instagram Ads orientados a vistas por nicho, priorizando la retención y recordación sobre la conversión inmediata.</li>
+  </ul>
+  <p>El resultado fue un crecimiento sostenido del alcance digital y un fortalecimiento perceptible del vínculo emocional entre el mensaje, la marca y su comunidad.</p>
+</section>
+
+<footer>
+  © 2025 Gonzalo Moscoso Pacheco
+</footer>
 
 </body>
 </html>
