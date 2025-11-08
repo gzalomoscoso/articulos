@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio – Gonzalo Moscoso Pacheco</title>
+  <style>
+    /* General */
+    body {
+      margin: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      background-color: #0e0e0e;
+      color: #e4e4e4;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      color: #4da6ff;
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: #4da6ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+      background: linear-gradient(180deg, #001f3f 0%, #000000 100%);
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    header p {
+      color: #ccc;
+      font-size: 1.1rem;
+    }
+
+    /* Nav */
+    nav {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      font-weight: 600;
+      color: #4da6ff;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    /* Secciones */
+    section {
+      max-width: 900px;
+      margin: 2.5rem auto;
+      padding: 2rem;
+      background-color: #181818;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    /* Galería */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px rgba(77,166,255,0.4);
+    }
+
+    /* Contacto */
+    .contact {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .contact a {
+      margin: 0 0.5rem;
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      background-color: #004080;
+      color: #fff;
+      transition: background 0.3s ease;
+    }
+
+    .contact a:hover {
+      background-color: #007bff;
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
+      padding: 1rem 0;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Gonzalo Moscoso Pacheco</h1>
+    <p>Ingeniero Senior en Telecomunicaciones | Integración de Proyectos IT | Data | Python | Salesforce</p>
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>
+      Ingeniero Senior con más de una década de experiencia liderando operaciones de telecomunicaciones e integración de proyectos IT.
+      Combino una mentalidad analítica y estratégica con habilidades de comunicación y liderazgo técnico.
+      Mi enfoque está en la precisión, la eficiencia y la creación de soluciones escalables que conecten tecnología con propósito.
+    </p>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos destacados</h2>
+    <p>
+      Algunos de los proyectos audiovisuales, técnicos y de integración de sistemas que reflejan la variedad de mi experiencia:
+    </p>
+
+    <div class="gallery">
+      <img src="https://i.imgur.com/2I8hThL.jpg" alt="Proyecto 1">
+      <img src="https://i.imgur.com/CSQH7bW.jpg" alt="Proyecto 2">
+      <img src="https://i.imgur.com/Zm8sOE8.jpg" alt="Proyecto 3">
+      <img src="https://i.imgur.com/nLd4zso.jpg" alt="Proyecto 4">
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Podés contactarme directamente o seguir mis publicaciones profesionales:</p>
+    <div class="contact">
+      <a href="mailto:gonzalo.moscoso@example.com">Email</a>
+      <a href="https://www.linkedin.com/in/gonzalom" target="_blank">LinkedIn</a>
+      <a href="https://github.com/gonzalom" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Gonzalo Moscoso Pacheco — Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
