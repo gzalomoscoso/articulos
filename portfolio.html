@@ -7,12 +7,11 @@
 
 <style>
 :root {
-  --bg-main: #0b0b0f;
-  --bg-card: #15151d;
-  --text-main: #f2f2f2;
-  --text-muted: #b0b0c3;
-  --accent: #7c7cff;
-  --border-soft: rgba(255,255,255,0.08);
+  --bg-main: #0f172a;        /* azul oscuro */
+  --bg-panel: #020617;       /* casi negro */
+  --text-main: #e5e7eb;      /* gris claro */
+  --text-muted: #94a3b8;
+  --accent: #38bdf8;
 }
 
 * {
@@ -21,126 +20,143 @@
 
 body {
   margin: 0;
-  font-family: Inter, Arial, sans-serif;
-  background: var(--bg-main);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-main);
   color: var(--text-main);
-  line-height: 1.6;
 }
 
-/* HERO */
-.hero {
+/* Layout */
+.wrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5rem 8%;
-  gap: 4rem;
+  min-height: 100vh;
 }
 
-.hero-text {
-  max-width: 600px;
+/* LEFT FIXED PANEL */
+.left-panel {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 40%;
+  height: 100vh;
+  background-color: var(--bg-panel);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
 }
 
-.hero-text h1 {
-  font-size: 3.2rem;
+.left-panel img {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+}
+
+.left-panel h1 {
+  font-size: 2.8rem;
   line-height: 1.1;
-  margin: 0 0 1rem;
+  margin: 0;
 }
 
-.hero-text h1 span {
+.left-panel h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-top: 0.8rem;
+}
+
+.left-panel .contact {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.left-panel .contact a {
+  color: var(--accent);
+  text-decoration: none;
+  display: block;
+  margin-top: 0.3rem;
+}
+
+/* RIGHT SCROLLABLE CONTENT */
+.right-panel {
+  margin-left: 40%;
+  width: 60%;
+  padding: 4rem 5rem;
+}
+
+section {
+  margin-bottom: 4.5rem;
+}
+
+section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
   color: var(--accent);
 }
 
-.hero-text p.role {
-  font-size: 1.2rem;
-  color: var(--text-muted);
-  margin-bottom: 1.5rem;
-}
-
-.hero-metrics {
-  display: flex;
-  gap: 2.5rem;
-  margin-top: 2rem;
-}
-
-.metric {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-}
-
-.metric strong {
-  display: block;
-  font-size: 1.6rem;
+section p {
+  font-size: 1.05rem;
+  line-height: 1.7;
   color: var(--text-main);
-}
-
-/* HERO IMAGE */
-.hero-image img {
-  width: 340px;
-  height: 420px;
-  object-fit: cover;
-  border-radius: 18px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
-}
-
-/* SECTIONS */
-section {
-  max-width: 1100px;
-  margin: 4rem auto;
-  padding: 0 8%;
-}
-
-.section-card {
-  background: var(--bg-card);
-  border-radius: 18px;
-  padding: 2.5rem;
-  border: 1px solid var(--border-soft);
-}
-
-h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1.2rem;
-  color: var(--text-main);
-}
-
-p {
-  color: var(--text-muted);
   margin-bottom: 1rem;
 }
 
-/* SKILLS */
+.tagline {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+/* Skills tags */
 .skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1.5rem;
+  gap: 0.6rem;
 }
 
 .skill {
-  padding: 0.6rem 1.1rem;
-  background: rgba(124,124,255,0.12);
-  color: var(--accent);
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 2rem;
+  background-color: #020617;
+  border: 1px solid #1e293b;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
   font-size: 0.85rem;
-  color: var(--text-muted);
-  border-top: 1px solid var(--border-soft);
+  color: var(--text-main);
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
+/* Experience blocks */
+.job {
+  margin-bottom: 2.5rem;
+}
+
+.job-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.job-meta {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .left-panel {
+    position: relative;
+    width: 100%;
+    height: auto;
   }
-  .hero-metrics {
-    justify-content: center;
+
+  .right-panel {
+    margin-left: 0;
+    width: 100%;
+    padding: 2.5rem;
+  }
+
+  .wrapper {
+    flex-direction: column;
   }
 }
 </style>
@@ -148,68 +164,62 @@ footer {
 
 <body>
 
-<!-- HERO -->
-<div class="hero">
-  <div class="hero-text">
-    <h1>Gonzalo <span>Moscoso</span><br>Pacheco</h1>
-    <p class="role">
-      Senior Engineer · Service Operations · Process & IT Governance
-    </p>
+<div class="wrapper">
 
-    <div class="hero-metrics">
-      <div class="metric">
-        <strong>15+</strong>
-        Years Experience
-      </div>
-      <div class="metric">
-        <strong>50+</strong>
-        IT & Service Projects
-      </div>
-      <div class="metric">
-        <strong>ISO</strong>
-        9001 / 27001
-      </div>
-    </div>
-  </div>
-
-  <div class="hero-image">
+  <!-- LEFT FIXED PANEL -->
+  <aside class="left-panel">
     <img src="gonzalomoscoso.jpg" alt="Gonzalo Moscoso Pacheco">
-  </div>
-</div>
+    <h1>Gonzalo<br>Moscoso Pacheco</h1>
+    <h2>Senior Engineer · Global Process & IT Operations</h2>
 
-<!-- SUMMARY -->
-<section>
-  <div class="section-card">
-    <h2>Professional Summary</h2>
-    <p>
-      Senior Engineer with extensive experience managing IT and telecommunications services supporting Service Center operations in complex public and private environments.
-    </p>
-    <p>
-      Specialized in process design, operational governance, and large-scale service and infrastructure initiatives, ensuring compliance with regulatory frameworks and internationally recognized quality and information security standards.
-    </p>
-  </div>
-</section>
-
-<!-- CORE SKILLS -->
-<section>
-  <div class="section-card">
-    <h2>Core Competencies</h2>
-    <div class="skills">
-      <div class="skill">Service Operations Management</div>
-      <div class="skill">Process Ownership</div>
-      <div class="skill">IT Systems Implementation</div>
-      <div class="skill">ISO 9001 / ISO 27001</div>
-      <div class="skill">KPI & SLA Governance</div>
-      <div class="skill">Continuous Improvement</div>
-      <div class="skill">Data & Reporting</div>
-      <div class="skill">Cross-functional Leadership</div>
+    <div class="contact">
+      gonzalomoscoso@icloud.com  
+      <a href="https://www.linkedin.com/in/gonzalomoscosoperu" target="_blank">
+        linkedin.com/in/gonzalomoscosoperu
+      </a>
+      WhatsApp: +51 959 651 415
     </div>
-  </div>
-</section>
+  </aside>
 
-<footer>
-  © 2026 Gonzalo Moscoso Pacheco
-</footer>
+  <!-- RIGHT SCROLLABLE PANEL -->
+  <main class="right-panel">
 
-</body>
-</html>
+    <section>
+      <div class="tagline">
+        Global Process Management · IT Systems Implementation · Service Operations Excellence
+      </div>
+      <p>
+        Senior Engineer with extensive experience in the management, oversight, and technical evaluation of IT and telecommunications services supporting Service Center operations within complex public and private environments.
+      </p>
+      <p>
+        Specialized in process design, operational governance, and large-scale service delivery, with a strong focus on ISO 9001 and ISO 27001 compliance, audit readiness, and continuous improvement across distributed and global organizations.
+      </p>
+    </section>
+
+    <section>
+      <h3>Core Expertise</h3>
+      <div class="skills">
+        <span class="skill">Global Process Ownership</span>
+        <span class="skill">IT Systems Implementation</span>
+        <span class="skill">Service Operations Management</span>
+        <span class="skill">ISO 9001 / ISO 27001</span>
+        <span class="skill">KPI & SLA Governance</span>
+        <span class="skill">Power BI & Reporting</span>
+        <span class="skill">SQL & Python</span>
+        <span class="skill">Salesforce</span>
+        <span class="skill">ITIL Certified</span>
+        <span class="skill">Professional English – Advanced</span>
+      </div>
+    </section>
+
+    <section>
+      <h3>Professional Experience</h3>
+
+      <div class="job">
+        <div class="job-title">Senior B2B Engineer – Telefónica International</div>
+        <div class="job-meta">2003 – 2025</div>
+        <p>
+          Led and supervised engineering teams delivering large-scale IT and telecommunications projects for enterprise customers, acting as process owner for service delivery workflows and standardized operational models.
+        </p>
+        <p>
+          Managed KPIs, SLAs, procurement processes, vendor coordination, and audit-ready documentation, suppo
