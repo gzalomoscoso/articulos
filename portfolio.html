@@ -95,7 +95,8 @@
 
     .stat {
       text-align: center;
-      min-width: 80px;
+  min-width: 80px;
+  max-width: 100px; /* limita el ancho para que el texto se divida */
     }
 
     .stat-number {
@@ -111,6 +112,8 @@
       font-weight: 500;
       color: #555;
       letter-spacing: 0.05em;
+      white-space: normal; /* permite saltos de línea */
+      word-break: break-word; /* fuerza el quiebre si la palabra es muy larga */
     }
 
     /* RIGHT SCROLLABLE CONTENT */
