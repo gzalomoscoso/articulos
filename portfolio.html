@@ -85,19 +85,27 @@
 /* STATS */
 .stats {
   display: flex;
-  justify-content: center; /* cambiar de space-around a center */
-  margin: 24px 0 40px;
-  flex-wrap: wrap;
-  gap: 32px; /* opcional: ajusta el espacio entre las estadísticas */
-  padding: 0 12px;
+  justify-content: center; /* centra horizontalmente las dos estadísticas */
+  gap: 32px; /* espacio entre ellas */
+  margin: 24px 0 40px; /* espacio debajo */
+  flex-wrap: nowrap; /* evita que las estadísticas bajen a otra línea */
 }
 
+.stat {
+  text-align: center;
+  width: 100px; /* ancho fijo para que el texto se divida dentro */
+}
 
-    .stat {
-      text-align: center;
-  min-width: 80px;
-  max-width: 100px; /* limita el ancho para que el texto se divida */
-    }
+.stat-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: #555;
+  letter-spacing: 0.05em;
+  white-space: normal; /* permite salto de línea */
+  word-break: break-word; /* fuerza quiebre si la palabra es muy larga */
+}
+
 
     .stat-number {
       display: block;
@@ -106,14 +114,12 @@
       color: #0e0e0e;
     }
 
-    .stat-label {
+
+    .stat-number {
       display: block;
-      font-size: 12px;
-      font-weight: 500;
-      color: #555;
-      letter-spacing: 0.05em;
-      white-space: normal; /* permite saltos de línea */
-      word-break: break-word; /* fuerza el quiebre si la palabra es muy larga */
+      font-size: 28px;
+      font-weight: 700;
+      color: #0e0e0e;
     }
 
     /* RIGHT SCROLLABLE CONTENT */
