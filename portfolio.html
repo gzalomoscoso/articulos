@@ -167,22 +167,32 @@
       margin-bottom: 72px;
     }
 
-    /* RESPONSIVE */
+    /* RESPONSIVE MOBILE FIX */
     @media (max-width: 1024px) {
+      body {
+        height: auto;
+        overflow: auto;
+      }
+
+      .layout {
+        flex-direction: column;
+        height: auto;
+      }
+
       .left-panel {
         width: 100%;
-        height: auto;          /* crece según contenido */
         position: relative;
-        display: block;        /* permite scroll vertical dentro */
+        height: auto;
+        display: block;
         padding: 16px 0;
-        overflow: auto;        /* habilita scroll en panel izquierdo */
+        overflow: visible;
       }
 
       .profile-card {
         width: 90%;
         max-width: 320px;
         margin: 0 auto;
-        overflow: visible;     /* imagen y stats completos */
+        overflow: visible;
       }
 
       .profile-card img {
@@ -196,14 +206,6 @@
         width: 100%;
         height: auto;
         padding: 48px 32px;
-      }
-
-      body {
-        overflow: auto;
-      }
-
-      .layout {
-        flex-direction: column;
       }
     }
   </style>
@@ -228,8 +230,8 @@
             <span class="stat-label">PROJECTS COMPLETED</span>
           </div>
           <div class="stat">
-  <span class="stat-number">5+</span>
-  <span class="stat-label">ISO 9001 AUDITS PASSED</span>
+            <span class="stat-number">5+</span>
+            <span class="stat-label">ISO 9001 AUDITS PASSED</span>
           </div>
         </div>
       </div>
