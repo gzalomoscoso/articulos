@@ -47,6 +47,7 @@
       align-items: center;
       justify-content: center;
       overflow: hidden;
+      padding: 24px 0;
     }
 
     .profile-card {
@@ -64,7 +65,7 @@
       width: 100%;
       height: auto;
       display: block;
-      object-fit: cover; /* mantiene proporciones y llena el ancho */
+      object-fit: cover;
     }
 
     .profile-card h1 {
@@ -77,6 +78,37 @@
       font-size: 16px;
       margin-bottom: 16px;
       color: #555;
+      padding: 0 12px;
+    }
+
+    /* STATS */
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin: 24px 0 16px;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding: 0 12px;
+    }
+
+    .stat {
+      text-align: center;
+      min-width: 80px;
+    }
+
+    .stat-number {
+      display: block;
+      font-size: 28px;
+      font-weight: 700;
+      color: #0e0e0e;
+    }
+
+    .stat-label {
+      display: block;
+      font-size: 12px;
+      font-weight: 500;
+      color: #555;
+      letter-spacing: 0.05em;
     }
 
     /* RIGHT SCROLLABLE CONTENT */
@@ -139,26 +171,24 @@
     @media (max-width: 1024px) {
       .left-panel {
         width: 100%;
-        height: auto; /* crece con el contenido */
+        height: auto;          /* crece según contenido */
         position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start; /* evita recorte de imagen */
-        padding-top: 16px;
-        overflow: visible; /* permite que la imagen se vea completa */
+        display: block;        /* permite scroll vertical dentro */
+        padding: 16px 0;
+        overflow: auto;        /* habilita scroll en panel izquierdo */
       }
 
       .profile-card {
         width: 90%;
         max-width: 320px;
-        overflow: visible; /* la imagen no se recorta */
+        margin: 0 auto;
+        overflow: visible;     /* imagen y stats completos */
       }
 
       .profile-card img {
         width: 100%;
         height: auto;
-        object-fit: contain; /* escala proporcional para móvil */
-        display: block;
+        object-fit: contain;
       }
 
       .right-panel {
@@ -180,14 +210,32 @@
 </head>
 <body>
   <div class="layout">
+    <!-- LEFT PANEL -->
     <aside class="left-panel">
       <div class="profile-card">
         <img src="gonzalomoscoso.jpg" alt="Gonzalo Moscoso Pacheco" />
         <h1>Gonzalo Moscoso Pacheco</h1>
         <p>Senior IT & Telecom Engineer, expert in service delivery, process optimization, and team leadership.</p>
+
+        <!-- STATS -->
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">YEARS OF EXPERIENCE</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">PROJECTS COMPLETED</span>
+          </div>
+          <div class="stat">
+  <span class="stat-number">5+</span>
+  <span class="stat-label">ISO 9001 AUDITS PASSED</span>
+          </div>
+        </div>
       </div>
     </aside>
 
+    <!-- RIGHT PANEL -->
     <main class="right-panel">
       <section class="section">
         <h2>Core Expertise</h2>
