@@ -36,7 +36,7 @@
       width: 100%;
     }
 
-    /* PANEL IZQUIERDO FIJO */
+    /* LEFT FIXED PANEL */
     .left-panel {
       position: fixed;
       left: 0;
@@ -84,13 +84,13 @@
     }
 
     .profile-card .contact-info {
-        font-size: 12px;
+        font-size: 11px;
         color: #888;
         margin-bottom: 16px;
         line-height: 1.4;
     }
 
-    /* ESTADÍSTICAS */
+    /* STATS */
     .stats {
       display: flex;
       justify-content: center;
@@ -113,12 +113,12 @@
       display: block;
       font-size: 10px;
       font-weight: 600;
-      color: #777;
+      color: #555;
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
 
-    /* CONTENIDO DERECHO DESPLAZABLE */
+    /* RIGHT SCROLLABLE CONTENT */
     .right-panel {
       margin-left: 40%;
       width: 60%;
@@ -151,7 +151,7 @@
       max-width: 820px;
     }
 
-    /* ETIQUETAS */
+    /* TAGS */
     .tags {
       display: flex;
       flex-wrap: wrap;
@@ -211,8 +211,7 @@
       background-color: var(--bg-panel);
       border: 1px solid var(--tag-border);
       border-radius: 12px;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      position: relative;
+      transition: all 0.3s ease;
     }
 
     .cert-card:hover {
@@ -234,12 +233,46 @@
       color: var(--text-secondary);
     }
 
+    /* RESPONSIVE MOBILE FIX - RESTAURADO EXACTAMENTE AL ORIGINAL */
     @media (max-width: 1024px) {
-      body { height: auto; overflow: auto; }
-      .layout { flex-direction: column; }
-      .left-panel { width: 100%; position: relative; height: auto; padding: 40px 0; }
-      .right-panel { margin-left: 0; width: 100%; height: auto; padding: 40px 24px; }
-      .cert-grid { grid-template-columns: 1fr; }
+      body {
+        height: auto;
+        overflow: auto;
+      }
+
+      .layout {
+        flex-direction: column;
+        height: auto;
+      }
+
+      .left-panel {
+        width: 100%;
+        position: relative;
+        height: auto;
+        display: block;
+        padding: 16px 0;
+        overflow: visible;
+      }
+
+      .profile-card {
+        width: 90%;
+        max-width: 320px;
+        margin: 0 auto;
+        overflow: visible;
+      }
+
+      .profile-card img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      .right-panel {
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+        padding: 48px 32px;
+      }
     }
   </style>
 </head>
@@ -282,97 +315,3 @@
           <span class="tag">Docker</span>
           <span class="tag">Python</span>
           <span class="tag">Agile (Scrum/Kanban)</span>
-          <span class="tag">ITIL Foundations</span>
-          <span class="tag">Asana / Jira</span>
-          <span class="tag">Microsoft Azure</span>
-          <span class="tag">SQL Server</span>
-          <span class="tag">SD-WAN & Fortinet</span>
-          <span class="tag">Swift / iOS Dev</span>
-          <span class="tag">Power BI</span>
-          <span class="tag">Procurement</span>
-        </div>
-      </section>
-
-      <section>
-        <h2>Core Competencies</h2>
-        <div class="experience-item">
-            <h3>End-to-End IT Delivery</h3>
-            <p>Gestión integral de proyectos nacionales e internacionales, asegurando hitos de entrega, control presupuestario y satisfacción del cliente.</p>
-            
-            <h3>Software Factory & Agile</h3>
-            <p>Conocimiento sólido del ciclo de desarrollo y mantenimiento de aplicaciones, priorizando la entrega de valor continua.</p>
-
-            <h3>Workflow Automation</h3>
-            <p>Diseño de automatizaciones complejas utilizando n8n y Python para conectar Asana, Salesforce y Jira.</p>
-        </div>
-      </section>
-
-      <section>
-        <h2>Experiencia Profesional</h2>
-        <div class="experience-item">
-            <div class="experience-header">
-                <h3>Telefónica – Senior B2B Telco Engineer</h3>
-                <span class="date">2003 – 2025</span>
-            </div>
-            <ul>
-                <li>Liderazgo del delivery técnico para cuentas corporativas estratégicas.</li>
-                <li>Diseño y supervisión de infraestructuras de red críticas (SLAs 99.9%).</li>
-                <li>Implementación de scripts y flujos automatizados para monitoreo de red.</li>
-                <li>Gestión directa de contratos y cumplimiento de aliados en campo.</li>
-            </ul>
-        </div>
-
-        <div class="experience-item">
-            <div class="experience-header">
-                <h3>Grupo Intercorp – Coordinador de Infraestructura</h3>
-            </div>
-            <ul>
-                <li>Despliegue de infraestructura para Retail y Banca en más de 1,600 sedes.</li>
-                <li>Control de cronogramas y supervisión de calidad de servicios tercerizados.</li>
-            </ul>
-        </div>
-      </section>
-
-      <section style="margin-bottom: 80px;">
-        <h2>Educación & Certificaciones</h2>
-        <div class="cert-grid">
-          <a href="2008 Titulo Universitario Gonzalo Moscoso compressed.pdf" target="_blank" class="cert-card">
-            <span class="cert-card-title">Bachelor’s Degree in Electronic Engineering</span>
-            <span class="cert-card-subtitle">Universidad Nacional de San Agustín</span>
-          </a>
-
-          <a href="2005 Gerencia Unidad de negocios.pdf" target="_blank" class="cert-card">
-            <span class="cert-card-title">Certification in Business Unit Management</span>
-            <span class="cert-card-subtitle">Universidad Católica San Pablo</span>
-          </a>
-
-          <a href="AXELOS-ITIL FOUNDATIONS CERTIFICATE.pdf" target="_blank" class="cert-card">
-            <span class="cert-card-title">Certification: ITIL Foundations</span>
-            <span class="cert-card-subtitle">AXELOS International</span>
-          </a>
-
-          <a href="2025 Agilidad Emocional y Equipo Resiliente - Universidad del Pacífico.pdf" target="_blank" class="cert-card">
-            <span class="cert-card-title">Emotional Agility and Resilient Teamwork</span>
-            <span class="cert-card-subtitle">Universidad del Pacífico</span>
-          </a>
-
-          <a href="2026 Project Management Agile Alison_Certificate-5661-55914136.pdf" target="_blank" class="cert-card">
-            <span class="cert-card-title">International Certification in Agile Project Management</span>
-            <span class="cert-card-subtitle">Alison.com · Training Facility UK</span>
-          </a>
-
-          <a href="Asana_Certificate-7448-55914136.pdf" target="_blank" class="cert-card">
-            <span class="cert-card-title">International Certification: ASANA</span>
-            <span class="cert-card-subtitle">Asana Academy</span>
-          </a>
-          
-          <a href="2025 - Formalizacion y Flujo de Compras.pdf" target="_blank" class="cert-card">
-            <span class="cert-card-title">Procurement Process and Formalization</span>
-            <span class="cert-card-subtitle">Successfactors - Telefonica Internacional</span>
-          </a>
-        </div>
-      </section>
-    </main>
-  </div>
-</body>
-</html>
