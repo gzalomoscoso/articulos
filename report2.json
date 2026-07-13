@@ -1,0 +1,13 @@
+{
+  "report_type": "reclassification_900am",
+  "horizon_weeks": 12,
+  "generated_date": null,
+  "weekday": null,
+  "generated_at_et": null,
+  "stamp": "Pending first 9:00 AM run",
+  "status": "placeholder",
+  "recommended": [],
+  "avoid": [],
+  "filters": "Relative Volume > 0.5 · no 52-week range anomalies · Market Cap >= $2B. Most-active ranked by Dollar Volume.",
+  "source": "Yahoo Finance (gainers + most-active)"
+}
