@@ -1,0 +1,24 @@
+{
+  "report_type": "swing_screener_745am",
+  "horizon_weeks": 12,
+  "generated_date": "2026-07-13",
+  "weekday": "Monday",
+  "generated_at_et": "2026-07-13T07:45:00-04:00",
+  "stamp": "AI-generated report · Monday, July 13 at 7:45 AM ET · Swing Trading Screener (12-week horizon)",
+  "recommended": [
+    { "rank": 1, "symbol": "META", "name": "Meta Platforms, Inc.", "reason": "Leads both gainers (+5.97%) and dollar volume (~$24B); AI-driven ad monetization compounding while heavy capex is already converting into engagement and revenue." },
+    { "rank": 2, "symbol": "NVDA", "name": "NVIDIA Corporation", "reason": "Highest dollar volume on the tape (~$27B) with price +4%; data-center demand keeps capex return and gross-margin monetization best-in-class." },
+    { "rank": 3, "symbol": "WDFC", "name": "WD-40 Company", "reason": "+10.65% earnings breakout on 6x relative volume; asset-light brand moat, low capex, high recurring margins with minimal litigation exposure." },
+    { "rank": 4, "symbol": "CAVA", "name": "CAVA Group, Inc.", "reason": "+5.84% mid-cap growth breakout; proven unit economics and same-store monetization fund new-store capex with visible cash-on-cash returns." },
+    { "rank": 5, "symbol": "REZI", "name": "Resideo Technologies, Inc.", "reason": "+9.34% on ~2x relative volume; steady smart-home/security cash flows, disciplined capex, low regulatory risk at a $5B mid-cap valuation." }
+  ],
+  "avoid": [
+    { "rank": 1, "symbol": "PLBL", "name": "Polibeli Group Ltd", "reason": "+26.48% parabolic spike on a thin newly-listed float (9.6x relative volume) — instability/squeeze profile, not a durable 12-week trend." },
+    { "rank": 2, "symbol": "OPEN", "name": "Opendoor Technologies Inc.", "reason": "-10.09% meme-grade swing; capital-intensive iBuying with thin monetization and high rate/housing sensitivity." },
+    { "rank": 3, "symbol": "PLUG", "name": "Plug Power Inc.", "reason": "Sub-$3 at -6.30%; chronic cash burn and equity dilution with no demonstrated return on capex." },
+    { "rank": 4, "symbol": "FRMI", "name": "Fermi Inc.", "reason": "-9.97% on a speculative recent listing with no durable earnings base to anchor a swing thesis." },
+    { "rank": 5, "symbol": "SPCX", "name": "Space Exploration Technologies Corp.", "reason": "Fails the liquidity filter (relative volume 0.28 < 0.5) and carries opaque proxy-valuation risk despite headline size." }
+  ],
+  "filters": "Relative Volume > 0.5 · no 52-week range anomalies · Market Cap >= $2B. Most-active ranked by Dollar Volume.",
+  "source": "Yahoo Finance (gainers + most-active)"
+}
