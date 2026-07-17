@@ -1,24 +1,77 @@
 {
-  "report_type": "swing_screener_745am",
+  "report_type": "premarket",
   "horizon_weeks": 12,
-  "generated_date": "2026-07-13",
-  "weekday": "Monday",
-  "generated_at_et": "2026-07-13T07:45:00-04:00",
-  "stamp": "AI-generated report · Monday, July 13 at 7:45 AM ET · Swing Trading Screener (12-week horizon)",
+  "generated_date": "2026-07-17",
+  "weekday": "Friday",
+  "generated_at_et": "2026-07-17T08:45:00-04:00",
+  "stamp": "Friday, July 17 at 8:45 AM ET · Pre-Market Report (12-week horizon)",
+  "status": "final",
+  "baseline_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/report1.json",
+  "baseline_date": null,
   "recommended": [
-    { "rank": 1, "symbol": "META", "name": "Meta Platforms, Inc.", "reason": "Leads both gainers (+5.97%) and dollar volume (~$24B); AI-driven ad monetization compounding while heavy capex is already converting into engagement and revenue." },
-    { "rank": 2, "symbol": "NVDA", "name": "NVIDIA Corporation", "reason": "Highest dollar volume on the tape (~$27B) with price +4%; data-center demand keeps capex return and gross-margin monetization best-in-class." },
-    { "rank": 3, "symbol": "WDFC", "name": "WD-40 Company", "reason": "+10.65% earnings breakout on 6x relative volume; asset-light brand moat, low capex, high recurring margins with minimal litigation exposure." },
-    { "rank": 4, "symbol": "CAVA", "name": "CAVA Group, Inc.", "reason": "+5.84% mid-cap growth breakout; proven unit economics and same-store monetization fund new-store capex with visible cash-on-cash returns." },
-    { "rank": 5, "symbol": "REZI", "name": "Resideo Technologies, Inc.", "reason": "+9.34% on ~2x relative volume; steady smart-home/security cash flows, disciplined capex, low regulatory risk at a $5B mid-cap valuation." }
+    {
+      "rank": 1,
+      "symbol": "ABT",
+      "name": "Abbott Laboratories",
+      "reason": "Diversified medical-device and diagnostics cash engine with strong free-cash-flow monetization; +10.7% on 2x relative volume with minimal regulatory overhang."
+    },
+    {
+      "rank": 2,
+      "symbol": "JBHT",
+      "name": "J.B. Hunt Transport Services",
+      "reason": "Earnings-driven breakout leading a broad freight rally; real revenue, disciplined capex and improving intermodal returns at 2.5x relative volume."
+    },
+    {
+      "rank": 3,
+      "symbol": "CTAS",
+      "name": "Cintas Corporation",
+      "reason": "Recurring uniform-and-services model with high return on capital and durable pricing power; +7.2% on ~2x volume, low litigation risk."
+    },
+    {
+      "rank": 4,
+      "symbol": "KARO",
+      "name": "Karooooo Ltd.",
+      "reason": "Profitable fleet-telematics SaaS with strong recurring monetization and high return on invested capital; 2.7x relative volume, negligible regulatory exposure."
+    },
+    {
+      "rank": 5,
+      "symbol": "IR",
+      "name": "Ingersoll Rand Inc.",
+      "reason": "Mission-critical industrial compression franchise with strong cash conversion and bolt-on capex returns; +7.1% on 1.8x relative volume."
+    }
   ],
   "avoid": [
-    { "rank": 1, "symbol": "PLBL", "name": "Polibeli Group Ltd", "reason": "+26.48% parabolic spike on a thin newly-listed float (9.6x relative volume) — instability/squeeze profile, not a durable 12-week trend." },
-    { "rank": 2, "symbol": "OPEN", "name": "Opendoor Technologies Inc.", "reason": "-10.09% meme-grade swing; capital-intensive iBuying with thin monetization and high rate/housing sensitivity." },
-    { "rank": 3, "symbol": "PLUG", "name": "Plug Power Inc.", "reason": "Sub-$3 at -6.30%; chronic cash burn and equity dilution with no demonstrated return on capex." },
-    { "rank": 4, "symbol": "FRMI", "name": "Fermi Inc.", "reason": "-9.97% on a speculative recent listing with no durable earnings base to anchor a swing thesis." },
-    { "rank": 5, "symbol": "SPCX", "name": "Space Exploration Technologies Corp.", "reason": "Fails the liquidity filter (relative volume 0.28 < 0.5) and carries opaque proxy-valuation risk despite headline size." }
+    {
+      "rank": 1,
+      "symbol": "ATAI",
+      "name": "AtaiBeckley Inc.",
+      "reason": "Pre-revenue clinical-stage psychedelics biotech; +33% on a 21x volume spike signals a news/squeeze anomaly with no monetization and heavy regulatory risk."
+    },
+    {
+      "rank": 2,
+      "symbol": "LCID",
+      "name": "Lucid Group, Inc.",
+      "reason": "Persistent EV cash burn and negative return on capex with recurring dilution; the pop lacks a durable monetization catalyst."
+    },
+    {
+      "rank": 3,
+      "symbol": "ASTS",
+      "name": "AST SpaceMobile, Inc.",
+      "reason": "Pre-revenue satellite build-out with enormous ongoing capex and unproven monetization; down 17% intraday underscores execution risk."
+    },
+    {
+      "rank": 4,
+      "symbol": "BTI",
+      "name": "British American Tobacco p.l.c.",
+      "reason": "Strong cash flow but a persistent litigation and regulatory overhang on the tobacco franchise caps the 12-week risk-adjusted upside."
+    },
+    {
+      "rank": 5,
+      "symbol": "FDXF",
+      "name": "FedEx Freight Holding Company, Inc.",
+      "reason": "Excluded by the screen: relative volume of ~0.43 is below the 0.5 threshold, so the +7.5% move lacks confirming participation."
+    }
   ],
-  "filters": "Relative Volume > 0.5 · no 52-week range anomalies · Market Cap >= $2B. Most-active ranked by Dollar Volume.",
+  "filters": "Relative Volume > 0.5 · no 52-week range anomalies · Market Cap >= $2B. Most-active ranked by Dollar Volume. Reclassification vs. the 7:45 AM matrix (report1.json).",
   "source": "Yahoo Finance (gainers + most-active)"
 }
