@@ -1,180 +1,77 @@
 {
-  "report_type": "reclassification_900am",
+  "report_type": "Opening Range Report",
   "horizon_weeks": 12,
-  "generated_date": "2026-07-16",
-  "weekday": "Thursday",
-  "generated_at_et": "2026-07-16T09:00:00-04:00",
-  "stamp": "AI-generated report · Thursday, July 16 at 9:00 AM ET · Swing Trading Screener (12-week horizon)",
+  "generated_date": "2026-07-17",
+  "weekday": "Friday",
+  "generated_at_et": "2026-07-17T10:15:00-04:00",
+  "stamp": "Friday, July 17 at 10:15 AM ET · Opening Range Report (12-week horizon)",
   "status": "final",
-  "baseline_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/report1.json",
-  "baseline_date": "2026-07-13",
-  "reclassification": [
-    {
-      "symbol": "ORCL",
-      "name": "Oracle Corporation",
-      "from": "Unclassified",
-      "to": "Strong",
-      "from_emoji": "⚪",
-      "to_emoji": "🟢",
-      "reason": "Not on the 7:45 matrix; today's AI-cloud momentum (+3.56%) on ~1.4x relative volume qualifies it as a leader.",
-      "action": "Initiate or add on strength; buy first pullback."
-    },
-    {
-      "symbol": "AAPL",
-      "name": "Apple Inc.",
-      "from": "Unclassified",
-      "to": "Strong",
-      "from_emoji": "⚪",
-      "to_emoji": "🟢",
-      "reason": "Absent at 7:45; +4.01% record-high breakout on ~$16B dollar volume with deep liquidity.",
-      "action": "Buy core position, add on dips."
-    },
-    {
-      "symbol": "PYPL",
-      "name": "PayPal Holdings, Inc.",
-      "from": "Unclassified",
-      "to": "Strong",
-      "from_emoji": "⚪",
-      "to_emoji": "🟢",
-      "reason": "New to the screen; +17.20% earnings breakout on ~5x relative volume.",
-      "action": "Buy on a pullback toward the breakout level."
-    },
-    {
-      "symbol": "NU",
-      "name": "Nu Holdings Ltd.",
-      "from": "Unclassified",
-      "to": "Strong",
-      "from_emoji": "⚪",
-      "to_emoji": "🟢",
-      "reason": "Not previously classified; ~2.9x relative volume at a $67B cap with scaling monetization.",
-      "action": "Start a partial position; size for EM volatility."
-    },
-    {
-      "symbol": "LCID",
-      "name": "Lucid Group, Inc.",
-      "from": "Unclassified",
-      "to": "Full Block",
-      "from_emoji": "⚪",
-      "to_emoji": "🔴",
-      "reason": "New parabolic +28.79% squeeze on ~2.8x volume, not on the 7:45 list.",
-      "action": "Do not chase; avoid."
-    },
-    {
-      "symbol": "IOVA",
-      "name": "Iovance Biotherapeutics, Inc.",
-      "from": "Unclassified",
-      "to": "Full Block",
-      "from_emoji": "⚪",
-      "to_emoji": "🔴",
-      "reason": "New +20.61% biotech spike absent at 7:45, with no durable earnings base.",
-      "action": "Avoid; no swing base."
-    },
-    {
-      "symbol": "META",
-      "name": "Meta Platforms, Inc.",
-      "from": "Strong",
-      "to": "Wait",
-      "from_emoji": "🟢",
-      "to_emoji": "🟡",
-      "reason": "Led the 7:45 tape but is off today's gainers/most-active screen; thesis intact, no fresh signal.",
-      "action": "Hold; add only on a pullback."
-    },
-    {
-      "symbol": "WDFC",
-      "name": "WD-40 Company",
-      "from": "Strong",
-      "to": "Wait",
-      "from_emoji": "🟢",
-      "to_emoji": "🟡",
-      "reason": "The 7:45 earnings breakout has cooled and dropped off the active screen.",
-      "action": "Hold; wait for a new base."
-    },
-    {
-      "symbol": "CAVA",
-      "name": "CAVA Group, Inc.",
-      "from": "Strong",
-      "to": "Wait",
-      "from_emoji": "🟢",
-      "to_emoji": "🟡",
-      "reason": "No longer showing momentum leadership versus the 7:45 matrix.",
-      "action": "Hold; buy on pullback."
-    },
-    {
-      "symbol": "REZI",
-      "name": "Resideo Technologies, Inc.",
-      "from": "Strong",
-      "to": "Wait",
-      "from_emoji": "🟢",
-      "to_emoji": "🟡",
-      "reason": "Dropped off today's active tape after the 7:45 pop.",
-      "action": "Hold; await re-entry signal."
-    }
-  ],
+  "baseline_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/report2.json",
+  "baseline_date": null,
   "recommended": [
     {
       "rank": 1,
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
-      "reason": "Highest large-cap dollar volume (~$21B); data-center demand keeps converting heavy capex into best-in-class gross-margin monetization with minimal regulatory drag."
+      "reason": "Highest dollar volume on the tape with dominant AI-accelerator monetization and prodigious free cash flow; institutional-grade opening-range momentum."
     },
     {
       "rank": 2,
       "symbol": "ORCL",
       "name": "Oracle Corporation",
-      "reason": "+3.56% on ~1.4x relative volume; OCI and AI-cloud bookings turn multiyear capex into accelerating recurring revenue with low litigation exposure."
+      "reason": "OCI/AI-cloud backlog is converting into recognized revenue at rising margins; heavy relative volume (1.6x) confirms real capital rotating in."
     },
     {
       "rank": 3,
-      "symbol": "AAPL",
-      "name": "Apple Inc.",
-      "reason": "+4.01% to record territory on ~$16B dollar volume; asset-light monetization, large buyback and modest capex intensity anchor a durable 12-week trend."
+      "symbol": "NU",
+      "name": "Nu Holdings Ltd.",
+      "reason": "Profitable digital bank compounding LatAm accounts at high return on equity; 2.8x relative volume signals genuine accumulation, not a squeeze."
     },
     {
       "rank": 4,
-      "symbol": "PYPL",
-      "name": "PayPal Holdings, Inc.",
-      "reason": "+17.20% earnings breakout on ~5x relative volume; asset-light payments network with high free cash flow and improving branded-checkout monetization."
+      "symbol": "ABT",
+      "name": "Abbott Laboratories",
+      "reason": "Diversified med-tech (diagnostics + DexCom-adjacent devices) breaking out +10.7% on durable ROIC and low litigation overhang."
     },
     {
       "rank": 5,
-      "symbol": "NU",
-      "name": "Nu Holdings Ltd.",
-      "reason": "~2.9x relative volume at a $67B cap; LatAm digital bank scaling deposit and credit monetization with efficient low-capex growth (watch EM regulation)."
+      "symbol": "CTAS",
+      "name": "Cintas Corporation",
+      "reason": "Best-in-class uniform/services compounder breaking out +7.2% on consistent high returns on invested capital and recession-resilient recurring revenue."
     }
   ],
   "avoid": [
     {
       "rank": 1,
-      "symbol": "LCID",
-      "name": "Lucid Group, Inc.",
-      "reason": "+28.79% parabolic squeeze on ~2.8x volume; chronic cash burn and negative return on EV capex make it an unstable, non-durable swing."
+      "symbol": "ATAI",
+      "name": "AtaiBeckley Inc.",
+      "reason": "~16x relative volume with a +33% single-session pop in a pre-revenue psychedelics biotech; no monetization and binary regulatory risk — a squeeze/anomaly, not a trend."
     },
     {
       "rank": 2,
-      "symbol": "IOVA",
-      "name": "Iovance Biotherapeutics, Inc.",
-      "reason": "+20.61% biotech spike with no durable earnings base; binary clinical/commercial risk unsuitable for a 12-week thesis."
+      "symbol": "PLUG",
+      "name": "Plug Power Inc.",
+      "reason": "Sub-$3 hydrogen name with chronic cash burn, negative return on capital and persistent dilution; fails the real-monetization pillar."
     },
     {
       "rank": 3,
-      "symbol": "PLUG",
-      "name": "Plug Power Inc.",
-      "reason": "Sub-$3 at $2.21; persistent cash burn and equity dilution with no demonstrated return on capex."
+      "symbol": "LCID",
+      "name": "Lucid Group, Inc.",
+      "reason": "Cash-burning EV maker with negative margins and heavy share issuance sitting at a marginal ~$2.5B cap; capex returns deeply negative."
     },
     {
       "rank": 4,
-      "symbol": "SPCX",
-      "name": "Space Exploration Technologies Corp.",
-      "reason": "Fails the liquidity filter (relative volume 0.42 < 0.5) and carries opaque private-proxy valuation risk despite headline size."
+      "symbol": "OPEN",
+      "name": "Opendoor Technologies Inc.",
+      "reason": "iBuying unit economics remain weak and rate-sensitive; meme-driven 2.7x volume masks poor return on capital and balance-sheet risk."
     },
     {
       "rank": 5,
-      "symbol": "OPEN",
-      "name": "Opendoor Technologies Inc.",
-      "reason": "+4.40% meme-grade swing; capital-intensive iBuying with thin monetization and high rate/housing sensitivity."
+      "symbol": "ONDS",
+      "name": "Ondas Holdings Inc.",
+      "reason": "Speculative sub-$7 drone/momentum name with thin fundamentals and execution/regulatory risk; volume is sentiment, not durable monetization."
     }
   ],
-  "note": "The 7:45 baseline (report1.json) available today is dated 2026-07-13 (Monday); symbols absent from it are treated as Unclassified per the matrix rules.",
-  "filters": "Relative Volume > 0.5 · no 52-week range anomalies · Market Cap >= $2B. Most-active ranked by Dollar Volume. Reclassification vs. the 7:45 AM matrix (report1.json).",
+  "filters": "Relative Volume > 0.5 · no 52-week range anomalies · Market Cap >= $2B. Most-active ranked by Dollar Volume.",
   "source": "Yahoo Finance (gainers + most-active)"
 }
