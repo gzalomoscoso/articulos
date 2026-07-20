@@ -1,38 +1,39 @@
 {
   "report_type": "opening-range",
   "horizon_weeks": 12,
+  "idioma": "es",
   "generated_date": "2026-07-20",
   "weekday": "Monday",
   "generated_at_et": "2026-07-20T10:15:00-04:00",
-  "stamp": "Monday, July 20 at 10:15 AM ET · Opening Range Report (12-week horizon)",
+  "stamp": "Lunes, 20 de julio a las 10:15 AM ET · Reporte Opening Range (horizonte 12 semanas)",
   "status": "final",
   "portfolio_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/stocks.json",
   "entregable_1": {
     "titulo": "Auditoría de Portafolio Activo",
     "posiciones": [
       {
-        "ticker": "AAPL",
+        "ticker": "NVDA",
         "riesgo": "ALERTA DE DESVIACIÓN",
         "accion": "EVALUAR BAJO MATRIZ MGRE",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "17-jul: reportes (Bloomberg/Reuters) de conversaciones tempranas de acuerdo con el DOJ por el caso antimonopolio de 2024; suma nueva disputa legal ligada a IA.",
-        "consecuencias": "Acción cayó 2.32% a ~$326 el 17-jul con alto volumen (31.8M); incertidumbre regulatoria federal pesa pese a +23% YTD."
+        "evento_detectado": "El índice de semiconductores entró en mercado bajista el 19-jul-2026 (>20% desde el pico de junio). Competencia china arrecia: Moonshot lanzó Kimi K3 y DeepSeek desarrolla su propio chip; EE.UU. endurece controles de exportación (lista blanca recortó ~50% de compradores asiáticos, 14-jul).",
+        "consecuencias": "Cotiza ~$202.81 (-2.21%) probando el soporte de $200; una ruptura abre la zona $190-192. Riesgo sobre ingresos de China pese a un Q2-2026 proyectado en ~$91B (+96% interanual)."
       },
       {
         "ticker": "WMT",
-        "riesgo": "ALERTA DE DESVIACIÓN",
-        "accion": "EVALUAR BAJO MATRIZ MGRE",
-        "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Julio: recortó precios manteniendo su guía financiera en un entorno de aranceles; la acción se desplomó 4.98% el 1-jul y luego rebotó 2.78%.",
-        "consecuencias": "Presión de márgenes por aranceles y costos de combustible; acción ~$113.90 con la demanda de consumo bajo vigilancia."
-      },
-      {
-        "ticker": "NVDA",
         "riesgo": "RUIDO OPERATIVO",
         "accion": "MANTENER",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "14-jul: EE.UU. amplió la aprobación de ventas de chips IA a firmas chinas (unidad de ZTE); despejó inversión en Intel; ambiciones de CPU por $200B.",
-        "consecuencias": "Catalizadores netos positivos; +1.4% hoy aunque rezaga al SOX (+2.5%); solo +7% YTD por menor dependencia de chips de Meta."
+        "evento_detectado": "Preocupación por desaceleración de ventas comparables y presión de aranceles sobre importaciones desde China. Insiders vendieron ~$1.06B en 3 meses sin compras. P/E ~39x, por encima de su mediana histórica.",
+        "consecuencias": "Acción ~$111.85 (-0.48% en el año). Los aranceles podrían comprimir márgenes y la valuación exigente reduce el margen de error, pero sin evento legal o regulatorio radicado."
+      },
+      {
+        "ticker": "AAPL",
+        "riesgo": "RUIDO OPERATIVO",
+        "accion": "MANTENER",
+        "momento": "DURANTE ESTE DIA",
+        "evento_detectado": "Apple demandó a OpenAI y a exempleados (Tang Tan) por robo de secretos de hardware (13-jul-2026); es una demanda ofensiva. Sigue pendiente el caso antimonopolio de App Store, a la espera del Tribunal Supremo.",
+        "consecuencias": "Acción resiliente en ~$333.74 (+0.14%) en máximos históricos pese al sell-off tecnológico. Impacto de cobertura mínimo; Servicios mantiene margen bruto de 76.7%."
       }
     ]
   },
@@ -55,22 +56,22 @@
     "mensaje": "",
     "recomendaciones": [
       {
-        "ticker": "NVDA",
-        "narrativa": "Recuperación de semis; foco en la expansión de ventas de chips IA a China y ambiciones de CPU por $200B, pero rezaga al sector.",
-        "hechos_que_podrian_afectar": "14-jul: EE.UU. aprobó ventas a ZTE y otras firmas chinas (subió 3.8%). Hoy +1.4% en apertura; SOX +2.5% pero aún -18% desde máximos.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional"
+        "ticker": "CVX",
+        "narrativa": "Rotación defensiva hacia energía: el sector (XLE +1.16%) lidera mientras la tecnología corrige. El crudo se sostiene por la escalada del conflicto con Irán.",
+        "hechos_que_podrian_afectar": "CVX ~$189.71 (+1.24%) el 20-jul; Brent $88.54 (+0.50%), WTI $82.35. Dividendo 3.75%. Nuevos ataques de EE.UU. a Irán elevan la prima geopolítica del petróleo.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional (rotación a energía)"
       },
       {
-        "ticker": "AVGO",
-        "narrativa": "Chip IA personalizado con OpenAI y acuerdo de chips con Apple hasta 2031; guía IA de $16B reactiva el activo tras caer 24% desde máximos.",
-        "hechos_que_podrian_afectar": "Hoy +3.10% en apertura acompañando el rebote de semis (+2.5%). El acuerdo con Apple y la guía IA sostienen la demanda de infraestructura.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional"
+        "ticker": "MSFT",
+        "narrativa": "Monetización de IA vía Azure y Copilot; el mercado premia el retorno del CapEx frente a hyperscalers con gasto menos productivo.",
+        "hechos_que_podrian_afectar": "MSFT ~$452; CapEx 2026 de ~$190B en centros de datos y GPU. Azure +31% interanual; Copilot a $30/usuario/mes. Reporta resultados a fin de julio (evento binario cercano).",
+        "apreciacion": "Cambio Estructural de Flujo Institucional (monetización IA)"
       },
       {
-        "ticker": "GOOGL",
-        "narrativa": "Anuncio de chip servidor 'Frozen v2' (10x eficiencia para Gemini a 2028) impulsa la monetización IA; persiste el overhang antimonopolio.",
-        "hechos_que_podrian_afectar": "Hoy +3% en apertura por el anuncio de chip IA. Reporta resultados esta semana; CapEx de Big Tech hacia $725B en 2026 en la mira.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional"
+        "ticker": "AAPL",
+        "narrativa": "Refugio dentro del sector: resiliencia en máximos mientras semis y megacaps con earnings corrigen. Menor exposición binaria al CapEx de IA.",
+        "hechos_que_podrian_afectar": "AAPL ~$333.74 (+0.14%) el 20-jul, sube pese al sell-off. Demanda ofensiva vs OpenAI (13-jul). Servicios con margen bruto 76.7%; sin earnings esta semana.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional (refugio defensivo)"
       }
     ]
   },
