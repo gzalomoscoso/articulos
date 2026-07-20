@@ -1,77 +1,78 @@
 {
-  "report_type": "Opening Range Report",
+  "report_type": "opening-range",
   "horizon_weeks": 12,
   "generated_date": "2026-07-20",
   "weekday": "Monday",
   "generated_at_et": "2026-07-20T10:15:00-04:00",
   "stamp": "Monday, July 20 at 10:15 AM ET · Opening Range Report (12-week horizon)",
   "status": "final",
-  "baseline_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/report2.json",
-  "baseline_date": null,
-  "recommended": [
-    {
-      "rank": 1,
-      "symbol": "NVDA",
-      "name": "NVIDIA Corporation",
-      "reason": "Top dollar-volume mover (~$29B) with best-in-class AI-compute monetization and elite free-cash-flow return on capex."
-    },
-    {
-      "rank": 2,
-      "symbol": "NFLX",
-      "name": "Netflix, Inc.",
-      "reason": "Relative volume of 3.3x flags heavy institutional participation; subscription plus ad-tier monetization and inflecting free cash flow."
-    },
-    {
-      "rank": 3,
-      "symbol": "SKHY",
-      "name": "SK hynix Inc.",
-      "reason": "HBM memory pricing supercycle converts AI capex into real revenue; strong dollar volume (~$11B) and expanding margins."
-    },
-    {
-      "rank": 4,
-      "symbol": "NU",
-      "name": "Nu Holdings Ltd.",
-      "reason": "Profitable LatAm fintech with high return on equity and durable deposit monetization; relative volume 1.75x shows accumulation."
-    },
-    {
-      "rank": 5,
-      "symbol": "SOFI",
-      "name": "SoFi Technologies, Inc.",
-      "reason": "Now GAAP-profitable and diversified across lending, financial services and tech platform; light regulatory overhang for the segment."
-    }
-  ],
-  "avoid": [
-    {
-      "rank": 1,
-      "symbol": "LCID",
-      "name": "Lucid Group, Inc.",
-      "reason": "Chronic cash burn and repeated shareholder dilution; negative return on heavy EV capex despite the +14% pop."
-    },
-    {
-      "rank": 2,
-      "symbol": "VG",
-      "name": "Venture Global, Inc.",
-      "reason": "Enormous LNG capex paired with customer arbitration/litigation and regulatory exposure raises the risk pillar."
-    },
-    {
-      "rank": 3,
-      "symbol": "INTC",
-      "name": "Intel Corporation",
-      "reason": "Massive foundry capex with negative free cash flow; weak return on capital keeps the risk/reward unfavorable."
-    },
-    {
-      "rank": 4,
-      "symbol": "SLS",
-      "name": "SELLAS Life Sciences Group, Inc.",
-      "reason": "Pre-revenue microcap biotech that fails the $2B market-cap filter; move is single-catalyst squeeze risk, not monetization."
-    },
-    {
-      "rank": 5,
-      "symbol": "ORKA",
-      "name": "Oruka Therapeutics, Inc.",
-      "reason": "Clinical-stage with no monetization; low-float speculative spike rather than fundamentals, high 52-week-range anomaly risk."
-    }
-  ],
-  "filters": "Relative Volume > 0.5 · no 52-week range anomalies · Market Cap >= $2B. Most-active ranked by Dollar Volume.",
-  "source": "Yahoo Finance (gainers + most-active)"
+  "portfolio_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/stocks.json",
+  "entregable_1": {
+    "titulo": "Auditoría de Portafolio Activo",
+    "posiciones": [
+      {
+        "ticker": "AAPL",
+        "riesgo": "ALERTA DE DESVIACIÓN",
+        "accion": "EVALUAR BAJO MATRIZ MGRE",
+        "momento": "DURANTE ESTE DIA",
+        "evento_detectado": "17-jul: reportes (Bloomberg/Reuters) de conversaciones tempranas de acuerdo con el DOJ por el caso antimonopolio de 2024; suma nueva disputa legal ligada a IA.",
+        "consecuencias": "Acción cayó 2.32% a ~$326 el 17-jul con alto volumen (31.8M); incertidumbre regulatoria federal pesa pese a +23% YTD."
+      },
+      {
+        "ticker": "WMT",
+        "riesgo": "ALERTA DE DESVIACIÓN",
+        "accion": "EVALUAR BAJO MATRIZ MGRE",
+        "momento": "DURANTE ESTE DIA",
+        "evento_detectado": "Julio: recortó precios manteniendo su guía financiera en un entorno de aranceles; la acción se desplomó 4.98% el 1-jul y luego rebotó 2.78%.",
+        "consecuencias": "Presión de márgenes por aranceles y costos de combustible; acción ~$113.90 con la demanda de consumo bajo vigilancia."
+      },
+      {
+        "ticker": "NVDA",
+        "riesgo": "RUIDO OPERATIVO",
+        "accion": "MANTENER",
+        "momento": "DURANTE ESTE DIA",
+        "evento_detectado": "14-jul: EE.UU. amplió la aprobación de ventas de chips IA a firmas chinas (unidad de ZTE); despejó inversión en Intel; ambiciones de CPU por $200B.",
+        "consecuencias": "Catalizadores netos positivos; +1.4% hoy aunque rezaga al SOX (+2.5%); solo +7% YTD por menor dependencia de chips de Meta."
+      }
+    ]
+  },
+  "entregable_2": {
+    "titulo": "Recomendaciones Vector 1 (Opening Range / Swing Trading)",
+    "universo": [
+      "AAPL",
+      "AMZN",
+      "AVGO",
+      "META",
+      "GOOGL",
+      "MSFT",
+      "NET",
+      "CVX",
+      "WMT",
+      "TSLA",
+      "NVDA"
+    ],
+    "sin_recomendaciones": false,
+    "mensaje": "",
+    "recomendaciones": [
+      {
+        "ticker": "NVDA",
+        "narrativa": "Recuperación de semis; foco en la expansión de ventas de chips IA a China y ambiciones de CPU por $200B, pero rezaga al sector.",
+        "hechos_que_podrian_afectar": "14-jul: EE.UU. aprobó ventas a ZTE y otras firmas chinas (subió 3.8%). Hoy +1.4% en apertura; SOX +2.5% pero aún -18% desde máximos.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional"
+      },
+      {
+        "ticker": "AVGO",
+        "narrativa": "Chip IA personalizado con OpenAI y acuerdo de chips con Apple hasta 2031; guía IA de $16B reactiva el activo tras caer 24% desde máximos.",
+        "hechos_que_podrian_afectar": "Hoy +3.10% en apertura acompañando el rebote de semis (+2.5%). El acuerdo con Apple y la guía IA sostienen la demanda de infraestructura.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional"
+      },
+      {
+        "ticker": "GOOGL",
+        "narrativa": "Anuncio de chip servidor 'Frozen v2' (10x eficiencia para Gemini a 2028) impulsa la monetización IA; persiste el overhang antimonopolio.",
+        "hechos_que_podrian_afectar": "Hoy +3% en apertura por el anuncio de chip IA. Reporta resultados esta semana; CapEx de Big Tech hacia $725B en 2026 en la mira.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional"
+      }
+    ]
+  },
+  "source": "Yahoo Finance / fuentes de noticias verificables"
 }
