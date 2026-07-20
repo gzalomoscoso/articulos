@@ -1,75 +1,75 @@
 {
   "report_type": "premarket",
   "horizon_weeks": 12,
-  "generated_date": "2026-07-17",
-  "weekday": "Friday",
-  "generated_at_et": "2026-07-17T08:45:00-04:00",
-  "stamp": "Friday, July 17 at 8:45 AM ET · Pre-Market Report (12-week horizon)",
+  "generated_date": "2026-07-20",
+  "weekday": "Monday",
+  "generated_at_et": "2026-07-20T08:45:00-04:00",
+  "stamp": "Monday, July 20 at 8:45 AM ET · Pre-Market Report (12-week horizon)",
   "status": "final",
   "baseline_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/report1.json",
   "baseline_date": null,
   "recommended": [
     {
       "rank": 1,
-      "symbol": "ABT",
-      "name": "Abbott Laboratories",
-      "reason": "Diversified medical-device and diagnostics cash engine with strong free-cash-flow monetization; +10.7% on 2x relative volume with minimal regulatory overhang."
+      "symbol": "TRV",
+      "name": "The Travelers Companies",
+      "reason": "Capital-light P&C insurer up on underwriting-driven results; real earnings and high, durable returns on capital."
     },
     {
       "rank": 2,
-      "symbol": "JBHT",
-      "name": "J.B. Hunt Transport Services",
-      "reason": "Earnings-driven breakout leading a broad freight rally; real revenue, disciplined capex and improving intermodal returns at 2.5x relative volume."
+      "symbol": "NVDA",
+      "name": "NVIDIA Corporation",
+      "reason": "Best-in-class AI-compute monetization and returns on capex, backed by the tape's deepest dollar-volume liquidity."
     },
     {
       "rank": 3,
-      "symbol": "CTAS",
-      "name": "Cintas Corporation",
-      "reason": "Recurring uniform-and-services model with high return on capital and durable pricing power; +7.2% on ~2x volume, low litigation risk."
+      "symbol": "MU",
+      "name": "Micron Technology",
+      "reason": "HBM/DRAM upcycle is converting AI demand into real revenue with visibly improving return on capex."
     },
     {
       "rank": 4,
-      "symbol": "KARO",
-      "name": "Karooooo Ltd.",
-      "reason": "Profitable fleet-telematics SaaS with strong recurring monetization and high return on invested capital; 2.7x relative volume, negligible regulatory exposure."
+      "symbol": "LEU",
+      "name": "Centrus Energy",
+      "reason": "Domestic uranium enrichment with contracted revenue and structural nuclear-fuel demand; low litigation overhang."
     },
     {
       "rank": 5,
-      "symbol": "IR",
-      "name": "Ingersoll Rand Inc.",
-      "reason": "Mission-critical industrial compression franchise with strong cash conversion and bolt-on capex returns; +7.1% on 1.8x relative volume."
+      "symbol": "TALO",
+      "name": "Talos Energy",
+      "reason": "Gulf E&P generating real free cash flow at a modest valuation with disciplined, high-return capex."
     }
   ],
   "avoid": [
     {
       "rank": 1,
-      "symbol": "ATAI",
-      "name": "AtaiBeckley Inc.",
-      "reason": "Pre-revenue clinical-stage psychedelics biotech; +33% on a 21x volume spike signals a news/squeeze anomaly with no monetization and heavy regulatory risk."
+      "symbol": "LCID",
+      "name": "Lucid Group",
+      "reason": "Chronic cash burn and dilution with negative return on capex; the +14% pop is momentum, not monetization."
     },
     {
       "rank": 2,
-      "symbol": "LCID",
-      "name": "Lucid Group, Inc.",
-      "reason": "Persistent EV cash burn and negative return on capex with recurring dilution; the pop lacks a durable monetization catalyst."
+      "symbol": "MARA",
+      "name": "MARA Holdings",
+      "reason": "Capex-heavy bitcoin miner whose returns swing with BTC price rather than a durable operating model."
     },
     {
       "rank": 3,
-      "symbol": "ASTS",
-      "name": "AST SpaceMobile, Inc.",
-      "reason": "Pre-revenue satellite build-out with enormous ongoing capex and unproven monetization; down 17% intraday underscores execution risk."
+      "symbol": "SPCX",
+      "name": "Space Exploration Technologies",
+      "reason": "Stretched ~$1.6T valuation with limited public monetization visibility; today's -5% break signals fragile momentum."
     },
     {
       "rank": 4,
-      "symbol": "BTI",
-      "name": "British American Tobacco p.l.c.",
-      "reason": "Strong cash flow but a persistent litigation and regulatory overhang on the tobacco franchise caps the 12-week risk-adjusted upside."
+      "symbol": "ORKA",
+      "name": "Oruka Therapeutics",
+      "reason": "Pre-revenue clinical-stage biotech; a binary-regulatory spike with no monetization or return on capital."
     },
     {
       "rank": 5,
-      "symbol": "FDXF",
-      "name": "FedEx Freight Holding Company, Inc.",
-      "reason": "Excluded by the screen: relative volume of ~0.43 is below the 0.5 threshold, so the +7.5% move lacks confirming participation."
+      "symbol": "SLS",
+      "name": "SELLAS Life Sciences",
+      "reason": "Pre-revenue, dilution-funded clinical-stage name driven by binary trial/FDA risk rather than fundamentals."
     }
   ],
   "filters": "Relative Volume > 0.5 · no 52-week range anomalies · Market Cap >= $2B. Most-active ranked by Dollar Volume. Reclassification vs. the 7:45 AM matrix (report1.json).",
