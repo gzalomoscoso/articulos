@@ -16,24 +16,24 @@
         "riesgo": "ALERTA DE DESVIACIÓN",
         "accion": "EVALUAR BAJO MATRIZ MGRE",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "El índice de semiconductores entró en mercado bajista el 19-jul-2026 (>20% desde el pico de junio). Competencia china arrecia: Moonshot lanzó Kimi K3 y DeepSeek desarrolla su propio chip; EE.UU. endurece controles de exportación (lista blanca recortó ~50% de compradores asiáticos, 14-jul).",
-        "consecuencias": "Cotiza ~$202.81 (-2.21%) probando el soporte de $200; una ruptura abre la zona $190-192. Riesgo sobre ingresos de China pese a un Q2-2026 proyectado en ~$91B (+96% interanual)."
+        "evento_detectado": "NVDA cerró en $202.81 (-2.21%) el 20-jul, probando el soporte de $200 (EMA200 en $200.58); el índice de semiconductores SOX entró en mercado bajista (-20% desde el pico de junio). Nueva competencia china: modelo abierto Kimi K3 de Moonshot AI. Reportes de hiperescaladores esta semana (GOOGL, 22-jul).",
+        "consecuencias": "Una ruptura de $200 abriría una caída técnica; la competencia china y el riesgo de menor dependencia de GPU presionan márgenes y el guidance de capex de IA en el horizonte de 12 semanas."
+      },
+      {
+        "ticker": "AAPL",
+        "riesgo": "ALERTA DE DESVIACIÓN",
+        "accion": "EVALUAR BAJO MATRIZ MGRE",
+        "momento": "DURANTE ESTE DIA",
+        "evento_detectado": "Investigación antimonopolio del DOJ (caso de 2024) en conversaciones de acuerdo; el caso del App Store fue aplazado a la espera del fallo de la Corte Suprema. Apple demandó a OpenAI el 10-jul por robo de secretos comerciales. Acción +22.99% YTD, cap. ~$4.9B.",
+        "consecuencias": "Riesgo regulatorio latente sobre comisiones y prácticas del App Store; un acuerdo con el DOJ despejaría la incertidumbre. Impacto de precio acotado por la resiliencia cerca de máximos históricos."
       },
       {
         "ticker": "WMT",
         "riesgo": "RUIDO OPERATIVO",
         "accion": "MANTENER",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Preocupación por desaceleración de ventas comparables y presión de aranceles sobre importaciones desde China. Insiders vendieron ~$1.06B en 3 meses sin compras. P/E ~39x, por encima de su mediana histórica.",
-        "consecuencias": "Acción ~$111.85 (-0.48% en el año). Los aranceles podrían comprimir márgenes y la valuación exigente reduce el margen de error, pero sin evento legal o regulatorio radicado."
-      },
-      {
-        "ticker": "AAPL",
-        "riesgo": "RUIDO OPERATIVO",
-        "accion": "MANTENER",
-        "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Apple demandó a OpenAI y a exempleados (Tang Tan) por robo de secretos de hardware (13-jul-2026); es una demanda ofensiva. Sigue pendiente el caso antimonopolio de App Store, a la espera del Tribunal Supremo.",
-        "consecuencias": "Acción resiliente en ~$333.74 (+0.14%) en máximos históricos pese al sell-off tecnológico. Impacto de cobertura mínimo; Servicios mantiene margen bruto de 76.7%."
+        "evento_detectado": "WMT en $112.53 (-1.03%); caída ~6% reciente y desempeño inferior al S&P 500. Resultados trimestrales programados para el 20-ago. P/E adelantado ~39 vs ~14 del sector; Zacks Rank #3 (Mantener).",
+        "consecuencias": "Volatilidad de precio y valoración exigente sin catalizador binario inminente; el reporte del 20-ago es el próximo evento estructural. Sin amenaza operativa de mediano impacto en el horizonte de 12 semanas."
       }
     ]
   },
@@ -56,22 +56,22 @@
     "mensaje": "",
     "recomendaciones": [
       {
-        "ticker": "CVX",
-        "narrativa": "Rotación defensiva hacia energía: el sector (XLE +1.16%) lidera mientras la tecnología corrige. El crudo se sostiene por la escalada del conflicto con Irán.",
-        "hechos_que_podrian_afectar": "CVX ~$189.71 (+1.24%) el 20-jul; Brent $88.54 (+0.50%), WTI $82.35. Dividendo 3.75%. Nuevos ataques de EE.UU. a Irán elevan la prima geopolítica del petróleo.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (rotación a energía)"
+        "ticker": "AVGO",
+        "narrativa": "Broadcom lidera el chip de IA personalizado (XPU/ASIC) para Google, Meta y OpenAI; el mercado premia su exposición directa al capex de los hiperescaladores.",
+        "hechos_que_podrian_afectar": "Guía de ingresos de IA Q3 en $16.000M (+200% YoY); acuerdo de chips con Apple extendido a 2031 elimina el mayor riesgo; +4.69% reciente, aún -24% desde su máximo.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional"
+      },
+      {
+        "ticker": "META",
+        "narrativa": "Meta financia su gasto agresivo en IA con un motor publicitario en máxima demanda; el foco está en el retorno del capex y los nuevos modelos Muse.",
+        "hechos_que_podrian_afectar": "Ingresos Q1 $56.310M (+33% YoY); capex 2026 elevado a $125.000-145.000M; acción en $646.01 (-1.96% YTD), 4% bajo su máximo. No reporta esta semana.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional"
       },
       {
         "ticker": "MSFT",
-        "narrativa": "Monetización de IA vía Azure y Copilot; el mercado premia el retorno del CapEx frente a hyperscalers con gasto menos productivo.",
-        "hechos_que_podrian_afectar": "MSFT ~$452; CapEx 2026 de ~$190B en centros de datos y GPU. Azure +31% interanual; Copilot a $30/usuario/mes. Reporta resultados a fin de julio (evento binario cercano).",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (monetización IA)"
-      },
-      {
-        "ticker": "AAPL",
-        "narrativa": "Refugio dentro del sector: resiliencia en máximos mientras semis y megacaps con earnings corrigen. Menor exposición binaria al CapEx de IA.",
-        "hechos_que_podrian_afectar": "AAPL ~$333.74 (+0.14%) el 20-jul, sube pese al sell-off. Demanda ofensiva vs OpenAI (13-jul). Servicios con margen bruto 76.7%; sin earnings esta semana.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (refugio defensivo)"
+        "narrativa": "Microsoft recupera $400 apoyado en Azure y en la diversificación de hardware de IA; el mercado exige pruebas de monetización rentable del gasto.",
+        "hechos_que_podrian_afectar": "AMD Helios (72 chips Instinct) alimentará Azure desde 2S26 como alternativa a Nvidia; ~$190.000M de capex de IA en 2026; rebote desde mínimos <$350 de junio.",
+        "apreciacion": "Ruido Transitorio Intradía"
       }
     ]
   },
