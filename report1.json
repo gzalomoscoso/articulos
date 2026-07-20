@@ -4,74 +4,75 @@
   "generated_date": "2026-07-20",
   "weekday": "Monday",
   "generated_at_et": "2026-07-20T08:45:00-04:00",
-  "stamp": "Monday, July 20 at 8:45 AM ET · Pre-Market Report (12-week horizon)",
+  "stamp": "Monday, July 20 at 08:45 AM ET · Pre-Market Report (12-week horizon)",
   "status": "final",
-  "baseline_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/report1.json",
-  "baseline_date": null,
-  "recommended": [
-    {
-      "rank": 1,
-      "symbol": "TRV",
-      "name": "The Travelers Companies",
-      "reason": "Capital-light P&C insurer up on underwriting-driven results; real earnings and high, durable returns on capital."
-    },
-    {
-      "rank": 2,
-      "symbol": "NVDA",
-      "name": "NVIDIA Corporation",
-      "reason": "Best-in-class AI-compute monetization and returns on capex, backed by the tape's deepest dollar-volume liquidity."
-    },
-    {
-      "rank": 3,
-      "symbol": "MU",
-      "name": "Micron Technology",
-      "reason": "HBM/DRAM upcycle is converting AI demand into real revenue with visibly improving return on capex."
-    },
-    {
-      "rank": 4,
-      "symbol": "LEU",
-      "name": "Centrus Energy",
-      "reason": "Domestic uranium enrichment with contracted revenue and structural nuclear-fuel demand; low litigation overhang."
-    },
-    {
-      "rank": 5,
-      "symbol": "TALO",
-      "name": "Talos Energy",
-      "reason": "Gulf E&P generating real free cash flow at a modest valuation with disciplined, high-return capex."
-    }
-  ],
-  "avoid": [
-    {
-      "rank": 1,
-      "symbol": "LCID",
-      "name": "Lucid Group",
-      "reason": "Chronic cash burn and dilution with negative return on capex; the +14% pop is momentum, not monetization."
-    },
-    {
-      "rank": 2,
-      "symbol": "MARA",
-      "name": "MARA Holdings",
-      "reason": "Capex-heavy bitcoin miner whose returns swing with BTC price rather than a durable operating model."
-    },
-    {
-      "rank": 3,
-      "symbol": "SPCX",
-      "name": "Space Exploration Technologies",
-      "reason": "Stretched ~$1.6T valuation with limited public monetization visibility; today's -5% break signals fragile momentum."
-    },
-    {
-      "rank": 4,
-      "symbol": "ORKA",
-      "name": "Oruka Therapeutics",
-      "reason": "Pre-revenue clinical-stage biotech; a binary-regulatory spike with no monetization or return on capital."
-    },
-    {
-      "rank": 5,
-      "symbol": "SLS",
-      "name": "SELLAS Life Sciences",
-      "reason": "Pre-revenue, dilution-funded clinical-stage name driven by binary trial/FDA risk rather than fundamentals."
-    }
-  ],
-  "filters": "Relative Volume > 0.5 · no 52-week range anomalies · Market Cap >= $2B. Most-active ranked by Dollar Volume. Reclassification vs. the 7:45 AM matrix (report1.json).",
-  "source": "Yahoo Finance (gainers + most-active)"
+  "portfolio_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/stocks.json",
+  "entregable_1": {
+    "titulo": "Auditoría de Portafolio Activo",
+    "posiciones": [
+      {
+        "ticker": "AAPL",
+        "riesgo": "ALERTA DE DESVIACIÓN",
+        "accion": "EVALUAR BAJO MATRIZ MGRE",
+        "momento": "DURANTE ESTE DIA",
+        "evento_detectado": "DOJ y 19 estados+DC mantienen la demanda antimonopolio de 2024 (desestimación negada jun-2025, sin fecha de juicio); Apple en conversaciones de acuerdo con el DOJ (Bloomberg, 18-jul-2026). Además, nueva disputa legal por IA reportada la semana del 14-jul.",
+        "consecuencias": "Overhang regulatorio persistente; un acuerdo lo reduciría. AAPL cotizó ~-0,7% el 18-jul pese a +21% YTD y capitalización récord ~US$4,88 billones. Sin impacto directo en guidance ni flujo de caja por ahora."
+      },
+      {
+        "ticker": "NVDA",
+        "riesgo": "ALERTA DE DESVIACIÓN",
+        "accion": "EVALUAR BAJO MATRIZ MGRE",
+        "momento": "DURANTE ESTE DIA",
+        "evento_detectado": "El Dept. de Comercio remitió las licencias del chip H200 para China a State/Energy/Defense (ventana de 30 días); la decisión final queda en manos del presidente Trump. Reanudación de ventas a China aún sin aprobar.",
+        "consecuencias": "Hasta ~US$50.000M/año en ventas a China en juego según estimaciones. Fundamentales sólidos: Q3 FY26 ingresos récord US$57.000M, Data Center US$51.200M, guía Q4 US$65.000M. NVDA US$204,76 (+0,96%) el 20-jul."
+      },
+      {
+        "ticker": "WMT",
+        "riesgo": "RUIDO OPERATIVO",
+        "accion": "MANTENER",
+        "momento": "DURANTE ESTE DIA",
+        "evento_detectado": "Recortes de precios selectivos financiados con la guía de febrero y el retorno de reembolsos arancelarios; BofA confirma que la guía financiera se mantiene intacta (7-jul-2026). Entorno arancelario sin cambio estructural.",
+        "consecuencias": "Sin revisión de proyecciones; presión de márgenes acotada. P/E ~39x, ventas FY26 >US$713.000M, ~60% de ingresos EE.UU. en comestibles. Volatilidad diaria normal, sin catalizador binario."
+      }
+    ]
+  },
+  "entregable_2": {
+    "titulo": "Recomendaciones Vector 1 (Pre-Market / Swing Trading)",
+    "universo": [
+      "AAPL",
+      "AMZN",
+      "AVGO",
+      "META",
+      "GOOGL",
+      "MSFT",
+      "NET",
+      "CVX",
+      "WMT",
+      "TSLA",
+      "NVDA"
+    ],
+    "sin_recomendaciones": false,
+    "mensaje": "",
+    "recomendaciones": [
+      {
+        "ticker": "NVDA",
+        "narrativa": "Líder en cómputo IA; la reapertura de China actúa como catalizador de ingresos incremental sobre una base de datacenter que ya monetiza a escala récord.",
+        "hechos_que_podrian_afectar": "Licencias H200 a China en revisión federal (decisión de Trump pendiente); rebote tras el selloff del viernes. NVDA US$204,76 (+0,96%) hoy; Q3 FY26 ingresos récord US$57.000M.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional"
+      },
+      {
+        "ticker": "AVGO",
+        "narrativa": "ASICs de IA a medida y networking; el acuerdo con Apple extendido a 2031 y un backlog de US$110.000M sostienen la tesis de crecimiento estructural.",
+        "hechos_que_podrian_afectar": "Extensión multianual del suministro de chips ASIC a Apple confirmada en julio; momentum en chips IA personalizados. AVGO US$381,66 (+2,92%) hoy; capitalización ~US$1,82 billones.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional"
+      },
+      {
+        "ticker": "MSFT",
+        "narrativa": "Monetización de IA vía Azure/Copilot con retornos visibles de CapEx; perfil defensivo dentro del gasto de ~US$725.000M de las megacaps en 2026.",
+        "hechos_que_podrian_afectar": "Rebota con las megacaps tras el selloff del viernes; sin catalizador regulatorio inminente. MSFT US$401,71 (+2,00%) hoy 20-jul-2026.",
+        "apreciacion": "Ruido Transitorio Intradia"
+      }
+    ]
+  },
+  "source": "Yahoo Finance / fuentes de noticias verificables"
 }
