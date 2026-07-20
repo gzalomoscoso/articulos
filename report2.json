@@ -1,10 +1,10 @@
 {
   "report_type": "Opening Range Report",
   "horizon_weeks": 12,
-  "generated_date": "2026-07-17",
-  "weekday": "Friday",
-  "generated_at_et": "2026-07-17T10:15:00-04:00",
-  "stamp": "Friday, July 17 at 10:15 AM ET · Opening Range Report (12-week horizon)",
+  "generated_date": "2026-07-20",
+  "weekday": "Monday",
+  "generated_at_et": "2026-07-20T10:15:00-04:00",
+  "stamp": "Monday, July 20 at 10:15 AM ET · Opening Range Report (12-week horizon)",
   "status": "final",
   "baseline_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/report2.json",
   "baseline_date": null,
@@ -13,63 +13,63 @@
       "rank": 1,
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
-      "reason": "Highest dollar volume on the tape with dominant AI-accelerator monetization and prodigious free cash flow; institutional-grade opening-range momentum."
+      "reason": "Top dollar-volume mover (~$29B) with best-in-class AI-compute monetization and elite free-cash-flow return on capex."
     },
     {
       "rank": 2,
-      "symbol": "ORCL",
-      "name": "Oracle Corporation",
-      "reason": "OCI/AI-cloud backlog is converting into recognized revenue at rising margins; heavy relative volume (1.6x) confirms real capital rotating in."
+      "symbol": "NFLX",
+      "name": "Netflix, Inc.",
+      "reason": "Relative volume of 3.3x flags heavy institutional participation; subscription plus ad-tier monetization and inflecting free cash flow."
     },
     {
       "rank": 3,
-      "symbol": "NU",
-      "name": "Nu Holdings Ltd.",
-      "reason": "Profitable digital bank compounding LatAm accounts at high return on equity; 2.8x relative volume signals genuine accumulation, not a squeeze."
+      "symbol": "SKHY",
+      "name": "SK hynix Inc.",
+      "reason": "HBM memory pricing supercycle converts AI capex into real revenue; strong dollar volume (~$11B) and expanding margins."
     },
     {
       "rank": 4,
-      "symbol": "ABT",
-      "name": "Abbott Laboratories",
-      "reason": "Diversified med-tech (diagnostics + DexCom-adjacent devices) breaking out +10.7% on durable ROIC and low litigation overhang."
+      "symbol": "NU",
+      "name": "Nu Holdings Ltd.",
+      "reason": "Profitable LatAm fintech with high return on equity and durable deposit monetization; relative volume 1.75x shows accumulation."
     },
     {
       "rank": 5,
-      "symbol": "CTAS",
-      "name": "Cintas Corporation",
-      "reason": "Best-in-class uniform/services compounder breaking out +7.2% on consistent high returns on invested capital and recession-resilient recurring revenue."
+      "symbol": "SOFI",
+      "name": "SoFi Technologies, Inc.",
+      "reason": "Now GAAP-profitable and diversified across lending, financial services and tech platform; light regulatory overhang for the segment."
     }
   ],
   "avoid": [
     {
       "rank": 1,
-      "symbol": "ATAI",
-      "name": "AtaiBeckley Inc.",
-      "reason": "~16x relative volume with a +33% single-session pop in a pre-revenue psychedelics biotech; no monetization and binary regulatory risk — a squeeze/anomaly, not a trend."
+      "symbol": "LCID",
+      "name": "Lucid Group, Inc.",
+      "reason": "Chronic cash burn and repeated shareholder dilution; negative return on heavy EV capex despite the +14% pop."
     },
     {
       "rank": 2,
-      "symbol": "PLUG",
-      "name": "Plug Power Inc.",
-      "reason": "Sub-$3 hydrogen name with chronic cash burn, negative return on capital and persistent dilution; fails the real-monetization pillar."
+      "symbol": "VG",
+      "name": "Venture Global, Inc.",
+      "reason": "Enormous LNG capex paired with customer arbitration/litigation and regulatory exposure raises the risk pillar."
     },
     {
       "rank": 3,
-      "symbol": "LCID",
-      "name": "Lucid Group, Inc.",
-      "reason": "Cash-burning EV maker with negative margins and heavy share issuance sitting at a marginal ~$2.5B cap; capex returns deeply negative."
+      "symbol": "INTC",
+      "name": "Intel Corporation",
+      "reason": "Massive foundry capex with negative free cash flow; weak return on capital keeps the risk/reward unfavorable."
     },
     {
       "rank": 4,
-      "symbol": "OPEN",
-      "name": "Opendoor Technologies Inc.",
-      "reason": "iBuying unit economics remain weak and rate-sensitive; meme-driven 2.7x volume masks poor return on capital and balance-sheet risk."
+      "symbol": "SLS",
+      "name": "SELLAS Life Sciences Group, Inc.",
+      "reason": "Pre-revenue microcap biotech that fails the $2B market-cap filter; move is single-catalyst squeeze risk, not monetization."
     },
     {
       "rank": 5,
-      "symbol": "ONDS",
-      "name": "Ondas Holdings Inc.",
-      "reason": "Speculative sub-$7 drone/momentum name with thin fundamentals and execution/regulatory risk; volume is sentiment, not durable monetization."
+      "symbol": "ORKA",
+      "name": "Oruka Therapeutics, Inc.",
+      "reason": "Clinical-stage with no monetization; low-float speculative spike rather than fundamentals, high 52-week-range anomaly risk."
     }
   ],
   "filters": "Relative Volume > 0.5 · no 52-week range anomalies · Market Cap >= $2B. Most-active ranked by Dollar Volume.",
