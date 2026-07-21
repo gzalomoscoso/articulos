@@ -2,38 +2,46 @@
   "report_type": "opening-range",
   "horizon_weeks": 12,
   "idioma": "es",
-  "generated_date": "2026-07-20",
-  "weekday": "Monday",
-  "generated_at_et": "2026-07-20T10:15:00-04:00",
-  "stamp": "Lunes, 20 de julio a las 10:15 AM ET · Reporte Opening Range (horizonte 12 semanas)",
+  "generated_date": "2026-07-21",
+  "weekday": "Tuesday",
+  "generated_at_et": "2026-07-21T10:15:00-04:00",
+  "stamp": "Martes, 21 de julio a las 10:15 AM ET · Reporte Opening Range (horizonte 12 semanas)",
   "status": "final",
   "portfolio_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/stocks.json",
   "entregable_1": {
     "titulo": "Auditoría de Portafolio Activo",
     "posiciones": [
       {
-        "ticker": "NVDA",
-        "riesgo": "ALERTA DE DESVIACIÓN",
-        "accion": "EVALUAR BAJO MATRIZ MGRE",
-        "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "NVDA cerró en $202.81 (-2.21%) el 20-jul, probando el soporte de $200 (EMA200 en $200.58); el índice de semiconductores SOX entró en mercado bajista (-20% desde el pico de junio). Nueva competencia china: modelo abierto Kimi K3 de Moonshot AI. Reportes de hiperescaladores esta semana (GOOGL, 22-jul).",
-        "consecuencias": "Una ruptura de $200 abriría una caída técnica; la competencia china y el riesgo de menor dependencia de GPU presionan márgenes y el guidance de capex de IA en el horizonte de 12 semanas."
+        "ticker": "GOOGL",
+        "riesgo": "CATALIZADOR DE INVALIDACIÓN",
+        "accion": "REDUCCIÓN / LIQUIDACIÓN PREVENTIVA",
+        "momento": "INMEDIATAMENTE",
+        "evento_detectado": "Reporte Q2 binario el 22-jul (est. USD 116.9B ingresos, EPS 2.90). Multa antimonopolio UE de EUR 4.1B ratificada el 2-jul; orden vinculante DMA prevista 27-jul. Retraso de Gemini 3.5 Pro anunciado 18-jul. Cierre viernes USD 346.77 (-2.2%).",
+        "consecuencias": "El evento binario de resultados puede mover el precio +/-8-10% en la apertura del 23-jul; la multa UE y el retraso de Gemini presionan el sentimiento en Cloud (63% a/a en Q1) y el capex FY2026 de USD 180-190B."
       },
       {
         "ticker": "AAPL",
-        "riesgo": "ALERTA DE DESVIACIÓN",
-        "accion": "EVALUAR BAJO MATRIZ MGRE",
+        "riesgo": "RUIDO OPERATIVO",
+        "accion": "MANTENER",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Investigación antimonopolio del DOJ (caso de 2024) en conversaciones de acuerdo; el caso del App Store fue aplazado a la espera del fallo de la Corte Suprema. Apple demandó a OpenAI el 10-jul por robo de secretos comerciales. Acción +22.99% YTD, cap. ~$4.9B.",
-        "consecuencias": "Riesgo regulatorio latente sobre comisiones y prácticas del App Store; un acuerdo con el DOJ despejaría la incertidumbre. Impacto de precio acotado por la resiliencia cerca de máximos históricos."
+        "evento_detectado": "Cayó ~3% el lunes 20-jul por toma de utilidades tras máximo histórico ~USD 335 el viernes; perdió los USD 325. Resultados fiscales Q3 el 30-jul (BofA: ingresos ~USD 109B, EPS 1.89, PT USD 380, Buy). Sin nuevos litigios.",
+        "consecuencias": "Retroceso técnico normal dentro de una tendencia +23% en 2026; sin cambio estructural de guía. Riesgo concentrado en el reporte del 30-jul, con impacto acotado en el horizonte de 12 semanas."
       },
       {
         "ticker": "WMT",
         "riesgo": "RUIDO OPERATIVO",
         "accion": "MANTENER",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "WMT en $112.53 (-1.03%); caída ~6% reciente y desempeño inferior al S&P 500. Resultados trimestrales programados para el 20-ago. P/E adelantado ~39 vs ~14 del sector; Zacks Rank #3 (Mantener).",
-        "consecuencias": "Volatilidad de precio y valoración exigente sin catalizador binario inminente; el reporte del 20-ago es el próximo evento estructural. Sin amenaza operativa de mediano impacto en el horizonte de 12 semanas."
+        "evento_detectado": "Recortes de precios en categorías selectas financiados con reembolsos de aranceles; BofA confirma (7-jul) que la guía financiera se mantiene sin cambios. P/E ~39x, cap. ~USD 889B, ventas FY2026 >USD 713B. Nuevos aranceles 50% a bienes canadienses (efecto en 30 días).",
+        "consecuencias": "Sin desviación de guía; presión de margen acotada por reembolsos arancelarios. Volatilidad de titulares por aranceles, sin amenaza a la ejecución operativa en el horizonte de 12 semanas."
+      },
+      {
+        "ticker": "NVDA",
+        "riesgo": "RUIDO OPERATIVO",
+        "accion": "MANTENER",
+        "momento": "DURANTE ESTE DIA",
+        "evento_detectado": "Reveló participación pasiva de 9.3% en el neocloud Nebius (incluye USD 2B de marzo); +1.12% en la apertura del 21-jul con rebote de chips (SOXQ +4.27%). Desmintió (7-jul) el retraso del Kyber NVL144. Goldman: P/E 21.7x 'atractivo'. Resultados 26-ago.",
+        "consecuencias": "Catalizador positivo de bloqueo de ecosistema y demanda de cómputo IA; sin evento binario cercano. Riesgo limitado a la volatilidad sectorial; capex hyperscaler proyectado en USD 650B (2026)."
       }
     ]
   },
@@ -57,21 +65,21 @@
     "recomendaciones": [
       {
         "ticker": "AVGO",
-        "narrativa": "Broadcom lidera el chip de IA personalizado (XPU/ASIC) para Google, Meta y OpenAI; el mercado premia su exposición directa al capex de los hiperescaladores.",
-        "hechos_que_podrian_afectar": "Guía de ingresos de IA Q3 en $16.000M (+200% YoY); acuerdo de chips con Apple extendido a 2031 elimina el mayor riesgo; +4.69% reciente, aún -24% desde su máximo.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional"
+        "narrativa": "Silicio personalizado de IA para hiperescaladores; el mercado apuesta a que un mayor gasto de Meta en chips a medida impulse el order book de aceleradores y redes de Broadcom en el 2S.",
+        "hechos_que_podrian_afectar": "+2.68% en la apertura del 21-jul liderando el rebote de chips (SOXQ +4.27%). Motley Fool (20-jul): el giro de Meta a silicio a medida podría potenciar a AVGO, que solo sube ~7% en 2026.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional hacia hardware de IA."
       },
       {
-        "ticker": "META",
-        "narrativa": "Meta financia su gasto agresivo en IA con un motor publicitario en máxima demanda; el foco está en el retorno del capex y los nuevos modelos Muse.",
-        "hechos_que_podrian_afectar": "Ingresos Q1 $56.310M (+33% YoY); capex 2026 elevado a $125.000-145.000M; acción en $646.01 (-1.96% YTD), 4% bajo su máximo. No reporta esta semana.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional"
+        "ticker": "NVDA",
+        "narrativa": "Monetización de infraestructura de IA vía integración vertical; el mercado lee la participación en Nebius como financiamiento de su propio order book de cómputo.",
+        "hechos_que_podrian_afectar": "+1.12% el 21-jul tras revelar 9.3% en Nebius (incluye USD 2B de marzo). Goldman llama 'atractivo' el P/E de 21.7x. Kyber NVL144 sin retraso (7-jul). Resultados 26-ago.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional; entrada estructural."
       },
       {
         "ticker": "MSFT",
-        "narrativa": "Microsoft recupera $400 apoyado en Azure y en la diversificación de hardware de IA; el mercado exige pruebas de monetización rentable del gasto.",
-        "hechos_que_podrian_afectar": "AMD Helios (72 chips Instinct) alimentará Azure desde 2S26 como alternativa a Nvidia; ~$190.000M de capex de IA en 2026; rebote desde mínimos <$350 de junio.",
-        "apreciacion": "Ruido Transitorio Intradía"
+        "narrativa": "Líder diversificado de nube e IA (Azure/Copilot); el mercado equilibra el elevado capex de IA frente a los retornos exigidos, con MSFT como núcleo defensivo del complejo megacap.",
+        "hechos_que_podrian_afectar": "Participa del repunte tecnológico del 21-jul (Nasdaq-100 +1.36%) sin catalizador propio del día. Campeón de dividendos; capex de IA elevado pendiente de mostrar retorno.",
+        "apreciacion": "Ruido Transitorio Intradía; tendencia estructural intacta."
       }
     ]
   },
