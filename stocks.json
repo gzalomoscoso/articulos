@@ -3,6 +3,7 @@
     "idioma" : "es",
     "stocks" : [
       "AAPL",
+      "GOOGL",
       "NVDA",
       "WMT"
     ]
