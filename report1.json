@@ -1,10 +1,11 @@
 {
   "report_type": "premarket",
   "horizon_weeks": 12,
-  "generated_date": "2026-07-20",
-  "weekday": "Monday",
-  "generated_at_et": "2026-07-20T08:45:00-04:00",
-  "stamp": "Monday, July 20 at 08:45 AM ET · Pre-Market Report (12-week horizon)",
+  "idioma": "es",
+  "generated_date": "2026-07-21",
+  "weekday": "Tuesday",
+  "generated_at_et": "2026-07-21T08:45:00-04:00",
+  "stamp": "Martes, 21 de Julio a las 08:45 AM ET · Reporte Pre-Market (horizonte 12 semanas)",
   "status": "final",
   "portfolio_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/stocks.json",
   "entregable_1": {
@@ -15,24 +16,24 @@
         "riesgo": "ALERTA DE DESVIACIÓN",
         "accion": "EVALUAR BAJO MATRIZ MGRE",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "DOJ y 19 estados+DC mantienen la demanda antimonopolio de 2024 (desestimación negada jun-2025, sin fecha de juicio); Apple en conversaciones de acuerdo con el DOJ (Bloomberg, 18-jul-2026). Además, nueva disputa legal por IA reportada la semana del 14-jul.",
-        "consecuencias": "Overhang regulatorio persistente; un acuerdo lo reduciría. AAPL cotizó ~-0,7% el 18-jul pese a +21% YTD y capitalización récord ~US$4,88 billones. Sin impacto directo en guidance ni flujo de caja por ahora."
+        "evento_detectado": "Demanda por robo de secretos comerciales radicada el 13-jul-2026 contra OpenAI y el exVP Tang Tan; caso Epic (App Store) bajo revisión de la Corte Suprema y demanda colectiva de privacidad de Safari (24-jun). Acción en máximo histórico de $317.31 (+16.7% YTD).",
+        "consecuencias": "Riesgo legal/regulatorio latente sin cambio de guía. Un fallo adverso en el caso Epic presionaría los ingresos de Servicios ($31 B, +16% a/a, margen bruto 76.7%). Venta de insiders ~$70 M en 3 meses; múltiplo P/E de 38x deja poca tolerancia a sorpresas."
       },
       {
         "ticker": "NVDA",
-        "riesgo": "ALERTA DE DESVIACIÓN",
-        "accion": "EVALUAR BAJO MATRIZ MGRE",
+        "riesgo": "RUIDO OPERATIVO",
+        "accion": "MANTENER",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "El Dept. de Comercio remitió las licencias del chip H200 para China a State/Energy/Defense (ventana de 30 días); la decisión final queda en manos del presidente Trump. Reanudación de ventas a China aún sin aprobar.",
-        "consecuencias": "Hasta ~US$50.000M/año en ventas a China en juego según estimaciones. Fundamentales sólidos: Q3 FY26 ingresos récord US$57.000M, Data Center US$51.200M, guía Q4 US$65.000M. NVDA US$204,76 (+0,96%) el 20-jul."
+        "evento_detectado": "NVIDIA desmintió el reporte de un retraso a 2028 de la plataforma Kyber NVL144 y confirmó que el calendario sigue en curso; la acción subió +1.53% el 20-jul en la reactivación de semiconductores. Goldman califica el P/E adelantado de 21.7x como 'atractivo'.",
+        "consecuencias": "Sin impacto estructural: volatilidad de titulares resuelta a favor. Próximo catalizador binario: resultados fiscales el 26-ago-2026. YTD +5%, rezagada frente al SOXX (+59%), lo que sugiere espacio de recuperación sin deterioro fundamental."
       },
       {
         "ticker": "WMT",
         "riesgo": "RUIDO OPERATIVO",
         "accion": "MANTENER",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Recortes de precios selectivos financiados con la guía de febrero y el retorno de reembolsos arancelarios; BofA confirma que la guía financiera se mantiene intacta (7-jul-2026). Entorno arancelario sin cambio estructural.",
-        "consecuencias": "Sin revisión de proyecciones; presión de márgenes acotada. P/E ~39x, ventas FY26 >US$713.000M, ~60% de ingresos EE.UU. en comestibles. Volatilidad diaria normal, sin catalizador binario."
+        "evento_detectado": "Walmart mantiene la guía de febrero (ventas FY2026 >$713 B) y reduce precios en categorías selectas, financiado con cifras previstas y reembolsos de aranceles (BofA, 7-jul). P/E de 39.22x, valuación de prima; GF Score 86/100.",
+        "consecuencias": "Sin desviación operativa ni cambio de guía. Bandera de vigilancia: venta de insiders por $1,058 M en 3 meses sin compras reportadas. Upside limitado por el múltiplo elevado; ~60% de los ingresos de EE.UU. dependen de abarrotes."
       }
     ]
   },
@@ -55,22 +56,22 @@
     "mensaje": "",
     "recomendaciones": [
       {
-        "ticker": "NVDA",
-        "narrativa": "Líder en cómputo IA; la reapertura de China actúa como catalizador de ingresos incremental sobre una base de datacenter que ya monetiza a escala récord.",
-        "hechos_que_podrian_afectar": "Licencias H200 a China en revisión federal (decisión de Trump pendiente); rebote tras el selloff del viernes. NVDA US$204,76 (+0,96%) hoy; Q3 FY26 ingresos récord US$57.000M.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional"
+        "ticker": "GOOGL",
+        "narrativa": "El mercado sopesa el gasto récord en IA contra el crecimiento de Google Cloud (~60% a/a) y el riesgo de canibalización de la búsqueda con IA, justo antes de sus resultados.",
+        "hechos_que_podrian_afectar": "Reporta mañana 22-jul tras el cierre. Capex 2026 guiado en $180-190 B; ingresos esperados ~$116.9 B (+21%). Recuperó sobre $350; futuros Nasdaq +1.34% pre-market hoy.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional (evento binario de resultados)."
       },
       {
         "ticker": "AVGO",
-        "narrativa": "ASICs de IA a medida y networking; el acuerdo con Apple extendido a 2031 y un backlog de US$110.000M sostienen la tesis de crecimiento estructural.",
-        "hechos_que_podrian_afectar": "Extensión multianual del suministro de chips ASIC a Apple confirmada en julio; momentum en chips IA personalizados. AVGO US$381,66 (+2,92%) hoy; capitalización ~US$1,82 billones.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional"
+        "narrativa": "Foco en silicio de IA personalizado (ASIC) para hyperscalers e ingresos recurrentes de VMware; percibido como infraestructura diversificada y no solo como fabricante de chips.",
+        "hechos_que_podrian_afectar": "Subió +3.10% el 20-jul por demanda de aceleradores IA y mejoras de analistas por mayores rendimientos de producción. La reactivación de chips continúa hoy (Nasdaq fut. +1.34%).",
+        "apreciacion": "Cambio Estructural de Flujo Institucional (momentum en IA)."
       },
       {
-        "ticker": "MSFT",
-        "narrativa": "Monetización de IA vía Azure/Copilot con retornos visibles de CapEx; perfil defensivo dentro del gasto de ~US$725.000M de las megacaps en 2026.",
-        "hechos_que_podrian_afectar": "Rebota con las megacaps tras el selloff del viernes; sin catalizador regulatorio inminente. MSFT US$401,71 (+2,00%) hoy 20-jul-2026.",
-        "apreciacion": "Ruido Transitorio Intradia"
+        "ticker": "NVDA",
+        "narrativa": "Reactivación de semiconductores; Goldman ve la valuación de 21.7x P/E adelantado como atractiva; rezagada en 2026 (+5% YTD) con espacio de recuperación frente al SOXX.",
+        "hechos_que_podrian_afectar": "Desmintió el retraso de Kyber NVL144; +1.53% el 20-jul. Sin catalizador binario hasta resultados del 26-ago. KOSPI +2% y futuros Nasdaq +1.34% impulsan los chips hoy.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional (rotación a semiconductores)."
       }
     ]
   },
