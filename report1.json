@@ -2,38 +2,46 @@
   "report_type": "premarket",
   "horizon_weeks": 12,
   "idioma": "es",
-  "generated_date": "2026-07-21",
-  "weekday": "Tuesday",
-  "generated_at_et": "2026-07-21T08:45:00-04:00",
-  "stamp": "Martes, 21 de Julio a las 08:45 AM ET · Reporte Pre-Market (horizonte 12 semanas)",
+  "generated_date": "2026-07-22",
+  "weekday": "Wednesday",
+  "generated_at_et": "2026-07-22T08:45:00-04:00",
+  "stamp": "Miércoles, 22 de Julio a las 08:45 AM ET · Reporte Pre-Market (horizonte 12 semanas)",
   "status": "final",
   "portfolio_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/stocks.json",
   "entregable_1": {
     "titulo": "Auditoría de Portafolio Activo",
     "posiciones": [
       {
+        "ticker": "GOOGL",
+        "riesgo": "CATALIZADOR DE INVALIDACIÓN",
+        "accion": "REDUCCIÓN / LIQUIDACIÓN PREVENTIVA",
+        "momento": "INMEDIATAMENTE",
+        "evento_detectado": "Reporta resultados Q2 hoy 22-jul tras el cierre (evento binario inminente). Multa antimonopolio Android de la UE por €4.100M (2-jul) y órdenes DMA del 17-18 jul; retraso del despliegue de Gemini 3.5 Pro (18-jul). Cierre previo $346.77 (-2.2%).",
+        "consecuencias": "Consenso $116.900M en ingresos y EPS $2.90; guía débil o miss puede gatillar caída de doble dígito. Presión regulatoria de la UE (~$4.670M) amenaza márgenes y modelo de Android."
+      },
+      {
         "ticker": "AAPL",
         "riesgo": "ALERTA DE DESVIACIÓN",
         "accion": "EVALUAR BAJO MATRIZ MGRE",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Demanda por robo de secretos comerciales radicada el 13-jul-2026 contra OpenAI y el exVP Tang Tan; caso Epic (App Store) bajo revisión de la Corte Suprema y demanda colectiva de privacidad de Safari (24-jun). Acción en máximo histórico de $317.31 (+16.7% YTD).",
-        "consecuencias": "Riesgo legal/regulatorio latente sin cambio de guía. Un fallo adverso en el caso Epic presionaría los ingresos de Servicios ($31 B, +16% a/a, margen bruto 76.7%). Venta de insiders ~$70 M en 3 meses; múltiplo P/E de 38x deja poca tolerancia a sorpresas."
+        "evento_detectado": "Litigio App Store vs Epic Games aplazado el 6-jul por la jueza Gonzalez Rogers a la espera del fallo de la Corte Suprema. Reporta resultados Q3 el 30-jul. Ventas de insiders ~$87.6M en 3 meses.",
+        "consecuencias": "Riesgo estructural sobre comisiones de App Store si la Corte Suprema falla en contra; impacto potencial en flujo de servicios. Cap. ~$4.61B, P/E 37.9x (valuación premium)."
+      },
+      {
+        "ticker": "WMT",
+        "riesgo": "ALERTA DE DESVIACIÓN",
+        "accion": "EVALUAR BAJO MATRIZ MGRE",
+        "momento": "DURANTE ESTE DIA",
+        "evento_detectado": "Preocupación por desaceleración de ventas comparables y aranceles sobre importaciones desde China. Ventas de insiders ~$1.060M en 3 meses, sin compras. Rendimiento YTD -0.48% vs S&P +9.32%.",
+        "consecuencias": "Presión de márgenes por aranceles en horizonte de 12 semanas; P/E 39.2x (modestamente sobrevalorada) limita expansión de múltiplo. Cap. ~$889.700M."
       },
       {
         "ticker": "NVDA",
         "riesgo": "RUIDO OPERATIVO",
         "accion": "MANTENER",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "NVIDIA desmintió el reporte de un retraso a 2028 de la plataforma Kyber NVL144 y confirmó que el calendario sigue en curso; la acción subió +1.53% el 20-jul en la reactivación de semiconductores. Goldman califica el P/E adelantado de 21.7x como 'atractivo'.",
-        "consecuencias": "Sin impacto estructural: volatilidad de titulares resuelta a favor. Próximo catalizador binario: resultados fiscales el 26-ago-2026. YTD +5%, rezagada frente al SOXX (+59%), lo que sugiere espacio de recuperación sin deterioro fundamental."
-      },
-      {
-        "ticker": "WMT",
-        "riesgo": "RUIDO OPERATIVO",
-        "accion": "MANTENER",
-        "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Walmart mantiene la guía de febrero (ventas FY2026 >$713 B) y reduce precios en categorías selectas, financiado con cifras previstas y reembolsos de aranceles (BofA, 7-jul). P/E de 39.22x, valuación de prima; GF Score 86/100.",
-        "consecuencias": "Sin desviación operativa ni cambio de guía. Bandera de vigilancia: venta de insiders por $1,058 M en 3 meses sin compras reportadas. Upside limitado por el múltiplo elevado; ~60% de los ingresos de EE.UU. dependen de abarrotes."
+        "evento_detectado": "Q1 FY27 récord: ingresos $81.620M (+85% i.a.), guía Q2 ~$91.000M (±2%). Aprobado el envío de H200 a China (Alibaba, Tencent, ByteDance). Pre-market -0.96% por enfriamiento del sector de chips.",
+        "consecuencias": "La caída pre-market es volatilidad normal del sector; fundamentales intactos. Resistencia técnica $212.43, soporte $204.40; sin catalizador negativo estructural."
       }
     ]
   },
@@ -56,22 +64,22 @@
     "mensaje": "",
     "recomendaciones": [
       {
-        "ticker": "GOOGL",
-        "narrativa": "El mercado sopesa el gasto récord en IA contra el crecimiento de Google Cloud (~60% a/a) y el riesgo de canibalización de la búsqueda con IA, justo antes de sus resultados.",
-        "hechos_que_podrian_afectar": "Reporta mañana 22-jul tras el cierre. Capex 2026 guiado en $180-190 B; ingresos esperados ~$116.9 B (+21%). Recuperó sobre $350; futuros Nasdaq +1.34% pre-market hoy.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (evento binario de resultados)."
-      },
-      {
-        "ticker": "AVGO",
-        "narrativa": "Foco en silicio de IA personalizado (ASIC) para hyperscalers e ingresos recurrentes de VMware; percibido como infraestructura diversificada y no solo como fabricante de chips.",
-        "hechos_que_podrian_afectar": "Subió +3.10% el 20-jul por demanda de aceleradores IA y mejoras de analistas por mayores rendimientos de producción. La reactivación de chips continúa hoy (Nasdaq fut. +1.34%).",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (momentum en IA)."
-      },
-      {
         "ticker": "NVDA",
-        "narrativa": "Reactivación de semiconductores; Goldman ve la valuación de 21.7x P/E adelantado como atractiva; rezagada en 2026 (+5% YTD) con espacio de recuperación frente al SOXX.",
-        "hechos_que_podrian_afectar": "Desmintió el retraso de Kyber NVL144; +1.53% el 20-jul. Sin catalizador binario hasta resultados del 26-ago. KOSPI +2% y futuros Nasdaq +1.34% impulsan los chips hoy.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (rotación a semiconductores)."
+        "narrativa": "Líder de infraestructura de IA; el mercado vigila la demanda de data centers y la reapertura de China tras aprobarse el envío de H200.",
+        "hechos_que_podrian_afectar": "Q1 FY27 récord $81.620M (+85% i.a.), guía Q2 ~$91.000M. Pre-market -0.96% por enfriamiento de chips; Nasdaq-100 -0.71%.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional"
+      },
+      {
+        "ticker": "MSFT",
+        "narrativa": "Monetización de IA vía Azure y Copilot; el mercado evalúa si el retorno justifica el CapEx récord antes del reporte de fin de julio.",
+        "hechos_que_podrian_afectar": "Azure +31% i.a.; CapEx 2026 ~$190.000M en IA; Copilot a $30/usuario/mes. Cotiza ~$452; reporta fin de julio.",
+        "apreciacion": "Ruido Transitorio Intradía"
+      },
+      {
+        "ticker": "CVX",
+        "narrativa": "Energética defensiva usada como cobertura ante el salto del crudo por tensiones EE.UU.-Irán; disciplina de CapEx sostiene el dividendo.",
+        "hechos_que_podrian_afectar": "WTI +4.21% a $88.64 y Brent $93.07 por ataques a Irán (11ª noche). Sector energía favorecido con Nasdaq-100 -0.71%.",
+        "apreciacion": "Ruido Transitorio Intradía"
       }
     ]
   },
