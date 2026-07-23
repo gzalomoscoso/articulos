@@ -2,46 +2,54 @@
   "report_type": "opening-range",
   "horizon_weeks": 12,
   "idioma": "es",
-  "generated_date": "2026-07-22",
-  "weekday": "Wednesday",
-  "generated_at_et": "2026-07-22T10:15:00-04:00",
-  "stamp": "Miércoles, 22 de julio a las 10:15 AM ET · Reporte Opening Range (horizonte 12 semanas)",
+  "generated_date": "2026-07-23",
+  "weekday": "Thursday",
+  "generated_at_et": "2026-07-23T10:15:00-04:00",
+  "stamp": "Jueves, 23 de Julio a las 10:15 AM ET · Reporte Opening Range (horizonte 12 semanas)",
   "status": "final",
   "portfolio_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/stocks.json",
   "entregable_1": {
     "titulo": "Auditoría de Portafolio Activo",
     "posiciones": [
       {
-        "ticker": "GOOGL",
+        "ticker": "SOFI",
         "riesgo": "CATALIZADOR DE INVALIDACIÓN",
         "accion": "REDUCCIÓN / LIQUIDACIÓN PREVENTIVA",
         "momento": "INMEDIATAMENTE",
-        "evento_detectado": "Reporte Q2 hoy 22-jul tras el cierre (est. $116.9B ingresos, EPS $2.90). Multa antimonopolio UE de €4.1B (~$4.67B) por Android finalizada el 2-jul y órdenes de abrir 11 funciones a asistentes IA rivales para 2027. Retraso de Gemini 3.5 Pro anunciado el 18-jul.",
-        "consecuencias": "Evento binario de resultados con alto riesgo de gap; la acción cayó ~2.2% el viernes a $346.77 con soporte crítico en $341.43. Fallo o guía débil amenaza el flujo del portafolio en el horizonte de 12 semanas."
+        "evento_detectado": "Reporte financiero binario inminente: SoFi confirmó resultados del 2T 2026 para el 29 de julio (6 días hábiles). Goldman subió objetivo a $21 (Neutral); KBW reiteró Underperform con objetivo $16. Precio ~$17.64 (+3.65% el 21-jul).",
+        "consecuencias": "Evento binario con dispersión de objetivos $16–$21: brecha de apertura potencial de doble dígito según guía de márgenes (proyección de margen ~21% en 2S) y lectura del negocio de préstamos a pequeñas empresas."
       },
       {
-        "ticker": "META",
+        "ticker": "GOOGL",
         "riesgo": "ALERTA DE DESVIACIÓN",
         "accion": "EVALUAR BAJO MATRIZ MGRE",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "El juicio por seguridad de menores (Fiscal General de Nuevo México R. Torrez, sobre WhatsApp/Instagram/Facebook) avanza a selección de jurado. La demanda por despidos vinculados a IA se intensifica y persiste un plan de CapEx de ~$145B con resultados Q2 próximos.",
-        "consecuencias": "Cae -1.76% hoy a $632.50 (cierre previo $643.81). El riesgo litigioso y el CapEx elevado presionan márgenes y la ejecución dentro del horizonte de 12 semanas."
+        "evento_detectado": "Tras el cierre del 22-jul reportó 2T con ingresos por encima de lo esperado y Cloud +82%, pero elevó el CapEx 2026 de $180–190B a $195–205B. La acción cae ~3.5% a ~$329.89 y rompe el soporte de $333.",
+        "consecuencias": "El salto de CapEx presiona el flujo de caja libre y dispara una alerta técnica; la ruptura de $333 abre riesgo de extensión bajista (proyección técnica hacia ~$270, ≈18% adicional) en el horizonte de 12 semanas."
+      },
+      {
+        "ticker": "NVDA",
+        "riesgo": "ALERTA DE DESVIACIÓN",
+        "accion": "EVALUAR BAJO MATRIZ MGRE",
+        "momento": "DURANTE ESTE DIA",
+        "evento_detectado": "Controles de exportación de EE.UU. más estrictos sobre chips de IA a China (endurecimiento de cumplimiento y paso para frenar envíos a firmas chinas fuera de China). Cerró +3.26% el 22-jul; opera ~$208.79 (-1.54%) el 23-jul.",
+        "consecuencias": "El bloqueo de exportación amenaza una porción del ingreso incremental de data center en el horizonte de 12 semanas; volatilidad regulatoria mantiene la beta elevada pese a la demanda de infraestructura de IA."
       },
       {
         "ticker": "AAPL",
         "riesgo": "ALERTA DE DESVIACIÓN",
         "accion": "EVALUAR BAJO MATRIZ MGRE",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Conversaciones de acuerdo en el caso antimonopolio en curso; demanda de valores (securities) radicada contra Apple; nueva disputa legal ligada a IA reportada a mediados de julio 2026.",
-        "consecuencias": "Cae -0.22% hoy a $327.01 (cierre previo $327.74). Incertidumbre legal de mediano impacto; un acuerdo potencial reduciría la cola de riesgo sin catalizador binario inmediato."
+        "evento_detectado": "Apple y el DOJ discuten un acuerdo para resolver la demanda antimonopolio federal de 2024; en paralelo enfrenta un nuevo litigio de IA, mientras otras demandas (iCloud/CSAM, App Store) fueron desestimadas o aplazadas.",
+        "consecuencias": "La negociación con el DOJ reduce la cola de riesgo regulatorio, pero un acuerdo con concesiones estructurales sobre App Store podría afectar el margen de servicios; sin cambio de objetivo estructural por ahora."
       },
       {
-        "ticker": "NVDA",
+        "ticker": "T",
         "riesgo": "RUIDO OPERATIVO",
         "accion": "MANTENER",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Baja -0.32% a $206.64 (cierre previo $207.29). Wistron abrió planta de $700M en Fort Worth para sistemas GB300; Super Micro aseguró >$60B en pedidos nuevos. Foco del mercado en oferta creciente de IA.",
-        "consecuencias": "Volatilidad diaria normal sin cambio estructural en fundamentales; sin demandas ni recorte de guía. Se vigila la oferta creciente, pero la tesis de 12 semanas permanece intacta."
+        "evento_detectado": "Reportó 2T 2026 el 22-jul: EPS ajustado $0.65 vs $0.54 a/a, ingresos $31.6B (+2.3%), 432 mil altas netas de pospago y FCF $4.7B. Reiteró la guía FY26 (EPS aj. $2.25–$2.35) y aceleró recompras.",
+        "consecuencias": "Resultados sólidos y guía reiterada respaldan la tesis de flujo de caja; sin catalizador negativo estructural. Impacto en precio: fluctuación normal dentro del rango operativo."
       }
     ]
   },
@@ -64,21 +72,21 @@
     "mensaje": "",
     "recomendaciones": [
       {
-        "ticker": "AVGO",
-        "narrativa": "Considerada 'ganador central de IA' (Morgan Stanley); el mercado premia ASICs y pedidos de hiperescala, pero la acción es sensible a la volatilidad del sector semiconductores.",
-        "hechos_que_podrian_afectar": "Baja ~1.86% a ~$379.33 (cierre previo $378.16). Acuerdo de $30B con Apple para chips a medida en EE.UU.; UBS ve fin de la corrección de semis como zona de entrada.",
-        "apreciacion": "Ruido Transitorio Intradía"
+        "ticker": "NVDA",
+        "narrativa": "Proveedor central de cómputo de IA: el alza de CapEx de los hyperscalers es su ingreso. Picks-and-shovels del ciclo, con sobrecarga regulatoria por exportaciones a China.",
+        "hechos_que_podrian_afectar": "Cerró +3.26% (22-jul); opera ~$208.79 (-1.54%) el 23-jul. Endurecimiento de controles de exportación a China. Objetivo medio de analistas ~$297. Demanda de infra de IA sin saturación.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional"
       },
       {
-        "ticker": "NVDA",
-        "narrativa": "Líder de infraestructura IA; el foco pasó de oferta a retorno real de clientes, y la acción 'valorada a la perfección' limita el margen de sorpresa alcista.",
-        "hechos_que_podrian_afectar": "-0.32% a $206.64 (cierre previo $207.29). Super Micro >$60B en pedidos y Wistron abre planta de $700M GB300 en Fort Worth; preocupa la oferta creciente.",
-        "apreciacion": "Ruido Transitorio Intradía"
+        "ticker": "AVGO",
+        "narrativa": "Silicio de IA a medida (TPU gen-7 de Google, MTIA de Meta) y redes. Beneficiario directo del alza de CapEx de GOOGL y META anunciada esta semana.",
+        "hechos_que_podrian_afectar": "Opera ~$395.10 (-0.43%) el 23-jul, el más resistente del grupo pese a la caída de GOOGL/TSLA. Las guías de CapEx de hyperscalers reescriben al alza su cartera de pedidos. Objetivo consenso ~$437.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional"
       },
       {
         "ticker": "MSFT",
-        "narrativa": "Nube Azure e IA con demanda que supera la oferta y $627B en ingresos contratados; el mercado vigila el CapEx de ~$190B para 2026.",
-        "hechos_que_podrian_afectar": "-2.06% a $389.55 (cierre previo $397.75) por temor a CapEx elevado y crecimiento de Azure más suave; el riesgo luce mayormente descontado.",
+        "narrativa": "Monetización de IA vía Azure y Copilot con base diversificada mega-cap; menor riesgo idiosincrático que los semiconductores dentro del universo.",
+        "hechos_que_podrian_afectar": "Opera ~$383.25 (-1.82%) el 23-jul, arrastrado por el temor al CapEx de IA en toda la cohorte tras GOOGL. Sin catalizador negativo propio; corrección de flujo, no de fundamento.",
         "apreciacion": "Ruido Transitorio Intradía"
       }
     ]
