@@ -2,46 +2,54 @@
   "report_type": "premarket",
   "horizon_weeks": 12,
   "idioma": "es",
-  "generated_date": "2026-07-22",
-  "weekday": "Wednesday",
-  "generated_at_et": "2026-07-22T08:45:00-04:00",
-  "stamp": "Miércoles, 22 de Julio a las 08:45 AM ET · Reporte Pre-Market (horizonte 12 semanas)",
+  "generated_date": "2026-07-23",
+  "weekday": "Thursday",
+  "generated_at_et": "2026-07-23T08:45:00-04:00",
+  "stamp": "Jueves, 23 de julio a las 08:45 AM ET · Reporte Pre-Market (horizonte 12 semanas)",
   "status": "final",
   "portfolio_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/stocks.json",
   "entregable_1": {
     "titulo": "Auditoría de Portafolio Activo",
     "posiciones": [
       {
-        "ticker": "GOOGL",
+        "ticker": "SOFI",
         "riesgo": "CATALIZADOR DE INVALIDACIÓN",
         "accion": "REDUCCIÓN / LIQUIDACIÓN PREVENTIVA",
-        "momento": "INMEDIATAMENTE",
-        "evento_detectado": "Reporta resultados Q2 hoy 22-jul tras el cierre (evento binario inminente). Multa antimonopolio Android de la UE por €4.100M (2-jul) y órdenes DMA del 17-18 jul; retraso del despliegue de Gemini 3.5 Pro (18-jul). Cierre previo $346.77 (-2.2%).",
-        "consecuencias": "Consenso $116.900M en ingresos y EPS $2.90; guía débil o miss puede gatillar caída de doble dígito. Presión regulatoria de la UE (~$4.670M) amenaza márgenes y modelo de Android."
+        "momento": "DURANTE ESTE DIA",
+        "evento_detectado": "Reporte financiero Q2 2026 binario e inminente el 29-jul; el mercado descuenta un swing implícito de ±11,46% (TipRanks).",
+        "consecuencias": "Riesgo de gap direccional de ~±11% sobre la posición en 6 sesiones, sin colchón de guía previa que amortigüe."
+      },
+      {
+        "ticker": "GOOGL",
+        "riesgo": "ALERTA DE DESVIACIÓN",
+        "accion": "EVALUAR BAJO MATRIZ MGRE",
+        "momento": "DURANTE ESTE DIA",
+        "evento_detectado": "Q2 2026 (22-jul): ingresos US$119,8B y EPS US$9,11 batieron, pero elevó CapEx 2026 a US$180-190B (antes US$175-185B).",
+        "consecuencias": "Cae -5,1% en pre-market hoy a US$324,47; mayor CapEx presiona FCF y el retorno exigido, con riesgo de continuación intradía."
       },
       {
         "ticker": "AAPL",
         "riesgo": "ALERTA DE DESVIACIÓN",
         "accion": "EVALUAR BAJO MATRIZ MGRE",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Litigio App Store vs Epic Games aplazado el 6-jul por la jueza Gonzalez Rogers a la espera del fallo de la Corte Suprema. Reporta resultados Q3 el 30-jul. Ventas de insiders ~$87.6M en 3 meses.",
-        "consecuencias": "Riesgo estructural sobre comisiones de App Store si la Corte Suprema falla en contra; impacto potencial en flujo de servicios. Cap. ~$4.61B, P/E 37.9x (valuación premium)."
-      },
-      {
-        "ticker": "WMT",
-        "riesgo": "ALERTA DE DESVIACIÓN",
-        "accion": "EVALUAR BAJO MATRIZ MGRE",
-        "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Preocupación por desaceleración de ventas comparables y aranceles sobre importaciones desde China. Ventas de insiders ~$1.060M en 3 meses, sin compras. Rendimiento YTD -0.48% vs S&P +9.32%.",
-        "consecuencias": "Presión de márgenes por aranceles en horizonte de 12 semanas; P/E 39.2x (modestamente sobrevalorada) limita expansión de múltiplo. Cap. ~$889.700M."
+        "evento_detectado": "Conversaciones tempranas de acuerdo con el DOJ por el caso antimonopolio (Bloomberg) y nueva demanda vinculada a IA (jul-2026).",
+        "consecuencias": "Incertidumbre regulatoria/legal que puede comprimir el múltiplo vía titulares; impacto en flujo de caja aún no cuantificado."
       },
       {
         "ticker": "NVDA",
+        "riesgo": "ALERTA DE DESVIACIÓN",
+        "accion": "EVALUAR BAJO MATRIZ MGRE",
+        "momento": "DURANTE ESTE DIA",
+        "evento_detectado": "Fricción de exportación de chips IA a China (H20/H200); un funcionario de EE.UU. calificó de “triviales” los envíos de H200 a China.",
+        "consecuencias": "-1,3% pre-market hoy a US$209,26; riesgo sobre ingresos de China, acotado por el alza de CapEx de hyperscalers."
+      },
+      {
+        "ticker": "T",
         "riesgo": "RUIDO OPERATIVO",
         "accion": "MANTENER",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Q1 FY27 récord: ingresos $81.620M (+85% i.a.), guía Q2 ~$91.000M (±2%). Aprobado el envío de H200 a China (Alibaba, Tencent, ByteDance). Pre-market -0.96% por enfriamiento del sector de chips.",
-        "consecuencias": "La caída pre-market es volatilidad normal del sector; fundamentales intactos. Resistencia técnica $212.43, soporte $204.40; sin catalizador negativo estructural."
+        "evento_detectado": "Q2 2026 (22-jul): batió EPS y sumó suscriptores; la acción subió ~5% y reiteró la guía FY26.",
+        "consecuencias": "Sin desviación estructural; la competencia de banda ancha satelital (Starlink) actúa solo como ruido de fondo."
       }
     ]
   },
@@ -65,21 +73,21 @@
     "recomendaciones": [
       {
         "ticker": "NVDA",
-        "narrativa": "Líder de infraestructura de IA; el mercado vigila la demanda de data centers y la reapertura de China tras aprobarse el envío de H200.",
-        "hechos_que_podrian_afectar": "Q1 FY27 récord $81.620M (+85% i.a.), guía Q2 ~$91.000M. Pre-market -0.96% por enfriamiento de chips; Nasdaq-100 -0.71%.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional"
+        "narrativa": "Líder de cómputo IA; el alza de CapEx de hyperscalers sostiene la demanda estructural pese al ruido y la volatilidad del sector chips.",
+        "hechos_que_podrian_afectar": "-1,3% pre-market a US$209,26 hoy; fricción de exportación a China (H200 “trivial”); Alphabet subió CapEx 2026 a US$180-190B (22-jul).",
+        "apreciacion": "Cambio Estructural de Flujo Institucional (demanda IA)."
       },
       {
-        "ticker": "MSFT",
-        "narrativa": "Monetización de IA vía Azure y Copilot; el mercado evalúa si el retorno justifica el CapEx récord antes del reporte de fin de julio.",
-        "hechos_que_podrian_afectar": "Azure +31% i.a.; CapEx 2026 ~$190.000M en IA; Copilot a $30/usuario/mes. Cotiza ~$452; reporta fin de julio.",
-        "apreciacion": "Ruido Transitorio Intradía"
+        "ticker": "AVGO",
+        "narrativa": "Silicio a medida (ASIC) y networking IA; beneficiario directo del mayor gasto de capital de los hyperscalers a 12 semanas.",
+        "hechos_que_podrian_afectar": "El alza de CapEx de Alphabet a US$180-190B (22-jul) refuerza el pipeline de ASIC/networking; sector semiconductores volátil hoy.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional."
       },
       {
         "ticker": "CVX",
-        "narrativa": "Energética defensiva usada como cobertura ante el salto del crudo por tensiones EE.UU.-Irán; disciplina de CapEx sostiene el dividendo.",
-        "hechos_que_podrian_afectar": "WTI +4.21% a $88.64 y Brent $93.07 por ataques a Irán (11ª noche). Sector energía favorecido con Nasdaq-100 -0.71%.",
-        "apreciacion": "Ruido Transitorio Intradía"
+        "narrativa": "Energética defensiva con viento de cola: el crudo en máximos de ~1 mes reactiva el flujo hacia el sector frente a la volatilidad tech.",
+        "hechos_que_podrian_afectar": "Petróleo sube a máximos de ~1 mes hoy por temores de oferta/inflación; rotación hacia energía como refugio ante la caída tech.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional (rotación a energía)."
       }
     ]
   },
