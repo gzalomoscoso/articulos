@@ -2,10 +2,10 @@
   "report_type": "premarket",
   "horizon_weeks": 12,
   "idioma": "es",
-  "generated_date": "2026-07-23",
-  "weekday": "Thursday",
-  "generated_at_et": "2026-07-23T08:45:00-04:00",
-  "stamp": "Jueves, 23 de julio a las 08:45 AM ET · Reporte Pre-Market (horizonte 12 semanas)",
+  "generated_date": "2026-07-24",
+  "weekday": "Friday",
+  "generated_at_et": "2026-07-24T08:45:00-04:00",
+  "stamp": "Viernes, 24 de julio a las 08:45 AM ET · Reporte Pre-Market (horizonte 12 semanas)",
   "status": "final",
   "portfolio_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/stocks.json",
   "entregable_1": {
@@ -15,41 +15,17 @@
         "ticker": "SOFI",
         "riesgo": "CATALIZADOR DE INVALIDACIÓN",
         "accion": "REDUCCIÓN / LIQUIDACIÓN PREVENTIVA",
-        "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Reporte financiero Q2 2026 binario e inminente el 29-jul; el mercado descuenta un swing implícito de ±11,46% (TipRanks).",
-        "consecuencias": "Riesgo de gap direccional de ~±11% sobre la posición en 6 sesiones, sin colchón de guía previa que amortigüe."
-      },
-      {
-        "ticker": "GOOGL",
-        "riesgo": "ALERTA DE DESVIACIÓN",
-        "accion": "EVALUAR BAJO MATRIZ MGRE",
-        "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Q2 2026 (22-jul): ingresos US$119,8B y EPS US$9,11 batieron, pero elevó CapEx 2026 a US$180-190B (antes US$175-185B).",
-        "consecuencias": "Cae -5,1% en pre-market hoy a US$324,47; mayor CapEx presiona FCF y el retorno exigido, con riesgo de continuación intradía."
-      },
-      {
-        "ticker": "AAPL",
-        "riesgo": "ALERTA DE DESVIACIÓN",
-        "accion": "EVALUAR BAJO MATRIZ MGRE",
-        "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Conversaciones tempranas de acuerdo con el DOJ por el caso antimonopolio (Bloomberg) y nueva demanda vinculada a IA (jul-2026).",
-        "consecuencias": "Incertidumbre regulatoria/legal que puede comprimir el múltiplo vía titulares; impacto en flujo de caja aún no cuantificado."
-      },
-      {
-        "ticker": "NVDA",
-        "riesgo": "ALERTA DE DESVIACIÓN",
-        "accion": "EVALUAR BAJO MATRIZ MGRE",
-        "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Fricción de exportación de chips IA a China (H20/H200); un funcionario de EE.UU. calificó de “triviales” los envíos de H200 a China.",
-        "consecuencias": "-1,3% pre-market hoy a US$209,26; riesgo sobre ingresos de China, acotado por el alza de CapEx de hyperscalers."
+        "momento": "INMEDIATAMENTE",
+        "evento_detectado": "Reporte financiero binario inminente: SoFi publica resultados del 2T 2026 el 29 de julio (a 5 días hábiles). El 22 de julio la acción cayó 3.15% hasta la zona de $17 ante mayor escrutinio regulatorio sobre sus prácticas de préstamo. Cotiza a P/E ~36-37x.",
+        "consecuencias": "Las opciones descuentan un swing elevado en torno al reporte; una guía o margen por debajo de lo esperado dispararía un re-rating a la baja desde múltiplos exigentes. Soporte técnico en $17 y resistencia en $18-$18.50."
       },
       {
         "ticker": "T",
-        "riesgo": "RUIDO OPERATIVO",
-        "accion": "MANTENER",
+        "riesgo": "ALERTA DE DESVIACIÓN",
+        "accion": "EVALUAR BAJO MATRIZ MGRE",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Q2 2026 (22-jul): batió EPS y sumó suscriptores; la acción subió ~5% y reiteró la guía FY26.",
-        "consecuencias": "Sin desviación estructural; la competencia de banda ancha satelital (Starlink) actúa solo como ruido de fondo."
+        "evento_detectado": "Investigación/disputa regulatoria en curso: el regulador de California presiona a la FCC y a una corte para bloquear el retiro del servicio de cobre de AT&T (~$1,000M/año en el 3% de hogares). Además, acuerdo de demanda de pensiones por $184.1M (~300,000 empleados). Reportó el 2T el 22 de julio superando EPS (+~5%) y reiteró la guía de EPS ajustado 2026, pero recibió recortes de precio objetivo (Bernstein $30→$25, RBC $31→$27, MoffettNathanson $27→$24).",
+        "consecuencias": "El acuerdo de $184.1M implica una salida de caja puntual; la obligación de 'carrier of last resort' amenaza ~$1,000M anuales de costos legacy y suma presión competitiva de Starlink. El FCF proyectado de $4.0-$4.5B mantiene cobertura del dividendo de 2.1x-2.3x, limitando el impacto estructural en 12 semanas."
       }
     ]
   },
@@ -72,22 +48,22 @@
     "mensaje": "",
     "recomendaciones": [
       {
-        "ticker": "NVDA",
-        "narrativa": "Líder de cómputo IA; el alza de CapEx de hyperscalers sostiene la demanda estructural pese al ruido y la volatilidad del sector chips.",
-        "hechos_que_podrian_afectar": "-1,3% pre-market a US$209,26 hoy; fricción de exportación a China (H200 “trivial”); Alphabet subió CapEx 2026 a US$180-190B (22-jul).",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (demanda IA)."
+        "ticker": "GOOGL",
+        "narrativa": "El mercado castiga el capex de IA elevado pese a una nube en récord; los institucionales debaten si el gasto rendirá retorno suficiente.",
+        "hechos_que_podrian_afectar": "2T: ingresos $119.8B (+24%), Google Cloud +82%; capex 2026 subido a $195-205B (desde $180-190B). Cayó 7.2% el jueves; +1.2% en pre-market hoy.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional (re-rating por capex)."
       },
       {
-        "ticker": "AVGO",
-        "narrativa": "Silicio a medida (ASIC) y networking IA; beneficiario directo del mayor gasto de capital de los hyperscalers a 12 semanas.",
-        "hechos_que_podrian_afectar": "El alza de CapEx de Alphabet a US$180-190B (22-jul) refuerza el pipeline de ASIC/networking; sector semiconductores volátil hoy.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional."
+        "ticker": "NVDA",
+        "narrativa": "Beneficiario directo del súper-ciclo de capex de hiperescaladores; el gasto de ~$205B guiado por Alphabet fluye hacia sus aceleradores de IA.",
+        "hechos_que_podrian_afectar": "Arrastrada en la venta tech del jueves (Mag7 -~$800B); no reporta hasta finales de agosto. Futuros Nasdaq planos/al alza hoy tras el desplome.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional (demanda IA sostenida)."
       },
       {
         "ticker": "CVX",
-        "narrativa": "Energética defensiva con viento de cola: el crudo en máximos de ~1 mes reactiva el flujo hacia el sector frente a la volatilidad tech.",
-        "hechos_que_podrian_afectar": "Petróleo sube a máximos de ~1 mes hoy por temores de oferta/inflación; rotación hacia energía como refugio ante la caída tech.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (rotación a energía)."
+        "narrativa": "Refugio energético frente a la rotación fuera de tecnología; el crudo se dispara por tensión geopolítica y la energía queda exenta de aranceles.",
+        "hechos_que_podrian_afectar": "Brent rozó ~$100 (primera vez desde mayo) por ataques a buques en el Mar Rojo; energía exenta de aranceles Sección 301. XOM/CVX +25% YTD.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional (rotación defensiva a energía)."
       }
     ]
   },
