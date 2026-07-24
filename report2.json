@@ -2,54 +2,38 @@
   "report_type": "opening-range",
   "horizon_weeks": 12,
   "idioma": "es",
-  "generated_date": "2026-07-23",
-  "weekday": "Thursday",
-  "generated_at_et": "2026-07-23T10:15:00-04:00",
-  "stamp": "Jueves, 23 de Julio a las 10:15 AM ET · Reporte Opening Range (horizonte 12 semanas)",
+  "generated_date": "2026-07-24",
+  "weekday": "Friday",
+  "generated_at_et": "2026-07-24T10:15:00-04:00",
+  "stamp": "Viernes, 24 de Julio a las 10:15 AM ET · Reporte Opening Range (horizonte 12 semanas)",
   "status": "final",
   "portfolio_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/stocks.json",
   "entregable_1": {
     "titulo": "Auditoría de Portafolio Activo",
     "posiciones": [
       {
-        "ticker": "SOFI",
-        "riesgo": "CATALIZADOR DE INVALIDACIÓN",
-        "accion": "REDUCCIÓN / LIQUIDACIÓN PREVENTIVA",
-        "momento": "INMEDIATAMENTE",
-        "evento_detectado": "Reporte financiero binario inminente: SoFi confirmó resultados del 2T 2026 para el 29 de julio (6 días hábiles). Goldman subió objetivo a $21 (Neutral); KBW reiteró Underperform con objetivo $16. Precio ~$17.64 (+3.65% el 21-jul).",
-        "consecuencias": "Evento binario con dispersión de objetivos $16–$21: brecha de apertura potencial de doble dígito según guía de márgenes (proyección de margen ~21% en 2S) y lectura del negocio de préstamos a pequeñas empresas."
-      },
-      {
-        "ticker": "GOOGL",
+        "ticker": "VALE",
         "riesgo": "ALERTA DE DESVIACIÓN",
         "accion": "EVALUAR BAJO MATRIZ MGRE",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Tras el cierre del 22-jul reportó 2T con ingresos por encima de lo esperado y Cloud +82%, pero elevó el CapEx 2026 de $180–190B a $195–205B. La acción cae ~3.5% a ~$329.89 y rompe el soporte de $333.",
-        "consecuencias": "El salto de CapEx presiona el flujo de caja libre y dispara una alerta técnica; la ruptura de $333 abre riesgo de extensión bajista (proyección técnica hacia ~$270, ≈18% adicional) en el horizonte de 12 semanas."
-      },
-      {
-        "ticker": "NVDA",
-        "riesgo": "ALERTA DE DESVIACIÓN",
-        "accion": "EVALUAR BAJO MATRIZ MGRE",
-        "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Controles de exportación de EE.UU. más estrictos sobre chips de IA a China (endurecimiento de cumplimiento y paso para frenar envíos a firmas chinas fuera de China). Cerró +3.26% el 22-jul; opera ~$208.79 (-1.54%) el 23-jul.",
-        "consecuencias": "El bloqueo de exportación amenaza una porción del ingreso incremental de data center en el horizonte de 12 semanas; volatilidad regulatoria mantiene la beta elevada pese a la demanda de infraestructura de IA."
+        "evento_detectado": "Producción Q2 2026 (reporte ~21 jul): 84,3 Mt de hierro, el mayor Q2 desde 2018, pero suspensión temporal de plantas de pellets en Omán por disrupción logística ligada al conflicto en Medio Oriente; presión del gobierno brasileño por asientos en el directorio.",
+        "consecuencias": "La interrupción de pellets recorta la mezcla de mayor margen y el riesgo de gobernanza pesa sobre la valuación; cap. de mercado ~US$58,9B, rating de consenso Hold con precio objetivo US$16."
       },
       {
         "ticker": "AAPL",
         "riesgo": "ALERTA DE DESVIACIÓN",
         "accion": "EVALUAR BAJO MATRIZ MGRE",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Apple y el DOJ discuten un acuerdo para resolver la demanda antimonopolio federal de 2024; en paralelo enfrenta un nuevo litigio de IA, mientras otras demandas (iCloud/CSAM, App Store) fueron desestimadas o aplazadas.",
-        "consecuencias": "La negociación con el DOJ reduce la cola de riesgo regulatorio, pero un acuerdo con concesiones estructurales sobre App Store podría afectar el margen de servicios; sin cambio de objetivo estructural por ahora."
+        "evento_detectado": "Conversaciones de acuerdo con el Departamento de Justicia (DOJ) sobre la demanda antimonopolio federal de 2024, sin fecha de juicio fijada. El 17 jul la acción tocó ~US$4,88B de capitalización, superando a Nvidia (~+21% en el año).",
+        "consecuencias": "El litigio federal en curso mantiene incertidumbre regulatoria, aunque un eventual acuerdo reduciría el riesgo; sin cambios de guía y volatilidad diaria contenida."
       },
       {
         "ticker": "T",
         "riesgo": "RUIDO OPERATIVO",
         "accion": "MANTENER",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Reportó 2T 2026 el 22-jul: EPS ajustado $0.65 vs $0.54 a/a, ingresos $31.6B (+2.3%), 432 mil altas netas de pospago y FCF $4.7B. Reiteró la guía FY26 (EPS aj. $2.25–$2.35) y aceleró recompras.",
-        "consecuencias": "Resultados sólidos y guía reiterada respaldan la tesis de flujo de caja; sin catalizador negativo estructural. Impacto en precio: fluctuación normal dentro del rango operativo."
+        "evento_detectado": "Resultados Q2 2026 (22 jul): ingresos US$31,6B (+2,3% interanual), EPS ajustado US$0,65, 432.000 adiciones netas postpago, 367.000 de fibra y FCF de US$4,7B; reiteró la guía 2026 y aceleró recompras por ~US$10B.",
+        "consecuencias": "Resultados sólidos y guía reafirmada actúan como catalizador positivo; sin amenazas a la ejecución en el horizonte de 12 semanas."
       }
     ]
   },
@@ -72,21 +56,21 @@
     "mensaje": "",
     "recomendaciones": [
       {
-        "ticker": "NVDA",
-        "narrativa": "Proveedor central de cómputo de IA: el alza de CapEx de los hyperscalers es su ingreso. Picks-and-shovels del ciclo, con sobrecarga regulatoria por exportaciones a China.",
-        "hechos_que_podrian_afectar": "Cerró +3.26% (22-jul); opera ~$208.79 (-1.54%) el 23-jul. Endurecimiento de controles de exportación a China. Objetivo medio de analistas ~$297. Demanda de infra de IA sin saturación.",
+        "ticker": "NET",
+        "narrativa": "Cloudflare como capa de borde/inferencia de IA y peaje de monetización de contenido frente a bots de IA; valuación exigente por encima del objetivo promedio.",
+        "hechos_que_podrian_afectar": "24 jul ~10:24 ET: US$263,06 (+0,28%). Piloto con OpenAI (8 jul) y defensa de bots Precursor (13 jul); reporta el 6 ago, evento binario dentro del horizonte.",
         "apreciacion": "Cambio Estructural de Flujo Institucional"
       },
       {
         "ticker": "AVGO",
-        "narrativa": "Silicio de IA a medida (TPU gen-7 de Google, MTIA de Meta) y redes. Beneficiario directo del alza de CapEx de GOOGL y META anunciada esta semana.",
-        "hechos_que_podrian_afectar": "Opera ~$395.10 (-0.43%) el 23-jul, el más resistente del grupo pese a la caída de GOOGL/TSLA. Las guías de CapEx de hyperscalers reescriben al alza su cartera de pedidos. Objetivo consenso ~$437.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional"
+        "narrativa": "Silicio personalizado de IA para hiperescaladores; beneficiario del mismo auge de CapEx que hoy castiga a las acciones de los hiperescaladores.",
+        "hechos_que_podrian_afectar": "24 jul ~10:24 ET: US$383,25 (-2,35%) en la corrección tech por temor al CapEx. Acuerdo de US$30B con Apple para chips en EE.UU. Consenso Strong Buy, PT US$525.",
+        "apreciacion": "Ruido Transitorio Intradía"
       },
       {
-        "ticker": "MSFT",
-        "narrativa": "Monetización de IA vía Azure y Copilot con base diversificada mega-cap; menor riesgo idiosincrático que los semiconductores dentro del universo.",
-        "hechos_que_podrian_afectar": "Opera ~$383.25 (-1.82%) el 23-jul, arrastrado por el temor al CapEx de IA en toda la cohorte tras GOOGL. Sin catalizador negativo propio; corrección de flujo, no de fundamento.",
+        "ticker": "NVDA",
+        "narrativa": "Líder de infraestructura de IA y receptor directo del salto de CapEx de hiperescaladores (Alphabet elevó su CapEx 2026 a US$205B).",
+        "hechos_que_podrian_afectar": "24 jul ~10:26 ET: US$207,89 (-0,42%), resiliente frente al rout tech. Alianza de US$1,5B con Amkor (empaque en EE.UU.); presión competitiva de AMD Helios.",
         "apreciacion": "Ruido Transitorio Intradía"
       }
     ]
