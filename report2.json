@@ -2,38 +2,30 @@
   "report_type": "opening-range",
   "horizon_weeks": 12,
   "idioma": "es",
-  "generated_date": "2026-07-24",
-  "weekday": "Friday",
-  "generated_at_et": "2026-07-24T10:15:00-04:00",
-  "stamp": "Viernes, 24 de Julio a las 10:15 AM ET · Reporte Opening Range (horizonte 12 semanas)",
+  "generated_date": "2026-07-27",
+  "weekday": "Monday",
+  "generated_at_et": "2026-07-27T10:15:00-04:00",
+  "stamp": "Lunes, 27 de julio a las 10:15 AM ET · Reporte Opening Range (horizonte 12 semanas)",
   "status": "final",
   "portfolio_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/stocks.json",
   "entregable_1": {
     "titulo": "Auditoría de Portafolio Activo",
     "posiciones": [
       {
-        "ticker": "VALE",
-        "riesgo": "ALERTA DE DESVIACIÓN",
-        "accion": "EVALUAR BAJO MATRIZ MGRE",
-        "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Producción Q2 2026 (reporte ~21 jul): 84,3 Mt de hierro, el mayor Q2 desde 2018, pero suspensión temporal de plantas de pellets en Omán por disrupción logística ligada al conflicto en Medio Oriente; presión del gobierno brasileño por asientos en el directorio.",
-        "consecuencias": "La interrupción de pellets recorta la mezcla de mayor margen y el riesgo de gobernanza pesa sobre la valuación; cap. de mercado ~US$58,9B, rating de consenso Hold con precio objetivo US$16."
-      },
-      {
         "ticker": "AAPL",
-        "riesgo": "ALERTA DE DESVIACIÓN",
-        "accion": "EVALUAR BAJO MATRIZ MGRE",
+        "riesgo": "CATALIZADOR DE INVALIDACIÓN",
+        "accion": "REDUCCIÓN / LIQUIDACIÓN PREVENTIVA",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Conversaciones de acuerdo con el Departamento de Justicia (DOJ) sobre la demanda antimonopolio federal de 2024, sin fecha de juicio fijada. El 17 jul la acción tocó ~US$4,88B de capitalización, superando a Nvidia (~+21% en el año).",
-        "consecuencias": "El litigio federal en curso mantiene incertidumbre regulatoria, aunque un eventual acuerdo reduciría el riesgo; sin cambios de guía y volatilidad diaria contenida."
+        "evento_detectado": "Apple reporta resultados Q3 fiscal 2026 el jueves 30 de julio tras el cierre; reporte financiero binario inminente con movimiento esperado de ±4.3%.",
+        "consecuencias": "Riesgo direccional binario sobre iPhone, Servicios, China y aranceles; una guía débil puede recortar el precio ~4-5% en una sola sesión."
       },
       {
         "ticker": "T",
         "riesgo": "RUIDO OPERATIVO",
         "accion": "MANTENER",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Resultados Q2 2026 (22 jul): ingresos US$31,6B (+2,3% interanual), EPS ajustado US$0,65, 432.000 adiciones netas postpago, 367.000 de fibra y FCF de US$4,7B; reiteró la guía 2026 y aceleró recompras por ~US$10B.",
-        "consecuencias": "Resultados sólidos y guía reafirmada actúan como catalizador positivo; sin amenazas a la ejecución en el horizonte de 12 semanas."
+        "evento_detectado": "AT&T reportó Q2 el 23-24 de julio: EPS ajustado $0.65 vs $0.59 esperado, +4.79% a $24.08; reafirmó guía FY26 y elevó recompra a $10B.",
+        "consecuencias": "Catalizador positivo ya digerido; FCF ≥$18B y >$45B de retorno al accionista 2026-28 sostienen el precio; sin desviación operativa."
       }
     ]
   },
@@ -56,22 +48,22 @@
     "mensaje": "",
     "recomendaciones": [
       {
-        "ticker": "NET",
-        "narrativa": "Cloudflare como capa de borde/inferencia de IA y peaje de monetización de contenido frente a bots de IA; valuación exigente por encima del objetivo promedio.",
-        "hechos_que_podrian_afectar": "24 jul ~10:24 ET: US$263,06 (+0,28%). Piloto con OpenAI (8 jul) y defensa de bots Precursor (13 jul); reporta el 6 ago, evento binario dentro del horizonte.",
+        "ticker": "NVDA",
+        "narrativa": "Núcleo de infraestructura de IA (data center = 92% de ingresos). El mercado mide si el capex de hyperscalers persiste en la semana de earnings MSFT/META/AMZN.",
+        "hechos_que_podrian_afectar": "Abre ~$206.75 sobre soportes EMA50/200 ($204.9-206.3); debe reclamar $213. Alianza SK Group y guía Q2 ~$91B; presión de competencia china. Nasdaq futuros +1.4%.",
         "apreciacion": "Cambio Estructural de Flujo Institucional"
       },
       {
         "ticker": "AVGO",
-        "narrativa": "Silicio personalizado de IA para hiperescaladores; beneficiario del mismo auge de CapEx que hoy castiga a las acciones de los hiperescaladores.",
-        "hechos_que_podrian_afectar": "24 jul ~10:24 ET: US$383,25 (-2,35%) en la corrección tech por temor al CapEx. Acuerdo de US$30B con Apple para chips en EE.UU. Consenso Strong Buy, PT US$525.",
-        "apreciacion": "Ruido Transitorio Intradía"
+        "narrativa": "Demanda de ASIC/silicio personalizado para IA con backlog creciente; cerca de máximos de 52 semanas y con upgrades de Wells Fargo, Barclays y Citi.",
+        "hechos_que_podrian_afectar": "Cotiza ~$351.71, +2.53% en sesión; ingresos anuales $63.89B (+23.9% a/a) y utilidad neta $23.13B. Sin earnings esta semana (próximo en septiembre).",
+        "apreciacion": "Cambio Estructural de Flujo Institucional"
       },
       {
-        "ticker": "NVDA",
-        "narrativa": "Líder de infraestructura de IA y receptor directo del salto de CapEx de hiperescaladores (Alphabet elevó su CapEx 2026 a US$205B).",
-        "hechos_que_podrian_afectar": "24 jul ~10:26 ET: US$207,89 (-0,42%), resiliente frente al rout tech. Alianza de US$1,5B con Amkor (empaque en EE.UU.); presión competitiva de AMD Helios.",
-        "apreciacion": "Ruido Transitorio Intradía"
+        "ticker": "GOOGL",
+        "narrativa": "Evento de earnings ya superado (22 jul): batió ingresos pero cayó por alza de capex 2026 a $195-205B. Mega-cap más barata reabsorbiendo el ajuste.",
+        "hechos_que_podrian_afectar": "Cierre viernes $319.74 (~-15% vs pre-earnings $374); rebote nocturno a $322.22 sobre soporte $315; RSI recupera de 25.6 a ~43. Capex Q2 $44.9B.",
+        "apreciacion": "Ruido Transitorio Intradia"
       }
     ]
   },
