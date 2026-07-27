@@ -2,30 +2,30 @@
   "report_type": "premarket",
   "horizon_weeks": 12,
   "idioma": "es",
-  "generated_date": "2026-07-24",
-  "weekday": "Friday",
-  "generated_at_et": "2026-07-24T08:45:00-04:00",
-  "stamp": "Viernes, 24 de julio a las 08:45 AM ET · Reporte Pre-Market (horizonte 12 semanas)",
+  "generated_date": "2026-07-27",
+  "weekday": "Monday",
+  "generated_at_et": "2026-07-27T08:45:00-04:00",
+  "stamp": "Lunes, 27 de Julio a las 08:45 AM ET · Reporte Pre-Market (horizonte 12 semanas)",
   "status": "final",
   "portfolio_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/stocks.json",
   "entregable_1": {
     "titulo": "Auditoría de Portafolio Activo",
     "posiciones": [
       {
-        "ticker": "SOFI",
+        "ticker": "AAPL",
         "riesgo": "CATALIZADOR DE INVALIDACIÓN",
         "accion": "REDUCCIÓN / LIQUIDACIÓN PREVENTIVA",
-        "momento": "INMEDIATAMENTE",
-        "evento_detectado": "Reporte financiero binario inminente: SoFi publica resultados del 2T 2026 el 29 de julio (a 5 días hábiles). El 22 de julio la acción cayó 3.15% hasta la zona de $17 ante mayor escrutinio regulatorio sobre sus prácticas de préstamo. Cotiza a P/E ~36-37x.",
-        "consecuencias": "Las opciones descuentan un swing elevado en torno al reporte; una guía o margen por debajo de lo esperado dispararía un re-rating a la baja desde múltiplos exigentes. Soporte técnico en $17 y resistencia en $18-$18.50."
+        "momento": "DURANTE ESTE DIA",
+        "evento_detectado": "Reporta resultados fiscales el jueves 30 jul tras el cierre (evento binario). Litigio vs OpenAI radicado 13 jul por robo de secretos comerciales; class action Safari 24 jun; charlas de acuerdo con el DOJ 17 jul. Acción en máximo histórico $317.31.",
+        "consecuencias": "Evento binario con valuación exigente (10.3x ventas): la reacción post-cierre del 30 jul puede mover la acción varios % y revertir desde máximos si la guía o Servicios ($31B, 76.7% margen) decepcionan."
       },
       {
         "ticker": "T",
-        "riesgo": "ALERTA DE DESVIACIÓN",
-        "accion": "EVALUAR BAJO MATRIZ MGRE",
+        "riesgo": "RUIDO OPERATIVO",
+        "accion": "MANTENER",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Investigación/disputa regulatoria en curso: el regulador de California presiona a la FCC y a una corte para bloquear el retiro del servicio de cobre de AT&T (~$1,000M/año en el 3% de hogares). Además, acuerdo de demanda de pensiones por $184.1M (~300,000 empleados). Reportó el 2T el 22 de julio superando EPS (+~5%) y reiteró la guía de EPS ajustado 2026, pero recibió recortes de precio objetivo (Bernstein $30→$25, RBC $31→$27, MoffettNathanson $27→$24).",
-        "consecuencias": "El acuerdo de $184.1M implica una salida de caja puntual; la obligación de 'carrier of last resort' amenaza ~$1,000M anuales de costos legacy y suma presión competitiva de Starlink. El FCF proyectado de $4.0-$4.5B mantiene cobertura del dividendo de 2.1x-2.3x, limitando el impacto estructural en 12 semanas."
+        "evento_detectado": "Reportó Q2 2026 el 22 jul: ingresos $31.6B (+2.3%), EPS ajustado $0.65, FCF $4.7B; +432k postpaid, +367k fibra. Reafirmó guía FY: FCF $18B+ y EPS $2.25-2.35. Acción +5%.",
+        "consecuencias": "Sin catalizador negativo; resultados sólidos ya digeridos y recompras ~$10B soportan el flujo de caja. Riesgo estructural bajo en el horizonte de 12 semanas."
       }
     ]
   },
@@ -48,22 +48,22 @@
     "mensaje": "",
     "recomendaciones": [
       {
-        "ticker": "GOOGL",
-        "narrativa": "El mercado castiga el capex de IA elevado pese a una nube en récord; los institucionales debaten si el gasto rendirá retorno suficiente.",
-        "hechos_que_podrian_afectar": "2T: ingresos $119.8B (+24%), Google Cloud +82%; capex 2026 subido a $195-205B (desde $180-190B). Cayó 7.2% el jueves; +1.2% en pre-market hoy.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (re-rating por capex)."
-      },
-      {
         "ticker": "NVDA",
-        "narrativa": "Beneficiario directo del súper-ciclo de capex de hiperescaladores; el gasto de ~$205B guiado por Alphabet fluye hacia sus aceleradores de IA.",
-        "hechos_que_podrian_afectar": "Arrastrada en la venta tech del jueves (Mag7 -~$800B); no reporta hasta finales de agosto. Futuros Nasdaq planos/al alza hoy tras el desplome.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (demanda IA sostenida)."
+        "narrativa": "Termómetro de la infraestructura IA: se beneficia cuando los hyperscalers elevan su CapEx. Foco en si el gasto récord se traduce en pedidos de chips.",
+        "hechos_que_podrian_afectar": "Alphabet subió guía CapEx 2026 a $205B (22 jul); MSFT ~$262B FY27 y Meta $125-145B FY26. GOOGL/TSLA cayeron tras resultados el 22 jul. NVDA no reporta hasta fin de agosto.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional"
       },
       {
-        "ticker": "CVX",
-        "narrativa": "Refugio energético frente a la rotación fuera de tecnología; el crudo se dispara por tensión geopolítica y la energía queda exenta de aranceles.",
-        "hechos_que_podrian_afectar": "Brent rozó ~$100 (primera vez desde mayo) por ataques a buques en el Mar Rojo; energía exenta de aranceles Sección 301. XOM/CVX +25% YTD.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (rotación defensiva a energía)."
+        "ticker": "AVGO",
+        "narrativa": "Silicio personalizado (ASIC) y networking para IA; demanda impulsada por el gasto de los hyperscalers. Sin earnings inminente esta semana.",
+        "hechos_que_podrian_afectar": "El alza de CapEx de Alphabet a $205B y de otras mega-caps refuerza pedidos de ASIC/networking. No expuesto a evento binario esta semana; reporta hacia septiembre.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional"
+      },
+      {
+        "ticker": "WMT",
+        "narrativa": "Refugio defensivo frente a la volatilidad de los earnings de mega-caps tech y la reunión de la Fed de esta semana.",
+        "hechos_que_podrian_afectar": "No reporta esta semana (resultados a mediados de agosto). Ajeno al 'revolt' por CapEx IA que golpeó a GOOGL y TSLA el 22 jul.",
+        "apreciacion": "Ruido Transitorio Intradía"
       }
     ]
   },
