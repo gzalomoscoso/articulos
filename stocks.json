@@ -2,7 +2,8 @@
   "f0536d05132bf4fd" : {
     "idioma" : "es",
     "stocks" : [
-      "AAPL"
+      "AAPL",
+      "MSFT"
     ]
   }
 }
