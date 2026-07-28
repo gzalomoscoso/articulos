@@ -2,10 +2,10 @@
   "report_type": "premarket",
   "horizon_weeks": 12,
   "idioma": "es",
-  "generated_date": "2026-07-27",
-  "weekday": "Monday",
-  "generated_at_et": "2026-07-27T08:45:00-04:00",
-  "stamp": "Lunes, 27 de Julio a las 08:45 AM ET · Reporte Pre-Market (horizonte 12 semanas)",
+  "generated_date": "2026-07-28",
+  "weekday": "Tuesday",
+  "generated_at_et": "2026-07-28T08:45:00-04:00",
+  "stamp": "Martes, 28 de Julio a las 08:45 AM ET · Reporte Pre-Market (horizonte 12 semanas)",
   "status": "final",
   "portfolio_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/stocks.json",
   "entregable_1": {
@@ -16,16 +16,8 @@
         "riesgo": "CATALIZADOR DE INVALIDACIÓN",
         "accion": "REDUCCIÓN / LIQUIDACIÓN PREVENTIVA",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Reporta resultados fiscales el jueves 30 jul tras el cierre (evento binario). Litigio vs OpenAI radicado 13 jul por robo de secretos comerciales; class action Safari 24 jun; charlas de acuerdo con el DOJ 17 jul. Acción en máximo histórico $317.31.",
-        "consecuencias": "Evento binario con valuación exigente (10.3x ventas): la reacción post-cierre del 30 jul puede mover la acción varios % y revertir desde máximos si la guía o Servicios ($31B, 76.7% margen) decepcionan."
-      },
-      {
-        "ticker": "T",
-        "riesgo": "RUIDO OPERATIVO",
-        "accion": "MANTENER",
-        "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Reportó Q2 2026 el 22 jul: ingresos $31.6B (+2.3%), EPS ajustado $0.65, FCF $4.7B; +432k postpaid, +367k fibra. Reafirmó guía FY: FCF $18B+ y EPS $2.25-2.35. Acción +5%.",
-        "consecuencias": "Sin catalizador negativo; resultados sólidos ya digeridos y recompras ~$10B soportan el flujo de caja. Riesgo estructural bajo en el horizonte de 12 semanas."
+        "evento_detectado": "Apple reporta resultados fiscales Q3 el 30-jul-2026 (en 2 días). Consenso: EPS ~$1.88 y ventas ~$108.8-108.9B (+16% interanual). La acción cotiza cerca de máximos históricos (~$333, +3.53% el 25-jul).",
+        "consecuencias": "Evento binario a 2 días con la acción en zona de récord: riesgo asimétrico a la baja si la guía de iPhone/Servicios o el margen bruto (~48%) decepcionan. El escrutinio regulatorio del App Store presiona el segmento más rentable."
       }
     ]
   },
@@ -48,22 +40,22 @@
     "mensaje": "",
     "recomendaciones": [
       {
-        "ticker": "NVDA",
-        "narrativa": "Termómetro de la infraestructura IA: se beneficia cuando los hyperscalers elevan su CapEx. Foco en si el gasto récord se traduce en pedidos de chips.",
-        "hechos_que_podrian_afectar": "Alphabet subió guía CapEx 2026 a $205B (22 jul); MSFT ~$262B FY27 y Meta $125-145B FY26. GOOGL/TSLA cayeron tras resultados el 22 jul. NVDA no reporta hasta fin de agosto.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional"
+        "ticker": "TSLA",
+        "narrativa": "Rebote técnico tras corrección: RSI ~28 (sobreventa) cerca del mínimo de 52 sem ($297.82). Catalizador robotaxi/Cybercab frente a dudas de margen auto.",
+        "hechos_que_podrian_afectar": "Cierre 25-jul $313.03, after-hours $311.38. Q2: EPS $0.33 vs $0.54 est. (-38%), ventas $28.24B; entregas récord 480.126. Riesgo: posible veto a robotaxi en New Jersey.",
+        "apreciacion": "Ruido Transitorio Intradía: rebote de sobreventa, no cambio estructural."
       },
       {
         "ticker": "AVGO",
-        "narrativa": "Silicio personalizado (ASIC) y networking para IA; demanda impulsada por el gasto de los hyperscalers. Sin earnings inminente esta semana.",
-        "hechos_que_podrian_afectar": "El alza de CapEx de Alphabet a $205B y de otras mega-caps refuerza pedidos de ASIC/networking. No expuesto a evento binario esta semana; reporta hacia septiembre.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional"
+        "narrativa": "Historia estructural de semiconductores IA en pullback: -21% desde el pico de junio ($480.77). Tracción con hyperscalers y silicio a medida como palanca a mediano plazo.",
+        "hechos_que_podrian_afectar": "Precio ~$381.50 (28-jul). Q2: ingresos IA +46% a $6.1B, ventas totales $16.75B (+20%). Acuerdo de silicio a medida con Apple por $30B. Riesgo: selloff de chips esta semana.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional: demanda IA sostiene la tesis."
       },
       {
-        "ticker": "WMT",
-        "narrativa": "Refugio defensivo frente a la volatilidad de los earnings de mega-caps tech y la reunión de la Fed de esta semana.",
-        "hechos_que_podrian_afectar": "No reporta esta semana (resultados a mediados de agosto). Ajeno al 'revolt' por CapEx IA que golpeó a GOOGL y TSLA el 22 jul.",
-        "apreciacion": "Ruido Transitorio Intradía"
+        "ticker": "GOOGL",
+        "narrativa": "Compra en la caída post-resultados: castigo por mayor CapEx, pero Cloud e IA aceleran. Ya reportó (evento binario superado), reduciendo el riesgo de sorpresa.",
+        "hechos_que_podrian_afectar": "Cierre $319.74, premarket $322.22 (+0.8%). Q2: ingresos $119.8B (+24%), Cloud $24.8B (+82%). CapEx 2026 elevado a $195-205B. Riesgo: multas UE / DMA.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional: Cloud +82% respalda la acumulación."
       }
     ]
   },
