@@ -2,30 +2,30 @@
   "report_type": "opening-range",
   "horizon_weeks": 12,
   "idioma": "es",
-  "generated_date": "2026-07-27",
-  "weekday": "Monday",
-  "generated_at_et": "2026-07-27T10:15:00-04:00",
-  "stamp": "Lunes, 27 de julio a las 10:15 AM ET · Reporte Opening Range (horizonte 12 semanas)",
+  "generated_date": "2026-07-28",
+  "weekday": "Tuesday",
+  "generated_at_et": "2026-07-28T10:15:00-04:00",
+  "stamp": "Martes, 28 de julio a las 10:15 AM ET · Reporte Opening Range (horizonte 12 semanas)",
   "status": "final",
   "portfolio_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/stocks.json",
   "entregable_1": {
     "titulo": "Auditoría de Portafolio Activo",
     "posiciones": [
       {
+        "ticker": "MSFT",
+        "riesgo": "CATALIZADOR DE INVALIDACIÓN",
+        "accion": "REDUCCIÓN / LIQUIDACIÓN PREVENTIVA",
+        "momento": "INMEDIATAMENTE",
+        "evento_detectado": "Reporte binario de resultados Q4 FY2026 el 29-jul tras el cierre; referéndum sobre el CapEx de IA (~$190.000M FY26) y el crecimiento de Azure (guía ~39-40% en moneda constante). La acción subió +3,09% el 27-jul hacia el print (cierre $381,70).",
+        "consecuencias": "Expectativas elevadas y la decisión de la Fed el mismo día amplifican el riesgo binario; un desvío en Azure o en la guía de CapEx puede gatillar una corrección brusca del precio. Consenso: ingresos $87.400-87.600M (+14%), BPA $4,21-4,24."
+      },
+      {
         "ticker": "AAPL",
         "riesgo": "CATALIZADOR DE INVALIDACIÓN",
         "accion": "REDUCCIÓN / LIQUIDACIÓN PREVENTIVA",
-        "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Apple reporta resultados Q3 fiscal 2026 el jueves 30 de julio tras el cierre; reporte financiero binario inminente con movimiento esperado de ±4.3%.",
-        "consecuencias": "Riesgo direccional binario sobre iPhone, Servicios, China y aranceles; una guía débil puede recortar el precio ~4-5% en una sola sesión."
-      },
-      {
-        "ticker": "T",
-        "riesgo": "RUIDO OPERATIVO",
-        "accion": "MANTENER",
-        "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "AT&T reportó Q2 el 23-24 de julio: EPS ajustado $0.65 vs $0.59 esperado, +4.79% a $24.08; reafirmó guía FY26 y elevó recompra a $10B.",
-        "consecuencias": "Catalizador positivo ya digerido; FCF ≥$18B y >$45B de retorno al accionista 2026-28 sostienen el precio; sin desviación operativa."
+        "momento": "INMEDIATAMENTE",
+        "evento_detectado": "Reporte binario de resultados Q3 el 30-jul a las 5:00 PM EDT (consenso ingresos $108.970M, BPA $1,89); litigios abiertos (conversaciones de acuerdo antimonopolio y riesgo regulatorio sobre App Store) y transición de CEO el 1-sep.",
+        "consecuencias": "Cook advirtió costos de memoria 'significativamente mayores'; una guía débil o un fallo legal adverso presiona los márgenes de Servicios y el precio, con riesgo de gap post-resultados sobre una acción cerca de máximos (~$333)."
       }
     ]
   },
@@ -49,21 +49,21 @@
     "recomendaciones": [
       {
         "ticker": "NVDA",
-        "narrativa": "Núcleo de infraestructura de IA (data center = 92% de ingresos). El mercado mide si el capex de hyperscalers persiste en la semana de earnings MSFT/META/AMZN.",
-        "hechos_que_podrian_afectar": "Abre ~$206.75 sobre soportes EMA50/200 ($204.9-206.3); debe reclamar $213. Alianza SK Group y guía Q2 ~$91B; presión de competencia china. Nasdaq futuros +1.4%.",
+        "narrativa": "Líder de cómputo IA bajo presión: el mercado castiga la exposición a financiamiento circular y la rotación fuera de semiconductores domina el flujo intradiario.",
+        "hechos_que_podrian_afectar": "Cayó -4,99% a $196,51 el 27-jul por temor a respaldar hasta $250.000M de OpenAI; la venta de chips continúa el 28-jul (AMD -5%, ASML -5,8%, SK Hynix -7%).",
         "apreciacion": "Cambio Estructural de Flujo Institucional"
       },
       {
         "ticker": "AVGO",
-        "narrativa": "Demanda de ASIC/silicio personalizado para IA con backlog creciente; cerca de máximos de 52 semanas y con upgrades de Wells Fargo, Barclays y Citi.",
-        "hechos_que_podrian_afectar": "Cotiza ~$351.71, +2.53% en sesión; ingresos anuales $63.89B (+23.9% a/a) y utilidad neta $23.13B. Sin earnings esta semana (próximo en septiembre).",
+        "narrativa": "Silicio personalizado y redes para hiperescala; su cartera de IA sostiene la tesis pese a la corrección desde máximos y la volatilidad del sector chip.",
+        "hechos_que_podrian_afectar": "Cotiza ~$381,50, -21% desde el pico de $480,77; ingresos IA +46% a $6.100M, guía Q3 $17.200M y acuerdo de $30.000M con Apple. Catalizador: prints de hiperescala esta semana.",
         "apreciacion": "Cambio Estructural de Flujo Institucional"
       },
       {
         "ticker": "GOOGL",
-        "narrativa": "Evento de earnings ya superado (22 jul): batió ingresos pero cayó por alza de capex 2026 a $195-205B. Mega-cap más barata reabsorbiendo el ajuste.",
-        "hechos_que_podrian_afectar": "Cierre viernes $319.74 (~-15% vs pre-earnings $374); rebote nocturno a $322.22 sobre soporte $315; RSI recupera de 25.6 a ~43. Capex Q2 $44.9B.",
-        "apreciacion": "Ruido Transitorio Intradia"
+        "narrativa": "Tras un sólido Q2 el foco es la monetización de IA en la nube y si el mayor CapEx erosiona el flujo de caja libre; el riesgo binario de earnings ya quedó atrás.",
+        "hechos_que_podrian_afectar": "Reportó el 22-jul: ingresos $119.800M (+24%), Cloud +82% a $24.800M, CapEx elevado a $195-205.000M. Cotiza $326,56 (+2,13% el 27-jul); PT consenso $427.",
+        "apreciacion": "Ruido Transitorio Intradía"
       }
     ]
   },
