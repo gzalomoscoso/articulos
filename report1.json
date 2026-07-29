@@ -2,22 +2,30 @@
   "report_type": "premarket",
   "horizon_weeks": 12,
   "idioma": "es",
-  "generated_date": "2026-07-28",
-  "weekday": "Tuesday",
-  "generated_at_et": "2026-07-28T08:45:00-04:00",
-  "stamp": "Martes, 28 de Julio a las 08:45 AM ET · Reporte Pre-Market (horizonte 12 semanas)",
+  "generated_date": "2026-07-29",
+  "weekday": "Wednesday",
+  "generated_at_et": "2026-07-29T08:45:00-04:00",
+  "stamp": "Miércoles, 29 de julio a las 08:45 AM ET · Reporte Pre-Market (horizonte 12 semanas)",
   "status": "final",
   "portfolio_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/stocks.json",
   "entregable_1": {
     "titulo": "Auditoría de Portafolio Activo",
     "posiciones": [
       {
+        "ticker": "MSFT",
+        "riesgo": "CATALIZADOR DE INVALIDACIÓN",
+        "accion": "REDUCCIÓN / LIQUIDACIÓN PREVENTIVA",
+        "momento": "INMEDIATAMENTE",
+        "evento_detectado": "Reporte binario Q4 FY2026 hoy 29-jul tras el cierre. Consenso: ingresos ~US$87.7B, EPS ~US$4.24, Azure ~40%. Foco en guía de CapEx FY2027 de US$255-260B.",
+        "consecuencias": "Reacción binaria: la guía de CapEx y el crecimiento de Azure definen la dirección. Pre-market +0.24% (US$394.29); riesgo de gap fuerte post-reporte sobre valuación."
+      },
+      {
         "ticker": "AAPL",
         "riesgo": "CATALIZADOR DE INVALIDACIÓN",
         "accion": "REDUCCIÓN / LIQUIDACIÓN PREVENTIVA",
-        "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Apple reporta resultados fiscales Q3 el 30-jul-2026 (en 2 días). Consenso: EPS ~$1.88 y ventas ~$108.8-108.9B (+16% interanual). La acción cotiza cerca de máximos históricos (~$333, +3.53% el 25-jul).",
-        "consecuencias": "Evento binario a 2 días con la acción en zona de récord: riesgo asimétrico a la baja si la guía de iPhone/Servicios o el margen bruto (~48%) decepcionan. El escrutinio regulatorio del App Store presiona el segmento más rentable."
+        "momento": "INMEDIATAMENTE",
+        "evento_detectado": "Reporte binario Q3 FY2026 mañana 30-jul tras el cierre. En paralelo: conversaciones de acuerdo en el caso antitrust del DOJ y demanda del App Store aplazada a la espera del fallo del Supremo.",
+        "consecuencias": "Doble riesgo binario (reporte + litigio). Pre-market -0.24% (US$339.27); el gap post-reporte y los titulares regulatorios pueden mover flujo de caja y valuación."
       }
     ]
   },
@@ -40,22 +48,22 @@
     "mensaje": "",
     "recomendaciones": [
       {
-        "ticker": "TSLA",
-        "narrativa": "Rebote técnico tras corrección: RSI ~28 (sobreventa) cerca del mínimo de 52 sem ($297.82). Catalizador robotaxi/Cybercab frente a dudas de margen auto.",
-        "hechos_que_podrian_afectar": "Cierre 25-jul $313.03, after-hours $311.38. Q2: EPS $0.33 vs $0.54 est. (-38%), ventas $28.24B; entregas récord 480.126. Riesgo: posible veto a robotaxi en New Jersey.",
-        "apreciacion": "Ruido Transitorio Intradía: rebote de sobreventa, no cambio estructural."
+        "ticker": "NVDA",
+        "narrativa": "Líder de infraestructura de IA; el mercado vigila si recupera los US$205 tras corregir. Fundamentales sólidos (Q1 FY27 +85% ingresos) pese al freno de China.",
+        "hechos_que_podrian_afectar": "Pre-market -0.08% (~US$196.85). Bajo resistencia US$205 (EMA50/200); guía excluye compute de datacenter en China. Reporta a fines de agosto.",
+        "apreciacion": "Ruido Transitorio Intradía; corrección técnica bajo US$205."
       },
       {
         "ticker": "AVGO",
-        "narrativa": "Historia estructural de semiconductores IA en pullback: -21% desde el pico de junio ($480.77). Tracción con hyperscalers y silicio a medida como palanca a mediano plazo.",
-        "hechos_que_podrian_afectar": "Precio ~$381.50 (28-jul). Q2: ingresos IA +46% a $6.1B, ventas totales $16.75B (+20%). Acuerdo de silicio a medida con Apple por $30B. Riesgo: selloff de chips esta semana.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional: demanda IA sostiene la tesis."
+        "narrativa": "Silicio personalizado y redes para hyperscalers; alianza de chips con OpenAI. Se beneficia del alza de CapEx de las nubes que reportan esta semana.",
+        "hechos_que_podrian_afectar": "Pre-market -0.37% (US$379.49). Cierre US$380.91; resistencia US$389. Consenso Compra Fuerte, PT US$527. Reporta a inicios de septiembre.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional (supercycle CapEx de IA)."
       },
       {
         "ticker": "GOOGL",
-        "narrativa": "Compra en la caída post-resultados: castigo por mayor CapEx, pero Cloud e IA aceleran. Ya reportó (evento binario superado), reduciendo el riesgo de sorpresa.",
-        "hechos_que_podrian_afectar": "Cierre $319.74, premarket $322.22 (+0.8%). Q2: ingresos $119.8B (+24%), Cloud $24.8B (+82%). CapEx 2026 elevado a $195-205B. Riesgo: multas UE / DMA.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional: Cloud +82% respalda la acumulación."
+        "narrativa": "Aceleración de Cloud e IA; riesgo de reporte ya despejado (Q2 el 22-jul). El mercado premia el crecimiento pese al mayor CapEx.",
+        "hechos_que_podrian_afectar": "Q2: ingresos +24%, Cloud +82%, CapEx récord US$45B (guía al alza). Cerró +2.19% (US$333.71); after-hours US$334.32.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional; momentum post-reporte."
       }
     ]
   },
