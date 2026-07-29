@@ -2,30 +2,30 @@
   "report_type": "opening-range",
   "horizon_weeks": 12,
   "idioma": "es",
-  "generated_date": "2026-07-28",
-  "weekday": "Tuesday",
-  "generated_at_et": "2026-07-28T10:15:00-04:00",
-  "stamp": "Martes, 28 de julio a las 10:15 AM ET · Reporte Opening Range (horizonte 12 semanas)",
+  "generated_date": "2026-07-29",
+  "weekday": "Wednesday",
+  "generated_at_et": "2026-07-29T10:15:00-04:00",
+  "stamp": "Miercoles, 29 de julio a las 10:15 AM ET · Reporte Opening Range (horizonte 12 semanas)",
   "status": "final",
   "portfolio_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/stocks.json",
   "entregable_1": {
-    "titulo": "Auditoría de Portafolio Activo",
+    "titulo": "Auditoria de Portafolio Activo",
     "posiciones": [
       {
         "ticker": "MSFT",
         "riesgo": "CATALIZADOR DE INVALIDACIÓN",
         "accion": "REDUCCIÓN / LIQUIDACIÓN PREVENTIVA",
         "momento": "INMEDIATAMENTE",
-        "evento_detectado": "Reporte binario de resultados Q4 FY2026 el 29-jul tras el cierre; referéndum sobre el CapEx de IA (~$190.000M FY26) y el crecimiento de Azure (guía ~39-40% en moneda constante). La acción subió +3,09% el 27-jul hacia el print (cierre $381,70).",
-        "consecuencias": "Expectativas elevadas y la decisión de la Fed el mismo día amplifican el riesgo binario; un desvío en Azure o en la guía de CapEx puede gatillar una corrección brusca del precio. Consenso: ingresos $87.400-87.600M (+14%), BPA $4,21-4,24."
+        "evento_detectado": "Reporte de resultados Q4 FY2026 HOY 29-jul tras el cierre; foco en Azure (~40% crecimiento) y ~$40B de CapEx en IA. Precio $392.29 (-0.27%) vs cierre previo $393.35.",
+        "consecuencias": "Evento binario inminente: la reaccion post-cierre puede mover el precio ~5-10% segun la guia de CapEx/Azure; riesgo de gap adverso en la apertura del 30-jul."
       },
       {
         "ticker": "AAPL",
         "riesgo": "CATALIZADOR DE INVALIDACIÓN",
         "accion": "REDUCCIÓN / LIQUIDACIÓN PREVENTIVA",
-        "momento": "INMEDIATAMENTE",
-        "evento_detectado": "Reporte binario de resultados Q3 el 30-jul a las 5:00 PM EDT (consenso ingresos $108.970M, BPA $1,89); litigios abiertos (conversaciones de acuerdo antimonopolio y riesgo regulatorio sobre App Store) y transición de CEO el 1-sep.",
-        "consecuencias": "Cook advirtió costos de memoria 'significativamente mayores'; una guía débil o un fallo legal adverso presiona los márgenes de Servicios y el precio, con riesgo de gap post-resultados sobre una acción cerca de máximos (~$333)."
+        "momento": "DURANTE ESTE DIA",
+        "evento_detectado": "Reporte de resultados manana 30-jul tras el cierre; Apple alcanzo US$5 billones de capitalizacion hoy. Precio $341.30 (+0.36%) vs cierre previo $340.08; +20% en 2026.",
+        "consecuencias": "Evento binario: tras un rally extendido, la guia de ingresos y margenes puede detonar reversion; posible gap el 31-jul. Reducir exposicion antes del reporte."
       }
     ]
   },
@@ -49,21 +49,21 @@
     "recomendaciones": [
       {
         "ticker": "NVDA",
-        "narrativa": "Líder de cómputo IA bajo presión: el mercado castiga la exposición a financiamiento circular y la rotación fuera de semiconductores domina el flujo intradiario.",
-        "hechos_que_podrian_afectar": "Cayó -4,99% a $196,51 el 27-jul por temor a respaldar hasta $250.000M de OpenAI; la venta de chips continúa el 28-jul (AMD -5%, ASML -5,8%, SK Hynix -7%).",
-        "apreciacion": "Cambio Estructural de Flujo Institucional"
+        "narrativa": "Lider de computo IA; el mercado vigila la demanda de GPUs Blackwell y el CapEx de los hiperescaladores tras senales mixtas en el sector de semiconductores.",
+        "hechos_que_podrian_afectar": "Cae -2.47% a $192.15 (cierre previo $197.01) por toma de utilidades en semis. Sin reporte hasta 26-ago. Consenso Strong Buy, objetivo ~$303 (+58%).",
+        "apreciacion": "Ruido Transitorio Intradia; correccion tecnica sin catalizador estructural."
       },
       {
         "ticker": "AVGO",
-        "narrativa": "Silicio personalizado y redes para hiperescala; su cartera de IA sostiene la tesis pese a la corrección desde máximos y la volatilidad del sector chip.",
-        "hechos_que_podrian_afectar": "Cotiza ~$381,50, -21% desde el pico de $480,77; ingresos IA +46% a $6.100M, guía Q3 $17.200M y acuerdo de $30.000M con Apple. Catalizador: prints de hiperescala esta semana.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional"
+        "narrativa": "Infraestructura de IA via ASICs a medida y networking; el foco es la cartera de pedidos de silicio personalizado de los hiperescaladores.",
+        "hechos_que_podrian_afectar": "Baja leve -0.70% a $378.23 (cierre previo $380.91); rango 375.80-381.33. Proximo reporte lejano (3-sep), sin riesgo binario inmediato.",
+        "apreciacion": "Ruido Transitorio Intradia; pullback menor dentro de tendencia alcista."
       },
       {
         "ticker": "GOOGL",
-        "narrativa": "Tras un sólido Q2 el foco es la monetización de IA en la nube y si el mayor CapEx erosiona el flujo de caja libre; el riesgo binario de earnings ya quedó atrás.",
-        "hechos_que_podrian_afectar": "Reportó el 22-jul: ingresos $119.800M (+24%), Cloud +82% a $24.800M, CapEx elevado a $195-205.000M. Cotiza $326,56 (+2,13% el 27-jul); PT consenso $427.",
-        "apreciacion": "Ruido Transitorio Intradía"
+        "narrativa": "Monetizacion de IA en Busqueda y Cloud (Gemini); el mercado revalua el retorno del CapEx tras resultados solidos reportados el 22-jul.",
+        "hechos_que_podrian_afectar": "Sube +2.19% a $333.71 (cierre previo $326.56); earnings ya reportados (22-jul), sin riesgo binario. Consenso Strong Buy, objetivo ~$428 (+28%).",
+        "apreciacion": "Cambio Estructural de Flujo Institucional; continuacion post-resultados."
       }
     ]
   },
