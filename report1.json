@@ -2,10 +2,10 @@
   "report_type": "premarket",
   "horizon_weeks": 12,
   "idioma": "es",
-  "generated_date": "2026-07-30",
-  "weekday": "Thursday",
-  "generated_at_et": "2026-07-30T08:45:00-04:00",
-  "stamp": "Jueves, 30 de Julio a las 08:45 AM ET · Reporte Pre-Market (horizonte 12 semanas)",
+  "generated_date": "2026-07-31",
+  "weekday": "Friday",
+  "generated_at_et": "2026-07-31T08:45:00-04:00",
+  "stamp": "Viernes, 31 de julio a las 08:45 AM ET · Reporte Pre-Market (horizonte 12 semanas)",
   "status": "final",
   "portfolio_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/stocks.json",
   "entregable_1": {
@@ -13,19 +13,19 @@
     "posiciones": [
       {
         "ticker": "AAPL",
-        "riesgo": "CATALIZADOR DE INVALIDACIÓN",
-        "accion": "REDUCCIÓN / LIQUIDACIÓN PREVENTIVA",
-        "momento": "INMEDIATAMENTE",
-        "evento_detectado": "Apple reporta resultados fiscales Q3 2026 hoy 30-jul tras el cierre (llamada 5pm ET); última presentación de Tim Cook como CEO. Consenso: ingresos ~$109B (+17% YoY), BPA $1.89. Reporte binario inminente.",
-        "consecuencias": "Escasez y alza de precios de memoria presionan márgenes; una sorpresa en Servicios (guía 13-15% YoY) o en la guía forward puede mover la acción varios puntos. Cotiza en máximos históricos (~US$5T de capitalización, +20% en 2026), lo que amplifica el riesgo de decepción."
+        "riesgo": "ALERTA DE DESVIACIÓN",
+        "accion": "EVALUAR BAJO MATRIZ MGRE",
+        "momento": "DURANTE ESTE DIA",
+        "evento_detectado": "Resultados F3T2026 (30-jul): ingresos US$109.4B (+16% i.a.), iPhone US$54.25B (+22%), pero Servicios US$30.74B (vs US$31.22B esp.) y Gran China US$18.8B (vs US$19.6B esp.) por debajo de lo estimado.",
+        "consecuencias": "La acción cae ~7% en el pre-market del 31-jul pese a batir en BPA; la desaceleración de Servicios y la debilidad en China presionan el múltiplo aun con margen bruto de 50.1%. Riesgo de deriva a 12 semanas."
       },
       {
         "ticker": "MSFT",
         "riesgo": "RUIDO OPERATIVO",
         "accion": "MANTENER",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Microsoft reportó Q4 FY2026 el 29-jul: ingresos $90.01B (+18% YoY, batió consenso $87.62B), BPA $4.74 (vs $4.24 esperado), Azure +43% YoY, Intelligent Cloud $39.3B (+32%). Pre-market +7.8% a $421.10.",
-        "consecuencias": "Beat estructural sin evento adverso; capex calendario 2026 ~$175B con ganancias de eficiencia de capacidad. Movimiento alcista normal post-resultados; no hay amenaza a la ejecución en el horizonte de 12 semanas."
+        "evento_detectado": "Resultados F4T2026 (29-jul): BPA US$4.74 (vs US$4.24 esp.), ingresos US$90.0B (+18% i.a.), Azure +43% en moneda constante, por encima de la guía de 39-40%.",
+        "consecuencias": "La acción sube ~8.9% tras el cierre; la aceleración de Azure y la demanda de IA validan la tesis. Vigilar la composición del beneficio (ganancia por participación en Anthropic) y el ritmo de CapEx."
       }
     ]
   },
@@ -48,21 +48,21 @@
     "mensaje": "",
     "recomendaciones": [
       {
-        "ticker": "GOOGL",
-        "narrativa": "Líder en IA (Gemini/Cloud) comprando el 'dip' tras el selloff por capex. El foco: si el gasto masivo genera retornos que justifiquen el flujo de caja negativo.",
-        "hechos_que_podrian_afectar": "Subió guía capex 2026 a $195-205B (+$15B); capex trimestral $44.92B (2x YoY) causó su primer FCF negativo (-$5.9B) desde 2004. Cayó 7.2% la semana pasada; leve alza (~+1%) en pre-market.",
-        "apreciacion": "Ruido Transitorio Intradía (rebote), sobre riesgo estructural de capex/FCF"
+        "ticker": "NVDA",
+        "narrativa": "Beneficiario directo del súperciclo de CapEx en IA: MSFT, AMZN y META elevan la inversión en infraestructura, sosteniendo la demanda de GPU de NVIDIA.",
+        "hechos_que_podrian_afectar": "Sin reporte propio hasta fin de agosto; CapEx agregado de hiperescaladores al alza (META guía ~US$145B). Chips suben en pre-market del 31-jul por la lectura de AWS +37%.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional"
       },
       {
-        "ticker": "AVGO",
-        "narrativa": "Ganador estructural del gasto en IA: los hyperscalers migran de GPU a ASICs a medida para bajar costos. Broadcom controla +60% del silicio IA custom y capta el capex récord de la nube.",
-        "hechos_que_podrian_afectar": "Ingresos IA Q2 FY26 $10.8B (+143% YoY); guía Q3 $16B (+200%); bookings IA +$30B. Contratos OpenAI 1.3GW, Anthropic 5GW, Meta 3GW. Precio ~$382 vs objetivo $525; P/E fwd 20x. Repunta con capex de MSFT.",
+        "ticker": "AMZN",
+        "narrativa": "AWS reacelera y el mercado premia a Amazon como ganador de IA/nube; foco en monetización del cómputo y márgenes récord de la nube.",
+        "hechos_que_podrian_afectar": "F2T2026 (30-jul): ventas US$200.6B (+20%), AWS US$42.2B (+37%, mejor en 18 trim.), margen AWS ~39%. Acción +13% en pre-market del 31-jul.",
         "apreciacion": "Cambio Estructural de Flujo Institucional"
       },
       {
         "ticker": "MSFT",
-        "narrativa": "Prueba máxima de monetización de IA: Azure acelera y disipa temores de desaceleración. El mercado premia el gasto que aumenta beneficios frente al que erosiona márgenes (caso Meta).",
-        "hechos_que_podrian_afectar": "Q4 FY26: ingresos $90.01B (+18% YoY, batió $87.62B), BPA $4.74 (vs $4.24), Azure +43%, Intelligent Cloud $39.3B (+32%). Capex cal. 2026 ~$175B con eficiencia. Pre-market +7.8% a $421.10.",
+        "narrativa": "Azure y Copilot como motores de monetización de IA; el mercado valida el gasto en IA con crecimiento de nube por encima de la guía.",
+        "hechos_que_podrian_afectar": "F4T2026 (29-jul): BPA US$4.74 vs US$4.24 esp.; ingresos US$90.0B (+18%); Azure +43% c.c. Acción +8.9% tras el cierre del 29-jul.",
         "apreciacion": "Cambio Estructural de Flujo Institucional"
       }
     ]
