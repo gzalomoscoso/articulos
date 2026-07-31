@@ -2,10 +2,10 @@
   "report_type": "opening-range",
   "horizon_weeks": 12,
   "idioma": "es",
-  "generated_date": "2026-07-30",
-  "weekday": "Thursday",
-  "generated_at_et": "2026-07-30T10:15:00-04:00",
-  "stamp": "Jueves, 30 de julio a las 10:15 AM ET · Reporte Opening Range (horizonte 12 semanas)",
+  "generated_date": "2026-07-31",
+  "weekday": "Friday",
+  "generated_at_et": "2026-07-31T10:15:00-04:00",
+  "stamp": "Viernes, 31 de julio a las 10:15 AM ET · Reporte Opening Range (horizonte 12 semanas)",
   "status": "final",
   "portfolio_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/stocks.json",
   "entregable_1": {
@@ -16,16 +16,16 @@
         "riesgo": "CATALIZADOR DE INVALIDACIÓN",
         "accion": "REDUCCIÓN / LIQUIDACIÓN PREVENTIVA",
         "momento": "INMEDIATAMENTE",
-        "evento_detectado": "Apple reporta resultados fiscales Q3 hoy 30-jul tras el cierre (evento binario). Consenso: ingresos ~US$108.9B y BPA ~US$1.89. Subió precios de Mac/iPad ~US$100 por escasez de memoria. Última llamada de Tim Cook antes de la transición a John Ternus el 1-sep.",
-        "consecuencias": "Reporte binario con potencial de gap fuerte en ambas direcciones tras el cierre; presión de márgenes por costos de memoria (guía margen bruto 47.5%-48.5%). Precio ~US$338.61, plano antes del reporte; se recomienda reducir exposición previa al evento."
+        "evento_detectado": "30-jul: Q3 FY26 superó (ingresos US$109.4B +16%, BPA US$2.02) pero guía Q4 de +9-11% (~US$113B) queda bajo consenso US$114.9B; China US$18.8B (miss). Cook alerta 'inundación de 100 años' en precios de memoria DRAM/NAND que limita oferta de iPhone/Mac/iPad en el trimestre de septiembre.",
+        "consecuencias": "La acción cae -9.45% a ~US$301.9 en la apertura; el techo de oferta y el alza de costos de DRAM/NAND presionan márgenes, ingresos y flujo de caja del trimestre de septiembre."
       },
       {
         "ticker": "MSFT",
         "riesgo": "RUIDO OPERATIVO",
         "accion": "MANTENER",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Microsoft reportó Q4 FY26 con ingresos US$90.01B (supera US$87.61B) y BPA ajustado US$4.74 (supera US$4.24). Azure +43% (>guía 39-40%), ingresos anuales de Azure superan US$100B por primera vez. Guía Q1 FY27 elevada.",
-        "consecuencias": "Acción +7.05% a US$418.59; flujo institucional positivo. CapEx Q4 ~US$41B (+70% interanual) y guía ~US$50B para Q1 FY27, pero FCF US$19.6B y RPO comercial US$678B (+84%) validan el retorno del gasto. Sin riesgo bajista inmediato."
+        "evento_detectado": "29-jul: Q4 FY26 superó (ingresos US$90.0B, BPA US$4.74); Azure +43% interanual y supera US$100B anuales; capex Q4 US$41B (+70%) y capex CY2026 mantenido en US$175B.",
+        "consecuencias": "Reacción +7.3% en aftermarket (29-jul); hoy consolida +0.99% a ~US$455.6. Sin desviación operativa; la guía de capex sostenida respalda la tesis de inversión."
       }
     ]
   },
@@ -48,22 +48,22 @@
     "mensaje": "",
     "recomendaciones": [
       {
-        "ticker": "NVDA",
-        "narrativa": "Beneficiario directo del súper-ciclo de CapEx de hiperescaladores; MSFT guía ~US$50B/trim y Meta/Google elevan presupuestos de IA, sosteniendo la demanda de GPU.",
-        "hechos_que_podrian_afectar": "NVDA +2.95% a US$195.62 en la apertura. Arrienda hasta US$50B en data center en Texas (Hut 8) y respalda proyecto de US$500B de OpenAI. Recupera pérdidas del mes.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional"
+        "ticker": "AMZN",
+        "narrativa": "Reaceleración de AWS reafirma el liderazgo de Amazon en nube e IA; el mercado premia el retorno del CapEx en infraestructura de datos.",
+        "hechos_que_podrian_afectar": "30-jul: Q2 2026 supera estimados con AWS fuerte; la acción salta +14.13% a ~US$268.8 desde cierre US$235.5. Gap alcista por flujo institucional.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional."
       },
       {
-        "ticker": "GOOGL",
-        "narrativa": "Alphabet rebota tras el castigo por CapEx del Q2; Google Cloud creció ~82% a US$20B. El mercado reevalúa priorizando el crecimiento de utilidades sobre el gasto de capital.",
-        "hechos_que_podrian_afectar": "GOOGL ~US$336.71, plano/+0.9% en apertura. PE 16.74, rating Strong Buy, objetivo 12m US$427.59 (+27%). Reportó el 22-jul superando el consenso de ingresos.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional"
+        "ticker": "NVDA",
+        "narrativa": "Corazón de la infraestructura de IA; el CapEx sostenido de las megacaps de nube reafirma la demanda estructural de GPUs.",
+        "hechos_que_podrian_afectar": "Resultados de MSFT y AMZN reavivan el optimismo en gasto de IA; NVDA +0.35% a ~US$195.7 (entrada no extendida). Consenso Strong Buy, PT ~US$303.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional."
       },
       {
         "ticker": "MSFT",
-        "narrativa": "Microsoft entrega beat & raise limpio; Azure +43% supera US$100B anuales y Copilot llega a 30M asientos pagos. La monetización de IA se traduce en flujo de caja real.",
-        "hechos_que_podrian_afectar": "MSFT +7.05% a US$418.59. Ingresos Q4 US$90.01B y BPA US$4.74 superan; FCF US$19.6B (vs ~US$13.4B est.); RPO US$678B (+84%). Guía Q1 FY27 elevada.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional"
+        "narrativa": "Azure supera US$100B anuales y crece +43%; la monetización de IA (Copilot 30M asientos) consolida la nube empresarial.",
+        "hechos_que_podrian_afectar": "29-jul: Q4 FY26 bate (ingresos US$90.0B, BPA US$4.74); capex CY2026 mantenido en US$175B. Hoy +0.99% a ~US$455.6 tras +7.3% en aftermarket.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional."
       }
     ]
   },
