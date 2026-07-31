@@ -1,71 +1,724 @@
 {
-  "report_type": "premarket",
+  "report_type": "fichas_cliente",
   "horizon_weeks": 12,
   "idioma": "es",
-  "generated_date": "2026-07-31",
+  "fecha": "2026-07-31",
   "weekday": "Friday",
   "generated_at_et": "2026-07-31T08:45:00-04:00",
-  "stamp": "Viernes, 31 de julio a las 08:45 AM ET · Reporte Pre-Market (horizonte 12 semanas)",
+  "generated_at_packet": "2026-07-31T08:36:53.172255-04:00",
+  "stamp": "Viernes, 31 de julio a las 08:45 AM ET · Fichas Cliente (horizonte 12 semanas)",
   "status": "final",
-  "portfolio_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/stocks.json",
-  "entregable_1": {
-    "titulo": "Auditoría de Portafolio Activo",
-    "posiciones": [
-      {
-        "ticker": "AAPL",
-        "riesgo": "ALERTA DE DESVIACIÓN",
-        "accion": "EVALUAR BAJO MATRIZ MGRE",
-        "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Resultados F3T2026 (30-jul): ingresos US$109.4B (+16% i.a.), iPhone US$54.25B (+22%), pero Servicios US$30.74B (vs US$31.22B esp.) y Gran China US$18.8B (vs US$19.6B esp.) por debajo de lo estimado.",
-        "consecuencias": "La acción cae ~7% en el pre-market del 31-jul pese a batir en BPA; la desaceleración de Servicios y la debilidad en China presionan el múltiplo aun con margen bruto de 50.1%. Riesgo de deriva a 12 semanas."
+  "fuente": "https://gzalomoscoso.pythonanywhere.com/static/packet.json (fuente única)",
+  "nota": "Fichas cliente de todos los tickers a disposicion del scan. Campos null = dato no disponible en el packet; nunca se inventa.",
+  "total_fichas": 23,
+  "fichas": [
+    {
+      "ticker": "FRVO",
+      "origenes": [
+        "gapper"
+      ],
+      "clasificacion": "DESCARTADO: cap < $10B",
+      "mercado": {
+        "precio": 22.3,
+        "prev_close": 17.08,
+        "gap_pct": 30.5621,
+        "cambio_pct": null,
+        "market_cap": 6570582528,
+        "rvol": 1.47,
+        "pe": -76.9,
+        "nombre": "Fervo Energy Company",
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "tendencia": null
       },
-      {
-        "ticker": "MSFT",
-        "riesgo": "RUIDO OPERATIVO",
-        "accion": "MANTENER",
-        "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "Resultados F4T2026 (29-jul): BPA US$4.74 (vs US$4.24 esp.), ingresos US$90.0B (+18% i.a.), Azure +43% en moneda constante, por encima de la guía de 39-40%.",
-        "consecuencias": "La acción sube ~8.9% tras el cierre; la aceleración de Azure y la demanda de IA validan la tesis. Vigilar la composición del beneficio (ganancia por participación en Anthropic) y el ritmo de CapEx."
-      }
-    ]
-  },
-  "entregable_2": {
-    "titulo": "Recomendaciones Vector 1 (Pre-Market / Swing Trading)",
-    "universo": [
-      "AAPL",
-      "AMZN",
-      "AVGO",
-      "META",
-      "GOOGL",
-      "MSFT",
-      "NET",
-      "CVX",
-      "WMT",
-      "TSLA",
-      "NVDA"
-    ],
-    "sin_recomendaciones": false,
-    "mensaje": "",
-    "recomendaciones": [
-      {
-        "ticker": "NVDA",
-        "narrativa": "Beneficiario directo del súperciclo de CapEx en IA: MSFT, AMZN y META elevan la inversión en infraestructura, sosteniendo la demanda de GPU de NVIDIA.",
-        "hechos_que_podrian_afectar": "Sin reporte propio hasta fin de agosto; CapEx agregado de hiperescaladores al alza (META guía ~US$145B). Chips suben en pre-market del 31-jul por la lectura de AWS +37%.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional"
+      "flags": {
+        "day_eligible": false,
+        "day_status": "rejected",
+        "swing_eligible": false,
+        "swing_reason": "cap < $10B",
+        "catalyst_found": true,
+        "earnings_soon": false
       },
-      {
-        "ticker": "AMZN",
-        "narrativa": "AWS reacelera y el mercado premia a Amazon como ganador de IA/nube; foco en monetización del cómputo y márgenes récord de la nube.",
-        "hechos_que_podrian_afectar": "F2T2026 (30-jul): ventas US$200.6B (+20%), AWS US$42.2B (+37%, mejor en 18 trim.), margen AWS ~39%. Acción +13% en pre-market del 31-jul.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional"
+      "niveles": {
+        "vwap": null,
+        "hod": null,
+        "lod": null,
+        "premarket_high": 22.89,
+        "premarket_volume": 0
       },
-      {
-        "ticker": "MSFT",
-        "narrativa": "Azure y Copilot como motores de monetización de IA; el mercado valida el gasto en IA con crecimiento de nube por encima de la guía.",
-        "hechos_que_podrian_afectar": "F4T2026 (29-jul): BPA US$4.74 vs US$4.24 esp.; ingresos US$90.0B (+18%); Azure +43% c.c. Acción +8.9% tras el cierre del 29-jul.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional"
-      }
-    ]
-  },
-  "source": "Yahoo Finance / fuentes de noticias verificables"
+      "catalizador": "Here's Why BofA Thinks Fervo Energy's Pullback Is a Buying Opportunity",
+      "next_earnings": "2026-08-14"
+    },
+    {
+      "ticker": "IREN",
+      "origenes": [
+        "gapper"
+      ],
+      "clasificacion": "DESCARTADO: bajo SMA150",
+      "mercado": {
+        "precio": 38.26,
+        "prev_close": 29.31,
+        "gap_pct": 30.5357,
+        "cambio_pct": null,
+        "market_cap": 13673308160,
+        "rvol": 1.59,
+        "pe": 49.69,
+        "nombre": "IREN LIMITED",
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "tendencia": null
+      },
+      "flags": {
+        "day_eligible": false,
+        "day_status": "rejected",
+        "swing_eligible": false,
+        "swing_reason": "bajo SMA150",
+        "catalyst_found": true,
+        "earnings_soon": false
+      },
+      "niveles": {
+        "vwap": null,
+        "hod": null,
+        "lod": null,
+        "premarket_high": 41.25,
+        "premarket_volume": 0
+      },
+      "catalizador": "Bitcoin Miner IREN Stock Surges 30% After CEO Says Demand Outstrips Supply",
+      "next_earnings": "2026-08-27"
+    },
+    {
+      "ticker": "MKTX",
+      "origenes": [
+        "gapper"
+      ],
+      "clasificacion": "DESCARTADO: cap < $10B",
+      "mercado": {
+        "precio": 162.76,
+        "prev_close": 125.73,
+        "gap_pct": 29.452,
+        "cambio_pct": null,
+        "market_cap": 5727994880,
+        "rvol": 18.33,
+        "pe": 19.26,
+        "nombre": "MarketAxess Holdings, Inc.",
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "tendencia": null
+      },
+      "flags": {
+        "day_eligible": false,
+        "day_status": "rejected",
+        "swing_eligible": false,
+        "swing_reason": "cap < $10B",
+        "catalyst_found": true,
+        "earnings_soon": false
+      },
+      "niveles": {
+        "vwap": null,
+        "hod": null,
+        "lod": null,
+        "premarket_high": 163.29,
+        "premarket_volume": 0
+      },
+      "catalizador": "MarketAxess Stock Surges 30% on $6 Billion Intercontinental Exchange Purchase",
+      "next_earnings": "2026-07-30"
+    },
+    {
+      "ticker": "BHC",
+      "origenes": [
+        "gapper"
+      ],
+      "clasificacion": "DESCARTADO: cap < $10B",
+      "mercado": {
+        "precio": 6.03,
+        "prev_close": 4.68,
+        "gap_pct": 28.8462,
+        "cambio_pct": null,
+        "market_cap": 2252058112,
+        "rvol": 9.55,
+        "pe": -2.05,
+        "nombre": "Bausch Health Companies Inc.",
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "tendencia": null
+      },
+      "flags": {
+        "day_eligible": false,
+        "day_status": "rejected",
+        "swing_eligible": false,
+        "swing_reason": "cap < $10B",
+        "catalyst_found": true,
+        "earnings_soon": false
+      },
+      "niveles": {
+        "vwap": null,
+        "hod": null,
+        "lod": null,
+        "premarket_high": 6.09,
+        "premarket_volume": 0
+      },
+      "catalizador": "Bausch Health (BHC) Rockets 28% as Q2 Turnaround Fuels Recovery Outlook",
+      "next_earnings": "2026-10-28"
+    },
+    {
+      "ticker": "CIFR",
+      "origenes": [
+        "gapper"
+      ],
+      "clasificacion": "DESCARTADO: cap < $10B",
+      "mercado": {
+        "precio": 22.655,
+        "prev_close": 17.685,
+        "gap_pct": 28.1029,
+        "cambio_pct": null,
+        "market_cap": 9267009536,
+        "rvol": 1.36,
+        "pe": -9.77,
+        "nombre": "Cipher Digital Inc.",
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "tendencia": null
+      },
+      "flags": {
+        "day_eligible": false,
+        "day_status": "rejected",
+        "swing_eligible": false,
+        "swing_reason": "cap < $10B",
+        "catalyst_found": true,
+        "earnings_soon": false
+      },
+      "niveles": {
+        "vwap": null,
+        "hod": null,
+        "lod": null,
+        "premarket_high": 24.24,
+        "premarket_volume": 0
+      },
+      "catalizador": "Zacks Investment Ideas feature highlights: Micron, SanDisk, Meta, Alphabet, Cipher Digital and Nebius",
+      "next_earnings": "2026-08-04"
+    },
+    {
+      "ticker": "KEEL",
+      "origenes": [
+        "gapper"
+      ],
+      "clasificacion": "DESCARTADO: cap < $10B",
+      "mercado": {
+        "precio": 4.05,
+        "prev_close": 3.175,
+        "gap_pct": 27.5591,
+        "cambio_pct": null,
+        "market_cap": 2445506304,
+        "rvol": 2.15,
+        "pe": -7.94,
+        "nombre": "Keel Infrastructure Corp.",
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "tendencia": null
+      },
+      "flags": {
+        "day_eligible": false,
+        "day_status": "rejected",
+        "swing_eligible": false,
+        "swing_reason": "cap < $10B",
+        "catalyst_found": true,
+        "earnings_soon": false
+      },
+      "niveles": {
+        "vwap": null,
+        "hod": null,
+        "lod": null,
+        "premarket_high": 4.3744,
+        "premarket_volume": 0
+      },
+      "catalizador": "KEEL Stock Heads For Worst Month In 2026: Retail Turns Bearish On 'Dead' Company",
+      "next_earnings": "2026-08-10"
+    },
+    {
+      "ticker": "CORT",
+      "origenes": [
+        "gapper"
+      ],
+      "clasificacion": "ELEGIBLE",
+      "mercado": {
+        "precio": 118.32,
+        "prev_close": 92.95,
+        "gap_pct": 27.2942,
+        "cambio_pct": null,
+        "market_cap": 12790202368,
+        "rvol": 3.85,
+        "pe": 262.93,
+        "nombre": "Corcept Therapeutics Incorporat",
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "tendencia": null
+      },
+      "flags": {
+        "day_eligible": false,
+        "day_status": "rejected",
+        "swing_eligible": true,
+        "swing_reason": "elegible",
+        "catalyst_found": true,
+        "earnings_soon": false
+      },
+      "niveles": {
+        "vwap": null,
+        "hod": null,
+        "lod": null,
+        "premarket_high": 122.86,
+        "premarket_volume": 0
+      },
+      "catalizador": "These 2 Biotech Stocks Hit New 52-Week Highs Today – And CORT Clocked Its Best Day In Nearly 16 Months",
+      "next_earnings": "2026-07-29"
+    },
+    {
+      "ticker": "NBIS",
+      "origenes": [
+        "gapper"
+      ],
+      "clasificacion": "ELEGIBLE",
+      "mercado": {
+        "precio": 188.43,
+        "prev_close": 148.22,
+        "gap_pct": 27.1286,
+        "cambio_pct": null,
+        "market_cap": 47842033664,
+        "rvol": 2.01,
+        "pe": 57.1,
+        "nombre": "Nebius Group N.V.",
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "tendencia": null
+      },
+      "flags": {
+        "day_eligible": false,
+        "day_status": "rejected",
+        "swing_eligible": true,
+        "swing_reason": "elegible",
+        "catalyst_found": true,
+        "earnings_soon": false
+      },
+      "niveles": {
+        "vwap": null,
+        "hod": null,
+        "lod": null,
+        "premarket_high": 208.6467,
+        "premarket_volume": 0
+      },
+      "catalizador": "Zacks Investment Ideas feature highlights: Micron, SanDisk, Meta, Alphabet, Cipher Digital and Nebius",
+      "next_earnings": "2026-08-12"
+    },
+    {
+      "ticker": "AXTI",
+      "origenes": [
+        "gapper"
+      ],
+      "clasificacion": "DESCARTADO: cap < $10B",
+      "mercado": {
+        "precio": 46.94,
+        "prev_close": 36.97,
+        "gap_pct": 26.9678,
+        "cambio_pct": null,
+        "market_cap": 3070964224,
+        "rvol": 2.27,
+        "pe": -146.69,
+        "nombre": "AXT Inc",
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "tendencia": null
+      },
+      "flags": {
+        "day_eligible": false,
+        "day_status": "rejected",
+        "swing_eligible": false,
+        "swing_reason": "cap < $10B",
+        "catalyst_found": true,
+        "earnings_soon": false
+      },
+      "niveles": {
+        "vwap": null,
+        "hod": null,
+        "lod": null,
+        "premarket_high": 64.97,
+        "premarket_volume": 0
+      },
+      "catalizador": "AXT Inc (AXTI) (Q2 2026) Earnings Call Highlights: Record Revenue and Profitability Surge on ...",
+      "next_earnings": "2026-10-29"
+    },
+    {
+      "ticker": "BE",
+      "origenes": [
+        "gapper"
+      ],
+      "clasificacion": "ELEGIBLE",
+      "mercado": {
+        "precio": 207.12,
+        "prev_close": 163.75,
+        "gap_pct": 26.4855,
+        "cambio_pct": null,
+        "market_cap": 61002506240,
+        "rvol": 2.2,
+        "pe": 268.99,
+        "nombre": "Bloom Energy Corporation",
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "tendencia": null
+      },
+      "flags": {
+        "day_eligible": false,
+        "day_status": "rejected",
+        "swing_eligible": true,
+        "swing_reason": "elegible",
+        "catalyst_found": true,
+        "earnings_soon": false
+      },
+      "niveles": {
+        "vwap": null,
+        "hod": null,
+        "lod": null,
+        "premarket_high": 229.72,
+        "premarket_volume": 0
+      },
+      "catalizador": "BE Stock Surges Overnight Despite New Hunterbrook Report Challenging Fuel Cell Performance – Retail Shrugs Off Allegations",
+      "next_earnings": "2026-10-27"
+    },
+    {
+      "ticker": "FORM",
+      "origenes": [
+        "gapper"
+      ],
+      "clasificacion": "DESCARTADO: cap < $10B",
+      "mercado": {
+        "precio": 105.38,
+        "prev_close": 83.45,
+        "gap_pct": 26.2792,
+        "cambio_pct": null,
+        "market_cap": 8214873088,
+        "rvol": 1.62,
+        "pe": 72.68,
+        "nombre": "FormFactor, Inc.",
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "tendencia": null
+      },
+      "flags": {
+        "day_eligible": false,
+        "day_status": "rejected",
+        "swing_eligible": false,
+        "swing_reason": "cap < $10B",
+        "catalyst_found": true,
+        "earnings_soon": false
+      },
+      "niveles": {
+        "vwap": null,
+        "hod": null,
+        "lod": null,
+        "premarket_high": 114.68,
+        "premarket_volume": 0
+      },
+      "catalizador": "Why FormFactor (FORM) Stock Is Up Today",
+      "next_earnings": "2026-10-28"
+    },
+    {
+      "ticker": "SNDK",
+      "origenes": [
+        "gapper"
+      ],
+      "clasificacion": "ELEGIBLE",
+      "mercado": {
+        "precio": 1279.96,
+        "prev_close": 1015.89,
+        "gap_pct": 25.9939,
+        "cambio_pct": null,
+        "market_cap": 189548969984,
+        "rvol": 1.57,
+        "pe": 43.67,
+        "nombre": "Sandisk Corporation",
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "tendencia": null
+      },
+      "flags": {
+        "day_eligible": false,
+        "day_status": "rejected",
+        "swing_eligible": true,
+        "swing_reason": "elegible",
+        "catalyst_found": true,
+        "earnings_soon": false
+      },
+      "niveles": {
+        "vwap": null,
+        "hod": null,
+        "lod": null,
+        "premarket_high": 1394.32,
+        "premarket_volume": 0
+      },
+      "catalizador": "The Zacks Analyst Blog Highlights Applied Materials, Sandisk, Eaton and Flanigan's",
+      "next_earnings": "2026-08-05"
+    },
+    {
+      "ticker": "AAPL",
+      "origenes": [
+        "watchlist"
+      ],
+      "clasificacion": "MONITOREO (watchlist, sin disparo)",
+      "mercado": {
+        "precio": 333.43,
+        "prev_close": null,
+        "gap_pct": null,
+        "cambio_pct": -1.41,
+        "market_cap": 4897205003506.592,
+        "rvol": null,
+        "pe": null,
+        "nombre": null,
+        "sma_150": 279.57,
+        "dist_sma150_pct": 19.3,
+        "tendencia": "Sobre SMA150 (+19.3%)"
+      },
+      "flags": null,
+      "niveles": null,
+      "catalizador": null,
+      "next_earnings": null
+    },
+    {
+      "ticker": "ADSK",
+      "origenes": [
+        "watchlist"
+      ],
+      "clasificacion": "MONITOREO (watchlist, sin disparo)",
+      "mercado": {
+        "precio": 234.97,
+        "prev_close": null,
+        "gap_pct": null,
+        "cambio_pct": -4.19,
+        "market_cap": 49612799885.21567,
+        "rvol": null,
+        "pe": null,
+        "nombre": null,
+        "sma_150": 239.03,
+        "dist_sma150_pct": -1.7,
+        "tendencia": "Bajo SMA150 (-1.7%)"
+      },
+      "flags": null,
+      "niveles": null,
+      "catalizador": null,
+      "next_earnings": null
+    },
+    {
+      "ticker": "AMZN",
+      "origenes": [
+        "watchlist"
+      ],
+      "clasificacion": "MONITOREO (watchlist, sin disparo)",
+      "mercado": {
+        "precio": 235.5,
+        "prev_close": null,
+        "gap_pct": null,
+        "cambio_pct": 3.9,
+        "market_cap": 2533299272178.0,
+        "rvol": null,
+        "pe": null,
+        "nombre": null,
+        "sma_150": 236.46,
+        "dist_sma150_pct": -0.4,
+        "tendencia": "Bajo SMA150 (-0.4%)"
+      },
+      "flags": null,
+      "niveles": null,
+      "catalizador": null,
+      "next_earnings": null
+    },
+    {
+      "ticker": "AVGO",
+      "origenes": [
+        "watchlist"
+      ],
+      "clasificacion": "MONITOREO (watchlist, sin disparo)",
+      "mercado": {
+        "precio": 387.84,
+        "prev_close": null,
+        "gap_pct": null,
+        "cambio_pct": 4.73,
+        "market_cap": 1845179886569.541,
+        "rvol": null,
+        "pe": null,
+        "nombre": null,
+        "sma_150": 366.03,
+        "dist_sma150_pct": 6.0,
+        "tendencia": "Sobre SMA150 (+6.0%)"
+      },
+      "flags": null,
+      "niveles": null,
+      "catalizador": null,
+      "next_earnings": null
+    },
+    {
+      "ticker": "GOOGL",
+      "origenes": [
+        "watchlist"
+      ],
+      "clasificacion": "MONITOREO (watchlist, sin disparo)",
+      "mercado": {
+        "precio": 333.66,
+        "prev_close": null,
+        "gap_pct": null,
+        "cambio_pct": -0.91,
+        "market_cap": 4080640100498.819,
+        "rvol": null,
+        "pe": null,
+        "nombre": null,
+        "sma_150": 337.57,
+        "dist_sma150_pct": -1.2,
+        "tendencia": "Bajo SMA150 (-1.2%)"
+      },
+      "flags": null,
+      "niveles": null,
+      "catalizador": null,
+      "next_earnings": null
+    },
+    {
+      "ticker": "META",
+      "origenes": [
+        "watchlist"
+      ],
+      "clasificacion": "MONITOREO (watchlist, sin disparo)",
+      "mercado": {
+        "precio": 539.03,
+        "prev_close": null,
+        "gap_pct": null,
+        "cambio_pct": -7.95,
+        "market_cap": 1373182355095.7214,
+        "rvol": null,
+        "pe": null,
+        "nombre": null,
+        "sma_150": 627.08,
+        "dist_sma150_pct": -14.0,
+        "tendencia": "Bajo SMA150 (-14.0%)"
+      },
+      "flags": null,
+      "niveles": null,
+      "catalizador": null,
+      "next_earnings": null
+    },
+    {
+      "ticker": "MSFT",
+      "origenes": [
+        "watchlist"
+      ],
+      "clasificacion": "MONITOREO (watchlist, sin disparo)",
+      "mercado": {
+        "precio": 451.1,
+        "prev_close": null,
+        "gap_pct": null,
+        "cambio_pct": 15.51,
+        "market_cap": 3349663616312.0327,
+        "rvol": null,
+        "pe": null,
+        "nombre": null,
+        "sma_150": 411.19,
+        "dist_sma150_pct": 9.7,
+        "tendencia": "Sobre SMA150 (+9.7%)"
+      },
+      "flags": null,
+      "niveles": null,
+      "catalizador": null,
+      "next_earnings": null
+    },
+    {
+      "ticker": "NVDA",
+      "origenes": [
+        "watchlist"
+      ],
+      "clasificacion": "MONITOREO (watchlist, sin disparo)",
+      "mercado": {
+        "precio": 195.04,
+        "prev_close": null,
+        "gap_pct": null,
+        "cambio_pct": 2.65,
+        "market_cap": 4724063677383.423,
+        "rvol": null,
+        "pe": null,
+        "nombre": null,
+        "sma_150": 195.27,
+        "dist_sma150_pct": -0.1,
+        "tendencia": "Bajo SMA150 (-0.1%)"
+      },
+      "flags": null,
+      "niveles": null,
+      "catalizador": null,
+      "next_earnings": null
+    },
+    {
+      "ticker": "ORCL",
+      "origenes": [
+        "watchlist"
+      ],
+      "clasificacion": "MONITOREO (watchlist, sin disparo)",
+      "mercado": {
+        "precio": 127.56,
+        "prev_close": null,
+        "gap_pct": null,
+        "cambio_pct": 8.34,
+        "market_cap": 367432873727.6001,
+        "rvol": null,
+        "pe": null,
+        "nombre": null,
+        "sma_150": 166.68,
+        "dist_sma150_pct": -23.5,
+        "tendencia": "Bajo SMA150 (-23.5%)"
+      },
+      "flags": null,
+      "niveles": null,
+      "catalizador": null,
+      "next_earnings": null
+    },
+    {
+      "ticker": "T",
+      "origenes": [
+        "watchlist"
+      ],
+      "clasificacion": "MONITOREO (watchlist, sin disparo)",
+      "mercado": {
+        "precio": 23.21,
+        "prev_close": null,
+        "gap_pct": null,
+        "cambio_pct": -3.05,
+        "market_cap": 159043864662.95355,
+        "rvol": null,
+        "pe": null,
+        "nombre": null,
+        "sma_150": 24.75,
+        "dist_sma150_pct": -6.2,
+        "tendencia": "Bajo SMA150 (-6.2%)"
+      },
+      "flags": null,
+      "niveles": null,
+      "catalizador": null,
+      "next_earnings": null
+    },
+    {
+      "ticker": "WMT",
+      "origenes": [
+        "watchlist"
+      ],
+      "clasificacion": "MONITOREO (watchlist, sin disparo)",
+      "mercado": {
+        "precio": 111.1,
+        "prev_close": null,
+        "gap_pct": null,
+        "cambio_pct": -2.73,
+        "market_cap": 884142581977.4349,
+        "rvol": null,
+        "pe": null,
+        "nombre": null,
+        "sma_150": 121.15,
+        "dist_sma150_pct": -8.3,
+        "tendencia": "Bajo SMA150 (-8.3%)"
+      },
+      "flags": null,
+      "niveles": null,
+      "catalizador": null,
+      "next_earnings": null
+    }
+  ]
 }
