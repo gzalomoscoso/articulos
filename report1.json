@@ -2,14 +2,14 @@
   "report_type": "fichas_cliente",
   "horizon_weeks": 12,
   "idioma": "es",
-  "fecha": "2026-07-31",
-  "weekday": "Friday",
-  "generated_at_et": "2026-07-31T18:24:00-04:00",
+  "fecha": "2026-08-01",
+  "weekday": "Saturday",
+  "generated_at_et": "2026-08-01T16:36:00-04:00",
   "generated_at_packet": null,
-  "stamp": "Viernes, 31 de julio a las 6:24 PM ET - Fichas Cliente (horizonte 12 semanas)",
+  "stamp": "Sabado, 01 de agosto a las 4:36 PM ET - Fichas Cliente (horizonte 12 semanas)",
   "status": "final",
-  "fuente": "FMP quote/grades/price-target-consensus (primario) + stockanalysis.com (fallback declarado por ficha) + packet.json (flags de gappers)",
-  "nota": "Universo fijo de ~100 tickers. Campos null = dato no disponible; nunca se inventa. Datos de mercado via stockanalysis.com (fallback declarado; conector FMP quote en plan gated). Analistas/consenso via FMP grades/price-target-consensus, limitados por cuota FMP: 67 tickers quedaron solo-mercado y 1 sin datos (BLSK, no encontrado en la fuente).",
+  "fuente": "FMP company/profile (mercado, ultimo cierre) + FMP grades/price-target-consensus (analistas, cobertura parcial por limite de plan) + stockanalysis.com/packet.json no disponibles en este entorno",
+  "nota": "Universo fijo de 96 tickers. Campos null = dato no disponible; nunca se inventa. En este entorno el endpoint FMP quote esta gated (plan) y stockanalysis.com/packet.json no son alcanzables; el mercado se tomo de FMP company/profile (cierre de la ultima sesion). Grades y price-target-consensus quedaron limitados por gating/rate-limit del plan FMP: 14 tickers con analistas, 39 con consenso; 57 tickers quedaron solo-mercado.",
   "nota_confiabilidad": "Confiabilidad: indice interno 0-100 por prestigio de la firma (bulge 78-85, mid 62-72, resto 55-60); NO es el success-rate de TipRanks.",
   "total_fichas": 96,
   "fichas": [
@@ -18,16 +18,16 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (-7.35%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
         "precio": 308.91,
         "prev_close": 333.43,
         "gap_pct": null,
         "cambio_pct": -7.35,
-        "market_cap": 4510000000000,
-        "rvol": null,
-        "pe": 35.44,
+        "market_cap": 4537071141960,
+        "rvol": 2.26,
+        "pe": null,
         "nombre": "Apple Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -36,31 +36,23 @@
       "catalizador": null,
       "next_earnings": null,
       "tokens": {
-        "riesgo": "ALERTA INVESTIGAR",
-        "accion": "OBSERVAR",
-        "momento": "EVALUAR CON MGRE",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (no confirmado por rating)",
-        "justificacion": "Cierre $308.91, -7.35% vs previo $333.43.",
-        "alineacion": "Solo vista Claude. Conviccion Media."
+        "riesgo": "ALERTA ROJA",
+        "accion": "SELL",
+        "momento": "INMEDIATAMENTE",
+        "apreciacion": "Cambio Estructural de Flujo Institucional",
+        "justificacion": "Variacion de -7.35% en la sesion con RVOL 2.26.",
+        "alineacion": "Solo vista Claude. Conviccion Alta."
       },
-      "evento": "stockanalysis.com 18:24 ET: $308.91, -7.35%. 5 reafirmaciones de rating hoy.",
-      "consenso_analistas": "Target prom 340.53 (mediana 350, rango 245-400); +10.2% vs 308.91. Fuente: FMP price-target-consensus 18:24 ET.",
+      "evento": "FMP 16:36 ET: $308.91, -7.35%. Movimiento fuerte en la sesion.",
+      "consenso_analistas": "Target prom 340.53 (mediana 350, rango 245-400); +10.2% vs 308.91. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": [
         {
           "analista": null,
-          "firma": "Needham",
-          "confiabilidad_pct": 57,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Hold (Hold -> Hold) 2026-07-31"
-        },
-        {
-          "analista": null,
-          "firma": "Rosenblatt",
-          "confiabilidad_pct": 55,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Neutral (Neutral -> Neutral) 2026-07-31"
+          "firma": "Goldman Sachs",
+          "confiabilidad_pct": 85,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-31"
         },
         {
           "analista": null,
@@ -72,7 +64,15 @@
         },
         {
           "analista": null,
-          "firma": "JP Morgan",
+          "firma": "Needham",
+          "confiabilidad_pct": 57,
+          "veredicto": "Neutral",
+          "tag": "HOLD",
+          "comentario": "Hold (Hold -> Hold) 2026-07-31"
+        },
+        {
+          "analista": null,
+          "firma": "Morgan Stanley",
           "confiabilidad_pct": 84,
           "veredicto": "Va a subir",
           "tag": "BUY",
@@ -80,11 +80,11 @@
         },
         {
           "analista": null,
-          "firma": "Morgan Stanley",
-          "confiabilidad_pct": 85,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Overweight (Overweight -> Overweight) 2026-07-31"
+          "firma": "Rosenblatt",
+          "confiabilidad_pct": 57,
+          "veredicto": "Neutral",
+          "tag": "HOLD",
+          "comentario": "Neutral (Neutral -> Neutral) 2026-07-31"
         }
       ]
     },
@@ -96,13 +96,13 @@
       "clasificacion": null,
       "posicion": null,
       "mercado": {
-        "precio": 220.08,
-        "prev_close": 224.13,
+        "precio": 250.875,
+        "prev_close": 257.41,
         "gap_pct": null,
-        "cambio_pct": -1.81,
-        "market_cap": 388970000000,
-        "rvol": null,
-        "pe": 166.65,
+        "cambio_pct": -2.54,
+        "market_cap": 443244148968,
+        "rvol": 0.72,
+        "pe": null,
         "nombre": "AbbVie Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -119,12 +119,12 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Target prom 279.5 (mediana 281, rango 235-300); +11.4% vs 250.875. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": [
         {
           "analista": null,
           "firma": "Barclays",
-          "confiabilidad_pct": 80,
+          "confiabilidad_pct": 79,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Overweight (Overweight -> Overweight) 2026-07-29"
@@ -132,7 +132,7 @@
         {
           "analista": null,
           "firma": "Canaccord Genuity",
-          "confiabilidad_pct": 58,
+          "confiabilidad_pct": 57,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Buy (Buy -> Buy) 2026-07-22"
@@ -140,10 +140,18 @@
         {
           "analista": null,
           "firma": "Citigroup",
-          "confiabilidad_pct": 82,
+          "confiabilidad_pct": 80,
           "veredicto": "Neutral",
           "tag": "HOLD",
           "comentario": "Neutral (Neutral -> Neutral) 2026-07-15"
+        },
+        {
+          "analista": null,
+          "firma": "BMO Capital",
+          "confiabilidad_pct": 70,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-07-13"
         },
         {
           "analista": null,
@@ -152,14 +160,6 @@
           "veredicto": "Neutral",
           "tag": "HOLD",
           "comentario": "Neutral (Neutral -> Neutral) 2026-07-13"
-        },
-        {
-          "analista": null,
-          "firma": "BMO Capital",
-          "confiabilidad_pct": 72,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Outperform (Outperform -> Outperform) 2026-07-13"
         }
       ]
     },
@@ -175,16 +175,16 @@
         "prev_close": 152.08,
         "gap_pct": null,
         "cambio_pct": -0.37,
-        "market_cap": 89930000000,
-        "rvol": null,
-        "pe": 37.28,
+        "market_cap": 89929185066,
+        "rvol": 0.6,
+        "pe": null,
         "nombre": "Airbnb, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-06",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -209,16 +209,16 @@
         "prev_close": 234.97,
         "gap_pct": null,
         "cambio_pct": -0.33,
-        "market_cap": 49450000000,
-        "rvol": null,
-        "pe": 34.32,
+        "market_cap": 49450217784,
+        "rvol": 0.72,
+        "pe": null,
         "nombre": "Autodesk, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-27",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -243,16 +243,16 @@
         "prev_close": 485.39,
         "gap_pct": null,
         "cambio_pct": -1.9,
-        "market_cap": 776410000000,
-        "rvol": null,
-        "pe": 161.86,
+        "market_cap": 776410190000,
+        "rvol": 0.76,
+        "pe": null,
         "nombre": "Advanced Micro Devices, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-04",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -262,7 +262,7 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": "Target prom 575.29 (mediana 607.5, rango 260-1250); +20.8% vs 476.15. Fuente: FMP price-target-consensus 18:24 ET.",
+      "consenso_analistas": "Target prom 575.29 (mediana 607.5, rango 260-1250); +20.8% vs 476.15. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": [
         {
           "analista": null,
@@ -275,7 +275,7 @@
         {
           "analista": null,
           "firma": "Wedbush",
-          "confiabilidad_pct": 64,
+          "confiabilidad_pct": 65,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Outperform (Outperform -> Outperform) 2026-07-27"
@@ -283,7 +283,7 @@
         {
           "analista": null,
           "firma": "Mizuho",
-          "confiabilidad_pct": 70,
+          "confiabilidad_pct": 67,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Outperform (Outperform -> Outperform) 2026-07-27"
@@ -299,7 +299,7 @@
         {
           "analista": null,
           "firma": "Jefferies",
-          "confiabilidad_pct": 60,
+          "confiabilidad_pct": 57,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Buy (Buy -> Buy) 2026-07-24"
@@ -314,13 +314,13 @@
       "clasificacion": null,
       "posicion": null,
       "mercado": {
-        "precio": 333.96,
-        "prev_close": 333.96,
+        "precio": 385.16,
+        "prev_close": 387.64,
         "gap_pct": null,
-        "cambio_pct": 0.0,
-        "market_cap": 179830000000,
-        "rvol": null,
-        "pe": 25.82,
+        "cambio_pct": -0.64,
+        "market_cap": 207873933280,
+        "rvol": 0.71,
+        "pe": null,
         "nombre": "Amgen Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -345,16 +345,16 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (+15.32%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
         "precio": 271.58,
         "prev_close": 235.5,
         "gap_pct": null,
         "cambio_pct": 15.32,
-        "market_cap": 2930000000000,
-        "rvol": null,
-        "pe": 21.84,
+        "market_cap": 2921413218000,
+        "rvol": 2.55,
+        "pe": null,
         "nombre": "Amazon.com, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -364,51 +364,51 @@
       "next_earnings": null,
       "tokens": {
         "riesgo": "RUIDO OPERATIVO",
-        "accion": "MANTENER",
+        "accion": "BUY",
         "momento": "DURANTE ESTE DIA",
         "apreciacion": "Ruido Transitorio Intradia",
-        "justificacion": "Cierre $271.58, +15.32% vs previo $235.5.",
+        "justificacion": "Variacion de 15.32% en la sesion con RVOL 2.55.",
         "alineacion": "Solo vista Claude. Conviccion Alta."
       },
-      "evento": "stockanalysis.com 18:24 ET: $271.58, +15.32%. 5 reafirmaciones de rating hoy.",
-      "consenso_analistas": null,
+      "evento": "FMP 16:36 ET: $271.58, 15.32%. Movimiento fuerte en la sesion.",
+      "consenso_analistas": "Target prom 321.87 (mediana 320, rango 175-390); +18.5% vs 271.58. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": [
         {
           "analista": null,
-          "firma": "Piper Sandler",
-          "confiabilidad_pct": 71,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Overweight (Overweight -> Overweight) 2026-07-31"
-        },
-        {
-          "analista": null,
-          "firma": "Wells Fargo",
-          "confiabilidad_pct": 78,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Overweight (Overweight -> Overweight) 2026-07-31"
-        },
-        {
-          "analista": null,
-          "firma": "Citigroup",
-          "confiabilidad_pct": 82,
+          "firma": "TD Cowen",
+          "confiabilidad_pct": 57,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Buy (Buy -> Buy) 2026-07-31"
         },
         {
           "analista": null,
-          "firma": "RBC Capital",
-          "confiabilidad_pct": 72,
+          "firma": "Wedbush",
+          "confiabilidad_pct": 65,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Outperform (Outperform -> Outperform) 2026-07-31"
         },
         {
           "analista": null,
-          "firma": "Mizuho",
-          "confiabilidad_pct": 70,
+          "firma": "Cantor Fitzgerald",
+          "confiabilidad_pct": 57,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Overweight (Overweight -> Overweight) 2026-07-31"
+        },
+        {
+          "analista": null,
+          "firma": "Citizens",
+          "confiabilidad_pct": 57,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Market Outperform (Market Outperform -> Market Outperform) 2026-07-31"
+        },
+        {
+          "analista": null,
+          "firma": "Telsey Advisory Group",
+          "confiabilidad_pct": 57,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Outperform (Outperform -> Outperform) 2026-07-31"
@@ -427,16 +427,16 @@
         "prev_close": 403.87,
         "gap_pct": null,
         "cambio_pct": -1.97,
-        "market_cap": 133000000000,
-        "rvol": null,
-        "pe": 34.42,
+        "market_cap": 132998455176,
+        "rvol": 2.74,
+        "pe": null,
         "nombre": "AppLovin Corporation",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-05",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -461,10 +461,10 @@
         "prev_close": 241.54,
         "gap_pct": null,
         "cambio_pct": -0.77,
-        "market_cap": 256010000000,
-        "rvol": null,
-        "pe": 246.55,
-        "nombre": "Arm Holdings plc",
+        "market_cap": 255988577004,
+        "rvol": 0.7,
+        "pe": null,
+        "nombre": "Arm Holdings plc American Depositary Shares",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
@@ -491,13 +491,13 @@
       "clasificacion": null,
       "posicion": null,
       "mercado": {
-        "precio": 1629.0,
+        "precio": 1629,
         "prev_close": 1651.44,
         "gap_pct": null,
         "cambio_pct": -1.36,
-        "market_cap": 633620000000,
-        "rvol": null,
-        "pe": 52.22,
+        "market_cap": 627845907339,
+        "rvol": 0.8,
+        "pe": null,
         "nombre": "ASML Holding N.V.",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -525,12 +525,12 @@
       "clasificacion": null,
       "posicion": null,
       "mercado": {
-        "precio": 81.0,
-        "prev_close": 85.53,
+        "precio": 58.98,
+        "prev_close": 58.44,
         "gap_pct": null,
-        "cambio_pct": -5.3,
-        "market_cap": 30940000000,
-        "rvol": null,
+        "cambio_pct": 0.92,
+        "market_cap": 23998493227,
+        "rvol": 0.43,
         "pe": null,
         "nombre": "AST SpaceMobile, Inc.",
         "sma_150": null,
@@ -540,14 +540,14 @@
       "catalizador": null,
       "next_earnings": null,
       "tokens": {
-        "riesgo": "ALERTA INVESTIGAR",
-        "accion": "OBSERVAR",
-        "momento": "EVALUAR CON MGRE",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (no confirmado por rating)",
-        "justificacion": "Cierre $81.0, -5.30% vs previo $85.53.",
-        "alineacion": "Solo vista Claude. Conviccion Media."
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": null,
+        "alineacion": null
       },
-      "evento": "stockanalysis.com 18:24 ET: $81.0, -5.30%. Caida intradia sin cambio de rating confirmatorio.",
+      "evento": null,
       "consenso_analistas": null,
       "analistas": null
     },
@@ -563,16 +563,16 @@
         "prev_close": 387.84,
         "gap_pct": null,
         "cambio_pct": 0.37,
-        "market_cap": 1850000000000,
-        "rvol": null,
-        "pe": 64.55,
+        "market_cap": 1852030742400,
+        "rvol": 0.71,
+        "pe": null,
         "nombre": "Broadcom Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-09-03",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -597,9 +597,9 @@
         "prev_close": 220.9,
         "gap_pct": null,
         "cambio_pct": -2.15,
-        "market_cap": 170830000000,
-        "rvol": null,
-        "pe": 80.6,
+        "market_cap": 170830571800,
+        "rvol": 1.13,
+        "pe": null,
         "nombre": "The Boeing Company",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -616,12 +616,12 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Target prom 274.17 (mediana 270, rango 250-300); +26.8% vs 216.14. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": [
         {
           "analista": null,
           "firma": "RBC Capital",
-          "confiabilidad_pct": 72,
+          "confiabilidad_pct": 71,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Outperform (Outperform -> Outperform) 2026-07-29"
@@ -629,7 +629,7 @@
         {
           "analista": null,
           "firma": "JP Morgan",
-          "confiabilidad_pct": 84,
+          "confiabilidad_pct": 83,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Overweight (Overweight -> Overweight) 2026-07-29"
@@ -637,7 +637,7 @@
         {
           "analista": null,
           "firma": "Citigroup",
-          "confiabilidad_pct": 82,
+          "confiabilidad_pct": 80,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Buy (Buy -> Buy) 2026-05-18"
@@ -645,7 +645,7 @@
         {
           "analista": null,
           "firma": "Tigress Financial",
-          "confiabilidad_pct": 55,
+          "confiabilidad_pct": 57,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Buy (Buy -> Buy) 2026-04-29"
@@ -653,7 +653,7 @@
         {
           "analista": null,
           "firma": "Morgan Stanley",
-          "confiabilidad_pct": 85,
+          "confiabilidad_pct": 84,
           "veredicto": "Neutral",
           "tag": "HOLD",
           "comentario": "Equal Weight (Equal Weight -> Equal Weight) 2026-04-23"
@@ -665,33 +665,33 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (+5.10%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
         "precio": 122.25,
         "prev_close": 116.32,
         "gap_pct": null,
         "cambio_pct": 5.1,
-        "market_cap": 278870000000,
-        "rvol": null,
-        "pe": 18.23,
+        "market_cap": 293017630362,
+        "rvol": 1.34,
+        "pe": null,
         "nombre": "Alibaba Group Holding Limited",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-28",
+      "next_earnings": null,
       "tokens": {
         "riesgo": "RUIDO OPERATIVO",
-        "accion": "MANTENER",
+        "accion": "BUY",
         "momento": "DURANTE ESTE DIA",
         "apreciacion": "Ruido Transitorio Intradia",
-        "justificacion": "Cierre $122.25, +5.10% vs previo $116.32.",
+        "justificacion": "Variacion de 5.1% en la sesion con RVOL 1.34.",
         "alineacion": "Solo vista Claude. Conviccion Alta."
       },
-      "evento": "stockanalysis.com 18:24 ET: $122.25, +5.10%. Alza intradia sin cambio de rating reciente.",
-      "consenso_analistas": "Target prom 185 (mediana 185, rango 170-209); +51.3% vs 122.25. Fuente: FMP price-target-consensus 18:24 ET.",
+      "evento": "FMP 16:36 ET: $122.25, 5.1%. Movimiento fuerte en la sesion.",
+      "consenso_analistas": "Target prom 185 (mediana 185, rango 170-209); +51.3% vs 122.25. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": [
         {
           "analista": null,
@@ -704,7 +704,7 @@
         {
           "analista": null,
           "firma": "Mizuho",
-          "confiabilidad_pct": 70,
+          "confiabilidad_pct": 67,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Outperform (Outperform -> Outperform) 2026-05-14"
@@ -712,7 +712,7 @@
         {
           "analista": null,
           "firma": "Barclays",
-          "confiabilidad_pct": 80,
+          "confiabilidad_pct": 79,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Overweight (Overweight -> Overweight) 2026-05-14"
@@ -720,7 +720,7 @@
         {
           "analista": null,
           "firma": "JP Morgan",
-          "confiabilidad_pct": 84,
+          "confiabilidad_pct": 83,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Overweight (Overweight -> Overweight) 2026-05-14"
@@ -728,7 +728,7 @@
         {
           "analista": null,
           "firma": "Barclays",
-          "confiabilidad_pct": 80,
+          "confiabilidad_pct": 79,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Overweight (Overweight -> Overweight) 2026-04-14"
@@ -747,9 +747,9 @@
         "prev_close": 61.73,
         "gap_pct": null,
         "cambio_pct": 0.36,
-        "market_cap": 434760000000,
-        "rvol": null,
-        "pe": 14.27,
+        "market_cap": 439633750500,
+        "rvol": 0.44,
+        "pe": null,
         "nombre": "Bank of America Corporation",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -766,12 +766,12 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": "Target prom 65.82 (mediana 65, rango 59-75); +6.2% vs 61.95. Fuente: FMP price-target-consensus 18:24 ET.",
+      "consenso_analistas": "Target prom 65.82 (mediana 65, rango 59-75); +6.2% vs 61.95. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": [
         {
           "analista": null,
           "firma": "JP Morgan",
-          "confiabilidad_pct": 84,
+          "confiabilidad_pct": 83,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Overweight (Overweight -> Overweight) 2026-07-29"
@@ -787,7 +787,7 @@
         {
           "analista": null,
           "firma": "Baird",
-          "confiabilidad_pct": 67,
+          "confiabilidad_pct": 66,
           "veredicto": "Neutral",
           "tag": "HOLD",
           "comentario": "Neutral (Neutral -> Neutral) 2026-07-15"
@@ -795,7 +795,7 @@
         {
           "analista": null,
           "firma": "RBC Capital",
-          "confiabilidad_pct": 72,
+          "confiabilidad_pct": 71,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Outperform (Outperform -> Outperform) 2026-07-15"
@@ -856,8 +856,8 @@
         "prev_close": 92.85,
         "gap_pct": null,
         "cambio_pct": -2.44,
-        "market_cap": 22910000000,
-        "rvol": null,
+        "market_cap": 22906255274,
+        "rvol": 0.75,
         "pe": null,
         "nombre": "BioNTech SE",
         "sma_150": null,
@@ -865,7 +865,7 @@
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-04",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -890,16 +890,16 @@
         "prev_close": 809.14,
         "gap_pct": null,
         "cambio_pct": 0.7,
-        "market_cap": 375290000000,
-        "rvol": null,
-        "pe": 40.29,
+        "market_cap": 375331633970,
+        "rvol": 0.75,
+        "pe": null,
         "nombre": "Caterpillar Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-04",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -924,16 +924,16 @@
         "prev_close": 66.44,
         "gap_pct": null,
         "cambio_pct": -1.82,
-        "market_cap": 7590000000,
-        "rvol": null,
-        "pe": 125.47,
+        "market_cap": 7597589496,
+        "rvol": 0.65,
+        "pe": null,
         "nombre": "CAVA Group, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-11",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -958,16 +958,16 @@
         "prev_close": 29.35,
         "gap_pct": null,
         "cambio_pct": -0.48,
-        "market_cap": 7470000000,
-        "rvol": null,
-        "pe": 66.39,
+        "market_cap": 7467254916,
+        "rvol": 0.57,
+        "pe": null,
         "nombre": "Celsius Holdings, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-06",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -985,15 +985,15 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (-5.36%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
         "precio": 13.76,
         "prev_close": 14.54,
         "gap_pct": null,
         "cambio_pct": -5.36,
-        "market_cap": 3530000000,
-        "rvol": null,
+        "market_cap": 3530934419,
+        "rvol": 0.83,
         "pe": null,
         "nombre": "CleanSpark, Inc.",
         "sma_150": null,
@@ -1001,16 +1001,16 @@
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-06",
+      "next_earnings": null,
       "tokens": {
-        "riesgo": "ALERTA INVESTIGAR",
-        "accion": "OBSERVAR",
-        "momento": "EVALUAR CON MGRE",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (no confirmado por rating)",
-        "justificacion": "Cierre $13.76, -5.36% vs previo $14.54.",
-        "alineacion": "Solo vista Claude. Conviccion Media."
+        "riesgo": "ALERTA ROJA",
+        "accion": "SELL",
+        "momento": "INMEDIATAMENTE",
+        "apreciacion": "Cambio Estructural de Flujo Institucional",
+        "justificacion": "Variacion de -5.36% en la sesion con RVOL 0.83.",
+        "alineacion": "Solo vista Claude. Conviccion Alta."
       },
-      "evento": "stockanalysis.com 18:24 ET: $13.76, -5.36%. Caida intradia sin cambio de rating confirmatorio.",
+      "evento": "FMP 16:36 ET: $13.76, -5.36%. Movimiento fuerte en la sesion.",
       "consenso_analistas": null,
       "analistas": null
     },
@@ -1019,15 +1019,15 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (-10.59%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
         "precio": 146.26,
         "prev_close": 163.58,
         "gap_pct": null,
         "cambio_pct": -10.59,
-        "market_cap": 38530000000,
-        "rvol": null,
+        "market_cap": 38588379561,
+        "rvol": 2.36,
         "pe": null,
         "nombre": "Coinbase Global, Inc.",
         "sma_150": null,
@@ -1037,43 +1037,19 @@
       "catalizador": null,
       "next_earnings": null,
       "tokens": {
-        "riesgo": "ALERTA INVESTIGAR",
-        "accion": "OBSERVAR",
-        "momento": "EVALUAR CON MGRE",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (no confirmado por rating)",
-        "justificacion": "Cierre $146.26, -10.59% vs previo $163.58.",
-        "alineacion": "Solo vista Claude. Conviccion Media."
+        "riesgo": "ALERTA ROJA",
+        "accion": "SELL",
+        "momento": "INMEDIATAMENTE",
+        "apreciacion": "Cambio Estructural de Flujo Institucional",
+        "justificacion": "Variacion de -10.59% en la sesion con RVOL 2.36.",
+        "alineacion": "Solo vista Claude. Conviccion Alta."
       },
-      "evento": "stockanalysis.com 18:24 ET: $146.26, -10.59%. 5 reafirmaciones de rating hoy.",
-      "consenso_analistas": null,
+      "evento": "FMP 16:36 ET: $146.26, -10.59%. Movimiento fuerte en la sesion.",
+      "consenso_analistas": "Target prom 208.25 (mediana 205.5, rango 95-330); +42.4% vs 146.26. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": [
         {
           "analista": null,
-          "firma": "Benchmark",
-          "confiabilidad_pct": 58,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Buy -> Buy) 2026-07-31"
-        },
-        {
-          "analista": null,
-          "firma": "Piper Sandler",
-          "confiabilidad_pct": 71,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Neutral (Neutral -> Neutral) 2026-07-31"
-        },
-        {
-          "analista": null,
-          "firma": "HC Wainwright & Co.",
-          "confiabilidad_pct": 60,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Buy -> Buy) 2026-07-31"
-        },
-        {
-          "analista": null,
-          "firma": "Needham",
+          "firma": "Canaccord Genuity",
           "confiabilidad_pct": 57,
           "veredicto": "Va a subir",
           "tag": "BUY",
@@ -1081,11 +1057,35 @@
         },
         {
           "analista": null,
-          "firma": "Canaccord Genuity",
-          "confiabilidad_pct": 58,
+          "firma": "Rosenblatt",
+          "confiabilidad_pct": 57,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Buy (Buy -> Buy) 2026-07-31"
+        },
+        {
+          "analista": null,
+          "firma": "Goldman Sachs",
+          "confiabilidad_pct": 85,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-31"
+        },
+        {
+          "analista": null,
+          "firma": "Oppenheimer",
+          "confiabilidad_pct": 57,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-07-31"
+        },
+        {
+          "analista": null,
+          "firma": "Piper Sandler",
+          "confiabilidad_pct": 69,
+          "veredicto": "Neutral",
+          "tag": "HOLD",
+          "comentario": "Neutral (Neutral -> Neutral) 2026-07-31"
         }
       ]
     },
@@ -1094,15 +1094,15 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (-21.10%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
-        "precio": 4.0,
+        "precio": 4,
         "prev_close": 5.07,
         "gap_pct": null,
         "cambio_pct": -21.1,
-        "market_cap": 522630000,
-        "rvol": null,
+        "market_cap": 146661840,
+        "rvol": 2.25,
         "pe": null,
         "nombre": "GraniteShares 2x Long COIN Daily ETF",
         "sma_150": null,
@@ -1112,14 +1112,14 @@
       "catalizador": null,
       "next_earnings": null,
       "tokens": {
-        "riesgo": "ALERTA INVESTIGAR",
-        "accion": "OBSERVAR",
-        "momento": "EVALUAR CON MGRE",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (no confirmado por rating)",
-        "justificacion": "Cierre $4.0, -21.10% vs previo $5.07.",
-        "alineacion": "Solo vista Claude. Conviccion Media."
+        "riesgo": "ALERTA ROJA",
+        "accion": "SELL",
+        "momento": "INMEDIATAMENTE",
+        "apreciacion": "Cambio Estructural de Flujo Institucional",
+        "justificacion": "Variacion de -21.1% en la sesion con RVOL 2.25.",
+        "alineacion": "Solo vista Claude. Conviccion Alta."
       },
-      "evento": "stockanalysis.com 18:24 ET: $4.0, -21.10%. Caida intradia sin cambio de rating confirmatorio.",
+      "evento": "FMP 16:36 ET: $4, -21.1%. Movimiento fuerte en la sesion.",
       "consenso_analistas": null,
       "analistas": null
     },
@@ -1135,9 +1135,9 @@
         "prev_close": 954.17,
         "gap_pct": null,
         "cambio_pct": -0.24,
-        "market_cap": 422140000000,
-        "rvol": null,
-        "pe": 47.99,
+        "market_cap": 422143225310,
+        "rvol": 0.7,
+        "pe": null,
         "nombre": "Costco Wholesale Corporation",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -1154,12 +1154,12 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": "Target prom 1102.23 (mediana 1100, rango 1000-1275); +15.8% vs 951.89. Fuente: FMP price-target-consensus 18:24 ET.",
+      "consenso_analistas": "Target prom 1102.23 (mediana 1100, rango 1000-1275); +15.8% vs 951.89. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": [
         {
           "analista": null,
           "firma": "JP Morgan",
-          "confiabilidad_pct": 84,
+          "confiabilidad_pct": 83,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Overweight (Overweight -> Overweight) 2026-07-09"
@@ -1167,7 +1167,7 @@
         {
           "analista": null,
           "firma": "DA Davidson",
-          "confiabilidad_pct": 60,
+          "confiabilidad_pct": 57,
           "veredicto": "Neutral",
           "tag": "HOLD",
           "comentario": "Neutral (Neutral -> Neutral) 2026-06-04"
@@ -1183,7 +1183,7 @@
         {
           "analista": null,
           "firma": "DA Davidson",
-          "confiabilidad_pct": 60,
+          "confiabilidad_pct": 57,
           "veredicto": "Neutral",
           "tag": "HOLD",
           "comentario": "Neutral (Neutral -> Neutral) 2026-06-01"
@@ -1210,16 +1210,16 @@
         "prev_close": 180.71,
         "gap_pct": null,
         "cambio_pct": 1.83,
-        "market_cap": 150710000000,
-        "rvol": null,
-        "pe": 20.98,
+        "market_cap": 150712380000,
+        "rvol": 0.56,
+        "pe": null,
         "nombre": "Salesforce, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-09-02",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -1237,15 +1237,15 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (+3.05%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
         "precio": 190.86,
         "prev_close": 185.22,
         "gap_pct": null,
         "cambio_pct": 3.05,
-        "market_cap": 194340000000,
-        "rvol": null,
+        "market_cap": 194344966181,
+        "rvol": 0.61,
         "pe": null,
         "nombre": "CrowdStrike Holdings, Inc.",
         "sma_150": null,
@@ -1253,16 +1253,16 @@
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-26",
+      "next_earnings": null,
       "tokens": {
         "riesgo": "RUIDO OPERATIVO",
-        "accion": "MANTENER",
+        "accion": "BUY",
         "momento": "DURANTE ESTE DIA",
         "apreciacion": "Ruido Transitorio Intradia",
-        "justificacion": "Cierre $190.86, +3.05% vs previo $185.22.",
-        "alineacion": "Solo vista Claude. Conviccion Alta."
+        "justificacion": "Variacion de 3.05% en la sesion con RVOL 0.61.",
+        "alineacion": "Solo vista Claude. Conviccion Media."
       },
-      "evento": "stockanalysis.com 18:24 ET: $190.86, +3.05%. Alza intradia sin cambio de rating reciente.",
+      "evento": "FMP 16:36 ET: $190.86, 3.05%. Movimiento fuerte en la sesion.",
       "consenso_analistas": null,
       "analistas": null
     },
@@ -1274,13 +1274,13 @@
       "clasificacion": null,
       "posicion": null,
       "mercado": {
-        "precio": 196.83,
+        "precio": 196.87,
         "prev_close": 192.31,
         "gap_pct": null,
-        "cambio_pct": 2.35,
-        "market_cap": 389220000000,
-        "rvol": null,
-        "pe": 18.47,
+        "cambio_pct": 2.37,
+        "market_cap": 392086292000,
+        "rvol": 0.82,
+        "pe": null,
         "nombre": "Chevron Corporation",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -1297,12 +1297,12 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Target prom 206.93 (mediana 210, rango 174-230); +5.1% vs 196.87. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": [
         {
           "analista": null,
           "firma": "B of A Securities",
-          "confiabilidad_pct": 83,
+          "confiabilidad_pct": 80,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Buy (Buy -> Buy) 2026-07-28"
@@ -1326,7 +1326,7 @@
         {
           "analista": null,
           "firma": "Morgan Stanley",
-          "confiabilidad_pct": 85,
+          "confiabilidad_pct": 84,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Overweight (Overweight -> Overweight) 2026-06-29"
@@ -1334,7 +1334,7 @@
         {
           "analista": null,
           "firma": "Mizuho",
-          "confiabilidad_pct": 70,
+          "confiabilidad_pct": 67,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Outperform (Outperform -> Outperform) 2026-05-27"
@@ -1349,20 +1349,20 @@
       "clasificacion": null,
       "posicion": null,
       "mercado": {
-        "precio": 405.37,
+        "precio": 405.25,
         "prev_close": 404.81,
         "gap_pct": null,
-        "cambio_pct": 0.14,
-        "market_cap": 261930000000,
-        "rvol": null,
-        "pe": 32.36,
+        "cambio_pct": 0.11,
+        "market_cap": 269187694651,
+        "rvol": 0.49,
+        "pe": null,
         "nombre": "Dell Technologies Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-27",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -1383,20 +1383,20 @@
       "clasificacion": null,
       "posicion": null,
       "mercado": {
-        "precio": 96.19,
+        "precio": 96.215,
         "prev_close": 96.16,
         "gap_pct": null,
-        "cambio_pct": 0.03,
-        "market_cap": 167040000000,
-        "rvol": null,
-        "pe": 15.37,
+        "cambio_pct": 0.06,
+        "market_cap": 167078309650,
+        "rvol": 0.79,
+        "pe": null,
         "nombre": "The Walt Disney Company",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-05",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -1406,8 +1406,16 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": "Target prom 128.22 (mediana 125, rango 110-164); +33.3% vs 96.19. Fuente: FMP price-target-consensus 18:24 ET.",
+      "consenso_analistas": "Target prom 128.22 (mediana 125, rango 110-164); +33.3% vs 96.215. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": [
+        {
+          "analista": null,
+          "firma": "Citigroup",
+          "confiabilidad_pct": 80,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-29"
+        },
         {
           "analista": null,
           "firma": "UBS",
@@ -1419,7 +1427,7 @@
         {
           "analista": null,
           "firma": "Barclays",
-          "confiabilidad_pct": 80,
+          "confiabilidad_pct": 79,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Overweight (Overweight -> Overweight) 2026-07-14"
@@ -1435,18 +1443,10 @@
         {
           "analista": null,
           "firma": "Rosenblatt",
-          "confiabilidad_pct": 55,
+          "confiabilidad_pct": 57,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Buy (Buy -> Buy) 2026-07-07"
-        },
-        {
-          "analista": null,
-          "firma": "Raymond James",
-          "confiabilidad_pct": 69,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Outperform (Outperform -> Outperform) 2026-07-02"
         }
       ]
     },
@@ -1462,16 +1462,16 @@
         "prev_close": 23.72,
         "gap_pct": null,
         "cambio_pct": -1.01,
-        "market_cap": 11650000000,
-        "rvol": null,
-        "pe": 258.97,
+        "market_cap": 11649104623,
+        "rvol": 0.6,
+        "pe": null,
         "nombre": "DraftKings Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-06",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -1496,9 +1496,9 @@
         "prev_close": 355.04,
         "gap_pct": null,
         "cambio_pct": 1.42,
-        "market_cap": 373600000000,
-        "rvol": null,
-        "pe": 42.44,
+        "market_cap": 373595134056,
+        "rvol": 0.62,
+        "pe": null,
         "nombre": "GE Aerospace",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -1515,7 +1515,7 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Target prom 419.1 (mediana 423, rango 375-455); +16.4% vs 360.07. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": [
         {
           "analista": null,
@@ -1528,7 +1528,7 @@
         {
           "analista": null,
           "firma": "JP Morgan",
-          "confiabilidad_pct": 84,
+          "confiabilidad_pct": 83,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Overweight (Overweight -> Overweight) 2026-07-20"
@@ -1544,7 +1544,7 @@
         {
           "analista": null,
           "firma": "RBC Capital",
-          "confiabilidad_pct": 72,
+          "confiabilidad_pct": 71,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Outperform (Outperform -> Outperform) 2026-07-17"
@@ -1552,7 +1552,7 @@
         {
           "analista": null,
           "firma": "RBC Capital",
-          "confiabilidad_pct": 72,
+          "confiabilidad_pct": 71,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Outperform (Outperform -> Outperform) 2026-07-15"
@@ -1564,16 +1564,16 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (+6.73%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
-        "precio": 335.84,
-        "prev_close": 335.97,
+        "precio": 356.13,
+        "prev_close": 333.66,
         "gap_pct": null,
-        "cambio_pct": -0.04,
-        "market_cap": 4050000000000,
-        "rvol": null,
-        "pe": 33.14,
+        "cambio_pct": 6.73,
+        "market_cap": 4309924892283,
+        "rvol": 1.44,
+        "pe": null,
         "nombre": "Alphabet Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -1582,20 +1582,20 @@
       "catalizador": null,
       "next_earnings": null,
       "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
+        "riesgo": "RUIDO OPERATIVO",
+        "accion": "BUY",
+        "momento": "DURANTE ESTE DIA",
+        "apreciacion": "Ruido Transitorio Intradia",
+        "justificacion": "Variacion de 6.73% en la sesion con RVOL 1.44.",
+        "alineacion": "Solo vista Claude. Conviccion Alta."
       },
-      "evento": null,
-      "consenso_analistas": null,
+      "evento": "FMP 16:36 ET: $356.13, 6.73%. Movimiento fuerte en la sesion.",
+      "consenso_analistas": "Target prom 423.44 (mediana 420, rango 350-475); +18.9% vs 356.13. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": [
         {
           "analista": null,
           "firma": "Cantor Fitzgerald",
-          "confiabilidad_pct": 56,
+          "confiabilidad_pct": 57,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Overweight (Overweight -> Overweight) 2026-07-23"
@@ -1603,7 +1603,7 @@
         {
           "analista": null,
           "firma": "Piper Sandler",
-          "confiabilidad_pct": 71,
+          "confiabilidad_pct": 69,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Overweight (Overweight -> Overweight) 2026-07-23"
@@ -1611,7 +1611,7 @@
         {
           "analista": null,
           "firma": "Barclays",
-          "confiabilidad_pct": 80,
+          "confiabilidad_pct": 79,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Overweight (Overweight -> Overweight) 2026-07-23"
@@ -1619,7 +1619,7 @@
         {
           "analista": null,
           "firma": "Rosenblatt",
-          "confiabilidad_pct": 55,
+          "confiabilidad_pct": 57,
           "veredicto": "Neutral",
           "tag": "HOLD",
           "comentario": "Neutral (Neutral -> Neutral) 2026-07-23"
@@ -1627,7 +1627,7 @@
         {
           "analista": null,
           "firma": "DA Davidson",
-          "confiabilidad_pct": 60,
+          "confiabilidad_pct": 57,
           "veredicto": "Neutral",
           "tag": "HOLD",
           "comentario": "Neutral (Neutral -> Neutral) 2026-07-23"
@@ -1646,9 +1646,9 @@
         "prev_close": 86.6,
         "gap_pct": null,
         "cambio_pct": -0.05,
-        "market_cap": 77820000000,
-        "rvol": null,
-        "pe": 38.34,
+        "market_cap": 77824565186,
+        "rvol": 0.84,
+        "pe": null,
         "nombre": "Robinhood Markets, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -1665,12 +1665,28 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Target prom 121.81 (mediana 123, rango 100-160); +40.7% vs 86.56. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": [
         {
           "analista": null,
+          "firma": "Goldman Sachs",
+          "confiabilidad_pct": 85,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-30"
+        },
+        {
+          "analista": null,
+          "firma": "Needham",
+          "confiabilidad_pct": 57,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-30"
+        },
+        {
+          "analista": null,
           "firma": "Citizens",
-          "confiabilidad_pct": 58,
+          "confiabilidad_pct": 57,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Market Outperform (Market Outperform -> Market Outperform) 2026-07-30"
@@ -1685,27 +1701,11 @@
         },
         {
           "analista": null,
-          "firma": "Goldman Sachs",
-          "confiabilidad_pct": 85,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Buy -> Buy) 2026-07-30"
-        },
-        {
-          "analista": null,
           "firma": "Barclays",
-          "confiabilidad_pct": 80,
+          "confiabilidad_pct": 79,
           "veredicto": "Va a subir",
           "tag": "BUY",
           "comentario": "Overweight (Overweight -> Overweight) 2026-07-30"
-        },
-        {
-          "analista": null,
-          "firma": "Needham",
-          "confiabilidad_pct": 57,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Buy -> Buy) 2026-07-30"
         }
       ]
     },
@@ -1721,8 +1721,8 @@
         "prev_close": 108.27,
         "gap_pct": null,
         "cambio_pct": -0.59,
-        "market_cap": 12120000000,
-        "rvol": null,
+        "market_cap": 12118492220,
+        "rvol": 0.95,
         "pe": null,
         "nombre": "Hut 8 Corp.",
         "sma_150": null,
@@ -1730,7 +1730,7 @@
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-04",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -1755,9 +1755,9 @@
         "prev_close": 221.74,
         "gap_pct": null,
         "cambio_pct": 0.86,
-        "market_cap": 210710000000,
-        "rvol": null,
-        "pe": 19.72,
+        "market_cap": 210708269100,
+        "rvol": 0.81,
+        "pe": null,
         "nombre": "International Business Machines Corporation",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -1789,10 +1789,10 @@
         "prev_close": 91.13,
         "gap_pct": null,
         "cambio_pct": -1.02,
-        "market_cap": 454970000000,
-        "rvol": null,
+        "market_cap": 454968770505,
+        "rvol": 0.8,
         "pe": null,
-        "nombre": "Intel Corporation",
+        "nombre": "Intel Corp.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
@@ -1808,81 +1808,40 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": null,
-      "analistas": [
-        {
-          "analista": null,
-          "firma": "B of A Securities",
-          "confiabilidad_pct": 83,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Buy -> Buy) 2026-07-28"
-        },
-        {
-          "analista": null,
-          "firma": "Baird",
-          "confiabilidad_pct": 67,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Neutral (Neutral -> Neutral) 2026-07-27"
-        },
-        {
-          "analista": null,
-          "firma": "Morgan Stanley",
-          "confiabilidad_pct": 85,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Equal Weight (Equal Weight -> Equal Weight) 2026-07-24"
-        },
-        {
-          "analista": null,
-          "firma": "Roth Capital",
-          "confiabilidad_pct": 60,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Buy -> Buy) 2026-07-24"
-        },
-        {
-          "analista": null,
-          "firma": "Wells Fargo",
-          "confiabilidad_pct": 78,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Equal Weight (Equal Weight -> Equal Weight) 2026-07-24"
-        }
-      ]
+      "consenso_analistas": "Target prom 110.41 (mediana 110, rango 60-200); +22.4% vs 90.2. Fuente: FMP price-target-consensus 16:36 ET.",
+      "analistas": null
     },
     {
       "ticker": "IREN",
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (-3.82%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
         "precio": 36.8,
         "prev_close": 38.26,
         "gap_pct": null,
         "cambio_pct": -3.82,
-        "market_cap": 13150000000,
-        "rvol": null,
-        "pe": 67.74,
+        "market_cap": 13132354307,
+        "rvol": 1.3,
+        "pe": null,
         "nombre": "IREN Limited",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-27",
+      "next_earnings": null,
       "tokens": {
         "riesgo": "ALERTA INVESTIGAR",
         "accion": "OBSERVAR",
         "momento": "EVALUAR CON MGRE",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (no confirmado por rating)",
-        "justificacion": "Cierre $36.8, -3.82% vs previo $38.26.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional",
+        "justificacion": "Variacion de -3.82% en la sesion con RVOL 1.3.",
         "alineacion": "Solo vista Claude. Conviccion Media."
       },
-      "evento": "stockanalysis.com 18:24 ET: $36.8, -3.82%. Caida intradia sin cambio de rating confirmatorio.",
+      "evento": "FMP 16:36 ET: $36.8, -3.82%. Movimiento fuerte en la sesion.",
       "consenso_analistas": null,
       "analistas": null
     },
@@ -1898,9 +1857,9 @@
         "prev_close": 352.97,
         "gap_pct": null,
         "cambio_pct": 0.1,
-        "market_cap": 124820000000,
-        "rvol": null,
-        "pe": 40.48,
+        "market_cap": 124823715740,
+        "rvol": 0.81,
+        "pe": null,
         "nombre": "Intuitive Surgical, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -1932,9 +1891,9 @@
         "prev_close": 350.85,
         "gap_pct": null,
         "cambio_pct": 0.27,
-        "market_cap": 935130000000,
-        "rvol": null,
-        "pe": 15.1,
+        "market_cap": 942624822900,
+        "rvol": 0.7,
+        "pe": null,
         "nombre": "JPMorgan Chase & Co.",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -1951,49 +1910,8 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": "Target prom 366.5 (mediana 370, rango 305-420); +4.2% vs 351.79. Fuente: FMP price-target-consensus 18:24 ET.",
-      "analistas": [
-        {
-          "analista": null,
-          "firma": "Citigroup",
-          "confiabilidad_pct": 82,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Neutral (Neutral -> Neutral) 2026-07-20"
-        },
-        {
-          "analista": null,
-          "firma": "Evercore ISI Group",
-          "confiabilidad_pct": 81,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Outperform (Outperform -> Outperform) 2026-07-17"
-        },
-        {
-          "analista": null,
-          "firma": "B of A Securities",
-          "confiabilidad_pct": 83,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Buy -> Buy) 2026-07-16"
-        },
-        {
-          "analista": null,
-          "firma": "Barclays",
-          "confiabilidad_pct": 80,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Overweight (Overweight -> Overweight) 2026-07-15"
-        },
-        {
-          "analista": null,
-          "firma": "Truist Securities",
-          "confiabilidad_pct": 65,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Hold (Hold -> Hold) 2026-07-15"
-        }
-      ]
+      "consenso_analistas": "Target prom 366.5 (mediana 370, rango 305-420); +4.2% vs 351.79. Fuente: FMP price-target-consensus 16:36 ET.",
+      "analistas": null
     },
     {
       "ticker": "KLAC",
@@ -2007,9 +1925,9 @@
         "prev_close": 180.33,
         "gap_pct": null,
         "cambio_pct": 1.38,
-        "market_cap": 238810000000,
-        "rvol": null,
-        "pe": 49.95,
+        "market_cap": 238814109600,
+        "rvol": 1.0,
+        "pe": null,
         "nombre": "KLA Corporation",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -2034,15 +1952,15 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (-9.11%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
         "precio": 7.38,
         "prev_close": 8.12,
         "gap_pct": null,
         "cambio_pct": -9.11,
-        "market_cap": 2880000000,
-        "rvol": null,
+        "market_cap": 2345941005,
+        "rvol": 0.47,
         "pe": null,
         "nombre": "Lucid Group, Inc.",
         "sma_150": null,
@@ -2050,59 +1968,18 @@
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-04",
+      "next_earnings": null,
       "tokens": {
-        "riesgo": "SITUACION CRITICA",
+        "riesgo": "ALERTA ROJA",
         "accion": "SELL",
         "momento": "INMEDIATAMENTE",
         "apreciacion": "Cambio Estructural de Flujo Institucional",
-        "justificacion": "Cierre $7.38, -9.11% vs previo $8.12.",
+        "justificacion": "Variacion de -9.11% en la sesion con RVOL 0.47.",
         "alineacion": "Solo vista Claude. Conviccion Alta."
       },
-      "evento": "stockanalysis.com 18:24 ET: $7.38, -9.11%. Caida fuerte con downgrade reciente en cobertura.",
-      "consenso_analistas": null,
-      "analistas": [
-        {
-          "analista": null,
-          "firma": "RBC Capital",
-          "confiabilidad_pct": 72,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Sector Perform (Sector Perform -> Sector Perform) 2026-07-13"
-        },
-        {
-          "analista": null,
-          "firma": "Citigroup",
-          "confiabilidad_pct": 82,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Buy -> Buy) 2026-05-15"
-        },
-        {
-          "analista": null,
-          "firma": "Benchmark",
-          "confiabilidad_pct": 58,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Hold (Buy -> Hold) 2026-05-06"
-        },
-        {
-          "analista": null,
-          "firma": "TD Cowen",
-          "confiabilidad_pct": 57,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Hold (Hold -> Hold) 2026-05-06"
-        },
-        {
-          "analista": null,
-          "firma": "Cantor Fitzgerald",
-          "confiabilidad_pct": 56,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Neutral (Neutral -> Neutral) 2026-05-04"
-        }
-      ]
+      "evento": "FMP 16:36 ET: $7.38, -9.11%. Movimiento fuerte en la sesion.",
+      "consenso_analistas": "Target prom 6.5 (mediana 6, rango 5-8.5); -11.9% vs 7.38. Fuente: FMP price-target-consensus 16:36 ET.",
+      "analistas": null
     },
     {
       "ticker": "LEU",
@@ -2116,16 +1993,16 @@
         "prev_close": 176.75,
         "gap_pct": null,
         "cambio_pct": 0.1,
-        "market_cap": 3480000000,
-        "rvol": null,
-        "pe": 62.18,
+        "market_cap": 3353459386,
+        "rvol": 0.59,
+        "pe": null,
         "nombre": "Centrus Energy Corp.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-05",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -2146,13 +2023,13 @@
       "clasificacion": null,
       "posicion": null,
       "mercado": {
-        "precio": 1076.98,
-        "prev_close": 1076.98,
+        "precio": 1148.5,
+        "prev_close": 1154.97,
         "gap_pct": null,
-        "cambio_pct": 0.0,
-        "market_cap": 964310000000,
-        "rvol": null,
-        "pe": 52.68,
+        "cambio_pct": -0.56,
+        "market_cap": 1081589538500,
+        "rvol": 0.75,
+        "pe": null,
         "nombre": "Eli Lilly and Company",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -2184,9 +2061,9 @@
         "prev_close": 297.72,
         "gap_pct": null,
         "cambio_pct": -1.58,
-        "market_cap": 366650000000,
-        "rvol": null,
-        "pe": 50.87,
+        "market_cap": 366442021400,
+        "rvol": 1.07,
+        "pe": null,
         "nombre": "Lam Research Corporation",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -2218,16 +2095,16 @@
         "prev_close": 119.48,
         "gap_pct": null,
         "cambio_pct": -0.51,
-        "market_cap": 13500000000,
-        "rvol": null,
-        "pe": 9.59,
-        "nombre": "lululemon athletica inc.",
+        "market_cap": 13498153995,
+        "rvol": 0.66,
+        "pe": null,
+        "nombre": "Lululemon Athletica Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-09-03",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -2252,8 +2129,8 @@
         "prev_close": 12.25,
         "gap_pct": null,
         "cambio_pct": 0.73,
-        "market_cap": 2680000000,
-        "rvol": null,
+        "market_cap": 1966657477,
+        "rvol": 0.6,
         "pe": null,
         "nombre": "Intuitive Machines, Inc.",
         "sma_150": null,
@@ -2261,7 +2138,7 @@
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-13",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -2286,9 +2163,9 @@
         "prev_close": 577.35,
         "gap_pct": null,
         "cambio_pct": -0.74,
-        "market_cap": 502040000000,
-        "rvol": null,
-        "pe": 31.52,
+        "market_cap": 502629331600,
+        "rvol": 1.23,
+        "pe": null,
         "nombre": "Mastercard Incorporated",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -2313,32 +2190,32 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (-4.23%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
         "precio": 11.32,
         "prev_close": 11.82,
         "gap_pct": null,
         "cambio_pct": -4.23,
-        "market_cap": 4320000000,
-        "rvol": null,
+        "market_cap": 4315982094,
+        "rvol": 0.86,
         "pe": null,
-        "nombre": "MARA Holdings, Inc.",
+        "nombre": "Marathon Digital Holdings, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-06",
+      "next_earnings": null,
       "tokens": {
         "riesgo": "ALERTA INVESTIGAR",
         "accion": "OBSERVAR",
         "momento": "EVALUAR CON MGRE",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (no confirmado por rating)",
-        "justificacion": "Cierre $11.32, -4.23% vs previo $11.82.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional",
+        "justificacion": "Variacion de -4.23% en la sesion con RVOL 0.86.",
         "alineacion": "Solo vista Claude. Conviccion Media."
       },
-      "evento": "stockanalysis.com 18:24 ET: $11.32, -4.23%. Caida intradia sin cambio de rating confirmatorio.",
+      "evento": "FMP 16:36 ET: $11.32, -4.23%. Movimiento fuerte en la sesion.",
       "consenso_analistas": null,
       "analistas": null
     },
@@ -2347,15 +2224,15 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (+3.56%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
         "precio": 337.48,
         "prev_close": 325.88,
         "gap_pct": null,
         "cambio_pct": 3.56,
-        "market_cap": 27140000000,
-        "rvol": null,
+        "market_cap": 27144166724,
+        "rvol": 0.53,
         "pe": null,
         "nombre": "MongoDB, Inc.",
         "sma_150": null,
@@ -2363,16 +2240,16 @@
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-25",
+      "next_earnings": null,
       "tokens": {
         "riesgo": "RUIDO OPERATIVO",
-        "accion": "MANTENER",
+        "accion": "BUY",
         "momento": "DURANTE ESTE DIA",
         "apreciacion": "Ruido Transitorio Intradia",
-        "justificacion": "Cierre $337.48, +3.56% vs previo $325.88.",
-        "alineacion": "Solo vista Claude. Conviccion Alta."
+        "justificacion": "Variacion de 3.56% en la sesion con RVOL 0.53.",
+        "alineacion": "Solo vista Claude. Conviccion Media."
       },
-      "evento": "stockanalysis.com 18:24 ET: $337.48, +3.56%. Alza intradia sin cambio de rating reciente.",
+      "evento": "FMP 16:36 ET: $337.48, 3.56%. Movimiento fuerte en la sesion.",
       "consenso_analistas": null,
       "analistas": null
     },
@@ -2381,16 +2258,16 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (+3.28%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
         "precio": 556.71,
         "prev_close": 539.03,
         "gap_pct": null,
         "cambio_pct": 3.28,
-        "market_cap": 1420000000000,
-        "rvol": null,
-        "pe": 20.31,
+        "market_cap": 1418211248385,
+        "rvol": 1.33,
+        "pe": null,
         "nombre": "Meta Platforms, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -2400,14 +2277,14 @@
       "next_earnings": null,
       "tokens": {
         "riesgo": "RUIDO OPERATIVO",
-        "accion": "MANTENER",
+        "accion": "BUY",
         "momento": "DURANTE ESTE DIA",
         "apreciacion": "Ruido Transitorio Intradia",
-        "justificacion": "Cierre $556.71, +3.28% vs previo $539.03.",
-        "alineacion": "Solo vista Claude. Conviccion Alta."
+        "justificacion": "Variacion de 3.28% en la sesion con RVOL 1.33.",
+        "alineacion": "Solo vista Claude. Conviccion Media."
       },
-      "evento": "stockanalysis.com 18:24 ET: $556.71, +3.28%. Alza intradia sin cambio de rating reciente.",
-      "consenso_analistas": null,
+      "evento": "FMP 16:36 ET: $556.71, 3.28%. Movimiento fuerte en la sesion.",
+      "consenso_analistas": "Target prom 723.69 (mediana 725, rango 595-883); +30.0% vs 556.71. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": null
     },
     {
@@ -2415,15 +2292,15 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (-5.35%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
         "precio": 54.82,
         "prev_close": 57.92,
         "gap_pct": null,
         "cambio_pct": -5.35,
-        "market_cap": 21750000000,
-        "rvol": null,
+        "market_cap": 21751808520,
+        "rvol": 1.01,
         "pe": null,
         "nombre": "Moderna, Inc.",
         "sma_150": null,
@@ -2433,57 +2310,16 @@
       "catalizador": null,
       "next_earnings": null,
       "tokens": {
-        "riesgo": "ALERTA INVESTIGAR",
-        "accion": "OBSERVAR",
-        "momento": "EVALUAR CON MGRE",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (no confirmado por rating)",
-        "justificacion": "Cierre $54.82, -5.35% vs previo $57.92.",
-        "alineacion": "Solo vista Claude. Conviccion Media."
+        "riesgo": "ALERTA ROJA",
+        "accion": "SELL",
+        "momento": "INMEDIATAMENTE",
+        "apreciacion": "Cambio Estructural de Flujo Institucional",
+        "justificacion": "Variacion de -5.35% en la sesion con RVOL 1.01.",
+        "alineacion": "Solo vista Claude. Conviccion Alta."
       },
-      "evento": "stockanalysis.com 18:24 ET: $54.82, -5.35%. Caida intradia sin cambio de rating confirmatorio.",
-      "consenso_analistas": null,
-      "analistas": [
-        {
-          "analista": null,
-          "firma": "Goldman Sachs",
-          "confiabilidad_pct": 85,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Neutral (Neutral -> Neutral) 2026-07-21"
-        },
-        {
-          "analista": null,
-          "firma": "Morgan Stanley",
-          "confiabilidad_pct": 85,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Equal Weight (Equal Weight -> Equal Weight) 2026-07-08"
-        },
-        {
-          "analista": null,
-          "firma": "B of A Securities",
-          "confiabilidad_pct": 83,
-          "veredicto": "Va a bajar",
-          "tag": "SELL",
-          "comentario": "Underperform (Underperform -> Underperform) 2026-07-07"
-        },
-        {
-          "analista": null,
-          "firma": "RBC Capital",
-          "confiabilidad_pct": 72,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Sector Perform (Sector Perform -> Sector Perform) 2026-07-07"
-        },
-        {
-          "analista": null,
-          "firma": "Piper Sandler",
-          "confiabilidad_pct": 71,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Overweight (Overweight -> Overweight) 2026-06-26"
-        }
-      ]
+      "evento": "FMP 16:36 ET: $54.82, -5.35%. Movimiento fuerte en la sesion.",
+      "consenso_analistas": "Target prom 46.11 (mediana 45, rango 25-77); -15.9% vs 54.82. Fuente: FMP price-target-consensus 16:36 ET.",
+      "analistas": null
     },
     {
       "ticker": "MRVL",
@@ -2497,16 +2333,16 @@
         "prev_close": 183.3,
         "gap_pct": null,
         "cambio_pct": 2.32,
-        "market_cap": 164260000000,
-        "rvol": null,
-        "pe": 64.79,
+        "market_cap": 164258670960,
+        "rvol": 0.63,
+        "pe": null,
         "nombre": "Marvell Technology, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-27",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -2524,16 +2360,16 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (+3.02%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
-        "precio": 411.58,
-        "prev_close": 393.11,
+        "precio": 464.72,
+        "prev_close": 451.1,
         "gap_pct": null,
-        "cambio_pct": 4.7,
-        "market_cap": 3060000000000,
-        "rvol": null,
-        "pe": 24.6,
+        "cambio_pct": 3.02,
+        "market_cap": 3450801596000,
+        "rvol": 1.4,
+        "pe": null,
         "nombre": "Microsoft Corporation",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -2543,71 +2379,30 @@
       "next_earnings": null,
       "tokens": {
         "riesgo": "RUIDO OPERATIVO",
-        "accion": "MANTENER",
+        "accion": "BUY",
         "momento": "DURANTE ESTE DIA",
         "apreciacion": "Ruido Transitorio Intradia",
-        "justificacion": "Cierre $411.58, +4.70% vs previo $393.11.",
-        "alineacion": "Solo vista Claude. Conviccion Alta."
+        "justificacion": "Variacion de 3.02% en la sesion con RVOL 1.4.",
+        "alineacion": "Solo vista Claude. Conviccion Media."
       },
-      "evento": "stockanalysis.com 18:24 ET: $411.58, +4.70%. Alza intradia sin cambio de rating reciente.",
-      "consenso_analistas": null,
-      "analistas": [
-        {
-          "analista": null,
-          "firma": "Barclays",
-          "confiabilidad_pct": 80,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Overweight (Overweight -> Overweight) 2026-07-30"
-        },
-        {
-          "analista": null,
-          "firma": "Bernstein",
-          "confiabilidad_pct": 80,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Outperform (Outperform -> Outperform) 2026-07-30"
-        },
-        {
-          "analista": null,
-          "firma": "Stifel",
-          "confiabilidad_pct": 68,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Hold (Hold -> Hold) 2026-07-30"
-        },
-        {
-          "analista": null,
-          "firma": "RBC Capital",
-          "confiabilidad_pct": 72,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Outperform (Outperform -> Outperform) 2026-07-30"
-        },
-        {
-          "analista": null,
-          "firma": "Citigroup",
-          "confiabilidad_pct": 82,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Buy -> Buy) 2026-07-30"
-        }
-      ]
+      "evento": "FMP 16:36 ET: $464.72, 3.02%. Movimiento fuerte en la sesion.",
+      "consenso_analistas": "Target prom 541.88 (mediana 531.5, rango 400-680); +16.6% vs 464.72. Fuente: FMP price-target-consensus 16:36 ET.",
+      "analistas": null
     },
     {
       "ticker": "MSTR",
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (-4.56%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
         "precio": 93.28,
         "prev_close": 97.74,
         "gap_pct": null,
         "cambio_pct": -4.56,
-        "market_cap": 35870000000,
-        "rvol": null,
+        "market_cap": 30857770240,
+        "rvol": 1.01,
         "pe": null,
         "nombre": "Strategy Inc",
         "sma_150": null,
@@ -2620,11 +2415,11 @@
         "riesgo": "ALERTA INVESTIGAR",
         "accion": "OBSERVAR",
         "momento": "EVALUAR CON MGRE",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (no confirmado por rating)",
-        "justificacion": "Cierre $93.28, -4.56% vs previo $97.74.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional",
+        "justificacion": "Variacion de -4.56% en la sesion con RVOL 1.01.",
         "alineacion": "Solo vista Claude. Conviccion Media."
       },
-      "evento": "stockanalysis.com 18:24 ET: $93.28, -4.56%. Caida intradia sin cambio de rating confirmatorio.",
+      "evento": "FMP 16:36 ET: $93.28, -4.56%. Movimiento fuerte en la sesion.",
       "consenso_analistas": null,
       "analistas": null
     },
@@ -2640,9 +2435,9 @@
         "prev_close": 73.17,
         "gap_pct": null,
         "cambio_pct": -2.0,
-        "market_cap": 298600000000,
-        "rvol": null,
-        "pe": 23.05,
+        "market_cap": 298596137328,
+        "rvol": 0.76,
+        "pe": null,
         "nombre": "Netflix, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -2659,7 +2454,7 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Target prom 91.82 (mediana 90, rango 75-119); +28.0% vs 71.71. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": null
     },
     {
@@ -2674,8 +2469,8 @@
         "prev_close": 4.84,
         "gap_pct": null,
         "cambio_pct": 0.83,
-        "market_cap": 12210000000,
-        "rvol": null,
+        "market_cap": 12107821529,
+        "rvol": 0.55,
         "pe": null,
         "nombre": "NIO Inc.",
         "sma_150": null,
@@ -2683,7 +2478,7 @@
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-09-01",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -2693,49 +2488,8 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": null,
-      "analistas": [
-        {
-          "analista": null,
-          "firma": "Goldman Sachs",
-          "confiabilidad_pct": 85,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Neutral -> Buy) 2026-07-13"
-        },
-        {
-          "analista": null,
-          "firma": "HSBC",
-          "confiabilidad_pct": 57,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Hold -> Buy) 2026-03-13"
-        },
-        {
-          "analista": null,
-          "firma": "Freedom Capital Markets",
-          "confiabilidad_pct": 58,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Hold -> Buy) 2025-11-28"
-        },
-        {
-          "analista": null,
-          "firma": "Barclays",
-          "confiabilidad_pct": 80,
-          "veredicto": "Va a bajar",
-          "tag": "SELL",
-          "comentario": "Underweight (Underweight -> Underweight) 2025-11-28"
-        },
-        {
-          "analista": null,
-          "firma": "Freedom Broker",
-          "confiabilidad_pct": 60,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Hold -> Buy) 2025-11-28"
-        }
-      ]
+      "consenso_analistas": "Target prom 6.65 (mediana 6.8, rango 6-7); +36.3% vs 4.88. Fuente: FMP price-target-consensus 16:36 ET.",
+      "analistas": null
     },
     {
       "ticker": "NKE",
@@ -2749,9 +2503,9 @@
         "prev_close": 42.29,
         "gap_pct": null,
         "cambio_pct": -1.37,
-        "market_cap": 61880000000,
-        "rvol": null,
-        "pe": 20.14,
+        "market_cap": 61722926195,
+        "rvol": 0.98,
+        "pe": null,
         "nombre": "NIKE, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -2768,49 +2522,8 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": null,
-      "analistas": [
-        {
-          "analista": null,
-          "firma": "B of A Securities",
-          "confiabilidad_pct": 83,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Neutral (Neutral -> Neutral) 2026-07-01"
-        },
-        {
-          "analista": null,
-          "firma": "Barclays",
-          "confiabilidad_pct": 80,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Overweight (Overweight -> Overweight) 2026-07-01"
-        },
-        {
-          "analista": null,
-          "firma": "Piper Sandler",
-          "confiabilidad_pct": 71,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Neutral (Neutral -> Neutral) 2026-07-01"
-        },
-        {
-          "analista": null,
-          "firma": "BTIG",
-          "confiabilidad_pct": 57,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Buy -> Buy) 2026-07-01"
-        },
-        {
-          "analista": null,
-          "firma": "Guggenheim",
-          "confiabilidad_pct": 55,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Buy -> Buy) 2026-07-01"
-        }
-      ]
+      "consenso_analistas": "Target prom 51.06 (mediana 48.5, rango 35-75); +22.4% vs 41.71. Fuente: FMP price-target-consensus 16:36 ET.",
+      "analistas": null
     },
     {
       "ticker": "NOW",
@@ -2824,9 +2537,9 @@
         "prev_close": 110.07,
         "gap_pct": null,
         "cambio_pct": 1.05,
-        "market_cap": 115000000000,
-        "rvol": null,
-        "pe": 68.77,
+        "market_cap": 114996470260,
+        "rvol": 0.6,
+        "pe": null,
         "nombre": "ServiceNow, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -2858,16 +2571,16 @@
         "prev_close": 195.04,
         "gap_pct": null,
         "cambio_pct": 2.93,
-        "market_cap": 4860000000000,
-        "rvol": null,
-        "pe": 30.74,
+        "market_cap": 4862365750000,
+        "rvol": 0.91,
+        "pe": null,
         "nombre": "NVIDIA Corporation",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-26",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -2877,65 +2590,24 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": "Target prom 319.48 (mediana 300, rango 218-500); +59.1% vs 200.75. Fuente: FMP price-target-consensus 18:24 ET.",
-      "analistas": [
-        {
-          "analista": null,
-          "firma": "Keybanc",
-          "confiabilidad_pct": 66,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Overweight (Overweight -> Overweight) 2026-07-14"
-        },
-        {
-          "analista": null,
-          "firma": "Needham",
-          "confiabilidad_pct": 57,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Buy -> Buy) 2026-06-02"
-        },
-        {
-          "analista": null,
-          "firma": "DA Davidson",
-          "confiabilidad_pct": 60,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Buy -> Buy) 2026-06-01"
-        },
-        {
-          "analista": null,
-          "firma": "Tigress Financial",
-          "confiabilidad_pct": 55,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Strong Buy (Strong Buy -> Strong Buy) 2026-05-27"
-        },
-        {
-          "analista": null,
-          "firma": "Truist Securities",
-          "confiabilidad_pct": 65,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Buy -> Buy) 2026-05-21"
-        }
-      ]
+      "consenso_analistas": "Target prom 319.48 (mediana 300, rango 218-500); +59.1% vs 200.75. Fuente: FMP price-target-consensus 16:36 ET.",
+      "analistas": null
     },
     {
       "ticker": "NVO",
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (-8.79%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
-        "precio": 58.08,
-        "prev_close": 62.88,
+        "precio": 47.075,
+        "prev_close": 51.61,
         "gap_pct": null,
-        "cambio_pct": -7.63,
-        "market_cap": 284500000000,
-        "rvol": null,
-        "pe": 20.29,
+        "cambio_pct": -8.79,
+        "market_cap": 209191020656,
+        "rvol": 2.01,
+        "pe": null,
         "nombre": "Novo Nordisk A/S",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -2944,14 +2616,14 @@
       "catalizador": null,
       "next_earnings": null,
       "tokens": {
-        "riesgo": "ALERTA INVESTIGAR",
-        "accion": "OBSERVAR",
-        "momento": "EVALUAR CON MGRE",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (no confirmado por rating)",
-        "justificacion": "Cierre $58.08, -7.63% vs previo $62.88.",
-        "alineacion": "Solo vista Claude. Conviccion Media."
+        "riesgo": "ALERTA ROJA",
+        "accion": "SELL",
+        "momento": "INMEDIATAMENTE",
+        "apreciacion": "Cambio Estructural de Flujo Institucional",
+        "justificacion": "Variacion de -8.79% en la sesion con RVOL 2.01.",
+        "alineacion": "Solo vista Claude. Conviccion Alta."
       },
-      "evento": "stockanalysis.com 18:24 ET: $58.08, -7.63%. Caida intradia sin cambio de rating confirmatorio.",
+      "evento": "FMP 16:36 ET: $47.075, -8.79%. Movimiento fuerte en la sesion.",
       "consenso_analistas": null,
       "analistas": null
     },
@@ -2960,15 +2632,15 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (-5.50%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
         "precio": 38.83,
         "prev_close": 41.09,
         "gap_pct": null,
         "cambio_pct": -5.5,
-        "market_cap": 6760000000,
-        "rvol": null,
+        "market_cap": 6756070025,
+        "rvol": 0.55,
         "pe": null,
         "nombre": "Oklo Inc.",
         "sma_150": null,
@@ -2976,16 +2648,16 @@
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-07",
+      "next_earnings": null,
       "tokens": {
-        "riesgo": "ALERTA INVESTIGAR",
-        "accion": "OBSERVAR",
-        "momento": "EVALUAR CON MGRE",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (no confirmado por rating)",
-        "justificacion": "Cierre $38.83, -5.50% vs previo $41.09.",
-        "alineacion": "Solo vista Claude. Conviccion Media."
+        "riesgo": "ALERTA ROJA",
+        "accion": "SELL",
+        "momento": "INMEDIATAMENTE",
+        "apreciacion": "Cambio Estructural de Flujo Institucional",
+        "justificacion": "Variacion de -5.5% en la sesion con RVOL 0.55.",
+        "alineacion": "Solo vista Claude. Conviccion Alta."
       },
-      "evento": "stockanalysis.com 18:24 ET: $38.83, -5.50%. Caida intradia sin cambio de rating confirmatorio.",
+      "evento": "FMP 16:36 ET: $38.83, -5.5%. Movimiento fuerte en la sesion.",
       "consenso_analistas": null,
       "analistas": null
     },
@@ -2997,20 +2669,20 @@
       "clasificacion": null,
       "posicion": null,
       "mercado": {
-        "precio": 129.87,
+        "precio": 129.88,
         "prev_close": 127.56,
         "gap_pct": null,
-        "cambio_pct": 1.81,
-        "market_cap": 374090000000,
-        "rvol": null,
-        "pe": 21.88,
+        "cambio_pct": 1.82,
+        "market_cap": 374115443600,
+        "rvol": 0.82,
+        "pe": null,
         "nombre": "Oracle Corporation",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-09-08",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -3035,16 +2707,16 @@
         "prev_close": 325.68,
         "gap_pct": null,
         "cambio_pct": 1.89,
-        "market_cap": 270440000000,
-        "rvol": null,
-        "pe": 289.24,
+        "market_cap": 270441450000,
+        "rvol": 0.62,
+        "pe": null,
         "nombre": "Palo Alto Networks, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-17",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -3069,16 +2741,16 @@
         "prev_close": 87.44,
         "gap_pct": null,
         "cambio_pct": 1.28,
-        "market_cap": 126060000000,
-        "rvol": null,
-        "pe": 9.35,
+        "market_cap": 126055989523,
+        "rvol": 0.48,
+        "pe": null,
         "nombre": "PDD Holdings Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-24",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -3103,16 +2775,16 @@
         "prev_close": 24.91,
         "gap_pct": null,
         "cambio_pct": 0.4,
-        "market_cap": 142540000000,
-        "rvol": null,
-        "pe": 19.01,
+        "market_cap": 142542994400,
+        "rvol": 0.82,
+        "pe": null,
         "nombre": "Pfizer Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-04",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -3122,7 +2794,7 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Target prom 26.88 (mediana 27, rango 25-30); +7.5% vs 25.01. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": null
     },
     {
@@ -3137,16 +2809,16 @@
         "prev_close": 122.26,
         "gap_pct": null,
         "cambio_pct": 0.65,
-        "market_cap": 295010000000,
-        "rvol": null,
-        "pe": 137.44,
+        "market_cap": 282554374200,
+        "rvol": 0.67,
+        "pe": null,
         "nombre": "Palantir Technologies Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-03",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -3156,49 +2828,8 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": null,
-      "analistas": [
-        {
-          "analista": null,
-          "firma": "Rosenblatt",
-          "confiabilidad_pct": 55,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Buy -> Buy) 2026-07-30"
-        },
-        {
-          "analista": null,
-          "firma": "Citigroup",
-          "confiabilidad_pct": 82,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Buy -> Buy) 2026-07-24"
-        },
-        {
-          "analista": null,
-          "firma": "DA Davidson",
-          "confiabilidad_pct": 60,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Buy -> Buy) 2026-07-17"
-        },
-        {
-          "analista": null,
-          "firma": "DA Davidson",
-          "confiabilidad_pct": 60,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Neutral -> Buy) 2026-07-02"
-        },
-        {
-          "analista": null,
-          "firma": "Wolfe Research",
-          "confiabilidad_pct": 57,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Peer Perform (Underperform -> Peer Perform) 2026-06-16"
-        }
-      ]
+      "consenso_analistas": "Target prom 177.42 (mediana 187.5, rango 90-230); +44.2% vs 123.06. Fuente: FMP price-target-consensus 16:36 ET.",
+      "analistas": null
     },
     {
       "ticker": "PYPL",
@@ -3208,13 +2839,13 @@
       "clasificacion": null,
       "posicion": null,
       "mercado": {
-        "precio": 57.66,
-        "prev_close": 56.56,
+        "precio": 57.21,
+        "prev_close": 57.65,
         "gap_pct": null,
-        "cambio_pct": 1.94,
-        "market_cap": 53950000000,
-        "rvol": null,
-        "pe": 11.58,
+        "cambio_pct": -0.76,
+        "market_cap": 50465227050,
+        "rvol": 0.53,
+        "pe": null,
         "nombre": "PayPal Holdings, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -3231,49 +2862,8 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": null,
-      "analistas": [
-        {
-          "analista": null,
-          "firma": "Barclays",
-          "confiabilidad_pct": 80,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Equal Weight (Equal Weight -> Equal Weight) 2026-07-29"
-        },
-        {
-          "analista": null,
-          "firma": "Wells Fargo",
-          "confiabilidad_pct": 78,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Equal Weight (Equal Weight -> Equal Weight) 2026-07-29"
-        },
-        {
-          "analista": null,
-          "firma": "BMO Capital",
-          "confiabilidad_pct": 72,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Market Perform (Market Perform -> Market Perform) 2026-07-29"
-        },
-        {
-          "analista": null,
-          "firma": "Citigroup",
-          "confiabilidad_pct": 82,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Neutral (Neutral -> Neutral) 2026-07-29"
-        },
-        {
-          "analista": null,
-          "firma": "Macquarie",
-          "confiabilidad_pct": 59,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Neutral (Neutral -> Neutral) 2026-07-29"
-        }
-      ]
+      "consenso_analistas": "Target prom 53.57 (mediana 54, rango 40-70); -6.4% vs 57.21. Fuente: FMP price-target-consensus 16:36 ET.",
+      "analistas": null
     },
     {
       "ticker": "QCOM",
@@ -3287,9 +2877,9 @@
         "prev_close": 151.6,
         "gap_pct": null,
         "cambio_pct": -2.63,
-        "market_cap": 157650000000,
-        "rvol": null,
-        "pe": 17.18,
+        "market_cap": 154990500000,
+        "rvol": 0.64,
+        "pe": null,
         "nombre": "QUALCOMM Incorporated",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -3314,16 +2904,16 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (-20.99%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
         "precio": 140.67,
         "prev_close": 178.04,
         "gap_pct": null,
         "cambio_pct": -20.99,
-        "market_cap": 27080000000,
-        "rvol": null,
-        "pe": 32.79,
+        "market_cap": 27080246375,
+        "rvol": 5.78,
+        "pe": null,
         "nombre": "Reddit, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -3332,14 +2922,14 @@
       "catalizador": null,
       "next_earnings": null,
       "tokens": {
-        "riesgo": "ALERTA INVESTIGAR",
-        "accion": "OBSERVAR",
-        "momento": "EVALUAR CON MGRE",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (no confirmado por rating)",
-        "justificacion": "Cierre $140.67, -20.99% vs previo $178.04.",
-        "alineacion": "Solo vista Claude. Conviccion Media."
+        "riesgo": "ALERTA ROJA",
+        "accion": "SELL",
+        "momento": "INMEDIATAMENTE",
+        "apreciacion": "Cambio Estructural de Flujo Institucional",
+        "justificacion": "Variacion de -20.99% en la sesion con RVOL 5.78.",
+        "alineacion": "Solo vista Claude. Conviccion Alta."
       },
-      "evento": "stockanalysis.com 18:24 ET: $140.67, -20.99%. Caida intradia sin cambio de rating confirmatorio.",
+      "evento": "FMP 16:36 ET: $140.67, -20.99%. Movimiento fuerte en la sesion.",
       "consenso_analistas": null,
       "analistas": null
     },
@@ -3348,15 +2938,15 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (-8.82%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
         "precio": 20.17,
         "prev_close": 22.12,
         "gap_pct": null,
         "cambio_pct": -8.82,
-        "market_cap": 7630000000,
-        "rvol": null,
+        "market_cap": 7627310309,
+        "rvol": 1.13,
         "pe": null,
         "nombre": "Riot Platforms, Inc.",
         "sma_150": null,
@@ -3364,17 +2954,17 @@
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-05",
+      "next_earnings": null,
       "tokens": {
-        "riesgo": "ALERTA INVESTIGAR",
-        "accion": "OBSERVAR",
-        "momento": "EVALUAR CON MGRE",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (no confirmado por rating)",
-        "justificacion": "Cierre $20.17, -8.82% vs previo $22.12.",
-        "alineacion": "Solo vista Claude. Conviccion Media."
+        "riesgo": "ALERTA ROJA",
+        "accion": "SELL",
+        "momento": "INMEDIATAMENTE",
+        "apreciacion": "Cambio Estructural de Flujo Institucional",
+        "justificacion": "Variacion de -8.82% en la sesion con RVOL 1.13.",
+        "alineacion": "Solo vista Claude. Conviccion Alta."
       },
-      "evento": "stockanalysis.com 18:24 ET: $20.17, -8.82%. Caida intradia sin cambio de rating confirmatorio.",
-      "consenso_analistas": null,
+      "evento": "FMP 16:36 ET: $20.17, -8.82%. Movimiento fuerte en la sesion.",
+      "consenso_analistas": "Target prom 28.13 (mediana 26.25, rango 24-36); +39.5% vs 20.17. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": null
     },
     {
@@ -3382,15 +2972,15 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (-9.57%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
         "precio": 15.22,
         "prev_close": 16.83,
         "gap_pct": null,
         "cambio_pct": -9.57,
-        "market_cap": 22040000000,
-        "rvol": null,
+        "market_cap": 18475221775,
+        "rvol": 1.55,
         "pe": null,
         "nombre": "Rivian Automotive, Inc.",
         "sma_150": null,
@@ -3400,57 +2990,16 @@
       "catalizador": null,
       "next_earnings": null,
       "tokens": {
-        "riesgo": "ALERTA INVESTIGAR",
-        "accion": "OBSERVAR",
-        "momento": "EVALUAR CON MGRE",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (no confirmado por rating)",
-        "justificacion": "Cierre $15.22, -9.57% vs previo $16.83.",
-        "alineacion": "Solo vista Claude. Conviccion Media."
+        "riesgo": "ALERTA ROJA",
+        "accion": "SELL",
+        "momento": "INMEDIATAMENTE",
+        "apreciacion": "Cambio Estructural de Flujo Institucional",
+        "justificacion": "Variacion de -9.57% en la sesion con RVOL 1.55.",
+        "alineacion": "Solo vista Claude. Conviccion Alta."
       },
-      "evento": "stockanalysis.com 18:24 ET: $15.22, -9.57%. 5 reafirmaciones de rating hoy.",
-      "consenso_analistas": null,
-      "analistas": [
-        {
-          "analista": null,
-          "firma": "Needham",
-          "confiabilidad_pct": 57,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Buy -> Buy) 2026-07-31"
-        },
-        {
-          "analista": null,
-          "firma": "RBC Capital",
-          "confiabilidad_pct": 72,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Sector Perform (Sector Perform -> Sector Perform) 2026-07-31"
-        },
-        {
-          "analista": null,
-          "firma": "Morgan Stanley",
-          "confiabilidad_pct": 85,
-          "veredicto": "Va a bajar",
-          "tag": "SELL",
-          "comentario": "Underweight (Underweight -> Underweight) 2026-07-31"
-        },
-        {
-          "analista": null,
-          "firma": "TD Cowen",
-          "confiabilidad_pct": 57,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Buy -> Buy) 2026-07-31"
-        },
-        {
-          "analista": null,
-          "firma": "Wells Fargo",
-          "confiabilidad_pct": 78,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Equal Weight (Equal Weight -> Equal Weight) 2026-07-31"
-        }
-      ]
+      "evento": "FMP 16:36 ET: $15.22, -9.57%. Movimiento fuerte en la sesion.",
+      "consenso_analistas": "Target prom 17.09 (mediana 16, rango 13-23); +12.3% vs 15.22. Fuente: FMP price-target-consensus 16:36 ET.",
+      "analistas": null
     },
     {
       "ticker": "RKLB",
@@ -3460,48 +3009,14 @@
       "clasificacion": null,
       "posicion": null,
       "mercado": {
-        "precio": 30.04,
-        "prev_close": 27.85,
+        "precio": 64.95,
+        "prev_close": 64.68,
         "gap_pct": null,
-        "cambio_pct": 7.86,
-        "market_cap": 13860000000,
-        "rvol": null,
+        "cambio_pct": 0.42,
+        "market_cap": 37597442501,
+        "rvol": 0.5,
         "pe": null,
-        "nombre": "Rocket Lab Corporation",
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": "RUIDO OPERATIVO",
-        "accion": "MANTENER",
-        "momento": "DURANTE ESTE DIA",
-        "apreciacion": "Ruido Transitorio Intradia",
-        "justificacion": "Cierre $30.04, +7.86% vs previo $27.85.",
-        "alineacion": "Solo vista Claude. Conviccion Alta."
-      },
-      "evento": "stockanalysis.com 18:24 ET: $30.04, +7.86%. Alza intradia sin cambio de rating reciente.",
-      "consenso_analistas": null,
-      "analistas": null
-    },
-    {
-      "ticker": "SBUX",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "mercado": {
-        "precio": 105.25,
-        "prev_close": 105.85,
-        "gap_pct": null,
-        "cambio_pct": -0.57,
-        "market_cap": 119960000000,
-        "rvol": null,
-        "pe": 60.8,
-        "nombre": "Starbucks Corporation",
+        "nombre": "Rocket Lab USA, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
@@ -3521,6 +3036,40 @@
       "analistas": null
     },
     {
+      "ticker": "SBUX",
+      "origenes": [
+        "universe"
+      ],
+      "clasificacion": null,
+      "posicion": null,
+      "mercado": {
+        "precio": 105.25,
+        "prev_close": 105.85,
+        "gap_pct": null,
+        "cambio_pct": -0.57,
+        "market_cap": 119985000000,
+        "rvol": 1.59,
+        "pe": null,
+        "nombre": "Starbucks Corporation",
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "tendencia": null
+      },
+      "catalizador": null,
+      "next_earnings": null,
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": null,
+        "alineacion": null
+      },
+      "evento": null,
+      "consenso_analistas": "Target prom 115.58 (mediana 113.5, rango 97-130); +9.8% vs 105.25. Fuente: FMP price-target-consensus 16:36 ET.",
+      "analistas": null
+    },
+    {
       "ticker": "SE",
       "origenes": [
         "universe"
@@ -3532,16 +3081,16 @@
         "prev_close": 106.24,
         "gap_pct": null,
         "cambio_pct": 0.47,
-        "market_cap": 65380000000,
-        "rvol": null,
-        "pe": 42.02,
+        "market_cap": 64081282788,
+        "rvol": 0.57,
+        "pe": null,
         "nombre": "Sea Limited",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-11",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -3566,16 +3115,16 @@
         "prev_close": 30.5,
         "gap_pct": null,
         "cambio_pct": 1.05,
-        "market_cap": 425760000,
-        "rvol": null,
+        "market_cap": 425756726,
+        "rvol": 0.6,
         "pe": null,
-        "nombre": "Summit Midstream Corporation",
+        "nombre": "Summit Midstream Corp.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-10",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -3600,16 +3149,16 @@
         "prev_close": 27.73,
         "gap_pct": null,
         "cambio_pct": 2.42,
-        "market_cap": 18370000000,
-        "rvol": null,
-        "pe": 14.89,
+        "market_cap": 18371193200,
+        "rvol": 0.62,
+        "pe": null,
         "nombre": "Super Micro Computer, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-11",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -3630,12 +3179,12 @@
       "clasificacion": null,
       "posicion": null,
       "mercado": {
-        "precio": 8.42,
+        "precio": 8.43,
         "prev_close": 8.6,
         "gap_pct": null,
-        "cambio_pct": -2.09,
-        "market_cap": 3080000000,
-        "rvol": null,
+        "cambio_pct": -1.98,
+        "market_cap": 2513640017,
+        "rvol": 0.69,
         "pe": null,
         "nombre": "NuScale Power Corporation",
         "sma_150": null,
@@ -3643,7 +3192,7 @@
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-05",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -3667,9 +3216,9 @@
         "precio": 4.69,
         "prev_close": 4.69,
         "gap_pct": null,
-        "cambio_pct": 0.0,
-        "market_cap": 7890000000,
-        "rvol": null,
+        "cambio_pct": 0,
+        "market_cap": 7936449667,
+        "rvol": 0.81,
         "pe": null,
         "nombre": "Snap Inc.",
         "sma_150": null,
@@ -3677,7 +3226,7 @@
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-03",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -3687,7 +3236,7 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Target prom 7.09 (mediana 6.5, rango 5-15); +51.2% vs 4.69. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": null
     },
     {
@@ -3695,32 +3244,32 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (-5.09%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
         "precio": 1214.83,
         "prev_close": 1279.96,
         "gap_pct": null,
         "cambio_pct": -5.09,
-        "market_cap": 179900000000,
-        "rvol": null,
-        "pe": 40.9,
+        "market_cap": 179903870993,
+        "rvol": 1.51,
+        "pe": null,
         "nombre": "Sandisk Corporation",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-05",
+      "next_earnings": null,
       "tokens": {
-        "riesgo": "ALERTA INVESTIGAR",
-        "accion": "OBSERVAR",
-        "momento": "EVALUAR CON MGRE",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (no confirmado por rating)",
-        "justificacion": "Cierre $1214.83, -5.09% vs previo $1279.96.",
-        "alineacion": "Solo vista Claude. Conviccion Media."
+        "riesgo": "ALERTA ROJA",
+        "accion": "SELL",
+        "momento": "INMEDIATAMENTE",
+        "apreciacion": "Cambio Estructural de Flujo Institucional",
+        "justificacion": "Variacion de -5.09% en la sesion con RVOL 1.51.",
+        "alineacion": "Solo vista Claude. Conviccion Alta."
       },
-      "evento": "stockanalysis.com 18:24 ET: $1214.83, -5.09%. Caida intradia sin cambio de rating confirmatorio.",
+      "evento": "FMP 16:36 ET: $1214.83, -5.09%. Movimiento fuerte en la sesion.",
       "consenso_analistas": null,
       "analistas": null
     },
@@ -3736,8 +3285,8 @@
         "prev_close": 298.1,
         "gap_pct": null,
         "cambio_pct": -1.62,
-        "market_cap": 101650000000,
-        "rvol": null,
+        "market_cap": 101650848000,
+        "rvol": 0.75,
         "pe": null,
         "nombre": "Snowflake Inc.",
         "sma_150": null,
@@ -3745,7 +3294,7 @@
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-26",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -3766,13 +3315,13 @@
       "clasificacion": null,
       "posicion": null,
       "mercado": {
-        "precio": 18.66,
-        "prev_close": 18.22,
+        "precio": 16.31,
+        "prev_close": 16.47,
         "gap_pct": null,
-        "cambio_pct": 2.41,
-        "market_cap": 23800000000,
-        "rvol": null,
-        "pe": 48.39,
+        "cambio_pct": -0.97,
+        "market_cap": 20921489400,
+        "rvol": 0.71,
+        "pe": null,
         "nombre": "SoFi Technologies, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -3789,49 +3338,8 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": null,
-      "analistas": [
-        {
-          "analista": null,
-          "firma": "Mizuho",
-          "confiabilidad_pct": 70,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Outperform (Outperform -> Outperform) 2026-07-31"
-        },
-        {
-          "analista": null,
-          "firma": "Wells Fargo",
-          "confiabilidad_pct": 78,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Equal Weight (Equal Weight -> Equal Weight) 2026-07-30"
-        },
-        {
-          "analista": null,
-          "firma": "Morgan Stanley",
-          "confiabilidad_pct": 85,
-          "veredicto": "Va a bajar",
-          "tag": "SELL",
-          "comentario": "Underweight (Underweight -> Underweight) 2026-07-30"
-        },
-        {
-          "analista": null,
-          "firma": "Needham",
-          "confiabilidad_pct": 57,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Buy -> Buy) 2026-07-30"
-        },
-        {
-          "analista": null,
-          "firma": "Truist Securities",
-          "confiabilidad_pct": 65,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Hold (Hold -> Hold) 2026-07-24"
-        }
-      ]
+      "consenso_analistas": "Target prom 21 (mediana 21, rango 16-29); +28.8% vs 16.31. Fuente: FMP price-target-consensus 16:36 ET.",
+      "analistas": null
     },
     {
       "ticker": "SOXL",
@@ -3845,8 +3353,8 @@
         "prev_close": 114.72,
         "gap_pct": null,
         "cambio_pct": 0,
-        "market_cap": 19470000000,
-        "rvol": null,
+        "market_cap": 33749407853,
+        "rvol": 1.59,
         "pe": null,
         "nombre": "Direxion Daily Semiconductor Bull 3X ETF",
         "sma_150": null,
@@ -3872,32 +3380,32 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (-4.34%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
         "precio": 499.94,
         "prev_close": 522.61,
         "gap_pct": null,
         "cambio_pct": -4.34,
-        "market_cap": 102800000000,
-        "rvol": null,
-        "pe": 35.17,
+        "market_cap": 102797693296,
+        "rvol": 1.14,
+        "pe": null,
         "nombre": "Spotify Technology S.A.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-04",
+      "next_earnings": null,
       "tokens": {
         "riesgo": "ALERTA INVESTIGAR",
         "accion": "OBSERVAR",
         "momento": "EVALUAR CON MGRE",
-        "apreciacion": "Cambio Estructural de Flujo Institucional (no confirmado por rating)",
-        "justificacion": "Cierre $499.94, -4.34% vs previo $522.61.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional",
+        "justificacion": "Variacion de -4.34% en la sesion con RVOL 1.14.",
         "alineacion": "Solo vista Claude. Conviccion Media."
       },
-      "evento": "stockanalysis.com 18:24 ET: $499.94, -4.34%. Caida intradia sin cambio de rating confirmatorio.",
+      "evento": "FMP 16:36 ET: $499.94, -4.34%. Movimiento fuerte en la sesion.",
       "consenso_analistas": null,
       "analistas": null
     },
@@ -3909,20 +3417,20 @@
       "clasificacion": null,
       "posicion": null,
       "mercado": {
-        "precio": 81.24,
-        "prev_close": 82.59,
+        "precio": 83.46,
+        "prev_close": 82.99,
         "gap_pct": null,
-        "cambio_pct": -1.63,
-        "market_cap": 48810000000,
-        "rvol": null,
-        "pe": 62.74,
+        "cambio_pct": 0.57,
+        "market_cap": 51729675689,
+        "rvol": 0.14,
+        "pe": null,
         "nombre": "Block, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-05",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -3932,7 +3440,7 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Target prom 94 (mediana 100, rango 82-100); +12.6% vs 83.46. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": null
     },
     {
@@ -3943,13 +3451,13 @@
       "clasificacion": null,
       "posicion": null,
       "mercado": {
-        "precio": 23.25,
+        "precio": 23.268,
         "prev_close": 23.21,
         "gap_pct": null,
-        "cambio_pct": 0.17,
-        "market_cap": 159320000000,
-        "rvol": null,
-        "pe": 7.66,
+        "cambio_pct": 0.25,
+        "market_cap": 159441410520,
+        "rvol": 0.71,
+        "pe": null,
         "nombre": "AT&T Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -3966,7 +3474,7 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Target prom 27.13 (mediana 28, rango 20-31); +16.6% vs 23.268. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": null
     },
     {
@@ -3981,9 +3489,9 @@
         "prev_close": 308.85,
         "gap_pct": null,
         "cambio_pct": 0.76,
-        "market_cap": 1230000000000,
-        "rvol": null,
-        "pe": 286.09,
+        "market_cap": 1229138644487,
+        "rvol": 0.75,
+        "pe": null,
         "nombre": "Tesla, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -4000,49 +3508,8 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": null,
-      "analistas": [
-        {
-          "analista": null,
-          "firma": "Piper Sandler",
-          "confiabilidad_pct": 71,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Overweight (Overweight -> Overweight) 2026-07-24"
-        },
-        {
-          "analista": null,
-          "firma": "RBC Capital",
-          "confiabilidad_pct": 72,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Outperform (Outperform -> Outperform) 2026-07-23"
-        },
-        {
-          "analista": null,
-          "firma": "Needham",
-          "confiabilidad_pct": 57,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Hold (Hold -> Hold) 2026-07-23"
-        },
-        {
-          "analista": null,
-          "firma": "Cantor Fitzgerald",
-          "confiabilidad_pct": 56,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Overweight (Overweight -> Overweight) 2026-07-23"
-        },
-        {
-          "analista": null,
-          "firma": "Roth Capital",
-          "confiabilidad_pct": 60,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Buy -> Buy) 2026-07-23"
-        }
-      ]
+      "consenso_analistas": "Target prom 431.09 (mediana 420, rango 370-485); +38.5% vs 311.21. Fuente: FMP price-target-consensus 16:36 ET.",
+      "analistas": null
     },
     {
       "ticker": "TSM",
@@ -4056,9 +3523,9 @@
         "prev_close": 403.31,
         "gap_pct": null,
         "cambio_pct": 0.23,
-        "market_cap": 1950000000000,
-        "rvol": null,
-        "pe": 27.95,
+        "market_cap": 2096634540000,
+        "rvol": 0.83,
+        "pe": null,
         "nombre": "Taiwan Semiconductor Manufacturing Company Limited",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -4075,49 +3542,8 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": null,
-      "analistas": [
-        {
-          "analista": null,
-          "firma": "Needham",
-          "confiabilidad_pct": 57,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Buy -> Buy) 2026-07-27"
-        },
-        {
-          "analista": null,
-          "firma": "TD Cowen",
-          "confiabilidad_pct": 57,
-          "veredicto": "Neutral",
-          "tag": "HOLD",
-          "comentario": "Hold (Hold -> Hold) 2026-07-17"
-        },
-        {
-          "analista": null,
-          "firma": "Barclays",
-          "confiabilidad_pct": 80,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Overweight (Overweight -> Overweight) 2026-07-17"
-        },
-        {
-          "analista": null,
-          "firma": "DA Davidson",
-          "confiabilidad_pct": 60,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Buy (Buy -> Buy) 2026-07-17"
-        },
-        {
-          "analista": null,
-          "firma": "Susquehanna",
-          "confiabilidad_pct": 57,
-          "veredicto": "Va a subir",
-          "tag": "BUY",
-          "comentario": "Positive (Positive -> Positive) 2026-07-16"
-        }
-      ]
+      "consenso_analistas": "Target prom 596 (mediana 600, rango 500-700); +47.4% vs 404.25. Fuente: FMP price-target-consensus 16:36 ET.",
+      "analistas": null
     },
     {
       "ticker": "TXN",
@@ -4131,9 +3557,9 @@
         "prev_close": 278.76,
         "gap_pct": null,
         "cambio_pct": -1.08,
-        "market_cap": 251820000000,
-        "rvol": null,
-        "pe": 41.86,
+        "market_cap": 251818916938,
+        "rvol": 0.94,
+        "pe": null,
         "nombre": "Texas Instruments Incorporated",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -4165,16 +3591,16 @@
         "prev_close": 70.37,
         "gap_pct": null,
         "cambio_pct": -0.01,
-        "market_cap": 143220000000,
-        "rvol": null,
-        "pe": 17.4,
+        "market_cap": 143224746555,
+        "rvol": 0.59,
+        "pe": null,
         "nombre": "Uber Technologies, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-05",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -4184,7 +3610,7 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Target prom 102.25 (mediana 105, rango 72-125); +45.3% vs 70.36. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": null
     },
     {
@@ -4199,9 +3625,9 @@
         "prev_close": 366.27,
         "gap_pct": null,
         "cambio_pct": -0.04,
-        "market_cap": 672070000000,
-        "rvol": null,
-        "pe": 31.17,
+        "market_cap": 683582011839,
+        "rvol": 0.59,
+        "pe": null,
         "nombre": "Visa Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -4218,7 +3644,7 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Target prom 412.33 (mediana 414, rango 350-450); +12.6% vs 366.13. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": null
     },
     {
@@ -4226,16 +3652,16 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Movimiento fuerte intradia (+6.18%), sin catalizador confirmado",
       "posicion": null,
       "mercado": {
         "precio": 241.57,
         "prev_close": 227.5,
         "gap_pct": null,
         "cambio_pct": 6.18,
-        "market_cap": 93000000000,
-        "rvol": null,
-        "pe": 54.67,
+        "market_cap": 93001551160,
+        "rvol": 1.7,
+        "pe": null,
         "nombre": "Vertiv Holdings Co",
         "sma_150": null,
         "dist_sma150_pct": null,
@@ -4245,13 +3671,13 @@
       "next_earnings": null,
       "tokens": {
         "riesgo": "RUIDO OPERATIVO",
-        "accion": "MANTENER",
+        "accion": "BUY",
         "momento": "DURANTE ESTE DIA",
         "apreciacion": "Ruido Transitorio Intradia",
-        "justificacion": "Cierre $241.57, +6.18% vs previo $227.5.",
+        "justificacion": "Variacion de 6.18% en la sesion con RVOL 1.7.",
         "alineacion": "Solo vista Claude. Conviccion Alta."
       },
-      "evento": "stockanalysis.com 18:24 ET: $241.57, +6.18%. Alza intradia sin cambio de rating reciente.",
+      "evento": "FMP 16:36 ET: $241.57, 6.18%. Movimiento fuerte en la sesion.",
       "consenso_analistas": null,
       "analistas": null
     },
@@ -4267,16 +3693,16 @@
         "prev_close": 481.7,
         "gap_pct": null,
         "cambio_pct": -0.95,
-        "market_cap": 121090000000,
-        "rvol": null,
-        "pe": 28.3,
+        "market_cap": 121090564451,
+        "rvol": 0.61,
+        "pe": null,
         "nombre": "Vertex Pharmaceuticals Incorporated",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-03",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -4301,16 +3727,16 @@
         "prev_close": 111.1,
         "gap_pct": null,
         "cambio_pct": 0.09,
-        "market_cap": 884940000000,
-        "rvol": null,
-        "pe": 39.11,
+        "market_cap": 884938496000,
+        "rvol": 1.01,
+        "pe": null,
         "nombre": "Walmart Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-20",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -4320,7 +3746,7 @@
         "alineacion": null
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Target prom 139.83 (mediana 140, rango 120-155); +25.7% vs 111.2. Fuente: FMP price-target-consensus 16:36 ET.",
       "analistas": null
     },
     {
@@ -4332,11 +3758,11 @@
       "posicion": null,
       "mercado": {
         "precio": 54.84,
-        "prev_close": 54.85,
+        "prev_close": 54.84,
         "gap_pct": null,
-        "cambio_pct": -0.02,
-        "market_cap": 12420000000,
-        "rvol": null,
+        "cambio_pct": 0,
+        "market_cap": 12416817960,
+        "rvol": 1.62,
         "pe": null,
         "nombre": "United States Steel Corporation",
         "sma_150": null,
@@ -4365,12 +3791,12 @@
       "clasificacion": null,
       "posicion": null,
       "mercado": {
-        "precio": 13.0,
+        "precio": 13,
         "prev_close": 12.98,
         "gap_pct": null,
         "cambio_pct": 0.15,
-        "market_cap": 12440000000,
-        "rvol": null,
+        "market_cap": 12350096044,
+        "rvol": 0.71,
         "pe": null,
         "nombre": "XPeng Inc.",
         "sma_150": null,
@@ -4378,7 +3804,7 @@
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-08-18",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
@@ -4403,8 +3829,8 @@
         "prev_close": 148.39,
         "gap_pct": null,
         "cambio_pct": 1.89,
-        "market_cap": 24450000000,
-        "rvol": null,
+        "market_cap": 24450480180,
+        "rvol": 0.56,
         "pe": null,
         "nombre": "Zscaler, Inc.",
         "sma_150": null,
@@ -4412,7 +3838,7 @@
         "tendencia": null
       },
       "catalizador": null,
-      "next_earnings": "2026-09-01",
+      "next_earnings": null,
       "tokens": {
         "riesgo": null,
         "accion": null,
