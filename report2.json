@@ -2,10 +2,10 @@
   "report_type": "opening-range",
   "horizon_weeks": 12,
   "idioma": "es",
-  "generated_date": "2026-07-31",
-  "weekday": "Friday",
-  "generated_at_et": "2026-07-31T10:15:00-04:00",
-  "stamp": "Viernes, 31 de julio a las 10:15 AM ET · Reporte Opening Range (horizonte 12 semanas)",
+  "generated_date": "2026-08-03",
+  "weekday": "Monday",
+  "generated_at_et": "2026-08-03T10:15:00-04:00",
+  "stamp": "Lunes, 03 de Agosto a las 10:15 AM ET · Reporte Opening Range (horizonte 12 semanas)",
   "status": "final",
   "portfolio_source": "https://raw.githubusercontent.com/gzalomoscoso/articulos/main/stocks.json",
   "entregable_1": {
@@ -13,19 +13,19 @@
     "posiciones": [
       {
         "ticker": "AAPL",
-        "riesgo": "CATALIZADOR DE INVALIDACIÓN",
-        "accion": "REDUCCIÓN / LIQUIDACIÓN PREVENTIVA",
-        "momento": "INMEDIATAMENTE",
-        "evento_detectado": "30-jul: Q3 FY26 superó (ingresos US$109.4B +16%, BPA US$2.02) pero guía Q4 de +9-11% (~US$113B) queda bajo consenso US$114.9B; China US$18.8B (miss). Cook alerta 'inundación de 100 años' en precios de memoria DRAM/NAND que limita oferta de iPhone/Mac/iPad en el trimestre de septiembre.",
-        "consecuencias": "La acción cae -9.45% a ~US$301.9 en la apertura; el techo de oferta y el alza de costos de DRAM/NAND presionan márgenes, ingresos y flujo de caja del trimestre de septiembre."
+        "riesgo": "ALERTA DE DESVIACIÓN",
+        "accion": "EVALUAR BAJO MATRIZ MGRE",
+        "momento": "DURANTE ESTE DIA",
+        "evento_detectado": "Q3 fiscal (31-jul): ingresos US$109.42B (est. 108.65B) y BPA US$2.02 (est. 1.89), pero la accion cayo 7.23% el viernes por toma de ganancias; hoy 03-ago cotiza en US$305.24 (-1.19%).",
+        "consecuencias": "Compresion de margen por mayores costos de memoria, dudas sobre crecimiento sostenido del iPhone (>20%), ejecucion de Siri/IA y China presionan la valoracion en el horizonte de 12 semanas."
       },
       {
         "ticker": "MSFT",
-        "riesgo": "RUIDO OPERATIVO",
-        "accion": "MANTENER",
+        "riesgo": "ALERTA DE DESVIACIÓN",
+        "accion": "EVALUAR BAJO MATRIZ MGRE",
         "momento": "DURANTE ESTE DIA",
-        "evento_detectado": "29-jul: Q4 FY26 superó (ingresos US$90.0B, BPA US$4.74); Azure +43% interanual y supera US$100B anuales; capex Q4 US$41B (+70%) y capex CY2026 mantenido en US$175B.",
-        "consecuencias": "Reacción +7.3% en aftermarket (29-jul); hoy consolida +0.99% a ~US$455.6. Sin desviación operativa; la guía de capex sostenida respalda la tesis de inversión."
+        "evento_detectado": "Azure supera US$100B de ingresos anuales (+43% cc) y Copilot >30M asientos pagos; la accion sube 5.28% hoy a US$489.24. Existen class actions por presunto engano sobre Copilot y escrutinio antimonopolio EC/FTC.",
+        "consecuencias": "Fundamentales solidos y alzas de precio objetivo (Citi US$600), pero RSI ~74.5 (sobrecompra) y los litigios/regulacion introducen riesgo de reversion en el horizonte de 12 semanas."
       }
     ]
   },
@@ -48,21 +48,21 @@
     "mensaje": "",
     "recomendaciones": [
       {
-        "ticker": "AMZN",
-        "narrativa": "Reaceleración de AWS reafirma el liderazgo de Amazon en nube e IA; el mercado premia el retorno del CapEx en infraestructura de datos.",
-        "hechos_que_podrian_afectar": "30-jul: Q2 2026 supera estimados con AWS fuerte; la acción salta +14.13% a ~US$268.8 desde cierre US$235.5. Gap alcista por flujo institucional.",
-        "apreciacion": "Cambio Estructural de Flujo Institucional."
-      },
-      {
-        "ticker": "NVDA",
-        "narrativa": "Corazón de la infraestructura de IA; el CapEx sostenido de las megacaps de nube reafirma la demanda estructural de GPUs.",
-        "hechos_que_podrian_afectar": "Resultados de MSFT y AMZN reavivan el optimismo en gasto de IA; NVDA +0.35% a ~US$195.7 (entrada no extendida). Consenso Strong Buy, PT ~US$303.",
+        "ticker": "META",
+        "narrativa": "Foco del mercado: si el gasto record en IA (~US$100B capex) se traduce en monetizacion publicitaria. Q2 con ingresos +28% pese a presion de margenes.",
+        "hechos_que_podrian_afectar": "Q2: ingresos +28%; capex IA ~US$100B presiona margenes. Hoy 03-ago +6.49% a US$592.85 (opening range), extendiendo el rebote post-resultados.",
         "apreciacion": "Cambio Estructural de Flujo Institucional."
       },
       {
         "ticker": "MSFT",
-        "narrativa": "Azure supera US$100B anuales y crece +43%; la monetización de IA (Copilot 30M asientos) consolida la nube empresarial.",
-        "hechos_que_podrian_afectar": "29-jul: Q4 FY26 bate (ingresos US$90.0B, BPA US$4.74); capex CY2026 mantenido en US$175B. Hoy +0.99% a ~US$455.6 tras +7.3% en aftermarket.",
+        "narrativa": "Mercado premia la aceleracion de Azure y la monetizacion de IA via Copilot; bancos elevan precios objetivo y la accion extiende su avance post-resultados.",
+        "hechos_que_podrian_afectar": "Azure >US$100B anual (+43% cc), Copilot >30M asientos; Citi PT US$600. Hoy +5.28% a US$489.24. Riesgo: RSI 74.5 y class actions/antimonopolio.",
+        "apreciacion": "Cambio Estructural de Flujo Institucional (con sobrecompra)."
+      },
+      {
+        "ticker": "AMZN",
+        "narrativa": "Reaceleracion de AWS valida la tesis de infraestructura/IA; el mercado recompensa el crecimiento y la ganancia contable ligada a Anthropic.",
+        "hechos_que_podrian_afectar": "Q2: AWS +37%, ingresos >US$200B; capex 2026 elevado a ~US$220B; guia Q3 US$197-202B. Hoy +4.66% a US$284.23 (opening range).",
         "apreciacion": "Cambio Estructural de Flujo Institucional."
       }
     ]
