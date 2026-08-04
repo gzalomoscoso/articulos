@@ -2,16 +2,16 @@
   "report_type": "fichas_cliente",
   "horizon_weeks": 12,
   "idioma": "es",
-  "fecha": "2026-08-03",
-  "weekday": "Monday",
-  "generated_at_et": "2026-08-03T18:20:00-04:00",
+  "fecha": "2026-08-04",
+  "weekday": "Tuesday",
+  "generated_at_et": "2026-08-04T10:00:00-04:00",
   "generated_at_packet": null,
-  "stamp": "Lunes, 03 de agosto a las 6:20 PM ET - Fichas Cliente (horizonte 12 semanas)",
+  "stamp": "Martes, 04 de agosto a las 10:00 AM ET - Fichas Cliente (horizonte 12 semanas)",
   "status": "final",
   "fuente": "FMP /quote + price-target-consensus (conector MCP) + FMP earnings-calendar (next_earnings)",
-  "nota": "Universo fijo de 96 tickers. Campos null = dato no disponible; nunca se inventa. pe/rvol sin fuente en el plan FMP free. Data FMP via conector MCP (curl a FMP/Alpha Vantage esta bloqueado por el proxy). veredicto_conjunto y targets son campos nuevos del 03-ago. 4 tickers con mercado, 4 con consenso, 4 con analistas; 92 sin datos. Cortacircuitos activado: el endpoint FMP /quote agoto su cupo diario/tier tras 4 llamadas (denegaciones 'requires a higher plan' persistentes que no se recuperaron ni tras 5 min); por eso 92 tickers quedaron sin mercado. El endpoint de analistas (consenso/grades) si respondia. Solucion de fondo: subir el plan FMP.",
+  "nota": "Universo fijo de 30 tickers (reducido de 96 el 2026-08-04 para caber en la cuota FMP free). Campos null = dato no disponible; nunca se inventa. pe/rvol sin fuente en el plan FMP free. Data FMP via conector MCP (curl a FMP/Alpha Vantage esta bloqueado por el proxy). veredicto_conjunto y targets son campos nuevos del 03-ago. 22 tickers con mercado, 22 con consenso, 9 con analistas; 8 sin datos. Cortacircuitos parcial: el endpoint FMP /quote impone un limite por-ventana muy estricto que, ante rafagas, devuelve denegaciones 'requires a higher plan' y deja el simbolo envenenado (cacheado como fallido) el resto de la sesion; por eso 8 tickers quedaron sin mercado pese al espaciado. La tabla de analistas (grades) se limito a los mayores movers por el tamano de las respuestas. Solucion de fondo: subir el plan FMP.",
   "nota_confiabilidad": "Confiabilidad: indice interno 0-100 por prestigio de la firma (bulge 78-85, mid 62-72, resto 55-60); NO es el success-rate de TipRanks.",
-  "total_fichas": 96,
+  "total_fichas": 30,
   "fichas": [
     {
       "ticker": "AAPL",
@@ -45,7 +45,7 @@
         "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."
       },
       "evento": null,
-      "consenso_analistas": "Los analistas creen que vale $355 (mediana), un +17.0% desde los $303.42 de hoy. Las opiniones van de $245 a $400. Fuente: FMP price-target-consensus 18:20 ET.",
+      "consenso_analistas": "Los analistas creen que vale $355 (mediana), un +17.0% desde los $303.42 de hoy. Las opiniones van de $245 a $400. Fuente: FMP price-target-consensus 10:00 ET.",
       "targets": {
         "high": 400,
         "low": 245,
@@ -128,7 +128,7 @@
         "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."
       },
       "evento": null,
-      "consenso_analistas": "Los analistas creen que vale $292.50 (mediana), un +19.3% desde los $245.08 de hoy. Las opiniones van de $235 a $300. Fuente: FMP price-target-consensus 18:20 ET.",
+      "consenso_analistas": "Los analistas creen que vale $292.50 (mediana), un +19.3% desde los $245.08 de hoy. Las opiniones van de $235 a $300. Fuente: FMP price-target-consensus 10:00 ET.",
       "targets": {
         "high": 300,
         "low": 235,
@@ -180,90 +180,6 @@
       ]
     },
     {
-      "ticker": "ABNB",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "ADSK",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
       "ticker": "AMD",
       "origenes": [
         "universe"
@@ -295,7 +211,7 @@
         "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."
       },
       "evento": null,
-      "consenso_analistas": "Los analistas creen que vale $607.50 (mediana), un +25.4% desde los $484.64 de hoy. Las opiniones van de $260 a $1250. Fuente: FMP price-target-consensus 18:20 ET.",
+      "consenso_analistas": "Los analistas creen que vale $607.50 (mediana), un +25.4% desde los $484.64 de hoy. Las opiniones van de $260 a $1250. Fuente: FMP price-target-consensus 10:00 ET.",
       "targets": {
         "high": 1250,
         "low": 260,
@@ -347,637 +263,90 @@
       ]
     },
     {
-      "ticker": "AMGN",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
       "ticker": "AMZN",
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Sobre SMA200 (+20.9%), sin catalizador",
       "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "veredicto_conjunto": "🟢 COMPRAR candidato a compra: confirmar con datos en vivo antes de ejecutar. Cotiza sobre su media de 200 dias y los analistas le ven ~14% mas de recorrido (mediana $325); hoy sube +4.6%. (Vista solo Claude.)",
       "mercado": {
-        "precio": 0,
-        "prev_close": null,
+        "precio": 284.02,
+        "prev_close": 271.58001,
         "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
+        "cambio_pct": 4.5806,
+        "market_cap": 3055231542000,
         "rvol": null,
         "pe": null,
-        "nombre": null,
+        "nombre": "Amazon.com, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
-        "tendencia": null
+        "tendencia": "Sobre SMA200 (+20.9%)"
       },
       "catalizador": null,
       "next_earnings": "2026-10-29",
       "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
+        "riesgo": "RUIDO OPERATIVO",
+        "accion": "BUY",
+        "momento": "DURANTE ESTE DIA",
+        "apreciacion": "Ruido Transitorio Intradia",
+        "justificacion": "El precio esta sobre su media de 200 dias y los analistas le ven un +14.4% hasta la mediana ($325).",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."
       },
-      "evento": null,
-      "consenso_analistas": null,
+      "evento": "Subio +4.6% hasta $284.02 en la sesion.",
+      "consenso_analistas": "Los analistas creen que vale $325 (mediana), un +14.4% desde los $284.02 de hoy. Las opiniones van de $175 a $390. Fuente: FMP price-target-consensus 10:00 ET.",
       "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
+        "high": 390,
+        "low": 175,
+        "consensus": 322.68,
+        "median": 325,
+        "upside_pct": 14.4
       },
-      "analistas": null
-    },
-    {
-      "ticker": "APP",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "ARM",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "ASML",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "ASTS",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
+      "analistas": [
+        {
+          "analista": null,
+          "firma": "UBS",
+          "confiabilidad_pct": 80,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-31"
+        },
+        {
+          "analista": null,
+          "firma": "Bernstein",
+          "confiabilidad_pct": 80,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-07-31"
+        },
+        {
+          "analista": null,
+          "firma": "Citigroup",
+          "confiabilidad_pct": 84,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-31"
+        },
+        {
+          "analista": null,
+          "firma": "Telsey Advisory Group",
+          "confiabilidad_pct": 59,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-07-31"
+        },
+        {
+          "analista": null,
+          "firma": "RBC Capital",
+          "confiabilidad_pct": 65,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-07-31"
+        }
+      ]
     },
     {
       "ticker": "AVGO",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "BA",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": "2026-10-28",
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "BABA",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": "2026-08-28",
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "BAC",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": "2026-10-14",
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "BLSK",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "BNTX",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "CAT",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "CAVA",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "CELH",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "CLSK",
       "origenes": [
         "universe"
       ],
@@ -1023,21 +392,21 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Bajo SMA200 (-31.0%), sin catalizador",
       "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "veredicto_conjunto": "🟡 OBSERVAR: esta bajo su media de 200 dias, con ~38% de recorrido teorico, y hoy varia +0.2%; conviene esperar confirmacion. (Vista solo Claude.)",
       "mercado": {
-        "precio": 0,
-        "prev_close": null,
+        "precio": 146.5,
+        "prev_close": 146.26,
         "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
+        "cambio_pct": 0.1641,
+        "market_cap": 38651699752,
         "rvol": null,
         "pe": null,
-        "nombre": null,
+        "nombre": "Coinbase Global, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
-        "tendencia": null
+        "tendencia": "Bajo SMA200 (-31.0%)"
       },
       "catalizador": null,
       "next_earnings": "2026-10-29",
@@ -1046,59 +415,17 @@
         "accion": null,
         "momento": null,
         "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
+        "justificacion": "El precio esta bajo su media de 200 dias y los analistas le ven un +37.5% hasta la mediana ($201.50) y hoy no ocurrio nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Cobertura parcial: sin tabla de analistas por limite del plan FMP."
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Los analistas creen que vale $201.50 (mediana), un +37.5% desde los $146.50 de hoy. Las opiniones van de $95 a $330. Fuente: FMP price-target-consensus 10:00 ET.",
       "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "CONL",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
+        "high": 330,
+        "low": 95,
+        "consensus": 204.95,
+        "median": 201.5,
+        "upside_pct": 37.5
       },
       "analistas": null
     },
@@ -1107,21 +434,21 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Bajo SMA200 (-0.4%), sin catalizador",
       "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "veredicto_conjunto": "🟡 OBSERVAR: esta bajo su media de 200 dias, con ~15% de recorrido teorico, y hoy varia +0.2%; conviene esperar confirmacion. (Vista solo Claude.)",
       "mercado": {
-        "precio": 0,
-        "prev_close": null,
+        "precio": 954.08,
+        "prev_close": 951.89,
         "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
+        "cambio_pct": 0.2301,
+        "market_cap": 423114444320,
         "rvol": null,
         "pe": null,
-        "nombre": null,
+        "nombre": "Costco Wholesale Corporation",
         "sma_150": null,
         "dist_sma150_pct": null,
-        "tendencia": null
+        "tendencia": "Bajo SMA200 (-0.4%)"
       },
       "catalizador": null,
       "next_earnings": "2026-09-24",
@@ -1130,17 +457,17 @@
         "accion": null,
         "momento": null,
         "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
+        "justificacion": "El precio esta bajo su media de 200 dias y los analistas le ven un +15.3% hasta la mediana ($1100) y hoy no ocurrio nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Cobertura parcial: sin tabla de analistas por limite del plan FMP."
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Los analistas creen que vale $1100 (mediana), un +15.3% desde los $954.08 de hoy. Las opiniones van de $1000 a $1275. Fuente: FMP price-target-consensus 10:00 ET.",
       "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
+        "high": 1275,
+        "low": 1000,
+        "consensus": 1102.23,
+        "median": 1100,
+        "upside_pct": 15.3
       },
       "analistas": null
     },
@@ -1187,67 +514,25 @@
       "analistas": null
     },
     {
-      "ticker": "CRWD",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
       "ticker": "CVX",
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Sobre SMA200 (+10.2%), sin catalizador",
       "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "veredicto_conjunto": "🟡 OBSERVAR: esta sobre su media de 200 dias, con ~11% de recorrido teorico, pero hoy cae -1.8%; conviene esperar confirmacion. (Vista solo Claude.)",
       "mercado": {
-        "precio": 0,
-        "prev_close": null,
+        "precio": 193.19,
+        "prev_close": 196.83,
         "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
+        "cambio_pct": -1.8493,
+        "market_cap": 384757204000,
         "rvol": null,
         "pe": null,
-        "nombre": null,
+        "nombre": "Chevron Corporation",
         "sma_150": null,
         "dist_sma150_pct": null,
-        "tendencia": null
+        "tendencia": "Sobre SMA200 (+10.2%)"
       },
       "catalizador": null,
       "next_earnings": "2026-10-30",
@@ -1256,143 +541,17 @@
         "accion": null,
         "momento": null,
         "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
+        "justificacion": "El precio esta sobre su media de 200 dias y los analistas le ven un +11.3% hasta la mediana ($215) y hoy no ocurrio nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Cobertura parcial: sin tabla de analistas por limite del plan FMP."
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Los analistas creen que vale $215 (mediana), un +11.3% desde los $193.19 de hoy. Las opiniones van de $174 a $224. Fuente: FMP price-target-consensus 10:00 ET.",
       "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "DELL",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "DIS",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": "2026-08-05",
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "DKNG",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
+        "high": 224,
+        "low": 174,
+        "consensus": 211.08,
+        "median": 215,
+        "upside_pct": 11.3
       },
       "analistas": null
     },
@@ -1401,21 +560,21 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Sobre SMA200 (+17.1%), sin catalizador",
       "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "veredicto_conjunto": "🟢 COMPRAR candidato a compra: confirmar con datos en vivo antes de ejecutar. Cotiza sobre su media de 200 dias y los analistas le ven ~15% mas de recorrido (mediana $423); hoy sube +2.5%. (Vista solo Claude.)",
       "mercado": {
-        "precio": 0,
-        "prev_close": null,
+        "precio": 368.93,
+        "prev_close": 360.07,
         "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
+        "cambio_pct": 2.4606,
+        "market_cap": 382787937921,
         "rvol": null,
         "pe": null,
-        "nombre": null,
+        "nombre": "GE Aerospace",
         "sma_150": null,
         "dist_sma150_pct": null,
-        "tendencia": null
+        "tendencia": "Sobre SMA200 (+17.1%)"
       },
       "catalizador": null,
       "next_earnings": "2026-10-20",
@@ -1424,334 +583,247 @@
         "accion": null,
         "momento": null,
         "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
+        "justificacion": "El precio esta sobre su media de 200 dias y los analistas le ven un +14.7% hasta la mediana ($423) y hoy no ocurrio nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Los analistas creen que vale $423 (mediana), un +14.7% desde los $368.93 de hoy. Las opiniones van de $375 a $455. Fuente: FMP price-target-consensus 10:00 ET.",
       "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
+        "high": 455,
+        "low": 375,
+        "consensus": 419.1,
+        "median": 423,
+        "upside_pct": 14.7
       },
-      "analistas": null
+      "analistas": [
+        {
+          "analista": null,
+          "firma": "Bernstein",
+          "confiabilidad_pct": 80,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-07-23"
+        },
+        {
+          "analista": null,
+          "firma": "JP Morgan",
+          "confiabilidad_pct": 84,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Overweight (Overweight -> Overweight) 2026-07-20"
+        },
+        {
+          "analista": null,
+          "firma": "UBS",
+          "confiabilidad_pct": 80,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-17"
+        },
+        {
+          "analista": null,
+          "firma": "RBC Capital",
+          "confiabilidad_pct": 65,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-07-17"
+        },
+        {
+          "analista": null,
+          "firma": "RBC Capital",
+          "confiabilidad_pct": 65,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-07-15"
+        }
+      ]
     },
     {
       "ticker": "GOOGL",
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Sobre SMA200 (+14.5%), sin catalizador",
       "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "veredicto_conjunto": "🟢 COMPRAR candidato a compra: confirmar con datos en vivo antes de ejecutar. Cotiza sobre su media de 200 dias y los analistas le ven ~12% mas de recorrido (mediana $420); hoy sube +4.9%. (Vista solo Claude.)",
       "mercado": {
-        "precio": 0,
-        "prev_close": null,
+        "precio": 373.51,
+        "prev_close": 356.13,
         "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
+        "cambio_pct": 4.8802,
+        "market_cap": 4520259586434,
         "rvol": null,
         "pe": null,
-        "nombre": null,
+        "nombre": "Alphabet Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
-        "tendencia": null
+        "tendencia": "Sobre SMA200 (+14.5%)"
       },
       "catalizador": null,
       "next_earnings": "2026-10-28",
       "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
+        "riesgo": "RUIDO OPERATIVO",
+        "accion": "BUY",
+        "momento": "DURANTE ESTE DIA",
+        "apreciacion": "Ruido Transitorio Intradia",
+        "justificacion": "El precio esta sobre su media de 200 dias y los analistas le ven un +12.4% hasta la mediana ($420).",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."
       },
-      "evento": null,
-      "consenso_analistas": null,
+      "evento": "Subio +4.9% hasta $373.51 en la sesion.",
+      "consenso_analistas": "Los analistas creen que vale $420 (mediana), un +12.4% desde los $373.51 de hoy. Las opiniones van de $350 a $475. Fuente: FMP price-target-consensus 10:00 ET.",
       "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
+        "high": 475,
+        "low": 350,
+        "consensus": 423.44,
+        "median": 420,
+        "upside_pct": 12.4
       },
-      "analistas": null
+      "analistas": [
+        {
+          "analista": null,
+          "firma": "Cantor Fitzgerald",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Overweight (Overweight -> Overweight) 2026-07-23"
+        },
+        {
+          "analista": null,
+          "firma": "Piper Sandler",
+          "confiabilidad_pct": 65,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Overweight (Overweight -> Overweight) 2026-07-23"
+        },
+        {
+          "analista": null,
+          "firma": "Barclays",
+          "confiabilidad_pct": 79,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Overweight (Overweight -> Overweight) 2026-07-23"
+        },
+        {
+          "analista": null,
+          "firma": "Rosenblatt",
+          "confiabilidad_pct": 59,
+          "veredicto": "Se mantiene",
+          "tag": "HOLD",
+          "comentario": "Neutral (Neutral -> Neutral) 2026-07-23"
+        },
+        {
+          "analista": null,
+          "firma": "DA Davidson",
+          "confiabilidad_pct": 60,
+          "veredicto": "Se mantiene",
+          "tag": "HOLD",
+          "comentario": "Neutral (Neutral -> Neutral) 2026-07-23"
+        }
+      ]
     },
     {
       "ticker": "HOOD",
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Bajo SMA200 (-9.0%), sin catalizador",
       "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "veredicto_conjunto": "🟡 OBSERVAR: esta bajo su media de 200 dias, con ~36% de recorrido teorico, y hoy varia +4.4%; conviene esperar confirmacion. (Vista solo Claude.)",
       "mercado": {
-        "precio": 0,
-        "prev_close": null,
+        "precio": 90.34,
+        "prev_close": 86.56,
         "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
+        "cambio_pct": 4.3669,
+        "market_cap": 81223096337,
         "rvol": null,
         "pe": null,
-        "nombre": null,
+        "nombre": "Robinhood Markets, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
-        "tendencia": null
+        "tendencia": "Bajo SMA200 (-9.0%)"
       },
       "catalizador": null,
       "next_earnings": "2026-11-04",
       "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
+        "riesgo": "RUIDO OPERATIVO",
+        "accion": "BUY",
+        "momento": "DURANTE ESTE DIA",
+        "apreciacion": "Ruido Transitorio Intradia",
+        "justificacion": "El precio esta bajo su media de 200 dias y los analistas le ven un +36.2% hasta la mediana ($123).",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."
       },
-      "evento": null,
-      "consenso_analistas": null,
+      "evento": "Subio +4.4% hasta $90.34 en la sesion.",
+      "consenso_analistas": "Los analistas creen que vale $123 (mediana), un +36.2% desde los $90.34 de hoy. Las opiniones van de $100 a $160. Fuente: FMP price-target-consensus 10:00 ET.",
       "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
+        "high": 160,
+        "low": 100,
+        "consensus": 122.13,
+        "median": 123,
+        "upside_pct": 36.2
       },
-      "analistas": null
-    },
-    {
-      "ticker": "HUT",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "IBM",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "INTC",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": "2026-10-22",
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "IREN",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "ISRG",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
+      "analistas": [
+        {
+          "analista": null,
+          "firma": "Goldman Sachs",
+          "confiabilidad_pct": 82,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-30"
+        },
+        {
+          "analista": null,
+          "firma": "Needham",
+          "confiabilidad_pct": 55,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-30"
+        },
+        {
+          "analista": null,
+          "firma": "Citizens",
+          "confiabilidad_pct": 79,
+          "veredicto": "Se mantiene",
+          "tag": "HOLD",
+          "comentario": "Market Outperform (Market Outperform -> Market Outperform) 2026-07-30"
+        },
+        {
+          "analista": null,
+          "firma": "BTIG",
+          "confiabilidad_pct": 55,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-30"
+        },
+        {
+          "analista": null,
+          "firma": "Barclays",
+          "confiabilidad_pct": 79,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Overweight (Overweight -> Overweight) 2026-07-30"
+        }
+      ]
     },
     {
       "ticker": "JPM",
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Sobre SMA200 (+13.8%), sin catalizador",
       "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "veredicto_conjunto": "🟡 OBSERVAR: esta sobre su media de 200 dias, con ~4% de recorrido teorico, y hoy varia +0.7%; conviene esperar confirmacion. (Vista solo Claude.)",
       "mercado": {
-        "precio": 0,
-        "prev_close": null,
+        "precio": 355.02,
+        "prev_close": 352.635,
         "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
+        "cambio_pct": 0.6763,
+        "market_cap": 951279640200,
         "rvol": null,
         "pe": null,
-        "nombre": null,
+        "nombre": "JPMorgan Chase & Co.",
         "sma_150": null,
         "dist_sma150_pct": null,
-        "tendencia": null
+        "tendencia": "Sobre SMA200 (+13.8%)"
       },
       "catalizador": null,
       "next_earnings": "2026-10-13",
@@ -1760,316 +832,22 @@
         "accion": null,
         "momento": null,
         "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
+        "justificacion": "El precio esta sobre su media de 200 dias y los analistas le ven un +4.2% hasta la mediana ($370) y hoy no ocurrio nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Cobertura parcial: sin tabla de analistas por limite del plan FMP."
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Los analistas creen que vale $370 (mediana), un +4.2% desde los $355.02 de hoy. Las opiniones van de $305 a $420. Fuente: FMP price-target-consensus 10:00 ET.",
       "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "KLAC",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "LCID",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": "2026-08-04",
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "LEU",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
+        "high": 420,
+        "low": 305,
+        "consensus": 367.83,
+        "median": 370,
+        "upside_pct": 4.2
       },
       "analistas": null
     },
     {
       "ticker": "LLY",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "LRCX",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "LULU",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "LUNR",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "MA",
       "origenes": [
         "universe"
       ],
@@ -2153,67 +931,25 @@
       "analistas": null
     },
     {
-      "ticker": "MDB",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
       "ticker": "META",
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Bajo SMA200 (-8.1%), sin catalizador",
       "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "veredicto_conjunto": "🟡 OBSERVAR: esta bajo su media de 200 dias, con ~24% de recorrido teorico, pero hoy cae -1.2%; conviene esperar confirmacion. (Vista solo Claude.)",
       "mercado": {
-        "precio": 0,
-        "prev_close": null,
+        "precio": 582.87,
+        "prev_close": 590.24,
         "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
+        "cambio_pct": -1.2487,
+        "market_cap": 1484853484617,
         "rvol": null,
         "pe": null,
-        "nombre": null,
+        "nombre": "Meta Platforms, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
-        "tendencia": null
+        "tendencia": "Bajo SMA200 (-8.1%)"
       },
       "catalizador": null,
       "next_earnings": "2026-10-28",
@@ -2222,101 +958,17 @@
         "accion": null,
         "momento": null,
         "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
+        "justificacion": "El precio esta bajo su media de 200 dias y los analistas le ven un +24.4% hasta la mediana ($725) y hoy no ocurrio nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Cobertura parcial: sin tabla de analistas por limite del plan FMP."
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Los analistas creen que vale $725 (mediana), un +24.4% desde los $582.87 de hoy. Las opiniones van de $595 a $883. Fuente: FMP price-target-consensus 10:00 ET.",
       "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "MRNA",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": "2026-11-05",
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "MRVL",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
+        "high": 883,
+        "low": 595,
+        "consensus": 723.69,
+        "median": 725,
+        "upside_pct": 24.4
       },
       "analistas": null
     },
@@ -2325,21 +977,21 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Sobre SMA200 (+12.3%), sin catalizador",
       "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "veredicto_conjunto": "🟡 OBSERVAR: esta sobre su media de 200 dias, con ~9% de recorrido teorico, y hoy varia -0.1%; conviene esperar confirmacion. (Vista solo Claude.)",
       "mercado": {
-        "precio": 0,
-        "prev_close": null,
+        "precio": 486.98001,
+        "prev_close": 487.65,
         "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
+        "cambio_pct": -0.1374,
+        "market_cap": 3616094420580,
         "rvol": null,
         "pe": null,
-        "nombre": null,
+        "nombre": "Microsoft Corporation",
         "sma_150": null,
         "dist_sma150_pct": null,
-        "tendencia": null
+        "tendencia": "Sobre SMA200 (+12.3%)"
       },
       "catalizador": null,
       "next_earnings": "2026-10-28",
@@ -2348,17 +1000,17 @@
         "accion": null,
         "momento": null,
         "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
+        "justificacion": "El precio esta sobre su media de 200 dias y los analistas le ven un +9.1% hasta la mediana ($531.50) y hoy no ocurrio nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Cobertura parcial: sin tabla de analistas por limite del plan FMP."
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Los analistas creen que vale $531.50 (mediana), un +9.1% desde los $486.98 de hoy. Las opiniones van de $400 a $680. Fuente: FMP price-target-consensus 10:00 ET.",
       "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
+        "high": 680,
+        "low": 400,
+        "consensus": 541.88,
+        "median": 531.5,
+        "upside_pct": 9.1
       },
       "analistas": null
     },
@@ -2409,21 +1061,21 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Bajo SMA200 (-19.8%), sin catalizador",
       "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "veredicto_conjunto": "🟡 OBSERVAR: esta bajo su media de 200 dias, con ~23% de recorrido teorico, y hoy varia -0.1%; conviene esperar confirmacion. (Vista solo Claude.)",
       "mercado": {
-        "precio": 0,
-        "prev_close": null,
+        "precio": 73.245,
+        "prev_close": 73.33,
         "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
+        "cambio_pct": -0.1159,
+        "market_cap": 304987785227,
         "rvol": null,
         "pe": null,
-        "nombre": null,
+        "nombre": "Netflix, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
-        "tendencia": null
+        "tendencia": "Bajo SMA200 (-19.8%)"
       },
       "catalizador": null,
       "next_earnings": "2026-10-20",
@@ -2432,143 +1084,17 @@
         "accion": null,
         "momento": null,
         "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
+        "justificacion": "El precio esta bajo su media de 200 dias y los analistas le ven un +22.9% hasta la mediana ($90) y hoy no ocurrio nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Cobertura parcial: sin tabla de analistas por limite del plan FMP."
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Los analistas creen que vale $90 (mediana), un +22.9% desde los $73.25 de hoy. Las opiniones van de $75 a $119. Fuente: FMP price-target-consensus 10:00 ET.",
       "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "NIO",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": "2026-09-01",
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "NKE",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": "2026-09-29",
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "NOW",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
+        "high": 119,
+        "low": 75,
+        "consensus": 91.82,
+        "median": 90,
+        "upside_pct": 22.9
       },
       "analistas": null
     },
@@ -2577,21 +1103,21 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": "Sobre SMA200 (+7.0%), sin catalizador",
+      "clasificacion": "Sobre SMA200 (+9.3%), sin catalizador",
       "posicion": null,
-      "veredicto_conjunto": "🟢 COMPRAR candidato a compra: confirmar con datos en vivo antes de ejecutar. Cotiza sobre su media de 200 dias y los analistas le ven ~45% mas de recorrido (mediana $300); hoy sube +2.9%. (Vista solo Claude.)",
+      "veredicto_conjunto": "🟢 COMPRAR candidato a compra: confirmar con datos en vivo antes de ejecutar. Cotiza sobre su media de 200 dias y los analistas le ven ~42% mas de recorrido (mediana $300); hoy sube +2.1%. (Vista solo Claude.)",
       "mercado": {
-        "precio": 206.64,
-        "prev_close": 200.75,
+        "precio": 211,
+        "prev_close": 206.64001,
         "gap_pct": null,
-        "cambio_pct": 2.934,
-        "market_cap": 5005027440000,
+        "cambio_pct": 2.1099,
+        "market_cap": 5110631000000,
         "rvol": null,
         "pe": null,
         "nombre": "NVIDIA Corporation",
         "sma_150": null,
         "dist_sma150_pct": null,
-        "tendencia": "Sobre SMA200 (+7.0%)"
+        "tendencia": "Sobre SMA200 (+9.3%)"
       },
       "catalizador": null,
       "next_earnings": "2026-08-26",
@@ -2600,17 +1126,17 @@
         "accion": null,
         "momento": null,
         "apreciacion": null,
-        "justificacion": "El precio esta sobre su media de 200 dias y los analistas le ven un +45.2% hasta la mediana ($300) y hoy no ocurrio nada material con la empresa.",
+        "justificacion": "El precio esta sobre su media de 200 dias y los analistas le ven un +42.2% hasta la mediana ($300) y hoy no ocurrio nada material con la empresa.",
         "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."
       },
       "evento": null,
-      "consenso_analistas": "Los analistas creen que vale $300 (mediana), un +45.2% desde los $206.64 de hoy. Las opiniones van de $218 a $500. Fuente: FMP price-target-consensus 18:20 ET.",
+      "consenso_analistas": "Los analistas creen que vale $300 (mediana), un +42.2% desde los $211 de hoy. Las opiniones van de $218 a $500. Fuente: FMP price-target-consensus 10:00 ET.",
       "targets": {
         "high": 500,
         "low": 218,
         "consensus": 319.48,
         "median": 300,
-        "upside_pct": 45.2
+        "upside_pct": 42.2
       },
       "analistas": [
         {
@@ -2654,48 +1180,6 @@
           "comentario": "Buy (Buy -> Buy) 2026-05-21"
         }
       ]
-    },
-    {
-      "ticker": "NVO",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
     },
     {
       "ticker": "OKLO",
@@ -2782,721 +1266,90 @@
       "analistas": null
     },
     {
-      "ticker": "PANW",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "PDD",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "PFE",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": "2026-08-04",
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
       "ticker": "PLTR",
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Bajo SMA200 (-1.1%), sin catalizador",
       "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "veredicto_conjunto": "🟡 OBSERVAR: esta bajo su media de 200 dias, con ~22% de recorrido teorico, y hoy varia +20.3%; conviene esperar confirmacion. (Vista solo Claude.)",
       "mercado": {
-        "precio": 0,
-        "prev_close": null,
+        "precio": 151.18,
+        "prev_close": 125.65,
         "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
+        "cambio_pct": 20.3183,
+        "market_cap": 347119862600,
         "rvol": null,
         "pe": null,
-        "nombre": null,
+        "nombre": "Palantir Technologies Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
-        "tendencia": null
+        "tendencia": "Bajo SMA200 (-1.1%)"
       },
       "catalizador": null,
       "next_earnings": "2026-11-02",
       "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
+        "riesgo": "RUIDO OPERATIVO",
+        "accion": "BUY",
+        "momento": "DURANTE ESTE DIA",
+        "apreciacion": "Ruido Transitorio Intradia",
+        "justificacion": "El precio esta bajo su media de 200 dias y los analistas le ven un +22.4% hasta la mediana ($185).",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."
       },
-      "evento": null,
-      "consenso_analistas": null,
+      "evento": "Subio +20.3% hasta $151.18 en la sesion.",
+      "consenso_analistas": "Los analistas creen que vale $185 (mediana), un +22.4% desde los $151.18 de hoy. Las opiniones van de $80 a $204. Fuente: FMP price-target-consensus 10:00 ET.",
       "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
+        "high": 204,
+        "low": 80,
+        "consensus": 166.91,
+        "median": 185,
+        "upside_pct": 22.4
       },
-      "analistas": null
-    },
-    {
-      "ticker": "PYPL",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": "2026-10-27",
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "QCOM",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "RDDT",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "RIOT",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": "2026-08-05",
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "RIVN",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": "2026-11-03",
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "RKLB",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "SBUX",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": "2026-10-28",
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "SE",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "SMC",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
+      "analistas": [
+        {
+          "analista": null,
+          "firma": "Rosenblatt",
+          "confiabilidad_pct": 59,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-30"
+        },
+        {
+          "analista": null,
+          "firma": "Citigroup",
+          "confiabilidad_pct": 84,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-24"
+        },
+        {
+          "analista": null,
+          "firma": "DA Davidson",
+          "confiabilidad_pct": 60,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-17"
+        },
+        {
+          "analista": null,
+          "firma": "DA Davidson",
+          "confiabilidad_pct": 60,
+          "veredicto": "Va a subir",
+          "tag": "BUY",
+          "comentario": "Buy (Neutral -> Buy) 2026-07-02"
+        },
+        {
+          "analista": null,
+          "firma": "Wolfe Research",
+          "confiabilidad_pct": 59,
+          "veredicto": "Se mantiene",
+          "tag": "HOLD",
+          "comentario": "Peer Perform (Underperform -> Peer Perform) 2026-06-16"
+        }
+      ]
     },
     {
       "ticker": "SMCI",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "SMR",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "SNAP",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "SNDK",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "SNOW",
       "origenes": [
         "universe"
       ],
@@ -3542,21 +1395,21 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Bajo SMA200 (-14.3%), sin catalizador",
       "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "veredicto_conjunto": "🟡 OBSERVAR: esta bajo su media de 200 dias, con ~15% de recorrido teorico, y hoy varia +1.2%; conviene esperar confirmacion. (Vista solo Claude.)",
       "mercado": {
-        "precio": 0,
-        "prev_close": null,
+        "precio": 18.255,
+        "prev_close": 18.03,
         "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
+        "cambio_pct": 1.2479,
+        "market_cap": 23416417623,
         "rvol": null,
         "pe": null,
-        "nombre": null,
+        "nombre": "SoFi Technologies, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
-        "tendencia": null
+        "tendencia": "Bajo SMA200 (-14.3%)"
       },
       "catalizador": null,
       "next_earnings": "2026-10-27",
@@ -3565,185 +1418,17 @@
         "accion": null,
         "momento": null,
         "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
+        "justificacion": "El precio esta bajo su media de 200 dias y los analistas le ven un +15.0% hasta la mediana ($21) y hoy no ocurrio nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Cobertura parcial: sin tabla de analistas por limite del plan FMP."
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Los analistas creen que vale $21 (mediana), un +15.0% desde los $18.25 de hoy. Las opiniones van de $16 a $29. Fuente: FMP price-target-consensus 10:00 ET.",
       "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "SOXL",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "SPOT",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "SQ",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "T",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": "2026-10-28",
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
+        "high": 29,
+        "low": 16,
+        "consensus": 21,
+        "median": 21,
+        "upside_pct": 15.0
       },
       "analistas": null
     },
@@ -3752,21 +1437,21 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Bajo SMA200 (-20.8%), sin catalizador",
       "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "veredicto_conjunto": "🟡 OBSERVAR: esta bajo su media de 200 dias, con ~34% de recorrido teorico, y hoy varia +1.2%; conviene esperar confirmacion. (Vista solo Claude.)",
       "mercado": {
-        "precio": 0,
-        "prev_close": null,
+        "precio": 325.87,
+        "prev_close": 322.08,
         "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
+        "cambio_pct": 1.1767,
+        "market_cap": 1287039009283,
         "rvol": null,
         "pe": null,
-        "nombre": null,
+        "nombre": "Tesla, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
-        "tendencia": null
+        "tendencia": "Bajo SMA200 (-20.8%)"
       },
       "catalizador": null,
       "next_earnings": "2026-10-28",
@@ -3775,17 +1460,17 @@
         "accion": null,
         "momento": null,
         "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
+        "justificacion": "El precio esta bajo su media de 200 dias y los analistas le ven un +33.5% hasta la mediana ($435) y hoy no ocurrio nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Cobertura parcial: sin tabla de analistas por limite del plan FMP."
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Los analistas creen que vale $435 (mediana), un +33.5% desde los $325.87 de hoy. Las opiniones van de $370 a $491. Fuente: FMP price-target-consensus 10:00 ET.",
       "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
+        "high": 491,
+        "low": 370,
+        "consensus": 436.08,
+        "median": 435,
+        "upside_pct": 33.5
       },
       "analistas": null
     },
@@ -3794,21 +1479,21 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Sobre SMA200 (+16.0%), sin catalizador",
       "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "veredicto_conjunto": "🟢 COMPRAR candidato a compra: confirmar con datos en vivo antes de ejecutar. Cotiza sobre su media de 200 dias y los analistas le ven ~45% mas de recorrido (mediana $600); hoy sube +2.1%. (Vista solo Claude.)",
       "mercado": {
-        "precio": 0,
-        "prev_close": null,
+        "precio": 414.63,
+        "prev_close": 406.11,
         "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
+        "cambio_pct": 2.0979,
+        "market_cap": 2150470202400,
         "rvol": null,
         "pe": null,
-        "nombre": null,
+        "nombre": "Taiwan Semiconductor Manufacturing Company Limited",
         "sma_150": null,
         "dist_sma150_pct": null,
-        "tendencia": null
+        "tendencia": "Sobre SMA200 (+16.0%)"
       },
       "catalizador": null,
       "next_earnings": "2026-10-15",
@@ -3817,59 +1502,17 @@
         "accion": null,
         "momento": null,
         "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
+        "justificacion": "El precio esta sobre su media de 200 dias y los analistas le ven un +44.7% hasta la mediana ($600) y hoy no ocurrio nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Cobertura parcial: sin tabla de analistas por limite del plan FMP."
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Los analistas creen que vale $600 (mediana), un +44.7% desde los $414.63 de hoy. Las opiniones van de $500 a $700. Fuente: FMP price-target-consensus 10:00 ET.",
       "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "TXN",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
+        "high": 700,
+        "low": 500,
+        "consensus": 596,
+        "median": 600,
+        "upside_pct": 44.7
       },
       "analistas": null
     },
@@ -3878,21 +1521,21 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Bajo SMA200 (-8.8%), reporta resultados 2026-08-05",
       "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "veredicto_conjunto": "🟡 OBSERVAR: reporta resultados el 2026-08-05 y eso puede mover el precio con violencia en cualquier direccion (evento binario); no entrar aun pese al +46.6% de recorrido teorico. (Vista solo Claude.)",
       "mercado": {
-        "precio": 0,
-        "prev_close": null,
+        "precio": 71.63,
+        "prev_close": 71.61,
         "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
+        "cambio_pct": 0.0279,
+        "market_cap": 145809951710,
         "rvol": null,
         "pe": null,
-        "nombre": null,
+        "nombre": "Uber Technologies, Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
-        "tendencia": null
+        "tendencia": "Bajo SMA200 (-8.8%)"
       },
       "catalizador": null,
       "next_earnings": "2026-08-05",
@@ -3901,17 +1544,17 @@
         "accion": null,
         "momento": null,
         "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
+        "justificacion": "El precio esta bajo su media de 200 dias y los analistas le ven un +46.6% hasta la mediana ($105) pero reporta resultados el 2026-08-05, un evento que puede cambiarlo todo.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Cobertura parcial: sin tabla de analistas por limite del plan FMP."
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Los analistas creen que vale $105 (mediana), un +46.6% desde los $71.63 de hoy. Las opiniones van de $72 a $125. Fuente: FMP price-target-consensus 10:00 ET.",
       "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
+        "high": 125,
+        "low": 72,
+        "consensus": 102.25,
+        "median": 105,
+        "upside_pct": 46.6
       },
       "analistas": null
     },
@@ -3920,21 +1563,21 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Sobre SMA200 (+9.9%), sin catalizador",
       "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "veredicto_conjunto": "🟡 OBSERVAR: esta sobre su media de 200 dias, con ~16% de recorrido teorico, pero hoy cae -0.7%; conviene esperar confirmacion. (Vista solo Claude.)",
       "mercado": {
-        "precio": 0,
-        "prev_close": null,
+        "precio": 362.875,
+        "prev_close": 365.58,
         "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
+        "cambio_pct": -0.7399,
+        "market_cap": 677504773021,
         "rvol": null,
         "pe": null,
-        "nombre": null,
+        "nombre": "Visa Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
-        "tendencia": null
+        "tendencia": "Sobre SMA200 (+9.9%)"
       },
       "catalizador": null,
       "next_earnings": "2026-10-27",
@@ -3943,101 +1586,17 @@
         "accion": null,
         "momento": null,
         "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
+        "justificacion": "El precio esta sobre su media de 200 dias y los analistas le ven un +15.7% hasta la mediana ($420) y hoy no ocurrio nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Cobertura parcial: sin tabla de analistas por limite del plan FMP."
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Los analistas creen que vale $420 (mediana), un +15.7% desde los $362.88 de hoy. Las opiniones van de $350 a $450. Fuente: FMP price-target-consensus 10:00 ET.",
       "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "VRT",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "VRTX",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
+        "high": 450,
+        "low": 350,
+        "consensus": 416.88,
+        "median": 420,
+        "upside_pct": 15.7
       },
       "analistas": null
     },
@@ -4046,21 +1605,21 @@
       "origenes": [
         "universe"
       ],
-      "clasificacion": null,
+      "clasificacion": "Bajo SMA200 (-7.7%), sin catalizador",
       "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "veredicto_conjunto": "🟡 OBSERVAR: esta bajo su media de 200 dias, con ~29% de recorrido teorico, pero hoy cae -1.6%; conviene esperar confirmacion. (Vista solo Claude.)",
       "mercado": {
-        "precio": 0,
-        "prev_close": null,
+        "precio": 108.89,
+        "prev_close": 110.71,
         "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
+        "cambio_pct": -1.6439,
+        "market_cap": 866555331200,
         "rvol": null,
         "pe": null,
-        "nombre": null,
+        "nombre": "Walmart Inc.",
         "sma_150": null,
         "dist_sma150_pct": null,
-        "tendencia": null
+        "tendencia": "Bajo SMA200 (-7.7%)"
       },
       "catalizador": null,
       "next_earnings": "2026-08-20",
@@ -4069,143 +1628,17 @@
         "accion": null,
         "momento": null,
         "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
+        "justificacion": "El precio esta bajo su media de 200 dias y los analistas le ven un +28.6% hasta la mediana ($140) y hoy no ocurrio nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Cobertura parcial: sin tabla de analistas por limite del plan FMP."
       },
       "evento": null,
-      "consenso_analistas": null,
+      "consenso_analistas": "Los analistas creen que vale $140 (mediana), un +28.6% desde los $108.89 de hoy. Las opiniones van de $120 a $155. Fuente: FMP price-target-consensus 10:00 ET.",
       "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "X",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "XPEV",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
-      },
-      "analistas": null
-    },
-    {
-      "ticker": "ZS",
-      "origenes": [
-        "universe"
-      ],
-      "clasificacion": null,
-      "posicion": null,
-      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
-      "mercado": {
-        "precio": 0,
-        "prev_close": null,
-        "gap_pct": null,
-        "cambio_pct": null,
-        "market_cap": null,
-        "rvol": null,
-        "pe": null,
-        "nombre": null,
-        "sma_150": null,
-        "dist_sma150_pct": null,
-        "tendencia": null
-      },
-      "catalizador": null,
-      "next_earnings": null,
-      "tokens": {
-        "riesgo": null,
-        "accion": null,
-        "momento": null,
-        "apreciacion": null,
-        "justificacion": null,
-        "alineacion": null
-      },
-      "evento": null,
-      "consenso_analistas": null,
-      "targets": {
-        "high": null,
-        "low": null,
-        "consensus": null,
-        "median": null,
-        "upside_pct": null
+        "high": 155,
+        "low": 120,
+        "consensus": 140.27,
+        "median": 140,
+        "upside_pct": 28.6
       },
       "analistas": null
     }
