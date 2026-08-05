@@ -1,1 +1,0 @@
-Prueba de escritura via conector Composio - 2026-08-05. Si ves esto, el push esquiva el proxy de git. Este archivo se puede borrar.
