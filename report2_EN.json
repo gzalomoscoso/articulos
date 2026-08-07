@@ -1,1 +1,556 @@
-{"report_type":"fichas_cliente","horizon_weeks":12,"idioma":"en","fecha":"2026-08-05","weekday":"Wednesday","generated_at_et":"2026-08-05T14:30:00-04:00","generated_at_packet":null,"stamp":"Wednesday, 05 August 2026 at 2:30 PM ET - Buy Candidates (12-week horizon)","status":"final","fuente":"FMP /quote + price-target-consensus (MCP connector) + FMP earnings-calendar (next_earnings)","nota":"report2: subset of report1 with ONLY the buy-candidate tickers (verdict 🟢). consensus, targets, analysts and next_earnings come from the daily dataset. 6 candidates. null fields = data not available; never invented.","nota_confiabilidad":"Reliability: internal 0-100 index by firm prestige (bulge 78-85, mid 62-72, rest 55-60); NOT the TipRanks success rate.","total_fichas":6,"fichas":[{"ticker":"AAPL","origenes":["universe"],"clasificacion":"Above SMA200; next earnings 2026-10-29","posicion":null,"veredicto_conjunto":"🟢 BUY: buy candidate: confirm with live data before executing — it is above its 200-day average and analysts see ~14.9% upside to the median ($355). (Claude-only view.)","mercado":{"precio":309.035,"prev_close":309.37999,"gap_pct":null,"cambio_pct":-0.11151,"market_cap":4538907061460,"rvol":null,"pe":null,"nombre":"Apple Inc.","sma_150":null,"dist_sma150_pct":null,"tendencia":"Above SMA200 (+11.1%)"},"catalizador":null,"next_earnings":"2026-10-29","tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":"The price is above its 200-day moving average (SMA200) by +11.1% and analysts see +14.9% to the median price target ($355); nothing material happened with the company today.","alineacion":"Claude-only view, with no second opinion from another model in this run: conviction capped at 🟡 (caution, not certainty). No analyst table in this card (shown only for the day's biggest movers)."},"evento":null,"consenso_analistas":"Analysts think it is worth $355 (median), +14.9% from today's $309.04. Views range from $245 to $400. Source: FMP price-target-consensus 14:30 ET.","targets":{"high":400,"low":245,"consensus":341.11,"median":355,"upside_pct":14.9},"analistas":null},{"ticker":"ABBV","origenes":["universe"],"clasificacion":"Above SMA200; next earnings 2026-10-30","posicion":null,"veredicto_conjunto":"🟢 BUY: buy candidate: confirm with live data before executing — it is above its 200-day average and analysts see ~19.0% upside to the median ($292.50). (Claude-only view.)","mercado":{"precio":245.85001,"prev_close":243.8,"gap_pct":null,"cambio_pct":0.84086,"market_cap":434366025826,"rvol":null,"pe":null,"nombre":"AbbVie Inc.","sma_150":null,"dist_sma150_pct":null,"tendencia":"Above SMA200 (+9.4%)"},"catalizador":null,"next_earnings":"2026-10-30","tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":"The price is above its 200-day moving average (SMA200) by +9.4% and analysts see +19.0% to the median price target ($292.50); nothing material happened with the company today.","alineacion":"Claude-only view, with no second opinion from another model in this run: conviction capped at 🟡 (caution, not certainty)."},"evento":null,"consenso_analistas":"Analysts think it is worth $292.50 (median), +19.0% from today's $245.85. Views range from $235 to $300. Source: FMP price-target-consensus 14:30 ET.","targets":{"high":300,"low":235,"consensus":283.92,"median":292.5,"upside_pct":19.0},"analistas":[{"analista":null,"firma":"Barclays","confiabilidad_pct":80,"veredicto":"Will rise","tag":"BUY","comentario":"Overweight (Overweight -> Overweight) 2026-07-29"},{"analista":null,"firma":"Canaccord Genuity","confiabilidad_pct":58,"veredicto":"Will rise","tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-07-22"},{"analista":null,"firma":"Citigroup","confiabilidad_pct":80,"veredicto":"Holds","tag":"HOLD","comentario":"Neutral (Neutral -> Neutral) 2026-07-15"},{"analista":null,"firma":"UBS","confiabilidad_pct":81,"veredicto":"Holds","tag":"HOLD","comentario":"Neutral (Neutral -> Neutral) 2026-07-13"},{"analista":null,"firma":"BMO Capital","confiabilidad_pct":70,"veredicto":"Will rise","tag":"BUY","comentario":"Outperform (Outperform -> Outperform) 2026-07-13"}]},{"ticker":"GE","origenes":["universe"],"clasificacion":"Above SMA200; next earnings 2026-10-20","posicion":null,"veredicto_conjunto":"🟢 BUY: buy candidate: confirm with live data before executing — it is above its 200-day average and analysts see ~11.0% upside to the median ($423). (Claude-only view.)","mercado":{"precio":381.17499,"prev_close":377.28,"gap_pct":null,"cambio_pct":1.03239,"market_cap":395492878227,"rvol":null,"pe":null,"nombre":"GE Aerospace","sma_150":null,"dist_sma150_pct":null,"tendencia":"Above SMA200 (+20.8%)"},"catalizador":null,"next_earnings":"2026-10-20","tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":"The price is above its 200-day moving average (SMA200) by +20.8% and analysts see +11.0% to the median price target ($423); nothing material happened with the company today.","alineacion":"Claude-only view, with no second opinion from another model in this run: conviction capped at 🟡 (caution, not certainty)."},"evento":null,"consenso_analistas":"Analysts think it is worth $423 (median), +11.0% from today's $381.17. Views range from $375 to $455. Source: FMP price-target-consensus 14:30 ET.","targets":{"high":455,"low":375,"consensus":419.1,"median":423,"upside_pct":11.0},"analistas":[{"analista":null,"firma":"Bernstein","confiabilidad_pct":80,"veredicto":"Will rise","tag":"BUY","comentario":"Outperform (Outperform -> Outperform) 2026-07-23"},{"analista":null,"firma":"JP Morgan","confiabilidad_pct":84,"veredicto":"Will rise","tag":"BUY","comentario":"Overweight (Overweight -> Overweight) 2026-07-20"},{"analista":null,"firma":"UBS","confiabilidad_pct":81,"veredicto":"Will rise","tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-07-17"},{"analista":null,"firma":"RBC Capital","confiabilidad_pct":71,"veredicto":"Will rise","tag":"BUY","comentario":"Outperform (Outperform -> Outperform) 2026-07-17"},{"analista":null,"firma":"RBC Capital","confiabilidad_pct":71,"veredicto":"Will rise","tag":"BUY","comentario":"Outperform (Outperform -> Outperform) 2026-07-15"}]},{"ticker":"NVDA","origenes":["universe"],"clasificacion":"Above SMA200; next earnings 2026-08-26","posicion":null,"veredicto_conjunto":"🟢 BUY: buy candidate: confirm with live data before executing — it is above its 200-day average and analysts see ~35.8% upside to the median ($300). (Claude-only view.)","mercado":{"precio":220.9,"prev_close":211.94,"gap_pct":null,"cambio_pct":4.22761,"market_cap":5350418900000,"rvol":null,"pe":null,"nombre":"NVIDIA Corporation","sma_150":null,"dist_sma150_pct":null,"tendencia":"Above SMA200 (+14.3%)"},"catalizador":null,"next_earnings":"2026-08-26","tokens":{"riesgo":"RUIDO OPERATIVO","accion":"BUY","momento":"DURANTE ESTE DIA","apreciacion":"Ruido Transitorio Intradia","justificacion":"The price is above its 200-day moving average (SMA200) by +14.3% and analysts see +35.8% to the median price target ($300); there was a strong move today (see event).","alineacion":"Claude-only view, with no second opinion from another model in this run: conviction capped at 🟡 (caution, not certainty). Low conviction on the event: it is a price-only signal, not confirmed by rating changes."},"evento":"Rose 4.2% to $220.90 during the session.","consenso_analistas":"Analysts think it is worth $300 (median), +35.8% from today's $220.90. Views range from $218 to $500. Source: FMP price-target-consensus 14:30 ET.","targets":{"high":500,"low":218,"consensus":319.48,"median":300,"upside_pct":35.8},"analistas":[{"analista":null,"firma":"Keybanc","confiabilidad_pct":68,"veredicto":"Will rise","tag":"BUY","comentario":"Overweight (Overweight -> Overweight) 2026-07-14"},{"analista":null,"firma":"Needham","confiabilidad_pct":58,"veredicto":"Will rise","tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-06-02"},{"analista":null,"firma":"DA Davidson","confiabilidad_pct":58,"veredicto":"Will rise","tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-06-01"},{"analista":null,"firma":"Tigress Financial","confiabilidad_pct":58,"veredicto":"Will rise","tag":"BUY","comentario":"Strong Buy (Strong Buy -> Strong Buy) 2026-05-27"},{"analista":null,"firma":"Truist Securities","confiabilidad_pct":66,"veredicto":"Will rise","tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-05-21"}]},{"ticker":"TSM","origenes":["universe"],"clasificacion":"Above SMA200; next earnings 2026-10-15","posicion":null,"veredicto_conjunto":"🟢 BUY: buy candidate: confirm with live data before executing — it is above its 200-day average and analysts see ~44.2% upside to the median ($600). (Claude-only view.)","mercado":{"precio":416.18,"prev_close":417.17,"gap_pct":null,"cambio_pct":-0.23731,"market_cap":2158509246400,"rvol":null,"pe":null,"nombre":"Taiwan Semiconductor Manufacturing Company Limited","sma_150":null,"dist_sma150_pct":null,"tendencia":"Above SMA200 (+16.3%)"},"catalizador":null,"next_earnings":"2026-10-15","tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":"The price is above its 200-day moving average (SMA200) by +16.3% and analysts see +44.2% to the median price target ($600); nothing material happened with the company today.","alineacion":"Claude-only view, with no second opinion from another model in this run: conviction capped at 🟡 (caution, not certainty). No analyst table in this card (shown only for the day's biggest movers)."},"evento":null,"consenso_analistas":"Analysts think it is worth $600 (median), +44.2% from today's $416.18. Views range from $500 to $700. Source: FMP price-target-consensus 14:30 ET.","targets":{"high":700,"low":500,"consensus":596,"median":600,"upside_pct":44.2},"analistas":null},{"ticker":"V","origenes":["universe"],"clasificacion":"Above SMA200; next earnings 2026-10-27","posicion":null,"veredicto_conjunto":"🟢 BUY: buy candidate: confirm with live data before executing — it is above its 200-day average and analysts see ~13.9% upside to the median ($420). (Claude-only view.)","mercado":{"precio":368.795,"prev_close":369.59,"gap_pct":null,"cambio_pct":-0.2151,"market_cap":688557676181,"rvol":null,"pe":null,"nombre":"Visa Inc.","sma_150":null,"dist_sma150_pct":null,"tendencia":"Above SMA200 (+11.6%)"},"catalizador":null,"next_earnings":"2026-10-27","tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":"The price is above its 200-day moving average (SMA200) by +11.6% and analysts see +13.9% to the median price target ($420); nothing material happened with the company today.","alineacion":"Claude-only view, with no second opinion from another model in this run: conviction capped at 🟡 (caution, not certainty). No analyst table in this card (shown only for the day's biggest movers)."},"evento":null,"consenso_analistas":"Analysts think it is worth $420 (median), +13.9% from today's $368.80. Views range from $350 to $450. Source: FMP price-target-consensus 14:30 ET.","targets":{"high":450,"low":350,"consensus":417.59,"median":420,"upside_pct":13.9},"analistas":null}]}
+{
+  "report_type": "fichas_cliente",
+  "horizon_weeks": 12,
+  "idioma": "en",
+  "fecha": "2026-08-05",
+  "weekday": "Wednesday",
+  "generated_at_et": "2026-08-06T22:49:00-04:00",
+  "status": "final",
+  "stamp": "Thursday, 06 August 2026 at 10:49 PM ET - Buy Candidates (12-week horizon)",
+  "nota": "report2: subset of report1 with ONLY the buy-candidate tickers (verdict 🟢). Event/catalyst/verdict refreshed at 22:49 ET; consensus, targets, analysts and next_earnings come from the daily dataset. 8 candidates. null fields = data not available; never invented.",
+  "nota_confiabilidad": "Reliability: internal 0-100 index by firm prestige (bulge 78-85, mid 62-72, rest 55-60); NOT the TipRanks success rate.",
+  "total_fichas": 8,
+  "fichas": [
+    {
+      "ticker": "AAPL",
+      "origenes": [
+        "universe"
+      ],
+      "clasificacion": "Above SMA200; next earnings 2026-10-29",
+      "posicion": null,
+      "veredicto_conjunto": "🟢 BUY: buy candidate: confirm with live data before executing — it is above its 200-day average and analysts see ~13.6% upside to the median ($355). (Claude-only view.)",
+      "mercado": {
+        "precio": 312.41,
+        "prev_close": 311.00001,
+        "gap_pct": null,
+        "cambio_pct": 0.4534,
+        "market_cap": 4588476887960,
+        "rvol": null,
+        "pe": null,
+        "nombre": "Apple Inc.",
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "tendencia": "Above SMA200 (+12.3%)"
+      },
+      "catalizador": "No material news today; AAPL +0.5% in the session (22:49 ET).",
+      "next_earnings": "2026-10-29",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "The price is above its 200-day moving average (SMA200) by +12.3% and analysts see +13.6% to the median price target ($355); nothing material happened with the company today.",
+        "alineacion": "Claude-only view, with no second opinion from another model in this run: conviction capped at 🟡 (caution, not certainty). No analyst table in this card (shown only for the day's biggest movers)."
+      },
+      "evento": null,
+      "consenso_analistas": "Analysts think it is worth $355 (median), +13.6% from today's $312.41. Views range from $245 to $400. Source: FMP price-target-consensus (daily) + price refresh 22:49 ET.",
+      "targets": {
+        "high": 400,
+        "low": 245,
+        "consensus": 341.11,
+        "median": 355,
+        "upside_pct": 13.6
+      },
+      "analistas": null
+    },
+    {
+      "ticker": "ABBV",
+      "origenes": [
+        "universe"
+      ],
+      "clasificacion": "Above SMA200; next earnings 2026-10-30",
+      "posicion": null,
+      "veredicto_conjunto": "🟢 BUY: buy candidate: confirm with live data before executing — it is above its 200-day average and analysts see ~19.9% upside to the median ($292.5). (Claude-only view.)",
+      "mercado": {
+        "precio": 243.87,
+        "prev_close": 246.2,
+        "gap_pct": null,
+        "cambio_pct": -0.9464,
+        "market_cap": 430867765257,
+        "rvol": null,
+        "pe": null,
+        "nombre": "AbbVie Inc.",
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "tendencia": "Above SMA200 (+8.5%)"
+      },
+      "catalizador": "No material news today; ABBV -0.9% in the session (22:49 ET).",
+      "next_earnings": "2026-10-30",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "The price is above its 200-day moving average (SMA200) by +8.5% and analysts see +19.9% to the median price target ($292.5); nothing material happened with the company today.",
+        "alineacion": "Claude-only view, with no second opinion from another model in this run: conviction capped at 🟡 (caution, not certainty)."
+      },
+      "evento": null,
+      "consenso_analistas": "Analysts think it is worth $292.5 (median), +19.9% from today's $243.87. Views range from $235 to $300. Source: FMP price-target-consensus (daily) + price refresh 22:49 ET.",
+      "targets": {
+        "high": 300,
+        "low": 235,
+        "consensus": 283.92,
+        "median": 292.5,
+        "upside_pct": 19.9
+      },
+      "analistas": [
+        {
+          "analista": null,
+          "firma": "Barclays",
+          "confiabilidad_pct": 80,
+          "veredicto": "Will rise",
+          "tag": "BUY",
+          "comentario": "Overweight (Overweight -> Overweight) 2026-07-29"
+        },
+        {
+          "analista": null,
+          "firma": "Canaccord Genuity",
+          "confiabilidad_pct": 58,
+          "veredicto": "Will rise",
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-22"
+        },
+        {
+          "analista": null,
+          "firma": "Citigroup",
+          "confiabilidad_pct": 80,
+          "veredicto": "Holds",
+          "tag": "HOLD",
+          "comentario": "Neutral (Neutral -> Neutral) 2026-07-15"
+        },
+        {
+          "analista": null,
+          "firma": "UBS",
+          "confiabilidad_pct": 81,
+          "veredicto": "Holds",
+          "tag": "HOLD",
+          "comentario": "Neutral (Neutral -> Neutral) 2026-07-13"
+        },
+        {
+          "analista": null,
+          "firma": "BMO Capital",
+          "confiabilidad_pct": 70,
+          "veredicto": "Will rise",
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-07-13"
+        }
+      ]
+    },
+    {
+      "ticker": "AMD",
+      "origenes": [
+        "universe"
+      ],
+      "clasificacion": "Above SMA200; next earnings 2026-11-03",
+      "posicion": null,
+      "veredicto_conjunto": "🟢 BUY: buy candidate: confirm with live data before executing — it is above its 200-day average and analysts see ~28.8% upside to the median ($630). (Claude-only view.)",
+      "mercado": {
+        "precio": 489.28,
+        "prev_close": 482.05,
+        "gap_pct": null,
+        "cambio_pct": 1.4998,
+        "market_cap": 797819968000,
+        "rvol": null,
+        "pe": null,
+        "nombre": "Advanced Micro Devices, Inc.",
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "tendencia": "Above SMA200 (+56.2%)"
+      },
+      "catalizador": "No material news today; AMD +1.5% in the session (22:49 ET).",
+      "next_earnings": "2026-11-03",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "The price is above its 200-day moving average (SMA200) by +56.2% and analysts see +28.8% to the median price target ($630); nothing material happened with the company today.",
+        "alineacion": "Claude-only view, with no second opinion from another model in this run: conviction capped at 🟡 (caution, not certainty)."
+      },
+      "evento": null,
+      "consenso_analistas": "Analysts think it is worth $630 (median), +28.8% from today's $489.28. Views range from $260 to $1250. Source: FMP price-target-consensus (daily) + price refresh 22:49 ET.",
+      "targets": {
+        "high": 1250,
+        "low": 260,
+        "consensus": 592.63,
+        "median": 630,
+        "upside_pct": 28.8
+      },
+      "analistas": [
+        {
+          "analista": null,
+          "firma": "RBC Capital",
+          "confiabilidad_pct": 71,
+          "veredicto": "Holds",
+          "tag": "HOLD",
+          "comentario": "Sector Perform (Sector Perform -> Sector Perform) 2026-08-05"
+        },
+        {
+          "analista": null,
+          "firma": "Wells Fargo",
+          "confiabilidad_pct": 79,
+          "veredicto": "Will rise",
+          "tag": "BUY",
+          "comentario": "Overweight (Overweight -> Overweight) 2026-08-05"
+        },
+        {
+          "analista": null,
+          "firma": "Cantor Fitzgerald",
+          "confiabilidad_pct": 58,
+          "veredicto": "Will rise",
+          "tag": "BUY",
+          "comentario": "Overweight (Overweight -> Overweight) 2026-08-05"
+        },
+        {
+          "analista": null,
+          "firma": "Wedbush",
+          "confiabilidad_pct": 66,
+          "veredicto": "Will rise",
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-08-05"
+        },
+        {
+          "analista": null,
+          "firma": "Susquehanna",
+          "confiabilidad_pct": 58,
+          "veredicto": "Will rise",
+          "tag": "BUY",
+          "comentario": "Positive (Positive -> Positive) 2026-07-30"
+        }
+      ]
+    },
+    {
+      "ticker": "AMZN",
+      "origenes": [
+        "universe"
+      ],
+      "clasificacion": "Above SMA200; next earnings 2026-10-29",
+      "posicion": null,
+      "veredicto_conjunto": "🟢 BUY: buy candidate: confirm with live data before executing — it is above its 200-day average and analysts see ~19.4% upside to the median ($325). (Claude-only view.)",
+      "mercado": {
+        "precio": 272.26,
+        "prev_close": 272.65,
+        "gap_pct": null,
+        "cambio_pct": -0.143,
+        "market_cap": 2928728046000,
+        "rvol": null,
+        "pe": null,
+        "nombre": "Amazon.com, Inc.",
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "tendencia": "Above SMA200 (+15.7%)"
+      },
+      "catalizador": "No material news today; AMZN -0.1% in the session (22:49 ET).",
+      "next_earnings": "2026-10-29",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "The price is above its 200-day moving average (SMA200) by +15.7% and analysts see +19.4% to the median price target ($325); nothing material happened with the company today.",
+        "alineacion": "Claude-only view, with no second opinion from another model in this run: conviction capped at 🟡 (caution, not certainty)."
+      },
+      "evento": null,
+      "consenso_analistas": "Analysts think it is worth $325 (median), +19.4% from today's $272.26. Views range from $175 to $390. Source: FMP price-target-consensus (daily) + price refresh 22:49 ET.",
+      "targets": {
+        "high": 390,
+        "low": 175,
+        "consensus": 322.68,
+        "median": 325,
+        "upside_pct": 19.4
+      },
+      "analistas": [
+        {
+          "analista": null,
+          "firma": "UBS",
+          "confiabilidad_pct": 81,
+          "veredicto": "Will rise",
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-31"
+        },
+        {
+          "analista": null,
+          "firma": "Bernstein",
+          "confiabilidad_pct": 80,
+          "veredicto": "Will rise",
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-07-31"
+        },
+        {
+          "analista": null,
+          "firma": "Citigroup",
+          "confiabilidad_pct": 80,
+          "veredicto": "Will rise",
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-31"
+        },
+        {
+          "analista": null,
+          "firma": "Telsey Advisory Group",
+          "confiabilidad_pct": 58,
+          "veredicto": "Will rise",
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-07-31"
+        },
+        {
+          "analista": null,
+          "firma": "RBC Capital",
+          "confiabilidad_pct": 71,
+          "veredicto": "Will rise",
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-07-31"
+        }
+      ]
+    },
+    {
+      "ticker": "CVX",
+      "origenes": [
+        "universe"
+      ],
+      "clasificacion": "Above SMA200; next earnings 2026-10-30",
+      "posicion": null,
+      "veredicto_conjunto": "🟢 BUY: buy candidate: confirm with live data before executing — it is above its 200-day average and analysts see ~13.6% upside to the median ($215). (Claude-only view.)",
+      "mercado": {
+        "precio": 189.245,
+        "prev_close": 186.41,
+        "gap_pct": null,
+        "cambio_pct": 1.5208,
+        "market_cap": 376900342000,
+        "rvol": null,
+        "pe": null,
+        "nombre": "Chevron Corporation",
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "tendencia": "Above SMA200 (+7.8%)"
+      },
+      "catalizador": "No material news today; CVX +1.5% in the session (22:49 ET).",
+      "next_earnings": "2026-10-30",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "The price is above its 200-day moving average (SMA200) by +7.8% and analysts see +13.6% to the median price target ($215); nothing material happened with the company today.",
+        "alineacion": "Claude-only view, with no second opinion from another model in this run: conviction capped at 🟡 (caution, not certainty)."
+      },
+      "evento": null,
+      "consenso_analistas": "Analysts think it is worth $215 (median), +13.6% from today's $189.25. Views range from $174 to $224. Source: FMP price-target-consensus (daily) + price refresh 22:49 ET.",
+      "targets": {
+        "high": 224,
+        "low": 174,
+        "consensus": 211.08,
+        "median": 215,
+        "upside_pct": 13.6
+      },
+      "analistas": [
+        {
+          "analista": null,
+          "firma": "B of A Securities",
+          "confiabilidad_pct": 82,
+          "veredicto": "Will rise",
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-28"
+        },
+        {
+          "analista": null,
+          "firma": "TD Cowen",
+          "confiabilidad_pct": 58,
+          "veredicto": "Holds",
+          "tag": "HOLD",
+          "comentario": "Hold (Hold -> Hold) 2026-07-22"
+        },
+        {
+          "analista": null,
+          "firma": "Wolfe Research",
+          "confiabilidad_pct": 58,
+          "veredicto": "Will rise",
+          "tag": "BUY",
+          "comentario": "Outperform (Peer Perform -> Outperform) 2026-07-02"
+        },
+        {
+          "analista": null,
+          "firma": "Morgan Stanley",
+          "confiabilidad_pct": 84,
+          "veredicto": "Will rise",
+          "tag": "BUY",
+          "comentario": "Overweight (Overweight -> Overweight) 2026-06-29"
+        },
+        {
+          "analista": null,
+          "firma": "Mizuho",
+          "confiabilidad_pct": 68,
+          "veredicto": "Will rise",
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-05-27"
+        }
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "origenes": [
+        "universe"
+      ],
+      "clasificacion": "Above SMA200; next earnings 2026-08-26",
+      "posicion": null,
+      "veredicto_conjunto": "🟢 BUY: buy candidate: confirm with live data before executing — it is above its 200-day average and analysts see ~37.0% upside to the median ($300). (Claude-only view.)",
+      "mercado": {
+        "precio": 218.99,
+        "prev_close": 219.22,
+        "gap_pct": null,
+        "cambio_pct": -0.1049,
+        "market_cap": 5304156790000,
+        "rvol": null,
+        "pe": null,
+        "nombre": "NVIDIA Corporation",
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "tendencia": "Above SMA200 (+13.3%)"
+      },
+      "catalizador": "No material news today; NVDA -0.1% in the session (22:49 ET).",
+      "next_earnings": "2026-08-26",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "The price is above its 200-day moving average (SMA200) by +13.3% and analysts see +37.0% to the median price target ($300); nothing material happened with the company today.",
+        "alineacion": "Claude-only view, with no second opinion from another model in this run: conviction capped at 🟡 (caution, not certainty)."
+      },
+      "evento": null,
+      "consenso_analistas": "Analysts think it is worth $300 (median), +37.0% from today's $218.99. Views range from $218 to $500. Source: FMP price-target-consensus (daily) + price refresh 22:49 ET.",
+      "targets": {
+        "high": 500,
+        "low": 218,
+        "consensus": 319.48,
+        "median": 300,
+        "upside_pct": 37.0
+      },
+      "analistas": [
+        {
+          "analista": null,
+          "firma": "Keybanc",
+          "confiabilidad_pct": 68,
+          "veredicto": "Will rise",
+          "tag": "BUY",
+          "comentario": "Overweight (Overweight -> Overweight) 2026-07-14"
+        },
+        {
+          "analista": null,
+          "firma": "Needham",
+          "confiabilidad_pct": 58,
+          "veredicto": "Will rise",
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-06-02"
+        },
+        {
+          "analista": null,
+          "firma": "DA Davidson",
+          "confiabilidad_pct": 58,
+          "veredicto": "Will rise",
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-06-01"
+        },
+        {
+          "analista": null,
+          "firma": "Tigress Financial",
+          "confiabilidad_pct": 58,
+          "veredicto": "Will rise",
+          "tag": "BUY",
+          "comentario": "Strong Buy (Strong Buy -> Strong Buy) 2026-05-27"
+        },
+        {
+          "analista": null,
+          "firma": "Truist Securities",
+          "confiabilidad_pct": 66,
+          "veredicto": "Will rise",
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-05-21"
+        }
+      ]
+    },
+    {
+      "ticker": "TSM",
+      "origenes": [
+        "universe"
+      ],
+      "clasificacion": "Above SMA200; next earnings 2026-10-15",
+      "posicion": null,
+      "veredicto_conjunto": "🟢 BUY: buy candidate: confirm with live data before executing — it is above its 200-day average and analysts see ~43.5% upside to the median ($600). (Claude-only view.)",
+      "mercado": {
+        "precio": 418.2,
+        "prev_close": 414,
+        "gap_pct": null,
+        "cambio_pct": 1.0145,
+        "market_cap": 2168985936000,
+        "rvol": null,
+        "pe": null,
+        "nombre": "Taiwan Semiconductor Manufacturing Company Limited",
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "tendencia": "Above SMA200 (+16.9%)"
+      },
+      "catalizador": "No material news today; TSM +1.0% in the session (22:49 ET).",
+      "next_earnings": "2026-10-15",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "The price is above its 200-day moving average (SMA200) by +16.9% and analysts see +43.5% to the median price target ($600); nothing material happened with the company today.",
+        "alineacion": "Claude-only view, with no second opinion from another model in this run: conviction capped at 🟡 (caution, not certainty). No analyst table in this card (shown only for the day's biggest movers)."
+      },
+      "evento": null,
+      "consenso_analistas": "Analysts think it is worth $600 (median), +43.5% from today's $418.20. Views range from $500 to $700. Source: FMP price-target-consensus (daily) + price refresh 22:49 ET.",
+      "targets": {
+        "high": 700,
+        "low": 500,
+        "consensus": 596,
+        "median": 600,
+        "upside_pct": 43.5
+      },
+      "analistas": null
+    },
+    {
+      "ticker": "V",
+      "origenes": [
+        "universe"
+      ],
+      "clasificacion": "Above SMA200; next earnings 2026-10-27",
+      "posicion": null,
+      "veredicto_conjunto": "🟢 BUY: buy candidate: confirm with live data before executing — it is above its 200-day average and analysts see ~13.4% upside to the median ($420). (Claude-only view.)",
+      "mercado": {
+        "precio": 370.47,
+        "prev_close": 368.54,
+        "gap_pct": null,
+        "cambio_pct": 0.5237,
+        "market_cap": 691684980259,
+        "rvol": null,
+        "pe": null,
+        "nombre": "Visa Inc.",
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "tendencia": "Above SMA200 (+12.1%)"
+      },
+      "catalizador": "No material news today; V +0.5% in the session (22:49 ET).",
+      "next_earnings": "2026-10-27",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "The price is above its 200-day moving average (SMA200) by +12.1% and analysts see +13.4% to the median price target ($420); nothing material happened with the company today.",
+        "alineacion": "Claude-only view, with no second opinion from another model in this run: conviction capped at 🟡 (caution, not certainty). No analyst table in this card (shown only for the day's biggest movers)."
+      },
+      "evento": null,
+      "consenso_analistas": "Analysts think it is worth $420 (median), +13.4% from today's $370.47. Views range from $350 to $450. Source: FMP price-target-consensus (daily) + price refresh 22:49 ET.",
+      "targets": {
+        "high": 450,
+        "low": 350,
+        "consensus": 417.59,
+        "median": 420,
+        "upside_pct": 13.4
+      },
+      "analistas": null
+    }
+  ]
+}
