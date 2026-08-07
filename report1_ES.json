@@ -1482,6 +1482,90 @@
       "next_earnings": null
     },
     {
+      "ticker": "SOFI",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "veredicto_conjunto": "🟡 OBSERVAR: bajo SMA200 con +16.0% de subida. (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": "Los analistas creen que vale $21 (mediana), un +16.0% desde los $18.10 de hoy. Las opiniones van de $16 a $29. Fuente: FMP price-target-consensus 09:44 ET.",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "El precio esta por debajo de su media de 200 dias (SMA200) en -14.5% y los analistas le ven un +16.0% hasta la mediana de precio objetivo ($21); hoy no paso nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."
+      },
+      "mercado": {
+        "precio": 18.1,
+        "cambio_pct": -0.82192,
+        "prev_close": 18.25,
+        "market_cap": 23217594000,
+        "nombre": "SoFi Technologies, Inc.",
+        "tendencia": "Bajo SMA200 (-14.5%)",
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": 29,
+        "low": 16,
+        "consensus": 21,
+        "median": 21,
+        "upside_pct": 16.0
+      },
+      "analistas": [
+        {
+          "firma": "Mizuho",
+          "analista": null,
+          "tag": "BUY",
+          "confiabilidad_pct": 70,
+          "comentario": "Outperform (Outperform -> Outperform) 2026-07-31",
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Wells Fargo",
+          "analista": null,
+          "tag": "HOLD",
+          "confiabilidad_pct": 79,
+          "comentario": "Equal Weight (Equal Weight -> Equal Weight) 2026-07-30",
+          "veredicto": "Se mantiene"
+        },
+        {
+          "firma": "Morgan Stanley",
+          "analista": null,
+          "tag": "SELL",
+          "confiabilidad_pct": 81,
+          "comentario": "Underweight (Underweight -> Underweight) 2026-07-30",
+          "veredicto": "Va a bajar"
+        },
+        {
+          "firma": "Needham",
+          "analista": null,
+          "tag": "BUY",
+          "confiabilidad_pct": 57,
+          "comentario": "Buy (Buy -> Buy) 2026-07-30",
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Truist Securities",
+          "analista": null,
+          "tag": "HOLD",
+          "confiabilidad_pct": 64,
+          "comentario": "Hold (Hold -> Hold) 2026-07-24",
+          "veredicto": "Se mantiene"
+        }
+      ],
+      "clasificacion": "Bajo SMA200; proximos resultados 2026-10-27",
+      "next_earnings": "2026-10-27"
+    },
+    {
       "ticker": "TSLA",
       "idioma": "es",
       "posicion": null,
