@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Línea de Tiempo Editable - Libro de Mormón</title>
+  <style>
+    :root {
+      --bg-mulekites: #00a896;
+      --bg-nephites: #2ec4b6;
+      --bg-lamanites: #e63946;
+      --bg-nephites-main: #d62828;
+      --bg-central: #cc4488;
+      --border-color: #333;
+      --font-family: Arial, sans-serif;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: #f4f4f9;
+      margin: 20px;
+      overflow-x: auto;
+    }
+
+    .timeline-container {
+      min-width: 1200px;
+      border: 2px solid var(--border-color);
+      background: #fff;
+      padding: 10px;
+      position: relative;
+    }
+
+    /* Eje Superior de Años */
+    .time-axis {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 5px;
+      font-weight: bold;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .time-tick {
+      flex: 1;
+      border-left: 1px solid #aaa;
+      height: 10px;
+      position: relative;
+    }
+
+    .time-tick span {
+      position: absolute;
+      top: -20px;
+      left: -50%;
+      width: 100%;
+    }
+
+    /* Contenedor Principal de Flujos */
+    .flow-grid {
+      display: grid;
+      grid-template-columns: 150px repeat(10, 1fr);
+      grid-template-rows: repeat(5, auto);
+      gap: 5px;
+      margin-top: 20px;
+      position: relative;
+    }
+
+    /* Bloques Editables */
+    .group-block {
+      padding: 10px;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px;
+      min-height: 50px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      outline: none; /* Permite edicion limpia */
+    }
+
+    .group-block:focus {
+      outline: 2px dashed #000;
+    }
+
+    .mulekites {
+      grid-column: 3 / 6;
+      grid-row: 1;
+      background-color: var(--bg-mulekites);
+    }
+
+    .nephites {
+      grid-column: 2 / 5;
+      grid-row: 3;
+      background-color: var(--bg-nephites);
+      color: #000;
+    }
+
+    .lamanites {
+      grid-column: 2 / 8;
+      grid-row: 5;
+      background-color: var(--bg-lamanites);
+    }
+
+    .central-period {
+      grid-column: 5 / 9;
+      grid-row: 1 / 4;
+      background-color: var(--bg-central);
+    }
+
+    /* Leyenda */
+    .legend {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 200px;
+      font-size: 12px;
+      background: #fafafa;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+
+    .legend-icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+      border-radius: 50%;
+      background: #333;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="timeline-container">
+    <!-- Eje Cronológico -->
+    <div class="time-axis">
+      <div class="time-tick"><span>600 B.C.</span></div>
+      <div class="time-tick"><span>500</span></div>
+      <div class="time-tick"><span>400</span></div>
+      <div class="time-tick"><span>300</span></div>
+      <div class="time-tick"><span>200</span></div>
+      <div class="time-tick"><span>100</span></div>
+      <div class="time-tick"><span>B.C. 0 A.D.</span></div>
+      <div class="time-tick"><span>100</span></div>
+      <div class="time-tick"><span>200</span></div>
+      <div class="time-tick"><span>300</span></div>
+      <div class="time-tick"><span>400 A.D.</span></div>
+    </div>
+
+    <!-- Diagrama de Flujos -->
+    <div class="flow-grid">
+      <div class="group-block mulekites" contenteditable="true">
+        MULEKITES / People of Zarahemla
+      </div>
+      
+      <div class="group-block central-period" contenteditable="true">
+        ALMA THE YOUNGER<br>
+        Helaman I<br>
+        Captain Moroni
+      </div>
+
+      <div class="group-block nephites" contenteditable="true">
+        NEPHITES<br>
+        Jacob, Enos, Jarom, Omni
+      </div>
+
+      <div class="group-block lamanites" contenteditable="true">
+        LAMANITES
+      </div>
+    </div>
+
+    <!-- Leyenda Editable -->
+    <div class="legend" contenteditable="true">
+      <strong>Símbolos clave:</strong>
+      <div class="legend-item"><span class="legend-icon">P</span> Profeta</div>
+      <div class="legend-item"><span class="legend-icon">R</span> Registrador</div>
+      <div class="legend-item"><span class="legend-icon">K</span> Rey</div>
+    </div>
+  </div>
+
+</body>
+</html>
