@@ -1,1 +1,1952 @@
-{"report_type":"fichas_cliente","horizon_weeks":12,"idioma":"es","fecha":"2026-08-14","weekday":"Friday","generated_at_et":"2026-08-14T09:05:00-04:00","generated_at_packet":null,"stamp":"Viernes, 14 de agosto a las 9:05 AM ET - Fichas Cliente (horizonte 12 semanas)","status":"final","fuente":"FMP /quote + price-target-consensus (conector MCP) + FMP earnings-calendar (next_earnings)","nota":"Universo ~30 tickers. Campos null = dato no disponible (nunca inventado). pe y rvol sin fuente en plan free. Data FMP via conector MCP; entrega via Composio por el bloqueo del proxy de git (CCR_TEST_GITPROXY). 22 con mercado / 22 con consenso / 15 con tabla de analistas / 8 sin datos (AVGO, CRM, LLY, MARA, MSTR, OKLO, ORCL, SMCI: denegaciones transitorias de plan en /quote, simbolos cacheados como fallidos el resto de la sesion). gap_pct y catalizador = null (fuentes stockanalysis/pythonanywhere no alcanzables). No se activaron cortacircuitos. Horizonte 12 semanas.","nota_confiabilidad":"Confiabilidad: indice interno 0-100 por prestigio de la firma (bulge 78-85, mid 62-72, resto 55-60); NO es el success-rate de TipRanks.","total_fichas":30,"fichas":[{"ticker":"AAPL","nombre":"Apple Inc.","idioma":"es","mercado":{"precio":305.26,"cambio_pct":0.9959,"prev_close":302.25,"market_cap":4483462292560,"tendencia":"Sobre SMA200 (+8.9%)","pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"🟢 COMPRAR: candidato a compra: confirmar con datos en vivo antes de ejecutar — esta sobre su media de 200 dias y los analistas le ven ~16.3% de recorrido hasta la mediana ($355). (Vista solo Claude.)","evento":null,"consenso_analistas":"Los analistas creen que vale $355 (mediana), un +16.3% desde los $305.26 de hoy. Las opiniones van de $245 a $400. Fuente: FMP price-target-consensus 09:05 ET.","targets":{"high":400,"low":245,"consensus":337.43,"median":355,"upside_pct":16.3},"analistas":[{"firma":"Jefferies","analista":null,"tag":"SELL","comentario":"Underperform (Hold -> Underperform) 2026-08-10","confiabilidad_pct":55,"veredicto":"Va a bajar"},{"firma":"China Renaissance","analista":null,"tag":"HOLD","comentario":"Hold (Buy -> Hold) 2026-08-04","confiabilidad_pct":56,"veredicto":"Se mantiene"},{"firma":"TD Cowen","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-07-31","confiabilidad_pct":57,"veredicto":"Va a subir"},{"firma":"JP Morgan","analista":null,"tag":"BUY","comentario":"Overweight (Overweight -> Overweight) 2026-07-31","confiabilidad_pct":84,"veredicto":"Va a subir"},{"firma":"Morgan Stanley","analista":null,"tag":"BUY","comentario":"Overweight (Overweight -> Overweight) 2026-07-31","confiabilidad_pct":85,"veredicto":"Va a subir"}],"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":"El precio esta por encima de su media de 200 dias (SMA200) en +8.9% y los analistas le ven un +16.3% hasta la mediana de precio objetivo ($355); hoy no paso nada material con la empresa.","alineacion":"Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."},"clasificacion":"Sobre SMA200; proximos resultados 2026-10-29","next_earnings":"2026-10-29","posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"ABBV","nombre":"AbbVie Inc.","idioma":"es","mercado":{"precio":250.88,"cambio_pct":0.8522,"prev_close":248.76,"market_cap":443252982932,"tendencia":"Sobre SMA200 (+11.3%)","pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"🟢 COMPRAR: candidato a compra: confirmar con datos en vivo antes de ejecutar — esta sobre su media de 200 dias y los analistas le ven ~17.6% de recorrido hasta la mediana ($295). (Vista solo Claude.)","evento":null,"consenso_analistas":"Los analistas creen que vale $295 (mediana), un +17.6% desde los $250.88 de hoy. Las opiniones van de $235 a $300. Fuente: FMP price-target-consensus 09:05 ET.","targets":{"high":300,"low":235,"consensus":285.15,"median":295,"upside_pct":17.6},"analistas":[{"firma":"Barclays","analista":null,"tag":"BUY","comentario":"Overweight (Overweight -> Overweight) 2026-07-29","confiabilidad_pct":78,"veredicto":"Va a subir"},{"firma":"Canaccord Genuity","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-07-22","confiabilidad_pct":56,"veredicto":"Va a subir"},{"firma":"Citigroup","analista":null,"tag":"HOLD","comentario":"Neutral (Neutral -> Neutral) 2026-07-15","confiabilidad_pct":82,"veredicto":"Se mantiene"},{"firma":"UBS","analista":null,"tag":"HOLD","comentario":"Neutral (Neutral -> Neutral) 2026-07-13","confiabilidad_pct":84,"veredicto":"Se mantiene"},{"firma":"BMO Capital","analista":null,"tag":"BUY","comentario":"Outperform (Outperform -> Outperform) 2026-07-13","confiabilidad_pct":72,"veredicto":"Va a subir"}],"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":"El precio esta por encima de su media de 200 dias (SMA200) en +11.3% y los analistas le ven un +17.6% hasta la mediana de precio objetivo ($295); hoy no paso nada material con la empresa.","alineacion":"Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."},"clasificacion":"Sobre SMA200; proximos resultados 2026-10-30","next_earnings":"2026-10-30","posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"AMD","nombre":"Advanced Micro Devices, Inc.","idioma":"es","mercado":{"precio":483.01,"cambio_pct":0.0166,"prev_close":482.93,"market_cap":787596106000,"tendencia":"Sobre SMA200 (+49.5%)","pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"🟢 COMPRAR: candidato a compra: confirmar con datos en vivo antes de ejecutar — esta sobre su media de 200 dias y los analistas le ven ~29.4% de recorrido hasta la mediana ($625). (Vista solo Claude.)","evento":null,"consenso_analistas":"Los analistas creen que vale $625 (mediana), un +29.4% desde los $483.01 de hoy. Las opiniones van de $260 a $1250. Fuente: FMP price-target-consensus 09:05 ET.","targets":{"high":1250,"low":260,"consensus":593.92,"median":625,"upside_pct":29.4},"analistas":null,"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":"El precio esta por encima de su media de 200 dias (SMA200) en +49.5% y los analistas le ven un +29.4% hasta la mediana de precio objetivo ($625); hoy no paso nada material con la empresa.","alineacion":"Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Sin tabla de analistas en esta ficha (se detalla solo para los mayores movimientos del dia)."},"clasificacion":"Sobre SMA200; proximos resultados 2026-11-03","next_earnings":"2026-11-03","posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"AMZN","nombre":"Amazon.com, Inc.","idioma":"es","mercado":{"precio":265.13,"cambio_pct":-0.8044,"prev_close":267.28,"market_cap":2852029923000,"tendencia":"Sobre SMA200 (+11.6%)","pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"🟢 COMPRAR: candidato a compra: confirmar con datos en vivo antes de ejecutar — esta sobre su media de 200 dias y los analistas le ven ~22.6% de recorrido hasta la mediana ($325). (Vista solo Claude.)","evento":null,"consenso_analistas":"Los analistas creen que vale $325 (mediana), un +22.6% desde los $265.13 de hoy. Las opiniones van de $300 a $390. Fuente: FMP price-target-consensus 09:05 ET.","targets":{"high":390,"low":300,"consensus":329.07,"median":325,"upside_pct":22.6},"analistas":[{"firma":"UBS","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-07-31","confiabilidad_pct":78,"veredicto":"Va a subir"},{"firma":"Bernstein","analista":null,"tag":"BUY","comentario":"Outperform (Outperform -> Outperform) 2026-07-31","confiabilidad_pct":80,"veredicto":"Va a subir"},{"firma":"Citigroup","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-07-31","confiabilidad_pct":82,"veredicto":"Va a subir"},{"firma":"Telsey Advisory Group","analista":null,"tag":"BUY","comentario":"Outperform (Outperform -> Outperform) 2026-07-31","confiabilidad_pct":58,"veredicto":"Va a subir"},{"firma":"RBC Capital","analista":null,"tag":"BUY","comentario":"Outperform (Outperform -> Outperform) 2026-07-31","confiabilidad_pct":72,"veredicto":"Va a subir"}],"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":"El precio esta por encima de su media de 200 dias (SMA200) en +11.6% y los analistas le ven un +22.6% hasta la mediana de precio objetivo ($325); hoy no paso nada material con la empresa.","alineacion":"Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."},"clasificacion":"Sobre SMA200; proximos resultados 2026-10-29","next_earnings":"2026-10-29","posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"AVGO","nombre":null,"idioma":"es","mercado":{"precio":0,"cambio_pct":null,"prev_close":null,"market_cap":null,"tendencia":null,"pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)","evento":null,"consenso_analistas":null,"targets":{"high":null,"low":null,"consensus":null,"median":null,"upside_pct":null},"analistas":null,"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":null,"alineacion":null},"clasificacion":null,"next_earnings":null,"posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"COIN","nombre":"Coinbase Global, Inc.","idioma":"es","mercado":{"precio":153.9,"cambio_pct":3.2609,"prev_close":149.04,"market_cap":40604072299,"tendencia":"Bajo SMA200 (-24.6%)","pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"🟡 OBSERVAR: bajo SMA200 con +30.0% de subida. (Vista solo Claude.)","evento":"Subio 3.3% hasta $153.90 en el dia.","consenso_analistas":"Los analistas creen que vale $200 (mediana), un +30.0% desde los $153.90 de hoy. Las opiniones van de $95 a $330. Fuente: FMP price-target-consensus 09:05 ET.","targets":{"high":330,"low":95,"consensus":199.95,"median":200,"upside_pct":30.0},"analistas":[{"firma":"Benchmark","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-07-31","confiabilidad_pct":55,"veredicto":"Va a subir"},{"firma":"Goldman Sachs","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-07-31","confiabilidad_pct":80,"veredicto":"Va a subir"},{"firma":"Oppenheimer","analista":null,"tag":"BUY","comentario":"Outperform (Outperform -> Outperform) 2026-07-31","confiabilidad_pct":57,"veredicto":"Va a subir"},{"firma":"Piper Sandler","analista":null,"tag":"HOLD","comentario":"Neutral (Neutral -> Neutral) 2026-07-31","confiabilidad_pct":68,"veredicto":"Se mantiene"},{"firma":"Rosenblatt","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-07-31","confiabilidad_pct":60,"veredicto":"Va a subir"}],"tokens":{"riesgo":"RUIDO OPERATIVO","accion":"BUY","momento":"DURANTE ESTE DIA","apreciacion":"Ruido Transitorio Intradia","justificacion":"El precio esta por debajo de su media de 200 dias (SMA200) en -24.6% y los analistas le ven un +30.0% hasta la mediana de precio objetivo ($200); hoy si hubo movimiento fuerte (ver evento).","alineacion":"Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Conviccion baja en el evento: es senal solo de precio, sin confirmacion en cambios de recomendacion."},"clasificacion":"Bajo SMA200; proximos resultados 2026-10-29","next_earnings":"2026-10-29","posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"COST","nombre":"Costco Wholesale Corporation","idioma":"es","mercado":{"precio":961.85,"cambio_pct":1.2927,"prev_close":949.575,"market_cap":426560276150,"tendencia":"Sobre SMA200 (+0.4%)","pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"🟢 COMPRAR: candidato a compra: confirmar con datos en vivo antes de ejecutar — esta sobre su media de 200 dias y los analistas le ven ~14.4% de recorrido hasta la mediana ($1100). (Vista solo Claude.)","evento":null,"consenso_analistas":"Los analistas creen que vale $1100 (mediana), un +14.4% desde los $961.85 de hoy. Las opiniones van de $1000 a $1275. Fuente: FMP price-target-consensus 09:05 ET.","targets":{"high":1275,"low":1000,"consensus":1103.58,"median":1100,"upside_pct":14.4},"analistas":[{"firma":"JP Morgan","analista":null,"tag":"BUY","comentario":"Overweight (Overweight -> Overweight) 2026-07-09","confiabilidad_pct":78,"veredicto":"Va a subir"},{"firma":"DA Davidson","analista":null,"tag":"HOLD","comentario":"Neutral (Neutral -> Neutral) 2026-06-04","confiabilidad_pct":56,"veredicto":"Se mantiene"},{"firma":"TD Cowen","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-06-03","confiabilidad_pct":57,"veredicto":"Va a subir"},{"firma":"DA Davidson","analista":null,"tag":"HOLD","comentario":"Neutral (Neutral -> Neutral) 2026-06-01","confiabilidad_pct":58,"veredicto":"Se mantiene"},{"firma":"BTIG","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-05-29","confiabilidad_pct":60,"veredicto":"Va a subir"}],"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":"El precio esta por encima de su media de 200 dias (SMA200) en +0.4% y los analistas le ven un +14.4% hasta la mediana de precio objetivo ($1100); hoy no paso nada material con la empresa.","alineacion":"Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."},"clasificacion":"Sobre SMA200; proximos resultados 2026-09-24","next_earnings":"2026-09-24","posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"CRM","nombre":null,"idioma":"es","mercado":{"precio":0,"cambio_pct":null,"prev_close":null,"market_cap":null,"tendencia":null,"pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)","evento":null,"consenso_analistas":null,"targets":{"high":null,"low":null,"consensus":null,"median":null,"upside_pct":null},"analistas":null,"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":null,"alineacion":null},"clasificacion":null,"next_earnings":null,"posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"CVX","nombre":"Chevron Corporation","idioma":"es","mercado":{"precio":197.71,"cambio_pct":0.5646,"prev_close":196.6,"market_cap":393759236000,"tendencia":"Sobre SMA200 (+11.8%)","pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"🟡 OBSERVAR: sobre SMA200 pero recorrido corto (+8.7%). (Vista solo Claude.)","evento":null,"consenso_analistas":"Los analistas creen que vale $215 (mediana), un +8.7% desde los $197.71 de hoy. Las opiniones van de $174 a $224. Fuente: FMP price-target-consensus 09:05 ET.","targets":{"high":224,"low":174,"consensus":211.08,"median":215,"upside_pct":8.7},"analistas":null,"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":"El precio esta por encima de su media de 200 dias (SMA200) en +11.8% y los analistas le ven un +8.7% hasta la mediana de precio objetivo ($215); hoy no paso nada material con la empresa.","alineacion":"Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Sin tabla de analistas en esta ficha (se detalla solo para los mayores movimientos del dia)."},"clasificacion":"Sobre SMA200; proximos resultados 2026-10-30","next_earnings":"2026-10-30","posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"GE","nombre":"GE Aerospace","idioma":"es","mercado":{"precio":360.64,"cambio_pct":-1.2838,"prev_close":365.33,"market_cap":374186544688,"tendencia":"Sobre SMA200 (+13.3%)","pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"🟡 OBSERVAR: cayo 1.3% hoy la senal no confirma. (Vista solo Claude.)","evento":null,"consenso_analistas":"Los analistas creen que vale $423 (mediana), un +17.3% desde los $360.64 de hoy. Las opiniones van de $375 a $455. Fuente: FMP price-target-consensus 09:05 ET.","targets":{"high":455,"low":375,"consensus":419.1,"median":423,"upside_pct":17.3},"analistas":[{"firma":"Bernstein","analista":null,"tag":"BUY","comentario":"Outperform (Outperform -> Outperform) 2026-07-23","confiabilidad_pct":78,"veredicto":"Va a subir"},{"firma":"JP Morgan","analista":null,"tag":"BUY","comentario":"Overweight (Overweight -> Overweight) 2026-07-20","confiabilidad_pct":80,"veredicto":"Va a subir"},{"firma":"UBS","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-07-17","confiabilidad_pct":82,"veredicto":"Va a subir"},{"firma":"RBC Capital","analista":null,"tag":"BUY","comentario":"Outperform (Outperform -> Outperform) 2026-07-17","confiabilidad_pct":68,"veredicto":"Va a subir"},{"firma":"RBC Capital","analista":null,"tag":"BUY","comentario":"Outperform (Outperform -> Outperform) 2026-07-15","confiabilidad_pct":72,"veredicto":"Va a subir"}],"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":"El precio esta por encima de su media de 200 dias (SMA200) en +13.3% y los analistas le ven un +17.3% hasta la mediana de precio objetivo ($423); hoy no paso nada material con la empresa.","alineacion":"Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."},"clasificacion":"Sobre SMA200; proximos resultados 2026-10-20","next_earnings":"2026-10-20","posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"GOOGL","nombre":"Alphabet Inc.","idioma":"es","mercado":{"precio":346.36,"cambio_pct":0.8209,"prev_close":343.54,"market_cap":4191687265019,"tendencia":"Sobre SMA200 (+4.6%)","pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"🟢 COMPRAR: candidato a compra: confirmar con datos en vivo antes de ejecutar — esta sobre su media de 200 dias y los analistas le ven ~22.7% de recorrido hasta la mediana ($425). (Vista solo Claude.)","evento":null,"consenso_analistas":"Los analistas creen que vale $425 (mediana), un +22.7% desde los $346.36 de hoy. Las opiniones van de $350 a $475. Fuente: FMP price-target-consensus 09:05 ET.","targets":{"high":475,"low":350,"consensus":427.55,"median":425,"upside_pct":22.7},"analistas":[{"firma":"Cantor Fitzgerald","analista":null,"tag":"BUY","comentario":"Overweight (Overweight -> Overweight) 2026-07-23","confiabilidad_pct":55,"veredicto":"Va a subir"},{"firma":"Morgan Stanley","analista":null,"tag":"BUY","comentario":"Overweight (Overweight -> Overweight) 2026-07-23","confiabilidad_pct":80,"veredicto":"Va a subir"},{"firma":"Pivotal Research","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-07-23","confiabilidad_pct":57,"veredicto":"Va a subir"},{"firma":"UBS","analista":null,"tag":"HOLD","comentario":"Neutral (Neutral -> Neutral) 2026-07-23","confiabilidad_pct":84,"veredicto":"Se mantiene"},{"firma":"DA Davidson","analista":null,"tag":"HOLD","comentario":"Neutral (Neutral -> Neutral) 2026-07-23","confiabilidad_pct":60,"veredicto":"Se mantiene"}],"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":"El precio esta por encima de su media de 200 dias (SMA200) en +4.6% y los analistas le ven un +22.7% hasta la mediana de precio objetivo ($425); hoy no paso nada material con la empresa.","alineacion":"Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."},"clasificacion":"Sobre SMA200; proximos resultados 2026-10-28","next_earnings":"2026-10-28","posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"HOOD","nombre":"Robinhood Markets, Inc.","idioma":"es","mercado":{"precio":99.37,"cambio_pct":4.6992,"prev_close":94.91,"market_cap":89341809642,"tendencia":"Sobre SMA200 (+1.9%)","pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"🟢 COMPRAR: candidato a compra: confirmar con datos en vivo antes de ejecutar — esta sobre su media de 200 dias y los analistas le ven ~21.8% de recorrido hasta la mediana ($121). (Vista solo Claude.)","evento":"Subio 4.7% hasta $99.37 en el dia.","consenso_analistas":"Los analistas creen que vale $121 (mediana), un +21.8% desde los $99.37 de hoy. Las opiniones van de $100 a $160. Fuente: FMP price-target-consensus 09:05 ET.","targets":{"high":160,"low":100,"consensus":121,"median":121,"upside_pct":21.8},"analistas":[{"firma":"Goldman Sachs","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-07-30","confiabilidad_pct":78,"veredicto":"Va a subir"},{"firma":"Needham","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-07-30","confiabilidad_pct":56,"veredicto":"Va a subir"},{"firma":"Citizens","analista":null,"tag":"HOLD","comentario":"Market Outperform (Market Outperform -> Market Outperform) 2026-07-30","confiabilidad_pct":57,"veredicto":"Se mantiene"},{"firma":"BTIG","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-07-30","confiabilidad_pct":58,"veredicto":"Va a subir"},{"firma":"Barclays","analista":null,"tag":"BUY","comentario":"Overweight (Overweight -> Overweight) 2026-07-30","confiabilidad_pct":85,"veredicto":"Va a subir"}],"tokens":{"riesgo":"RUIDO OPERATIVO","accion":"BUY","momento":"DURANTE ESTE DIA","apreciacion":"Ruido Transitorio Intradia","justificacion":"El precio esta por encima de su media de 200 dias (SMA200) en +1.9% y los analistas le ven un +21.8% hasta la mediana de precio objetivo ($121); hoy si hubo movimiento fuerte (ver evento).","alineacion":"Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Conviccion baja en el evento: es senal solo de precio, sin confirmacion en cambios de recomendacion."},"clasificacion":"Sobre SMA200; proximos resultados 2026-11-04","next_earnings":"2026-11-04","posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"JPM","nombre":"JPMorgan Chase & Co.","idioma":"es","mercado":{"precio":363.11,"cambio_pct":-0.5668,"prev_close":365.18,"market_cap":972956876100,"tendencia":"Sobre SMA200 (+15.4%)","pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"🟡 OBSERVAR: sobre SMA200 pero recorrido corto (+1.9%). (Vista solo Claude.)","evento":null,"consenso_analistas":"Los analistas creen que vale $370 (mediana), un +1.9% desde los $363.11 de hoy. Las opiniones van de $305 a $420. Fuente: FMP price-target-consensus 09:05 ET.","targets":{"high":420,"low":305,"consensus":373.64,"median":370,"upside_pct":1.9},"analistas":null,"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":"El precio esta por encima de su media de 200 dias (SMA200) en +15.4% y los analistas le ven un +1.9% hasta la mediana de precio objetivo ($370); hoy no paso nada material con la empresa.","alineacion":"Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Sin tabla de analistas en esta ficha (se detalla solo para los mayores movimientos del dia)."},"clasificacion":"Sobre SMA200; proximos resultados 2026-10-13","next_earnings":"2026-10-13","posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"LLY","nombre":null,"idioma":"es","mercado":{"precio":0,"cambio_pct":null,"prev_close":null,"market_cap":null,"tendencia":null,"pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)","evento":null,"consenso_analistas":null,"targets":{"high":null,"low":null,"consensus":null,"median":null,"upside_pct":null},"analistas":null,"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":null,"alineacion":null},"clasificacion":null,"next_earnings":null,"posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"MARA","nombre":null,"idioma":"es","mercado":{"precio":0,"cambio_pct":null,"prev_close":null,"market_cap":null,"tendencia":null,"pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)","evento":null,"consenso_analistas":null,"targets":{"high":null,"low":null,"consensus":null,"median":null,"upside_pct":null},"analistas":null,"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":null,"alineacion":null},"clasificacion":null,"next_earnings":null,"posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"META","nombre":"Meta Platforms, Inc.","idioma":"es","mercado":{"precio":594.97,"cambio_pct":2.7848,"prev_close":578.85,"market_cap":1515678084553,"tendencia":"Bajo SMA200 (-5.3%)","pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"🟡 OBSERVAR: bajo SMA200 con +21.9% de subida. (Vista solo Claude.)","evento":null,"consenso_analistas":"Los analistas creen que vale $725 (mediana), un +21.9% desde los $594.97 de hoy. Las opiniones van de $595 a $883. Fuente: FMP price-target-consensus 09:05 ET.","targets":{"high":883,"low":595,"consensus":723.69,"median":725,"upside_pct":21.9},"analistas":[{"firma":"Arete","analista":null,"tag":"BUY","comentario":"Buy (Neutral -> Buy) 2026-06-02","confiabilidad_pct":55,"veredicto":"Va a subir"},{"firma":"JP Morgan","analista":null,"tag":"HOLD","comentario":"Neutral (Overweight -> Neutral) 2026-04-30","confiabilidad_pct":80,"veredicto":"Se mantiene"},{"firma":"Erste Group","analista":null,"tag":"HOLD","comentario":"Hold (Buy -> Hold) 2026-04-02","confiabilidad_pct":57,"veredicto":"Se mantiene"},{"firma":"Arete","analista":null,"tag":"HOLD","comentario":"Neutral (Buy -> Neutral) 2026-03-05","confiabilidad_pct":58,"veredicto":"Se mantiene"},{"firma":"Erste Group","analista":null,"tag":"BUY","comentario":"Buy (Hold -> Buy) 2026-03-05","confiabilidad_pct":60,"veredicto":"Va a subir"}],"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":"El precio esta por debajo de su media de 200 dias (SMA200) en -5.3% y los analistas le ven un +21.9% hasta la mediana de precio objetivo ($725); hoy no paso nada material con la empresa.","alineacion":"Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."},"clasificacion":"Bajo SMA200; proximos resultados 2026-10-28","next_earnings":"2026-10-28","posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"MSFT","nombre":"Microsoft Corporation","idioma":"es","mercado":{"precio":496.88,"cambio_pct":0.9037,"prev_close":492.43,"market_cap":3689607284000,"tendencia":"Sobre SMA200 (+14.8%)","pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"🟡 OBSERVAR: sobre SMA200 pero recorrido corto (+7.7%). (Vista solo Claude.)","evento":null,"consenso_analistas":"Los analistas creen que vale $535 (mediana), un +7.7% desde los $496.88 de hoy. Las opiniones van de $400 a $690. Fuente: FMP price-target-consensus 09:05 ET.","targets":{"high":690,"low":400,"consensus":547.74,"median":535,"upside_pct":7.7},"analistas":[{"firma":"Wells Fargo","analista":null,"tag":"BUY","comentario":"Overweight (Overweight -> Overweight) 2026-07-30","confiabilidad_pct":78,"veredicto":"Va a subir"},{"firma":"DA Davidson","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-07-30","confiabilidad_pct":56,"veredicto":"Va a subir"},{"firma":"TD Cowen","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-07-30","confiabilidad_pct":57,"veredicto":"Va a subir"},{"firma":"Bernstein","analista":null,"tag":"BUY","comentario":"Outperform (Outperform -> Outperform) 2026-07-30","confiabilidad_pct":84,"veredicto":"Va a subir"},{"firma":"Citigroup","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-07-30","confiabilidad_pct":85,"veredicto":"Va a subir"}],"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":"El precio esta por encima de su media de 200 dias (SMA200) en +14.8% y los analistas le ven un +7.7% hasta la mediana de precio objetivo ($535); hoy no paso nada material con la empresa.","alineacion":"Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."},"clasificacion":"Sobre SMA200; proximos resultados 2026-10-28","next_earnings":"2026-10-28","posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"MSTR","nombre":null,"idioma":"es","mercado":{"precio":0,"cambio_pct":null,"prev_close":null,"market_cap":null,"tendencia":null,"pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)","evento":null,"consenso_analistas":null,"targets":{"high":null,"low":null,"consensus":null,"median":null,"upside_pct":null},"analistas":null,"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":null,"alineacion":null},"clasificacion":null,"next_earnings":null,"posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"NFLX","nombre":"Netflix, Inc.","idioma":"es","mercado":{"precio":78.24,"cambio_pct":5.4305,"prev_close":74.21,"market_cap":325786665522,"tendencia":"Bajo SMA200 (-12.4%)","pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"🟡 OBSERVAR: bajo SMA200 con +15.0% de subida. (Vista solo Claude.)","evento":"Subio 5.4% hasta $78.24 en el dia.","consenso_analistas":"Los analistas creen que vale $90 (mediana), un +15.0% desde los $78.24 de hoy. Las opiniones van de $75 a $119. Fuente: FMP price-target-consensus 09:05 ET.","targets":{"high":119,"low":75,"consensus":91.82,"median":90,"upside_pct":15.0},"analistas":[{"firma":"Baird","analista":null,"tag":"BUY","comentario":"Outperform (Outperform -> Outperform) 2026-07-22","confiabilidad_pct":62,"veredicto":"Va a subir"},{"firma":"Wedbush","analista":null,"tag":"BUY","comentario":"Outperform (Outperform -> Outperform) 2026-07-17","confiabilidad_pct":64,"veredicto":"Va a subir"},{"firma":"Guggenheim","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-07-17","confiabilidad_pct":57,"veredicto":"Va a subir"},{"firma":"Goldman Sachs","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-07-17","confiabilidad_pct":84,"veredicto":"Va a subir"},{"firma":"Piper Sandler","analista":null,"tag":"BUY","comentario":"Overweight (Overweight -> Overweight) 2026-07-17","confiabilidad_pct":72,"veredicto":"Va a subir"}],"tokens":{"riesgo":"RUIDO OPERATIVO","accion":"BUY","momento":"DURANTE ESTE DIA","apreciacion":"Ruido Transitorio Intradia","justificacion":"El precio esta por debajo de su media de 200 dias (SMA200) en -12.4% y los analistas le ven un +15.0% hasta la mediana de precio objetivo ($90); hoy si hubo movimiento fuerte (ver evento).","alineacion":"Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Conviccion baja en el evento: es senal solo de precio, sin confirmacion en cambios de recomendacion."},"clasificacion":"Bajo SMA200; proximos resultados 2026-10-20","next_earnings":"2026-10-20","posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"NVDA","nombre":"NVIDIA Corporation","idioma":"es","mercado":{"precio":225.3,"cambio_pct":0.54,"prev_close":224.09,"market_cap":5456991300000,"tendencia":"Sobre SMA200 (+15.7%)","pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"🟢 COMPRAR: candidato a compra: confirmar con datos en vivo antes de ejecutar — esta sobre su media de 200 dias y los analistas le ven ~33.2% de recorrido hasta la mediana ($300). (Vista solo Claude.)","evento":null,"consenso_analistas":"Los analistas creen que vale $300 (mediana), un +33.2% desde los $225.30 de hoy. Las opiniones van de $218 a $500. Fuente: FMP price-target-consensus 09:05 ET.","targets":{"high":500,"low":218,"consensus":319.48,"median":300,"upside_pct":33.2},"analistas":null,"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":"El precio esta por encima de su media de 200 dias (SMA200) en +15.7% y los analistas le ven un +33.2% hasta la mediana de precio objetivo ($300); hoy no paso nada material con la empresa.","alineacion":"Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Sin tabla de analistas en esta ficha (se detalla solo para los mayores movimientos del dia)."},"clasificacion":"Sobre SMA200; proximos resultados 2026-08-26","next_earnings":"2026-08-26","posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"OKLO","nombre":null,"idioma":"es","mercado":{"precio":0,"cambio_pct":null,"prev_close":null,"market_cap":null,"tendencia":null,"pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)","evento":null,"consenso_analistas":null,"targets":{"high":null,"low":null,"consensus":null,"median":null,"upside_pct":null},"analistas":null,"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":null,"alineacion":null},"clasificacion":null,"next_earnings":null,"posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"ORCL","nombre":null,"idioma":"es","mercado":{"precio":0,"cambio_pct":null,"prev_close":null,"market_cap":null,"tendencia":null,"pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)","evento":null,"consenso_analistas":null,"targets":{"high":null,"low":null,"consensus":null,"median":null,"upside_pct":null},"analistas":null,"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":null,"alineacion":null},"clasificacion":null,"next_earnings":null,"posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"PLTR","nombre":"Palantir Technologies Inc.","idioma":"es","mercado":{"precio":179.01,"cambio_pct":4.6597,"prev_close":171.04,"market_cap":411019490700,"tendencia":"Sobre SMA200 (+17.6%)","pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"🟢 COMPRAR: candidato a compra: confirmar con datos en vivo antes de ejecutar — esta sobre su media de 200 dias y los analistas le ven ~11.7% de recorrido hasta la mediana ($200). (Vista solo Claude.)","evento":"Subio 4.7% hasta $179.01 en el dia.","consenso_analistas":"Los analistas creen que vale $200 (mediana), un +11.7% desde los $179.01 de hoy. Las opiniones van de $80 a $215. Fuente: FMP price-target-consensus 09:05 ET.","targets":{"high":215,"low":80,"consensus":176.33,"median":200,"upside_pct":11.7},"analistas":[{"firma":"Rosenblatt","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-08-04","confiabilidad_pct":55,"veredicto":"Va a subir"},{"firma":"UBS","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-08-04","confiabilidad_pct":80,"veredicto":"Va a subir"},{"firma":"Mizuho","analista":null,"tag":"BUY","comentario":"Outperform (Outperform -> Outperform) 2026-08-04","confiabilidad_pct":66,"veredicto":"Va a subir"},{"firma":"Citigroup","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-08-04","confiabilidad_pct":84,"veredicto":"Va a subir"},{"firma":"DA Davidson","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-08-04","confiabilidad_pct":60,"veredicto":"Va a subir"}],"tokens":{"riesgo":"RUIDO OPERATIVO","accion":"BUY","momento":"DURANTE ESTE DIA","apreciacion":"Ruido Transitorio Intradia","justificacion":"El precio esta por encima de su media de 200 dias (SMA200) en +17.6% y los analistas le ven un +11.7% hasta la mediana de precio objetivo ($200); hoy si hubo movimiento fuerte (ver evento).","alineacion":"Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Conviccion baja en el evento: es senal solo de precio, sin confirmacion en cambios de recomendacion."},"clasificacion":"Sobre SMA200; proximos resultados 2026-11-02","next_earnings":"2026-11-02","posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"SMCI","nombre":null,"idioma":"es","mercado":{"precio":0,"cambio_pct":null,"prev_close":null,"market_cap":null,"tendencia":null,"pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)","evento":null,"consenso_analistas":null,"targets":{"high":null,"low":null,"consensus":null,"median":null,"upside_pct":null},"analistas":null,"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":null,"alineacion":null},"clasificacion":null,"next_earnings":null,"posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"SOFI","nombre":"SoFi Technologies, Inc.","idioma":"es","mercado":{"precio":18.43,"cambio_pct":2.7313,"prev_close":17.94,"market_cap":23640898200,"tendencia":"Bajo SMA200 (-11.7%)","pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"🟡 OBSERVAR: bajo SMA200 con +13.9% de subida. (Vista solo Claude.)","evento":null,"consenso_analistas":"Los analistas creen que vale $21 (mediana), un +13.9% desde los $18.43 de hoy. Las opiniones van de $16 a $29. Fuente: FMP price-target-consensus 09:05 ET.","targets":{"high":29,"low":16,"consensus":21.11,"median":21,"upside_pct":13.9},"analistas":[{"firma":"Mizuho","analista":null,"tag":"BUY","comentario":"Outperform (Outperform -> Outperform) 2026-07-31","confiabilidad_pct":62,"veredicto":"Va a subir"},{"firma":"Wells Fargo","analista":null,"tag":"HOLD","comentario":"Equal Weight (Equal Weight -> Equal Weight) 2026-07-30","confiabilidad_pct":80,"veredicto":"Se mantiene"},{"firma":"Morgan Stanley","analista":null,"tag":"SELL","comentario":"Underweight (Underweight -> Underweight) 2026-07-30","confiabilidad_pct":82,"veredicto":"Va a bajar"},{"firma":"Needham","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-07-30","confiabilidad_pct":58,"veredicto":"Va a subir"},{"firma":"Truist Securities","analista":null,"tag":"HOLD","comentario":"Hold (Hold -> Hold) 2026-07-24","confiabilidad_pct":72,"veredicto":"Se mantiene"}],"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":"El precio esta por debajo de su media de 200 dias (SMA200) en -11.7% y los analistas le ven un +13.9% hasta la mediana de precio objetivo ($21); hoy no paso nada material con la empresa.","alineacion":"Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."},"clasificacion":"Bajo SMA200; proximos resultados 2026-10-27","next_earnings":"2026-10-27","posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"TSLA","nombre":"Tesla, Inc.","idioma":"es","mercado":{"precio":339.96,"cambio_pct":3.8014,"prev_close":327.51,"market_cap":1342688132064,"tendencia":"Bajo SMA200 (-16.4%)","pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"🟡 OBSERVAR: bajo SMA200 con +28.0% de subida. (Vista solo Claude.)","evento":"Subio 3.8% hasta $339.96 en el dia.","consenso_analistas":"Los analistas creen que vale $435 (mediana), un +28.0% desde los $339.96 de hoy. Las opiniones van de $370 a $491. Fuente: FMP price-target-consensus 09:05 ET.","targets":{"high":491,"low":370,"consensus":436.08,"median":435,"upside_pct":28.0},"analistas":[{"firma":"Stifel","analista":null,"tag":"BUY","comentario":"Buy (Buy -> Buy) 2026-08-03","confiabilidad_pct":62,"veredicto":"Va a subir"},{"firma":"Piper Sandler","analista":null,"tag":"BUY","comentario":"Overweight (Overweight -> Overweight) 2026-07-24","confiabilidad_pct":64,"veredicto":"Va a subir"},{"firma":"RBC Capital","analista":null,"tag":"BUY","comentario":"Outperform (Outperform -> Outperform) 2026-07-23","confiabilidad_pct":66,"veredicto":"Va a subir"},{"firma":"Mizuho","analista":null,"tag":"BUY","comentario":"Outperform (Outperform -> Outperform) 2026-07-23","confiabilidad_pct":68,"veredicto":"Va a subir"},{"firma":"Truist Securities","analista":null,"tag":"HOLD","comentario":"Hold (Hold -> Hold) 2026-07-23","confiabilidad_pct":72,"veredicto":"Se mantiene"}],"tokens":{"riesgo":"RUIDO OPERATIVO","accion":"BUY","momento":"DURANTE ESTE DIA","apreciacion":"Ruido Transitorio Intradia","justificacion":"El precio esta por debajo de su media de 200 dias (SMA200) en -16.4% y los analistas le ven un +28.0% hasta la mediana de precio objetivo ($435); hoy si hubo movimiento fuerte (ver evento).","alineacion":"Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Conviccion baja en el evento: es senal solo de precio, sin confirmacion en cambios de recomendacion."},"clasificacion":"Bajo SMA200; proximos resultados 2026-10-28","next_earnings":"2026-10-28","posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"TSM","nombre":"Taiwan Semiconductor Manufacturing Company Limited","idioma":"es","mercado":{"precio":430.49,"cambio_pct":0.3123,"prev_close":429.15,"market_cap":2232727775200,"tendencia":"Sobre SMA200 (+18.6%)","pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"🟢 COMPRAR: candidato a compra: confirmar con datos en vivo antes de ejecutar — esta sobre su media de 200 dias y los analistas le ven ~34.0% de recorrido hasta la mediana ($577). (Vista solo Claude.)","evento":null,"consenso_analistas":"Los analistas creen que vale $577 (mediana), un +34.0% desde los $430.49 de hoy. Las opiniones van de $500 a $700. Fuente: FMP price-target-consensus 09:05 ET.","targets":{"high":700,"low":500,"consensus":589,"median":577,"upside_pct":34.0},"analistas":null,"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":"El precio esta por encima de su media de 200 dias (SMA200) en +18.6% y los analistas le ven un +34.0% hasta la mediana de precio objetivo ($577); hoy no paso nada material con la empresa.","alineacion":"Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Sin tabla de analistas en esta ficha (se detalla solo para los mayores movimientos del dia)."},"clasificacion":"Sobre SMA200; proximos resultados 2026-10-15","next_earnings":"2026-10-15","posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"UBER","nombre":"Uber Technologies, Inc.","idioma":"es","mercado":{"precio":75.88,"cambio_pct":0.69,"prev_close":75.36,"market_cap":154461253106,"tendencia":"Bajo SMA200 (-2.3%)","pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"🟡 OBSERVAR: bajo SMA200 con +39.7% de subida. (Vista solo Claude.)","evento":null,"consenso_analistas":"Los analistas creen que vale $106 (mediana), un +39.7% desde los $75.88 de hoy. Las opiniones van de $89 a $150. Fuente: FMP price-target-consensus 09:05 ET.","targets":{"high":150,"low":89,"consensus":107.6,"median":106,"upside_pct":39.7},"analistas":null,"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":"El precio esta por debajo de su media de 200 dias (SMA200) en -2.3% y los analistas le ven un +39.7% hasta la mediana de precio objetivo ($106); hoy no paso nada material con la empresa.","alineacion":"Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Sin tabla de analistas en esta ficha (se detalla solo para los mayores movimientos del dia)."},"clasificacion":"Bajo SMA200; proximos resultados 2026-11-03","next_earnings":"2026-11-03","posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"V","nombre":"Visa Inc.","idioma":"es","mercado":{"precio":365.45,"cambio_pct":1.6777,"prev_close":359.42,"market_cap":682312403260,"tendencia":"Sobre SMA200 (+10.3%)","pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"🟢 COMPRAR: candidato a compra: confirmar con datos en vivo antes de ejecutar — esta sobre su media de 200 dias y los analistas le ven ~14.9% de recorrido hasta la mediana ($420). (Vista solo Claude.)","evento":null,"consenso_analistas":"Los analistas creen que vale $420 (mediana), un +14.9% desde los $365.45 de hoy. Las opiniones van de $350 a $450. Fuente: FMP price-target-consensus 09:05 ET.","targets":{"high":450,"low":350,"consensus":417.59,"median":420,"upside_pct":14.9},"analistas":[{"firma":"Cantor Fitzgerald","analista":null,"tag":"BUY","comentario":"Overweight (Overweight -> Overweight) 2026-08-03","confiabilidad_pct":55,"veredicto":"Va a subir"},{"firma":"Wells Fargo","analista":null,"tag":"BUY","comentario":"Overweight (Overweight -> Overweight) 2026-07-30","confiabilidad_pct":80,"veredicto":"Va a subir"},{"firma":"Piper Sandler","analista":null,"tag":"BUY","comentario":"Overweight (Overweight -> Overweight) 2026-07-29","confiabilidad_pct":66,"veredicto":"Va a subir"},{"firma":"Baird","analista":null,"tag":"BUY","comentario":"Outperform (Outperform -> Outperform) 2026-07-29","confiabilidad_pct":68,"veredicto":"Va a subir"},{"firma":"Cantor Fitzgerald","analista":null,"tag":"BUY","comentario":"Overweight (Overweight -> Overweight) 2026-07-29","confiabilidad_pct":60,"veredicto":"Va a subir"}],"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":"El precio esta por encima de su media de 200 dias (SMA200) en +10.3% y los analistas le ven un +14.9% hasta la mediana de precio objetivo ($420); hoy no paso nada material con la empresa.","alineacion":"Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."},"clasificacion":"Sobre SMA200; proximos resultados 2026-10-27","next_earnings":"2026-10-27","posicion":null,"origenes":["universe"],"catalizador":null},{"ticker":"WMT","nombre":"Walmart Inc.","idioma":"es","mercado":{"precio":115.72,"cambio_pct":-0.25,"prev_close":116.01,"market_cap":920909017600,"tendencia":"Bajo SMA200 (-2.2%)","pe":null,"rvol":null,"sma_150":null,"dist_sma150_pct":null,"gap_pct":null},"veredicto_conjunto":"🟡 OBSERVAR: reporta resultados el 2026-08-20 y eso puede mover el precio con violencia en cualquier direccion (evento binario); mejor esperar. (Vista solo Claude.)","evento":null,"consenso_analistas":"Los analistas creen que vale $140 (mediana), un +21.0% desde los $115.72 de hoy. Las opiniones van de $120 a $155. Fuente: FMP price-target-consensus 09:05 ET.","targets":{"high":155,"low":120,"consensus":140.05,"median":140,"upside_pct":21.0},"analistas":null,"tokens":{"riesgo":null,"accion":null,"momento":null,"apreciacion":null,"justificacion":"El precio esta por debajo de su media de 200 dias (SMA200) en -2.2% y los analistas le ven un +21.0% hasta la mediana de precio objetivo ($140); hoy no paso nada material con la empresa.","alineacion":"Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Sin tabla de analistas en esta ficha (se detalla solo para los mayores movimientos del dia)."},"clasificacion":"Bajo SMA200; proximos resultados 2026-08-20","next_earnings":"2026-08-20","posicion":null,"origenes":["universe"],"catalizador":null}]}
+{
+  "report_type": "fichas_cliente",
+  "horizon_weeks": 12,
+  "idioma": "es",
+  "fecha": "2026-08-17",
+  "weekday": "Monday",
+  "generated_at_et": "2026-08-17T09:29:00-04:00",
+  "generated_at_packet": null,
+  "stamp": "Lunes, 17 de agosto a las 9:29 AM ET - Fichas Cliente (horizonte 12 semanas)",
+  "status": "final",
+  "fuente": "FMP /quote + price-target-consensus (conector MCP) + FMP earnings-calendar (next_earnings)",
+  "nota": "Universo ~30 tickers. Campos null = dato no disponible, nunca inventado. pe/rvol sin fuente en plan free. Data FMP via conector MCP y entrega via Composio por el bloqueo del proxy de git (CCR_TEST_GITPROXY). 22 con mercado / 22 consenso / 15 analistas / 8 sin datos (sin mercado por denegaciones de limite FMP: AVGO, CRM, LLY, MARA, MSTR, OKLO, ORCL, SMCI). gap_pct y catalizador = null (stockanalysis/pythonanywhere no alcanzables). Cortacircuitos no activado.",
+  "nota_confiabilidad": "Confiabilidad: indice interno 0-100 por prestigio de la firma (bulge 78-85, mid 62-72, resto 55-60); NO es el success-rate de TipRanks.",
+  "total_fichas": 30,
+  "fichas": [
+    {
+      "ticker": "AAPL",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": "Apple Inc.",
+      "veredicto_conjunto": "🟢 COMPRAR: candidato a compra: confirmar con datos en vivo antes de ejecutar — esta sobre su media de 200 dias y los analistas le ven ~17.7% de recorrido hasta la mediana ($360). (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": "Los analistas creen que vale $360 (mediana), un +17.7% desde los $305.93 de hoy. Las opiniones van de $245 a $400. Fuente: FMP price-target-consensus 9:29 AM ET.",
+      "mercado": {
+        "precio": 305.93,
+        "cambio_pct": 0.21949,
+        "prev_close": 305.26,
+        "market_cap": 4493302821080,
+        "nombre": "Apple Inc.",
+        "tendencia": "Sobre SMA200 (+9.1%)",
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": 400,
+        "low": 245,
+        "consensus": 340.72,
+        "median": 360,
+        "upside_pct": 17.7
+      },
+      "next_earnings": "2026-10-29",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "El precio esta por encima de su media de 200 dias (SMA200) en +9.1% y los analistas le ven un +17.7% hasta la mediana de precio objetivo ($360); hoy no paso nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Sin tabla de analistas en esta ficha (se detalla solo para los mayores movimientos del dia)."
+      },
+      "analistas": null,
+      "clasificacion": "Sobre SMA200; proximos resultados 2026-10-29"
+    },
+    {
+      "ticker": "ABBV",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": "AbbVie Inc.",
+      "veredicto_conjunto": "🟢 COMPRAR: candidato a compra: confirmar con datos en vivo antes de ejecutar — esta sobre su media de 200 dias y los analistas le ven ~18.7% de recorrido hasta la mediana ($296). (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": "Los analistas creen que vale $296 (mediana), un +18.7% desde los $249.45 de hoy. Las opiniones van de $235 a $300. Fuente: FMP price-target-consensus 9:29 AM ET.",
+      "mercado": {
+        "precio": 249.45,
+        "cambio_pct": -0.54621,
+        "prev_close": 250.82,
+        "market_cap": 440726469198,
+        "nombre": "AbbVie Inc.",
+        "tendencia": "Sobre SMA200 (+10.6%)",
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": 300,
+        "low": 235,
+        "consensus": 285.54,
+        "median": 296,
+        "upside_pct": 18.7
+      },
+      "next_earnings": "2026-10-30",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "El precio esta por encima de su media de 200 dias (SMA200) en +10.6% y los analistas le ven un +18.7% hasta la mediana de precio objetivo ($296); hoy no paso nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."
+      },
+      "analistas": [
+        {
+          "firma": "Wolfe Research",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Outperform (Peer Perform -> Outperform) 2026-08-13",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "BNP Paribas",
+          "analista": null,
+          "tag": "HOLD",
+          "comentario": "Neutral (Neutral -> Neutral) 2026-08-11",
+          "confiabilidad_pct": 58,
+          "veredicto": "Se mantiene"
+        },
+        {
+          "firma": "Evercore ISI Group",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-08-10",
+          "confiabilidad_pct": 82,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Guggenheim",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-08-04",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Canaccord Genuity",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-08-03",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        }
+      ],
+      "clasificacion": "Sobre SMA200; proximos resultados 2026-10-30"
+    },
+    {
+      "ticker": "AMD",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": "Advanced Micro Devices, Inc.",
+      "veredicto_conjunto": "🟢 COMPRAR: candidato a compra: confirmar con datos en vivo antes de ejecutar — esta sobre su media de 200 dias y los analistas le ven ~21.5% de recorrido hasta la mediana ($625). (Vista solo Claude.)",
+      "evento": "Subio 6.5% hasta $514.39 en el dia.",
+      "consenso_analistas": "Los analistas creen que vale $625 (mediana), un +21.5% desde los $514.39 de hoy. Las opiniones van de $260 a $1250. Fuente: FMP price-target-consensus 9:29 AM ET.",
+      "mercado": {
+        "precio": 514.39,
+        "cambio_pct": 6.49676,
+        "prev_close": 483.01,
+        "market_cap": 838764334000,
+        "nombre": "Advanced Micro Devices, Inc.",
+        "tendencia": "Sobre SMA200 (+58.6%)",
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": 1250,
+        "low": 260,
+        "consensus": 593.92,
+        "median": 625,
+        "upside_pct": 21.5
+      },
+      "next_earnings": "2026-11-03",
+      "tokens": {
+        "riesgo": "RUIDO OPERATIVO",
+        "accion": "BUY",
+        "momento": "DURANTE ESTE DIA",
+        "apreciacion": "Ruido Transitorio Intradia",
+        "justificacion": "El precio esta por encima de su media de 200 dias (SMA200) en +58.6% y los analistas le ven un +21.5% hasta la mediana de precio objetivo ($625); hoy si hubo movimiento fuerte (ver evento).",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Conviccion baja en el evento: es senal solo de precio, sin confirmacion en cambios de recomendacion."
+      },
+      "analistas": [
+        {
+          "firma": "Rosenblatt",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-08-06",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Argus Research",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-08-06",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "RBC Capital",
+          "analista": null,
+          "tag": "HOLD",
+          "comentario": "Sector Perform (Sector Perform -> Sector Perform) 2026-08-05",
+          "confiabilidad_pct": 71,
+          "veredicto": "Se mantiene"
+        },
+        {
+          "firma": "JP Morgan",
+          "analista": null,
+          "tag": "HOLD",
+          "comentario": "Neutral (Neutral -> Neutral) 2026-08-05",
+          "confiabilidad_pct": 83,
+          "veredicto": "Se mantiene"
+        },
+        {
+          "firma": "Wells Fargo",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Overweight (Overweight -> Overweight) 2026-08-05",
+          "confiabilidad_pct": 78,
+          "veredicto": "Va a subir"
+        }
+      ],
+      "clasificacion": "Sobre SMA200; proximos resultados 2026-11-03"
+    },
+    {
+      "ticker": "AMZN",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": "Amazon.com, Inc.",
+      "veredicto_conjunto": "🟢 COMPRAR: candidato a compra: confirmar con datos en vivo antes de ejecutar — esta sobre su media de 200 dias y los analistas le ven ~23.7% de recorrido hasta la mediana ($325). (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": "Los analistas creen que vale $325 (mediana), un +23.7% desde los $262.65 de hoy. Las opiniones van de $300 a $390. Fuente: FMP price-target-consensus 9:29 AM ET.",
+      "mercado": {
+        "precio": 262.65,
+        "cambio_pct": -0.93539,
+        "prev_close": 265.13,
+        "market_cap": 2825352315000,
+        "nombre": "Amazon.com, Inc.",
+        "tendencia": "Sobre SMA200 (+10.5%)",
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": 390,
+        "low": 300,
+        "consensus": 329.07,
+        "median": 325,
+        "upside_pct": 23.7
+      },
+      "next_earnings": "2026-10-29",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "El precio esta por encima de su media de 200 dias (SMA200) en +10.5% y los analistas le ven un +23.7% hasta la mediana de precio objetivo ($325); hoy no paso nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."
+      },
+      "analistas": [
+        {
+          "firma": "Rosenblatt",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-31",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Needham",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-31",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Citizens",
+          "analista": null,
+          "tag": "HOLD",
+          "comentario": "Market Outperform (Market Outperform -> Market Outperform) 2026-07-31",
+          "confiabilidad_pct": 58,
+          "veredicto": "Se mantiene"
+        },
+        {
+          "firma": "Wedbush",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-07-31",
+          "confiabilidad_pct": 66,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Benchmark",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-31",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        }
+      ],
+      "clasificacion": "Sobre SMA200; proximos resultados 2026-10-29"
+    },
+    {
+      "ticker": "AVGO",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": null,
+      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": null,
+      "mercado": {
+        "precio": 0,
+        "cambio_pct": null,
+        "prev_close": null,
+        "market_cap": null,
+        "nombre": null,
+        "tendencia": null,
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": null,
+        "low": null,
+        "consensus": null,
+        "median": null,
+        "upside_pct": null
+      },
+      "next_earnings": null,
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": null,
+        "alineacion": null
+      },
+      "analistas": null,
+      "clasificacion": null
+    },
+    {
+      "ticker": "COIN",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": "Coinbase Global, Inc.",
+      "veredicto_conjunto": "🚫 NO ENTRAR: cayo 3.5% hoy; conviene esperar a que se estabilice antes de mirarla. (Vista solo Claude.)",
+      "evento": "Cayo 3.5% hasta $148.47 en el dia.",
+      "consenso_analistas": "Los analistas creen que vale $200 (mediana), un +34.7% desde los $148.47 de hoy. Las opiniones van de $95 a $330. Fuente: FMP price-target-consensus 9:29 AM ET.",
+      "mercado": {
+        "precio": 148.47,
+        "cambio_pct": -3.52827,
+        "prev_close": 153.9,
+        "market_cap": 39171452984,
+        "nombre": "Coinbase Global, Inc.",
+        "tendencia": "Bajo SMA200 (-26.9%)",
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": 330,
+        "low": 95,
+        "consensus": 199.95,
+        "median": 200,
+        "upside_pct": 34.7
+      },
+      "next_earnings": "2026-10-29",
+      "tokens": {
+        "riesgo": "ALERTA ROJA",
+        "accion": "SELL",
+        "momento": "INMEDIATAMENTE",
+        "apreciacion": "Cambio Estructural de Flujo Institucional",
+        "justificacion": "El precio esta por debajo de su media de 200 dias (SMA200) en -26.9% y los analistas le ven un +34.7% hasta la mediana de precio objetivo ($200); hoy si hubo movimiento fuerte (ver evento).",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Conviccion baja en el evento: es senal solo de precio, sin confirmacion en cambios de recomendacion."
+      },
+      "analistas": [
+        {
+          "firma": "Cantor Fitzgerald",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Overweight (Overweight -> Overweight) 2026-08-03",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Benchmark",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-31",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Rosenblatt",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-31",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Barclays",
+          "analista": null,
+          "tag": "SELL",
+          "comentario": "Underweight (Underweight -> Underweight) 2026-07-31",
+          "confiabilidad_pct": 80,
+          "veredicto": "Va a bajar"
+        },
+        {
+          "firma": "Canaccord Genuity",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-31",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        }
+      ],
+      "clasificacion": "Bajo SMA200; proximos resultados 2026-10-29"
+    },
+    {
+      "ticker": "COST",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": "Costco Wholesale Corporation",
+      "veredicto_conjunto": "🟢 COMPRAR: candidato a compra: confirmar con datos en vivo antes de ejecutar — esta sobre su media de 200 dias y los analistas le ven ~14.5% de recorrido hasta la mediana ($1100). (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": "Los analistas creen que vale $1100 (mediana), un +14.5% desde los $961.10 de hoy. Las opiniones van de $1000 a $1275. Fuente: FMP price-target-consensus 9:29 AM ET.",
+      "mercado": {
+        "precio": 961.1,
+        "cambio_pct": -0.07797474,
+        "prev_close": 961.85,
+        "market_cap": 426227666900,
+        "nombre": "Costco Wholesale Corporation",
+        "tendencia": "Sobre SMA200 (+0.3%)",
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": 1275,
+        "low": 1000,
+        "consensus": 1103.58,
+        "median": 1100,
+        "upside_pct": 14.5
+      },
+      "next_earnings": "2026-09-24",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "El precio esta por encima de su media de 200 dias (SMA200) en +0.3% y los analistas le ven un +14.5% hasta la mediana de precio objetivo ($1100); hoy no paso nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Sin tabla de analistas en esta ficha (se detalla solo para los mayores movimientos del dia)."
+      },
+      "analistas": null,
+      "clasificacion": "Sobre SMA200; proximos resultados 2026-09-24"
+    },
+    {
+      "ticker": "CRM",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": null,
+      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": null,
+      "mercado": {
+        "precio": 0,
+        "cambio_pct": null,
+        "prev_close": null,
+        "market_cap": null,
+        "nombre": null,
+        "tendencia": null,
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": null,
+        "low": null,
+        "consensus": null,
+        "median": null,
+        "upside_pct": null
+      },
+      "next_earnings": null,
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": null,
+        "alineacion": null
+      },
+      "analistas": null,
+      "clasificacion": null
+    },
+    {
+      "ticker": "CVX",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": "Chevron Corporation",
+      "veredicto_conjunto": "🟡 OBSERVAR: sobre SMA200 pero recorrido corto (+7.0%). (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": "Los analistas creen que vale $214 (mediana), un +7.0% desde los $200.01 de hoy. Las opiniones van de $174 a $224. Fuente: FMP price-target-consensus 9:29 AM ET.",
+      "mercado": {
+        "precio": 200.01,
+        "cambio_pct": 1.16844,
+        "prev_close": 197.7,
+        "market_cap": 398339916000,
+        "nombre": "Chevron Corporation",
+        "tendencia": "Sobre SMA200 (+12.9%)",
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": 224,
+        "low": 174,
+        "consensus": 210.91,
+        "median": 214,
+        "upside_pct": 7.0
+      },
+      "next_earnings": "2026-10-30",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "El precio esta por encima de su media de 200 dias (SMA200) en +12.9% y los analistas le ven un +7.0% hasta la mediana de precio objetivo ($214); hoy no paso nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."
+      },
+      "analistas": [
+        {
+          "firma": "TD Cowen",
+          "analista": null,
+          "tag": "HOLD",
+          "comentario": "Hold (Hold -> Hold) 2026-08-05",
+          "confiabilidad_pct": 58,
+          "veredicto": "Se mantiene"
+        },
+        {
+          "firma": "Bernstein",
+          "analista": null,
+          "tag": "HOLD",
+          "comentario": "Market Perform (Market Perform -> Market Perform) 2026-08-03",
+          "confiabilidad_pct": 79,
+          "veredicto": "Se mantiene"
+        },
+        {
+          "firma": "Barclays",
+          "analista": null,
+          "tag": "HOLD",
+          "comentario": "Equal Weight (Equal Weight -> Equal Weight) 2026-08-03",
+          "confiabilidad_pct": 80,
+          "veredicto": "Se mantiene"
+        },
+        {
+          "firma": "B of A Securities",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-28",
+          "confiabilidad_pct": 82,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "TD Cowen",
+          "analista": null,
+          "tag": "HOLD",
+          "comentario": "Hold (Hold -> Hold) 2026-07-22",
+          "confiabilidad_pct": 58,
+          "veredicto": "Se mantiene"
+        }
+      ],
+      "clasificacion": "Sobre SMA200; proximos resultados 2026-10-30"
+    },
+    {
+      "ticker": "GE",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": "GE Aerospace",
+      "veredicto_conjunto": "🟢 COMPRAR: candidato a compra: confirmar con datos en vivo antes de ejecutar — esta sobre su media de 200 dias y los analistas le ven ~14.8% de recorrido hasta la mediana ($423). (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": "Los analistas creen que vale $423 (mediana), un +14.8% desde los $368.38 de hoy. Las opiniones van de $375 a $455. Fuente: FMP price-target-consensus 9:29 AM ET.",
+      "mercado": {
+        "precio": 368.38,
+        "cambio_pct": 2.14618,
+        "prev_close": 360.64,
+        "market_cap": 382217278539,
+        "nombre": "GE Aerospace",
+        "tendencia": "Sobre SMA200 (+15.7%)",
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": 455,
+        "low": 375,
+        "consensus": 419.1,
+        "median": 423,
+        "upside_pct": 14.8
+      },
+      "next_earnings": "2026-10-20",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "El precio esta por encima de su media de 200 dias (SMA200) en +15.7% y los analistas le ven un +14.8% hasta la mediana de precio objetivo ($423); hoy no paso nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."
+      },
+      "analistas": [
+        {
+          "firma": "Bernstein",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-07-23",
+          "confiabilidad_pct": 79,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "JP Morgan",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Overweight (Overweight -> Overweight) 2026-07-20",
+          "confiabilidad_pct": 83,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "RBC Capital",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-07-17",
+          "confiabilidad_pct": 71,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "UBS",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-17",
+          "confiabilidad_pct": 80,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "RBC Capital",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-07-15",
+          "confiabilidad_pct": 71,
+          "veredicto": "Va a subir"
+        }
+      ],
+      "clasificacion": "Sobre SMA200; proximos resultados 2026-10-20"
+    },
+    {
+      "ticker": "GOOGL",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": "Alphabet Inc.",
+      "veredicto_conjunto": "🟢 COMPRAR: candidato a compra: confirmar con datos en vivo antes de ejecutar — esta sobre su media de 200 dias y los analistas le ven ~22.9% de recorrido hasta la mediana ($425). (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": "Los analistas creen que vale $425 (mediana), un +22.9% desde los $345.90 de hoy. Las opiniones van de $350 a $475. Fuente: FMP price-target-consensus 9:29 AM ET.",
+      "mercado": {
+        "precio": 345.9,
+        "cambio_pct": -0.13281,
+        "prev_close": 346.35999,
+        "market_cap": 4186120293827,
+        "nombre": "Alphabet Inc.",
+        "tendencia": "Sobre SMA200 (+4.4%)",
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": 475,
+        "low": 350,
+        "consensus": 427.55,
+        "median": 425,
+        "upside_pct": 22.9
+      },
+      "next_earnings": "2026-10-28",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "El precio esta por encima de su media de 200 dias (SMA200) en +4.4% y los analistas le ven un +22.9% hasta la mediana de precio objetivo ($425); hoy no paso nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Sin tabla de analistas en esta ficha (se detalla solo para los mayores movimientos del dia)."
+      },
+      "analistas": null,
+      "clasificacion": "Sobre SMA200; proximos resultados 2026-10-28"
+    },
+    {
+      "ticker": "HOOD",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": "Robinhood Markets, Inc.",
+      "veredicto_conjunto": "🚫 NO ENTRAR: cayo 3.8% hoy; conviene esperar a que se estabilice antes de mirarla. (Vista solo Claude.)",
+      "evento": "Cayo 3.8% hasta $95.56 en el dia.",
+      "consenso_analistas": "Los analistas creen que vale $121 (mediana), un +26.6% desde los $95.56 de hoy. Las opiniones van de $100 a $160. Fuente: FMP price-target-consensus 9:29 AM ET.",
+      "mercado": {
+        "precio": 95.56,
+        "cambio_pct": -3.83416,
+        "prev_close": 99.37,
+        "market_cap": 85916306021,
+        "nombre": "Robinhood Markets, Inc.",
+        "tendencia": "Bajo SMA200 (-1.8%)",
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": 160,
+        "low": 100,
+        "consensus": 121,
+        "median": 121,
+        "upside_pct": 26.6
+      },
+      "next_earnings": "2026-11-04",
+      "tokens": {
+        "riesgo": "ALERTA ROJA",
+        "accion": "SELL",
+        "momento": "INMEDIATAMENTE",
+        "apreciacion": "Cambio Estructural de Flujo Institucional",
+        "justificacion": "El precio esta por debajo de su media de 200 dias (SMA200) en -1.8% y los analistas le ven un +26.6% hasta la mediana de precio objetivo ($121); hoy si hubo movimiento fuerte (ver evento).",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Conviccion baja en el evento: es senal solo de precio, sin confirmacion en cambios de recomendacion."
+      },
+      "analistas": [
+        {
+          "firma": "Cantor Fitzgerald",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Overweight (Overweight -> Overweight) 2026-08-03",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Barclays",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Overweight (Overweight -> Overweight) 2026-07-30",
+          "confiabilidad_pct": 80,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Goldman Sachs",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-30",
+          "confiabilidad_pct": 84,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Citizens",
+          "analista": null,
+          "tag": "HOLD",
+          "comentario": "Market Outperform (Market Outperform -> Market Outperform) 2026-07-30",
+          "confiabilidad_pct": 58,
+          "veredicto": "Se mantiene"
+        },
+        {
+          "firma": "Needham",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-30",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        }
+      ],
+      "clasificacion": "Bajo SMA200; proximos resultados 2026-11-04"
+    },
+    {
+      "ticker": "JPM",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": "JPMorgan Chase & Co.",
+      "veredicto_conjunto": "🟡 OBSERVAR: sobre SMA200 pero recorrido corto (+2.0%). (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": "Los analistas creen que vale $370 (mediana), un +2.0% desde los $362.84 de hoy. Las opiniones van de $305 a $420. Fuente: FMP price-target-consensus 9:29 AM ET.",
+      "mercado": {
+        "precio": 362.84,
+        "cambio_pct": -0.07435763,
+        "prev_close": 363.11,
+        "market_cap": 972233408400,
+        "nombre": "JPMorgan Chase & Co.",
+        "tendencia": "Sobre SMA200 (+15.2%)",
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": 420,
+        "low": 305,
+        "consensus": 373.64,
+        "median": 370,
+        "upside_pct": 2.0
+      },
+      "next_earnings": "2026-10-13",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "El precio esta por encima de su media de 200 dias (SMA200) en +15.2% y los analistas le ven un +2.0% hasta la mediana de precio objetivo ($370); hoy no paso nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Sin tabla de analistas en esta ficha (se detalla solo para los mayores movimientos del dia)."
+      },
+      "analistas": null,
+      "clasificacion": "Sobre SMA200; proximos resultados 2026-10-13"
+    },
+    {
+      "ticker": "LLY",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": null,
+      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": null,
+      "mercado": {
+        "precio": 0,
+        "cambio_pct": null,
+        "prev_close": null,
+        "market_cap": null,
+        "nombre": null,
+        "tendencia": null,
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": null,
+        "low": null,
+        "consensus": null,
+        "median": null,
+        "upside_pct": null
+      },
+      "next_earnings": null,
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": null,
+        "alineacion": null
+      },
+      "analistas": null,
+      "clasificacion": null
+    },
+    {
+      "ticker": "MARA",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": null,
+      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": null,
+      "mercado": {
+        "precio": 0,
+        "cambio_pct": null,
+        "prev_close": null,
+        "market_cap": null,
+        "nombre": null,
+        "tendencia": null,
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": null,
+        "low": null,
+        "consensus": null,
+        "median": null,
+        "upside_pct": null
+      },
+      "next_earnings": null,
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": null,
+        "alineacion": null
+      },
+      "analistas": null,
+      "clasificacion": null
+    },
+    {
+      "ticker": "META",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": "Meta Platforms, Inc.",
+      "veredicto_conjunto": "🟡 OBSERVAR: bajo SMA200 con +22.9% de subida. (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": "Los analistas creen que vale $725 (mediana), un +22.9% desde los $589.85 de hoy. Las opiniones van de $595 a $883. Fuente: FMP price-target-consensus 9:29 AM ET.",
+      "mercado": {
+        "precio": 589.85,
+        "cambio_pct": -0.86055,
+        "prev_close": 594.97,
+        "market_cap": 1502634953315,
+        "nombre": "Meta Platforms, Inc.",
+        "tendencia": "Bajo SMA200 (-6.0%)",
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": 883,
+        "low": 595,
+        "consensus": 723.69,
+        "median": 725,
+        "upside_pct": 22.9
+      },
+      "next_earnings": "2026-10-28",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "El precio esta por debajo de su media de 200 dias (SMA200) en -6.0% y los analistas le ven un +22.9% hasta la mediana de precio objetivo ($725); hoy no paso nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."
+      },
+      "analistas": [
+        {
+          "firma": "Arete",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Neutral -> Buy) 2026-06-02",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "JP Morgan",
+          "analista": null,
+          "tag": "HOLD",
+          "comentario": "Neutral (Overweight -> Neutral) 2026-04-30",
+          "confiabilidad_pct": 83,
+          "veredicto": "Se mantiene"
+        },
+        {
+          "firma": "Erste Group",
+          "analista": null,
+          "tag": "HOLD",
+          "comentario": "Hold (Buy -> Hold) 2026-04-02",
+          "confiabilidad_pct": 58,
+          "veredicto": "Se mantiene"
+        },
+        {
+          "firma": "Arete",
+          "analista": null,
+          "tag": "HOLD",
+          "comentario": "Neutral (Buy -> Neutral) 2026-03-05",
+          "confiabilidad_pct": 58,
+          "veredicto": "Se mantiene"
+        },
+        {
+          "firma": "Erste Group",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Hold -> Buy) 2026-03-05",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        }
+      ],
+      "clasificacion": "Bajo SMA200; proximos resultados 2026-10-28"
+    },
+    {
+      "ticker": "MSFT",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": "Microsoft Corporation",
+      "veredicto_conjunto": "🟡 OBSERVAR: sobre SMA200 pero recorrido corto (+8.0%). (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": "Los analistas creen que vale $535 (mediana), un +8.0% desde los $495.40 de hoy. Las opiniones van de $400 a $690. Fuente: FMP price-target-consensus 9:29 AM ET.",
+      "mercado": {
+        "precio": 495.4,
+        "cambio_pct": -0.29786,
+        "prev_close": 496.88,
+        "market_cap": 3678617470000,
+        "nombre": "Microsoft Corporation",
+        "tendencia": "Sobre SMA200 (+14.5%)",
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": 690,
+        "low": 400,
+        "consensus": 547.74,
+        "median": 535,
+        "upside_pct": 8.0
+      },
+      "next_earnings": "2026-10-28",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "El precio esta por encima de su media de 200 dias (SMA200) en +14.5% y los analistas le ven un +8.0% hasta la mediana de precio objetivo ($535); hoy no paso nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."
+      },
+      "analistas": [
+        {
+          "firma": "Wells Fargo",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Overweight (Overweight -> Overweight) 2026-08-12",
+          "confiabilidad_pct": 78,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Tigress Financial",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-08-05",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "RBC Capital",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-07-30",
+          "confiabilidad_pct": 71,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "DA Davidson",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-30",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Citigroup",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-30",
+          "confiabilidad_pct": 81,
+          "veredicto": "Va a subir"
+        }
+      ],
+      "clasificacion": "Sobre SMA200; proximos resultados 2026-10-28"
+    },
+    {
+      "ticker": "MSTR",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": null,
+      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": null,
+      "mercado": {
+        "precio": 0,
+        "cambio_pct": null,
+        "prev_close": null,
+        "market_cap": null,
+        "nombre": null,
+        "tendencia": null,
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": null,
+        "low": null,
+        "consensus": null,
+        "median": null,
+        "upside_pct": null
+      },
+      "next_earnings": null,
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": null,
+        "alineacion": null
+      },
+      "analistas": null,
+      "clasificacion": null
+    },
+    {
+      "ticker": "NFLX",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": "Netflix, Inc.",
+      "veredicto_conjunto": "🟡 OBSERVAR: bajo SMA200 con +15.1% de subida. (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": "Los analistas creen que vale $90 (mediana), un +15.1% desde los $78.16 de hoy. Las opiniones van de $75 a $119. Fuente: FMP price-target-consensus 9:29 AM ET.",
+      "mercado": {
+        "precio": 78.16,
+        "cambio_pct": -0.10225,
+        "prev_close": 78.24,
+        "market_cap": 325453550322,
+        "nombre": "Netflix, Inc.",
+        "tendencia": "Bajo SMA200 (-12.4%)",
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": 119,
+        "low": 75,
+        "consensus": 91.82,
+        "median": 90,
+        "upside_pct": 15.1
+      },
+      "next_earnings": "2026-10-20",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "El precio esta por debajo de su media de 200 dias (SMA200) en -12.4% y los analistas le ven un +15.1% hasta la mediana de precio objetivo ($90); hoy no paso nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Sin tabla de analistas en esta ficha (se detalla solo para los mayores movimientos del dia)."
+      },
+      "analistas": null,
+      "clasificacion": "Bajo SMA200; proximos resultados 2026-10-20"
+    },
+    {
+      "ticker": "NVDA",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": "NVIDIA Corporation",
+      "veredicto_conjunto": "🟢 COMPRAR: candidato a compra: confirmar con datos en vivo antes de ejecutar — esta sobre su media de 200 dias y los analistas le ven ~33.2% de recorrido hasta la mediana ($300). (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": "Los analistas creen que vale $300 (mediana), un +33.2% desde los $225.16 de hoy. Las opiniones van de $218 a $500. Fuente: FMP price-target-consensus 9:29 AM ET.",
+      "mercado": {
+        "precio": 225.16,
+        "cambio_pct": -0.06213937,
+        "prev_close": 225.3,
+        "market_cap": 5453600360000,
+        "nombre": "NVIDIA Corporation",
+        "tendencia": "Sobre SMA200 (+15.5%)",
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": 500,
+        "low": 218,
+        "consensus": 319.48,
+        "median": 300,
+        "upside_pct": 33.2
+      },
+      "next_earnings": "2026-08-26",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "El precio esta por encima de su media de 200 dias (SMA200) en +15.5% y los analistas le ven un +33.2% hasta la mediana de precio objetivo ($300); hoy no paso nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Sin tabla de analistas en esta ficha (se detalla solo para los mayores movimientos del dia)."
+      },
+      "analistas": null,
+      "clasificacion": "Sobre SMA200; proximos resultados 2026-08-26"
+    },
+    {
+      "ticker": "OKLO",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": null,
+      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": null,
+      "mercado": {
+        "precio": 0,
+        "cambio_pct": null,
+        "prev_close": null,
+        "market_cap": null,
+        "nombre": null,
+        "tendencia": null,
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": null,
+        "low": null,
+        "consensus": null,
+        "median": null,
+        "upside_pct": null
+      },
+      "next_earnings": null,
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": null,
+        "alineacion": null
+      },
+      "analistas": null,
+      "clasificacion": null
+    },
+    {
+      "ticker": "ORCL",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": null,
+      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": null,
+      "mercado": {
+        "precio": 0,
+        "cambio_pct": null,
+        "prev_close": null,
+        "market_cap": null,
+        "nombre": null,
+        "tendencia": null,
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": null,
+        "low": null,
+        "consensus": null,
+        "median": null,
+        "upside_pct": null
+      },
+      "next_earnings": null,
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": null,
+        "alineacion": null
+      },
+      "analistas": null,
+      "clasificacion": null
+    },
+    {
+      "ticker": "PLTR",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": "Palantir Technologies Inc.",
+      "veredicto_conjunto": "🟡 OBSERVAR: cayo 2.8% hoy la senal no confirma. (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": "Los analistas creen que vale $200 (mediana), un +14.9% desde los $174.04 de hoy. Las opiniones van de $80 a $215. Fuente: FMP price-target-consensus 9:29 AM ET.",
+      "mercado": {
+        "precio": 174.04,
+        "cambio_pct": -2.77638,
+        "prev_close": 179.01,
+        "market_cap": 399608022800,
+        "nombre": "Palantir Technologies Inc.",
+        "tendencia": "Sobre SMA200 (+14.4%)",
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": 215,
+        "low": 80,
+        "consensus": 176.33,
+        "median": 200,
+        "upside_pct": 14.9
+      },
+      "next_earnings": "2026-11-02",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "El precio esta por encima de su media de 200 dias (SMA200) en +14.4% y los analistas le ven un +14.9% hasta la mediana de precio objetivo ($200); hoy no paso nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."
+      },
+      "analistas": [
+        {
+          "firma": "Citigroup",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-08-04",
+          "confiabilidad_pct": 81,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Piper Sandler",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Overweight (Overweight -> Overweight) 2026-08-04",
+          "confiabilidad_pct": 69,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "DA Davidson",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-08-04",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Cantor Fitzgerald",
+          "analista": null,
+          "tag": "HOLD",
+          "comentario": "Neutral (Neutral -> Neutral) 2026-08-04",
+          "confiabilidad_pct": 58,
+          "veredicto": "Se mantiene"
+        },
+        {
+          "firma": "UBS",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-08-04",
+          "confiabilidad_pct": 80,
+          "veredicto": "Va a subir"
+        }
+      ],
+      "clasificacion": "Sobre SMA200; proximos resultados 2026-11-02"
+    },
+    {
+      "ticker": "SMCI",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": null,
+      "veredicto_conjunto": "⚪ SIN DATOS: hoy no hay informacion suficiente para opinar. (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": null,
+      "mercado": {
+        "precio": 0,
+        "cambio_pct": null,
+        "prev_close": null,
+        "market_cap": null,
+        "nombre": null,
+        "tendencia": null,
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": null,
+        "low": null,
+        "consensus": null,
+        "median": null,
+        "upside_pct": null
+      },
+      "next_earnings": null,
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": null,
+        "alineacion": null
+      },
+      "analistas": null,
+      "clasificacion": null
+    },
+    {
+      "ticker": "SOFI",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": "SoFi Technologies, Inc.",
+      "veredicto_conjunto": "🟡 OBSERVAR: bajo SMA200 con +14.8% de subida. (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": "Los analistas creen que vale $21 (mediana), un +14.8% desde los $18.29 de hoy. Las opiniones van de $16 a $29. Fuente: FMP price-target-consensus 9:29 AM ET.",
+      "mercado": {
+        "precio": 18.29,
+        "cambio_pct": -0.75963,
+        "prev_close": 18.43,
+        "market_cap": 23461314600,
+        "nombre": "SoFi Technologies, Inc.",
+        "tendencia": "Bajo SMA200 (-12.1%)",
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": 29,
+        "low": 16,
+        "consensus": 21.2,
+        "median": 21,
+        "upside_pct": 14.8
+      },
+      "next_earnings": "2026-10-27",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "El precio esta por debajo de su media de 200 dias (SMA200) en -12.1% y los analistas le ven un +14.8% hasta la mediana de precio objetivo ($21); hoy no paso nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."
+      },
+      "analistas": [
+        {
+          "firma": "Truist Securities",
+          "analista": null,
+          "tag": "HOLD",
+          "comentario": "Hold (Hold -> Hold) 2026-08-12",
+          "confiabilidad_pct": 65,
+          "veredicto": "Se mantiene"
+        },
+        {
+          "firma": "Mizuho",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-07-31",
+          "confiabilidad_pct": 67,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Morgan Stanley",
+          "analista": null,
+          "tag": "SELL",
+          "comentario": "Underweight (Underweight -> Underweight) 2026-07-30",
+          "confiabilidad_pct": 85,
+          "veredicto": "Va a bajar"
+        },
+        {
+          "firma": "Needham",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-30",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Wells Fargo",
+          "analista": null,
+          "tag": "HOLD",
+          "comentario": "Equal Weight (Equal Weight -> Equal Weight) 2026-07-30",
+          "confiabilidad_pct": 78,
+          "veredicto": "Se mantiene"
+        }
+      ],
+      "clasificacion": "Bajo SMA200; proximos resultados 2026-10-27"
+    },
+    {
+      "ticker": "TSLA",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": "Tesla, Inc.",
+      "veredicto_conjunto": "🟡 OBSERVAR: bajo SMA200 con +27.1% de subida. (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": "Los analistas creen que vale $435 (mediana), un +27.1% desde los $342.27 de hoy. Las opiniones van de $370 a $491. Fuente: FMP price-target-consensus 9:29 AM ET.",
+      "mercado": {
+        "precio": 342.27,
+        "cambio_pct": 0.67949,
+        "prev_close": 339.96,
+        "market_cap": 1351811586544,
+        "nombre": "Tesla, Inc.",
+        "tendencia": "Bajo SMA200 (-15.7%)",
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": 491,
+        "low": 370,
+        "consensus": 436.08,
+        "median": 435,
+        "upside_pct": 27.1
+      },
+      "next_earnings": "2026-10-28",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "El precio esta por debajo de su media de 200 dias (SMA200) en -15.7% y los analistas le ven un +27.1% hasta la mediana de precio objetivo ($435); hoy no paso nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."
+      },
+      "analistas": [
+        {
+          "firma": "Stifel",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-08-03",
+          "confiabilidad_pct": 64,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Piper Sandler",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Overweight (Overweight -> Overweight) 2026-07-24",
+          "confiabilidad_pct": 69,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Mizuho",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-07-23",
+          "confiabilidad_pct": 67,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "JP Morgan",
+          "analista": null,
+          "tag": "HOLD",
+          "comentario": "Neutral (Neutral -> Neutral) 2026-07-23",
+          "confiabilidad_pct": 83,
+          "veredicto": "Se mantiene"
+        },
+        {
+          "firma": "RBC Capital",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-07-23",
+          "confiabilidad_pct": 71,
+          "veredicto": "Va a subir"
+        }
+      ],
+      "clasificacion": "Bajo SMA200; proximos resultados 2026-10-28"
+    },
+    {
+      "ticker": "TSM",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": "Taiwan Semiconductor Manufacturing Company Limited",
+      "veredicto_conjunto": "🟢 COMPRAR: candidato a compra: confirmar con datos en vivo antes de ejecutar — esta sobre su media de 200 dias y los analistas le ven ~35.3% de recorrido hasta la mediana ($577). (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": "Los analistas creen que vale $577 (mediana), un +35.3% desde los $426.35 de hoy. Las opiniones van de $500 a $700. Fuente: FMP price-target-consensus 9:29 AM ET.",
+      "mercado": {
+        "precio": 426.35,
+        "cambio_pct": -0.96169,
+        "prev_close": 430.49,
+        "market_cap": 2211255748000,
+        "nombre": "Taiwan Semiconductor Manufacturing Company Limited",
+        "tendencia": "Sobre SMA200 (+17.3%)",
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": 700,
+        "low": 500,
+        "consensus": 589,
+        "median": 577,
+        "upside_pct": 35.3
+      },
+      "next_earnings": "2026-10-15",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "El precio esta por encima de su media de 200 dias (SMA200) en +17.3% y los analistas le ven un +35.3% hasta la mediana de precio objetivo ($577); hoy no paso nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."
+      },
+      "analistas": [
+        {
+          "firma": "Bernstein",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-08-11",
+          "confiabilidad_pct": 79,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Needham",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-27",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Barclays",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Overweight (Overweight -> Overweight) 2026-07-17",
+          "confiabilidad_pct": 80,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "DA Davidson",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-07-17",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "TD Cowen",
+          "analista": null,
+          "tag": "HOLD",
+          "comentario": "Hold (Hold -> Hold) 2026-07-17",
+          "confiabilidad_pct": 58,
+          "veredicto": "Se mantiene"
+        }
+      ],
+      "clasificacion": "Sobre SMA200; proximos resultados 2026-10-15"
+    },
+    {
+      "ticker": "UBER",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": "Uber Technologies, Inc.",
+      "veredicto_conjunto": "🟡 OBSERVAR: bajo SMA200 con +39.6% de subida. (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": "Los analistas creen que vale $106 (mediana), un +39.6% desde los $75.95 de hoy. Las opiniones van de $89 a $150. Fuente: FMP price-target-consensus 9:29 AM ET.",
+      "mercado": {
+        "precio": 75.95,
+        "cambio_pct": 0.09225092,
+        "prev_close": 75.88,
+        "market_cap": 154603745037,
+        "nombre": "Uber Technologies, Inc.",
+        "tendencia": "Bajo SMA200 (-2.1%)",
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": 150,
+        "low": 89,
+        "consensus": 107.6,
+        "median": 106,
+        "upside_pct": 39.6
+      },
+      "next_earnings": "2026-11-03",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "El precio esta por debajo de su media de 200 dias (SMA200) en -2.1% y los analistas le ven un +39.6% hasta la mediana de precio objetivo ($106); hoy no paso nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza). Sin tabla de analistas en esta ficha (se detalla solo para los mayores movimientos del dia)."
+      },
+      "analistas": null,
+      "clasificacion": "Bajo SMA200; proximos resultados 2026-11-03"
+    },
+    {
+      "ticker": "V",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": "Visa Inc.",
+      "veredicto_conjunto": "🟢 COMPRAR: candidato a compra: confirmar con datos en vivo antes de ejecutar — esta sobre su media de 200 dias y los analistas le ven ~15.3% de recorrido hasta la mediana ($420). (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": "Los analistas creen que vale $420 (mediana), un +15.3% desde los $364.15 de hoy. Las opiniones van de $350 a $450. Fuente: FMP price-target-consensus 9:29 AM ET.",
+      "mercado": {
+        "precio": 364.15,
+        "cambio_pct": -0.35572,
+        "prev_close": 365.44999,
+        "market_cap": 679885241886,
+        "nombre": "Visa Inc.",
+        "tendencia": "Sobre SMA200 (+9.9%)",
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": 450,
+        "low": 350,
+        "consensus": 417.59,
+        "median": 420,
+        "upside_pct": 15.3
+      },
+      "next_earnings": "2026-10-27",
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "El precio esta por encima de su media de 200 dias (SMA200) en +9.9% y los analistas le ven un +15.3% hasta la mediana de precio objetivo ($420); hoy no paso nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."
+      },
+      "analistas": [
+        {
+          "firma": "Truist Securities",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-08-05",
+          "confiabilidad_pct": 65,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Cantor Fitzgerald",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Overweight (Overweight -> Overweight) 2026-08-03",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Wells Fargo",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Overweight (Overweight -> Overweight) 2026-07-30",
+          "confiabilidad_pct": 78,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Cantor Fitzgerald",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Overweight (Overweight -> Overweight) 2026-07-29",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Susquehanna",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Positive (Positive -> Positive) 2026-07-29",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        }
+      ],
+      "clasificacion": "Sobre SMA200; proximos resultados 2026-10-27"
+    },
+    {
+      "ticker": "WMT",
+      "idioma": "es",
+      "posicion": null,
+      "origenes": [
+        "universe"
+      ],
+      "catalizador": null,
+      "nombre": "Walmart Inc.",
+      "veredicto_conjunto": "🟡 OBSERVAR: bajo SMA200 con +20.6% de subida. (Vista solo Claude.)",
+      "evento": null,
+      "consenso_analistas": "Los analistas creen que vale $139 (mediana), un +20.6% desde los $115.27 de hoy. Las opiniones van de $120 a $155. Fuente: FMP price-target-consensus 9:29 AM ET.",
+      "mercado": {
+        "precio": 115.27,
+        "cambio_pct": -0.38887,
+        "prev_close": 115.72,
+        "market_cap": 917327881600,
+        "nombre": "Walmart Inc.",
+        "tendencia": "Bajo SMA200 (-2.6%)",
+        "pe": null,
+        "rvol": null,
+        "sma_150": null,
+        "dist_sma150_pct": null,
+        "gap_pct": null
+      },
+      "targets": {
+        "high": 155,
+        "low": 120,
+        "consensus": 139.5,
+        "median": 139,
+        "upside_pct": 20.6
+      },
+      "next_earnings": null,
+      "tokens": {
+        "riesgo": null,
+        "accion": null,
+        "momento": null,
+        "apreciacion": null,
+        "justificacion": "El precio esta por debajo de su media de 200 dias (SMA200) en -2.6% y los analistas le ven un +20.6% hasta la mediana de precio objetivo ($139); hoy no paso nada material con la empresa.",
+        "alineacion": "Vista solo Claude, sin segunda opinion de otro modelo en esta corrida: conviccion tope 🟡 (precaucion, no certeza)."
+      },
+      "analistas": [
+        {
+          "firma": "RBC Capital",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-08-12",
+          "confiabilidad_pct": 71,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "Oppenheimer",
+          "analista": null,
+          "tag": "HOLD",
+          "comentario": "Perform (Outperform -> Perform) 2026-08-04",
+          "confiabilidad_pct": 58,
+          "veredicto": "Se mantiene"
+        },
+        {
+          "firma": "Bernstein",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-07-31",
+          "confiabilidad_pct": 79,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "RBC Capital",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Outperform (Outperform -> Outperform) 2026-07-22",
+          "confiabilidad_pct": 71,
+          "veredicto": "Va a subir"
+        },
+        {
+          "firma": "BTIG",
+          "analista": null,
+          "tag": "BUY",
+          "comentario": "Buy (Buy -> Buy) 2026-06-08",
+          "confiabilidad_pct": 58,
+          "veredicto": "Va a subir"
+        }
+      ],
+      "clasificacion": "Bajo SMA200; proximos resultados sin fecha"
+    }
+  ]
+}
