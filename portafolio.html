@@ -2,9 +2,9 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Portfolio – Gonzalo Moscoso Pacheco</title>
+  <title>Portafolio – Gonzalo Moscoso Pacheco</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Gonzalo Moscoso Pacheco — Senior Backend Engineer, Infrastructure & Solutions Architect. Más de 20 años diseñando arquitecturas escalables, automatización y conectividad crítica." />
+  <meta name="description" content="Gonzalo Moscoso Pacheco — Senior iOS Engineer · Desarrollo impulsado por IA · 20+ años de ingeniería de sistemas. Cuatro apps publicadas en App Store, incluyendo ApexTrade." />
   <link rel="icon" type="image/x-icon" href="https://www.linkedin.com/favicon.ico">
   <style>
     :root {
@@ -14,7 +14,9 @@
       --text-primary: #f4f4f5;
       --text-secondary: #a8a8ad;
       --text-muted: #6f6f76;
-      --accent: #e3e3e6;
+      --accent: #6ea8ff;
+      --accent-soft: rgba(110, 168, 255, 0.13);
+      --accent-border: rgba(110, 168, 255, 0.35);
       --tag-bg: #1a1a1d;
       --tag-border: #26262a;
       --hairline: #202024;
@@ -32,12 +34,10 @@
       -moz-osx-font-smoothing: grayscale;
       letter-spacing: -0.011em;
     }
-    ::selection { background: rgba(255,255,255,.16); }
+    ::selection { background: rgba(110,168,255,.28); }
     a { color: inherit; }
     :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
-
     .layout { display: flex; height: 100vh; width: 100%; }
-
     /* ---------- LEFT FIXED PANEL ---------- */
     .left-panel {
       position: fixed;
@@ -86,8 +86,6 @@
       line-height: 1.45;
       margin: 0 0 18px;
     }
-
-    /* contacto */
     .contact-info {
       display: flex;
       flex-direction: column;
@@ -110,7 +108,6 @@
     .contact-row svg { width: 13px; height: 13px; flex: none; color: #a3a3ac; transition: color .25s var(--ease); }
     a.contact-row:hover { color: #0e0e0e; }
     a.contact-row:hover svg { color: #0e0e0e; }
-
     .linkedin-btn {
       display: inline-flex;
       align-items: center;
@@ -129,12 +126,10 @@
     }
     .linkedin-btn svg { width: 15px; height: 15px; flex: none; }
     .linkedin-btn:hover { background: #0a66c2; transform: translateY(-1px); }
-
-    /* stats */
     .stats {
       display: flex;
       justify-content: center;
-      gap: 14px;
+      gap: 10px;
       margin: 18px 0 0;
       padding-top: 18px;
       border-top: 1px solid #ececef;
@@ -143,7 +138,7 @@
     .stat + .stat { border-left: 1px solid #ececef; }
     .stat-number {
       display: block;
-      font-size: 25px;
+      font-size: 22px;
       font-weight: 700;
       letter-spacing: -0.03em;
       color: #0e0e0e;
@@ -152,14 +147,13 @@
     .stat-label {
       display: block;
       margin-top: 6px;
-      font-size: 9.5px;
+      font-size: 9px;
       font-weight: 600;
       color: #78787f;
       text-transform: uppercase;
       letter-spacing: 0.07em;
       line-height: 1.35;
     }
-
     /* ---------- RIGHT SCROLLABLE CONTENT ---------- */
     .right-panel {
       margin-left: 40%;
@@ -167,9 +161,13 @@
       height: 100vh;
       overflow-y: auto;
       overscroll-behavior: contain;
-      padding: 80px 72px;
+      padding: 64px 72px 80px;
       scrollbar-width: thin;
       scrollbar-color: #2c2c31 transparent;
+      background-image:
+        radial-gradient(70% 38% at 85% 0%, rgba(110,168,255,.06), transparent 62%),
+        radial-gradient(55% 30% at 10% 100%, rgba(110,168,255,.035), transparent 60%);
+      background-attachment: local;
     }
     .right-panel::-webkit-scrollbar { width: 11px; }
     .right-panel::-webkit-scrollbar-track { background: transparent; }
@@ -180,7 +178,25 @@
     }
     .right-panel::-webkit-scrollbar-thumb:hover { background: #3d3d44; }
     .content { max-width: 860px; }
-
+    .lang-switch {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 6px;
+    }
+    .lang-switch a {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--text-muted);
+      padding: 5px 12px;
+      border: 1px solid var(--tag-border);
+      border-radius: 99px;
+      background: var(--tag-bg);
+      transition: color .3s var(--ease), border-color .3s var(--ease);
+    }
+    .lang-switch a:hover { color: var(--accent); border-color: var(--accent-border); }
     h2 {
       display: flex;
       align-items: center;
@@ -199,9 +215,9 @@
       border-radius: 50%;
       background: var(--accent);
       flex: none;
-      opacity: .75;
+      box-shadow: 0 0 8px rgba(110,168,255,.5);
     }
-    section:first-child h2 { margin-top: 0; }
+    section:first-of-type h2 { margin-top: 0; }
     h3 {
       font-size: 17px;
       font-weight: 600;
@@ -209,8 +225,8 @@
       color: var(--text-primary);
       margin-bottom: 8px;
     }
-    h3 a { text-decoration: none; border-bottom: 1px solid transparent; transition: border-color .3s var(--ease); }
-    h3 a:hover { border-bottom-color: var(--text-secondary); }
+    h3 a { text-decoration: none; border-bottom: 1px solid transparent; transition: border-color .3s var(--ease), color .3s var(--ease); }
+    h3 a:hover { border-bottom-color: var(--accent); color: var(--accent); }
     p {
       font-size: 16px;
       line-height: 1.72;
@@ -218,8 +234,6 @@
       margin-bottom: 18px;
     }
     .lead { font-size: 17.5px; color: #d6d6da; }
-
-    /* tags */
     .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
     .tag {
       padding: 7px 13px;
@@ -231,13 +245,47 @@
       color: var(--text-secondary);
       transition: border-color .3s var(--ease), color .3s var(--ease), background-color .3s var(--ease);
     }
-    .tag:hover { border-color: #3a3a42; color: var(--text-primary); background-color: var(--bg-elev); }
-
+    .tag:hover { border-color: var(--accent-border); color: var(--text-primary); background-color: var(--bg-elev); }
+    .tag-featured {
+      border-color: var(--accent-border);
+      background: var(--accent-soft);
+      color: #cfe2ff;
+    }
+    /* productos destacados */
+    .product-card {
+      background-color: var(--bg-panel);
+      border: 1px solid var(--tag-border);
+      border-left: 3px solid var(--accent);
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 16px;
+      transition: border-color .35s var(--ease), background-color .35s var(--ease), transform .35s var(--ease);
+    }
+    .product-card:hover {
+      background-color: var(--bg-elev);
+      border-color: var(--accent-border);
+      border-left-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .product-card .product-meta {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border-radius: 99px;
+      padding: 4px 11px;
+      margin-bottom: 12px;
+    }
+    .product-card h3 { margin-bottom: 10px; }
+    .product-card p:last-child, .product-card ul:last-child { margin-bottom: 0; }
     /* competencias */
     .competency { margin-bottom: 26px; }
     .competency:last-child { margin-bottom: 0; }
     .competency p { margin-bottom: 0; }
-
+    .competency h3 { color: #cfe2ff; }
     /* experiencia — rail vertical */
     .experience-item {
       position: relative;
@@ -249,7 +297,7 @@
       position: absolute;
       left: 3px; top: 8px; bottom: 0;
       width: 1px;
-      background: var(--hairline);
+      background: linear-gradient(to bottom, var(--accent-border), var(--hairline) 55%);
     }
     .experience-item:last-child { padding-bottom: 0; }
     .experience-item:last-child::before { bottom: 8px; }
@@ -260,7 +308,7 @@
       width: 7px; height: 7px;
       border-radius: 50%;
       background: var(--bg-main);
-      border: 1.5px solid #46464f;
+      border: 1.5px solid var(--accent);
     }
     .experience-header {
       display: flex;
@@ -274,20 +322,19 @@
     .date {
       font-size: 12px;
       font-weight: 600;
-      color: var(--text-muted);
+      color: #9dc2ff;
       letter-spacing: 0.04em;
       text-transform: uppercase;
       white-space: nowrap;
       padding: 4px 10px;
-      border: 1px solid var(--tag-border);
+      border: 1px solid var(--accent-border);
       border-radius: 99px;
-      background: var(--tag-bg);
+      background: var(--accent-soft);
     }
     ul { margin: 0 0 0 18px; color: var(--text-secondary); }
     li { margin-bottom: 8px; font-size: 15.5px; line-height: 1.65; padding-left: 4px; }
-    li::marker { color: #4c4c55; }
+    li::marker { color: var(--accent); }
     li:last-child { margin-bottom: 0; }
-
     /* certificaciones */
     .cert-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
     .cert-card {
@@ -311,7 +358,7 @@
       transition: border-color .35s var(--ease), right .35s var(--ease);
     }
     .cert-card:hover {
-      border-color: #3c3c45;
+      border-color: var(--accent-border);
       background-color: var(--bg-elev);
       transform: translateY(-2px);
     }
@@ -326,7 +373,6 @@
       line-height: 1.4;
     }
     .cert-card-subtitle { font-size: 12px; color: var(--text-muted); }
-
     /* ---------- RESPONSIVE ---------- */
     @media (max-width: 1024px) {
       body { height: auto; overflow: auto; }
@@ -363,12 +409,11 @@
         <img src="gonzalomoscoso.jpg" alt="Gonzalo Moscoso Pacheco" />
         <div class="profile-body">
           <h1>Gonzalo Moscoso Pacheco</h1>
-          <p class="subtitle">Senior Backend Engineer | Infrastructure &amp; Solutions Architect</p>
-
+          <p class="subtitle">Senior iOS Engineer | Desarrollo impulsado por IA · 20+ años de ingeniería de sistemas</p>
           <div class="contact-info">
             <span class="contact-row">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Arequipa, Perú
+              Arequipa, Perú · 100% remoto (Américas)
             </span>
             <a class="contact-row" href="tel:+51959651415">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 1.9.6 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.1a2 2 0 012.1-.5c.9.3 1.8.5 2.8.6a2 2 0 011.7 2z"/></svg>
@@ -378,100 +423,126 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
               gonzalomoscoso@icloud.com
             </a>
+            <a class="contact-row" href="https://www.myiosapps.org" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+              MyIOSApps.org
+            </a>
           </div>
-
           <a class="linkedin-btn" href="https://www.linkedin.com/in/gonzalomoscosoperu/" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05a3.74 3.74 0 013.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
             Perfil de LinkedIn
           </a>
-
           <div class="stats">
             <div class="stat">
+              <span class="stat-number">4</span>
+              <span class="stat-label">Apps en<br>App Store</span>
+            </div>
+            <div class="stat">
               <span class="stat-number">20+</span>
-              <span class="stat-label">Años de<br>exp.</span>
+              <span class="stat-label">Años de<br>ingeniería</span>
             </div>
             <div class="stat">
               <span class="stat-number">1.6k</span>
-              <span class="stat-label">Sedes<br>distribuidas</span>
+              <span class="stat-label">Sedes<br>desplegadas</span>
             </div>
           </div>
         </div>
       </div>
     </aside>
-
     <main class="right-panel">
       <div class="content">
+        <div class="lang-switch"><a href="portafolio_en_web.html">English version →</a></div>
         <section>
-          <h2>Abstract</h2>
-          <p class="lead">Ingeniero de Software e Infraestructura con más de 20 años de experiencia diseñando arquitecturas escalables, soluciones técnicas y conectividad crítica. Especialista en la construcción de lógica backend, administración y optimización de bases de datos relacionales (SQL), y el aseguramiento perimetral de APIs de alta disponibilidad.</p>
-          <p>Experto en la optimización y automatización de procesos mediante la orquestación de flujos de trabajo avanzados (n8n) y entornos contenerizados (Docker). Implemento de forma nativa un enfoque de desarrollo impulsado por Inteligencia Artificial (AI-Driven) para acelerar los ciclos de entrega y auditar la calidad del código, garantizando estructuras limpias (Clean Code), trazables y de alta eficiencia operativa.</p>
+          <h2>Perfil</h2>
+          <p class="lead">Ingeniero iOS con 4+ años diseñando, construyendo y publicando apps nativas de punta a punta, sobre una base de 20 años de ingeniería de software, backend e infraestructura. Dueño del ciclo completo del producto: arquitectura, desarrollo en Swift/SwiftUI, publicación en App Store, suscripciones y salud post-lanzamiento, con cuatro apps vivas en el App Store.</p>
+          <p>Integro Inteligencia Artificial donde produce valor real: un pipeline agéntico diario (agentes LLM Claude + Gemini con razonamiento multi-paso, tool calling y candados de integridad) ejecuta mi análisis de mercado en producción. Carrera previa: APIs seguras, optimización SQL y conectividad crítica para clientes corporativos bajo SLAs de 99.9%.</p>
         </section>
-
+        <section>
+          <h2>Productos Destacados</h2>
+          <div class="product-card">
+            <span class="product-meta">App Store · 2024–2026</span>
+            <h3>ApexTrade — tracker de portafolio de grado institucional</h3>
+            <ul>
+              <li><strong>Portafolio en tiempo real:</strong> precios en vivo, P&amp;L y cost basis por posición, seguimiento de stop-loss y gráfico interactivo de valor en el tiempo con VIX en vivo.</li>
+              <li><strong>StockMap:</strong> mapas de calor de mercado estilo Finviz (S&amp;P 100, top gainers, ETFs por sector).</li>
+              <li><strong>Fichas por activo:</strong> gráficos de velas, RVOL, ROC, ATR, RSC, grilla de fundamentales, consenso de analistas, valor razonable y flujo VWAP.</li>
+              <li><strong>Alertas en segundo plano:</strong> precios objetivo y rupturas bajistas de VWAP con la app cerrada; notificación push al instante en que se cumple la condición.</li>
+              <li><strong>Privacy-first:</strong> Sign in with Apple + sincronización privada vía iCloud (CloudKit); cero datos en servidores externos.</li>
+            </ul>
+          </div>
+          <div class="product-card">
+            <span class="product-meta">App Store</span>
+            <h3>SpotiActions · Automate for Apple Music · SoloWrite</h3>
+            <p>Apps de automatización y productividad, cada una publicada de punta a punta: arquitectura, desarrollo, revisión de App Store, modelo de suscripción (free trial + Pro) y activos promocionales.</p>
+          </div>
+          <div class="product-card">
+            <span class="product-meta">En producción · 2025–2026</span>
+            <h3>Pipeline agéntico de IA</h3>
+            <p>Automatización diaria donde agentes LLM (Anthropic Claude + Google Gemini) realizan análisis de mercado multi-paso con tool calling, se validan mutuamente mediante candados de integridad y generan reportes auditables HTML/JSON. Orquestado con Python y versionado de punta a punta.</p>
+          </div>
+        </section>
         <section>
           <h2>Habilidades Técnicas &amp; Herramientas</h2>
           <div class="tags">
-            <span class="tag">Backend Logic</span>
-            <span class="tag">n8n Automation</span>
-            <span class="tag">Docker</span>
+            <span class="tag tag-featured">Swift / SwiftUI / UIKit</span>
+            <span class="tag tag-featured">Swift Concurrency (async/await)</span>
+            <span class="tag tag-featured">MVVM · Clean Architecture · SPM</span>
+            <span class="tag tag-featured">CoreData · CloudKit · StoreKit</span>
+            <span class="tag tag-featured">AI-Driven Development (Claude · Gemini)</span>
+            <span class="tag">Agentic Workflows &amp; Tool Calling</span>
             <span class="tag">Python</span>
-            <span class="tag">SQL (PostgreSQL / MySQL)</span>
-            <span class="tag">API Security &amp; Webhooks</span>
-            <span class="tag">Clean Code &amp; Git</span>
-            <span class="tag">AI-Driven Development</span>
+            <span class="tag">SQL (PostgreSQL / MySQL / Oracle)</span>
+            <span class="tag">API Security · JWT · Webhooks</span>
+            <span class="tag">n8n Automation · Docker</span>
+            <span class="tag">XCTest · CI/CD (GitHub Actions · Fastlane)</span>
             <span class="tag">Microsoft Azure / AWS Mapping</span>
-            <span class="tag">Swift / iOS Dev</span>
             <span class="tag">SD-WAN, VPLS &amp; Fortinet</span>
-            <span class="tag">Agile (Scrum/Kanban)</span>
-            <span class="tag">ITIL Foundations</span>
+            <span class="tag">Clean Code &amp; Git</span>
+            <span class="tag">Agile (Scrum/Kanban) · ITIL</span>
             <span class="tag">Asana / Jira / Notion</span>
           </div>
         </section>
-
         <section>
           <h2>Core Competencies</h2>
           <div class="competency">
-            <h3>Backend Engineering &amp; Clean Code</h3>
-            <p>Diseño e implementación de lógica de servidor eficiente, estructuración y optimización de consultas en bases de datos relacionales SQL, y control estricto de versiones con Git bajo principios de código limpio y mantenible.</p>
+            <h3>iOS Engineering de punta a punta</h3>
+            <p>Diseño, desarrollo y publicación de apps nativas completas: arquitectura Swift/SwiftUI, datos en tiempo real, procesamiento en segundo plano, notificaciones push, suscripciones y cumplimiento de App Store. Cuatro productos vivos lo demuestran.</p>
           </div>
           <div class="competency">
-            <h3>API Integration &amp; Security</h3>
-            <p>Construcción y orquestación de arquitecturas lógicas interconectando APIs corporativas seguras, implementando autenticación mediante tokens/JWT, manejo avanzado de webhooks y seguridad perimetral.</p>
+            <h3>Integración de IA &amp; Workflows Agénticos</h3>
+            <p>Integración de LLMs (Claude, Gemini) en flujos reales de producción: razonamiento multi-paso, tool calling, validación cruzada con candados de integridad y auditoría de código asistida por IA para acelerar ciclos de entrega.</p>
           </div>
           <div class="competency">
-            <h3>Infrastructure &amp; Workflow Automation</h3>
-            <p>Diseño de automatizaciones avanzadas interconectando sistemas críticos mediante n8n y Python. Despliegue de entornos contenerizados con Docker y mapeo lógico de redes cloud e híbridas (Azure / AWS).</p>
+            <h3>Backend, Datos &amp; Infraestructura</h3>
+            <p>Lógica de servidor eficiente, optimización de consultas SQL, APIs seguras (tokens/JWT, webhooks), orquestación con n8n y Python, entornos Docker y mapeo de redes cloud e híbridas (Azure/AWS), sobre una base de conectividad crítica bajo SLA 99.9%.</p>
           </div>
         </section>
-
         <section>
           <h2>Experiencia Profesional</h2>
-
           <div class="experience-item">
             <div class="experience-header">
-              <h3><a href="https://www.myiosapps.org/" target="_blank" rel="noopener noreferrer">MyIOSApps.org</a> – Lead Backend Engineer &amp; Software Developer</h3>
-              <span class="date">2025 – Presente</span>
+              <h3><a href="https://www.myiosapps.org/" target="_blank" rel="noopener noreferrer">MyIOSApps.org</a> – iOS Solutions Architect &amp; Developer</h3>
+              <span class="date">2022 – Presente</span>
             </div>
             <ul>
-              <li>Diseño, desarrollo y despliegue de arquitectura backend y lógica de servidor para aplicaciones móviles y herramientas de automatización como SpotiActions, Automate Music y SoloWrite.</li>
-              <li>Orquestación de flujos lógicos inter-APIs avanzados y puentes de automatización técnica en tiempo real utilizando Python, n8n y entornos contenerizados en Docker.</li>
-              <li>Implementación de pipelines de desarrollo impulsados por Inteligencia Artificial (AI-Driven) para acelerar los ciclos de entrega, auditar la seguridad del código y optimizar consultas en bases de datos relacionales SQL.</li>
-              <li>Control de versiones nativo con Git y aplicación rigurosa de principios Clean Code para garantizar la escalabilidad técnica y limpieza de cada desarrollo.</li>
+              <li>Diseño, construcción y publicación de cuatro apps iOS nativas de punta a punta (ApexTrade, SpotiActions, Automate for Apple Music, SoloWrite): arquitectura, desarrollo, cumplimiento de App Store y modelo de negocio por suscripción.</li>
+              <li>Ingeniería de funciones financieras en tiempo real: feeds de precios en vivo, motores de métricas cuantitativas (VWAP, RVOL, ATR), gráficos interactivos y sistema de alertas en segundo plano.</li>
+              <li>Construcción y operación de un flujo de desarrollo y análisis impulsado por IA: integración de LLMs (Claude, Gemini), puentes de automatización con Python, n8n y Docker, y auditoría de código asistida por IA para acelerar los ciclos de entrega.</li>
+              <li>Práctica de ingeniería rigurosa como dueño único: versionado con Git, Clean Code, optimización SQL y pipelines reproducibles y versionados.</li>
             </ul>
           </div>
-
           <div class="experience-item">
             <div class="experience-header">
               <h3>Telefónica – Senior B2B Solutions &amp; Infrastructure Engineer</h3>
               <span class="date">2005 – Febrero 2025</span>
             </div>
             <ul>
-              <li>Diseño, estructuración y despliegue de arquitectura lógica, soluciones de conectividad transparente (VPLS) y transporte crítico de datos para clientes corporativos.</li>
-              <li>Desarrollo de scripts avanzados y flujos lógicos automatizados para el monitoreo de infraestructura, procesamiento de datos y optimización de redes distribuidas.</li>
-              <li>Garantía de continuidad operativa en infraestructuras de alta disponibilidad bajo estrictos Acuerdos de Nivel de Servicio (SLA 99.9%).</li>
-              <li>Liderazgo técnico en la integración de plataformas complejas, seguridad perimetral y control de calidad en la entrega de soluciones tecnológicas corporativas.</li>
+              <li>Diseño y despliegue de arquitectura lógica, conectividad transparente (VPLS) y transporte crítico de datos para clientes corporativos, gestionando el cumplimiento de un portafolio de contratos B2B de más de US$ 60M (SLAs, covenants).</li>
+              <li>Estructuración del caso técnico-financiero de ofertas complejas (CAPEX/OPEX/OIBDA, punto de equilibrio, sensibilidades), defendidas ante comités ejecutivos y en licitaciones públicas.</li>
+              <li>Desarrollo de scripts avanzados y flujos automatizados para monitoreo de infraestructura, procesamiento de datos y optimización de redes distribuidas, garantizando continuidad operativa con SLA 99.9%.</li>
+              <li>Liderazgo técnico en integración de plataformas complejas, seguridad perimetral y control de calidad de entrega, coordinando células multidisciplinarias (ingeniería, operaciones, finanzas, legal).</li>
             </ul>
           </div>
-
           <div class="experience-item">
             <div class="experience-header">
               <h3>Grupo Intercorp – Coordinador de Infraestructura Tecnológica</h3>
@@ -483,10 +554,25 @@
             </ul>
           </div>
         </section>
-
         <section style="margin-bottom: 80px;">
           <h2>Educación &amp; Certificaciones</h2>
           <div class="cert-grid">
+            <a href="2008 Titulo Universitario Gonzalo Moscoso compressed.pdf" target="_blank" class="cert-card">
+              <span class="cert-card-title">Bachelor’s Degree in Electronic Engineering</span>
+              <span class="cert-card-subtitle">Universidad Nacional de San Agustín</span>
+            </a>
+            <a href="2026 Fortinet Certified Associate in Cybersecurity.pdf" target="_blank" class="cert-card">
+              <span class="cert-card-title">Fortinet Certified Associate in Cybersecurity</span>
+              <span class="cert-card-subtitle">Fortinet Training Institute</span>
+            </a>
+            <a href="2026 Project Management Agile Alison_Certificate-5661-55914136.pdf" target="_blank" class="cert-card">
+              <span class="cert-card-title">International Certification in Agile Project Management</span>
+              <span class="cert-card-subtitle">Alison.com · Training Facility UK</span>
+            </a>
+            <a href="AXELOS-ITIL FOUNDATIONS CERTIFICATE.pdf" target="_blank" class="cert-card">
+              <span class="cert-card-title">Certification: ITIL Foundations</span>
+              <span class="cert-card-subtitle">AXELOS International</span>
+            </a>
             <a href="2016 Competencia Security Advanced.pdf" target="_blank" class="cert-card">
               <span class="cert-card-title">Security Advanced Certification (Level: Advanced)</span>
               <span class="cert-card-subtitle">Telefónica Educación Digital</span>
@@ -495,37 +581,21 @@
               <span class="cert-card-title">Financial Services Competency (Level: Proficiency)</span>
               <span class="cert-card-subtitle">Telefónica Educación Digital</span>
             </a>
-            <a href="2008 Titulo Universitario Gonzalo Moscoso compressed.pdf" target="_blank" class="cert-card">
-              <span class="cert-card-title">Bachelor’s Degree in Electronic Engineering</span>
-              <span class="cert-card-subtitle">Universidad Nacional de San Agustín</span>
-            </a>
-            <a href="AXELOS-ITIL FOUNDATIONS CERTIFICATE.pdf" target="_blank" class="cert-card">
-              <span class="cert-card-title">Certification: ITIL Foundations</span>
-              <span class="cert-card-subtitle">AXELOS International</span>
-            </a>
-            <a href="2026 Project Management Agile Alison_Certificate-5661-55914136.pdf" target="_blank" class="cert-card">
-              <span class="cert-card-title">International Certification in Agile Project Management</span>
-              <span class="cert-card-subtitle">Alison.com · Training Facility UK</span>
-            </a>
-            <a href="Asana_Certificate-7448-55914136.pdf" target="_blank" class="cert-card">
-              <span class="cert-card-title">International Certification: ASANA</span>
-              <span class="cert-card-subtitle">Asana Academy</span>
+            <a href="2005 Gerencia Unidad de negocios.pdf" target="_blank" class="cert-card">
+              <span class="cert-card-title">Certification in Business Unit Management</span>
+              <span class="cert-card-subtitle">Universidad Católica San Pablo</span>
             </a>
             <a href="2025 Agilidad Emocional y Equipo Resiliente - Universidad del Pacífico.pdf" target="_blank" class="cert-card">
               <span class="cert-card-title">Emotional Agility and Resilient Teamwork</span>
               <span class="cert-card-subtitle">Universidad del Pacífico</span>
             </a>
-            <a href="2005 Gerencia Unidad de negocios.pdf" target="_blank" class="cert-card">
-              <span class="cert-card-title">Certification in Business Unit Management</span>
-              <span class="cert-card-subtitle">Universidad Católica San Pablo</span>
+            <a href="Asana_Certificate-7448-55914136.pdf" target="_blank" class="cert-card">
+              <span class="cert-card-title">International Certification: ASANA</span>
+              <span class="cert-card-subtitle">Asana Academy</span>
             </a>
             <a href="2025 - Formalizacion y Flujo de Compras.pdf" target="_blank" class="cert-card">
               <span class="cert-card-title">Procurement Process and Formalization</span>
               <span class="cert-card-subtitle">Successfactors - Telefonica Internacional</span>
-            </a>
-            <a href="2026 Fortinet Certified Associate in Cybersecurity.pdf" target="_blank" class="cert-card">
-              <span class="cert-card-title">Fortinet Certified Associate in Cybersecurity</span>
-              <span class="cert-card-subtitle">Fortinet Training Institute</span>
             </a>
           </div>
         </section>
