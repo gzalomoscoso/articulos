@@ -3,423 +3,603 @@
 <head>
   <meta charset="UTF-8" />
   <title>Portfolio – Gonzalo Moscoso Pacheco</title>
-  <link rel="icon" type="image/x-icon" href="https://www.linkedin.com/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gonzalo Moscoso Pacheco — Senior iOS Engineer · AI-Driven Development · 20+ years of systems engineering. Four apps live on the App Store, including ApexTrade." />
+  <link rel="icon" type="image/x-icon" href="https://www.linkedin.com/favicon.ico">
   <style>
     :root {
-      --bg-main: #0e0e0e;
-      --bg-panel: #141414;
-      --text-primary: #f2f2f2;
-      --text-secondary: #b5b5b5;
-      --accent: #d1d1d1;
-      --tag-bg: #1e1e1e;
-      --tag-border: #2a2a2a;
+      --bg-main: #0b0b0c;
+      --bg-panel: #121213;
+      --bg-elev: #17171a;
+      --text-primary: #f4f4f5;
+      --text-secondary: #a8a8ad;
+      --text-muted: #6f6f76;
+      --accent: #6ea8ff;
+      --accent-soft: rgba(110, 168, 255, 0.13);
+      --accent-border: rgba(110, 168, 255, 0.35);
+      --tag-bg: #1a1a1d;
+      --tag-border: #26262a;
+      --hairline: #202024;
+      --ease: cubic-bezier(.2, .8, .2, 1);
     }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-text-size-adjust: 100%; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       background-color: var(--bg-main);
       color: var(--text-primary);
       height: 100vh;
       overflow: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      letter-spacing: -0.011em;
     }
-
-    .layout {
-      display: flex;
-      height: 100vh;
-      width: 100%;
-    }
-
-    /* LEFT FIXED PANEL */
+    ::selection { background: rgba(110,168,255,.28); }
+    a { color: inherit; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+    .layout { display: flex; height: 100vh; width: 100%; }
+    /* ---------- LEFT FIXED PANEL ---------- */
     .left-panel {
       position: fixed;
-      left: 0;
-      top: 0;
+      left: 0; top: 0;
       width: 40%;
       height: 100vh;
       background-color: var(--bg-panel);
+      background-image:
+        radial-gradient(120% 60% at 50% 0%, rgba(255,255,255,.045), transparent 60%),
+        radial-gradient(90% 50% at 50% 100%, rgba(255,255,255,.022), transparent 65%);
+      border-right: 1px solid var(--hairline);
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
       padding: 24px 0;
     }
-
     .profile-card {
       background-color: #fff;
       color: #0e0e0e;
       width: 80%;
-      max-width: 320px;
+      max-width: 330px;
       text-align: center;
-      border-radius: 16px;
+      border-radius: 20px;
       overflow: hidden;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+      box-shadow: 0 2px 4px rgba(0,0,0,.4), 0 24px 60px -18px rgba(0,0,0,.75);
     }
-
     .profile-card img {
       width: 100%;
       height: auto;
       display: block;
       object-fit: cover;
     }
-
+    .profile-body { padding: 20px 22px 24px; }
     .profile-card h1 {
-      font-size: 22px;
-      font-weight: 600;
-      margin: 16px 0 6px;
+      font-size: 21px;
+      font-weight: 640;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      margin: 0 0 6px;
     }
-
-    .profile-card p.subtitle {
+    .profile-card .subtitle {
       font-size: 13px;
-      font-weight: 600;
-      line-height: 1.4;
-      margin-bottom: 12px;
-      color: #333;
-      padding: 0 12px;
+      color: #5c5c63;
+      font-weight: 500;
+      line-height: 1.45;
+      margin: 0 0 18px;
     }
-
     .contact-info {
-      font-size: 13px;
-      color: #555;
-      line-height: 1.5;
-      margin-bottom: 16px;
-      padding: 0 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      padding-top: 16px;
+      border-top: 1px solid #ececef;
+      margin-bottom: 14px;
     }
-
-    .linkedin-link {
-      display: inline-block;
-      margin-bottom: 16px;
-      font-size: 13px;
-      font-weight: 600;
-      color: #0077b5;
+    .contact-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 12px;
+      color: #6a6a72;
       text-decoration: none;
+      line-height: 1.3;
+      transition: color .25s var(--ease);
     }
-
-    .linkedin-link:hover {
-      text-decoration: underline;
+    .contact-row svg { width: 13px; height: 13px; flex: none; color: #a3a3ac; transition: color .25s var(--ease); }
+    a.contact-row:hover { color: #0e0e0e; }
+    a.contact-row:hover svg { color: #0e0e0e; }
+    .linkedin-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: #0e0e0e;
+      color: #fff;
+      font-size: 12.5px;
+      font-weight: 600;
+      letter-spacing: .01em;
+      text-decoration: none;
+      transition: background .3s var(--ease), transform .3s var(--ease);
     }
-
-    /* STATS */
+    .linkedin-btn svg { width: 15px; height: 15px; flex: none; }
+    .linkedin-btn:hover { background: #0a66c2; transform: translateY(-1px); }
     .stats {
       display: flex;
       justify-content: center;
-      gap: 32px;
-      margin: 16px 0 24px;
-      flex-wrap: nowrap;
+      gap: 10px;
+      margin: 18px 0 0;
+      padding-top: 18px;
+      border-top: 1px solid #ececef;
     }
-
-    .stat {
-      text-align: center;
-      width: 100px;
-    }
-
+    .stat { flex: 1; text-align: center; }
+    .stat + .stat { border-left: 1px solid #ececef; }
     .stat-number {
       display: block;
-      font-size: 28px;
+      font-size: 22px;
       font-weight: 700;
+      letter-spacing: -0.03em;
       color: #0e0e0e;
+      line-height: 1;
     }
-
     .stat-label {
       display: block;
-      font-size: 11px;
-      font-weight: 500;
-      color: #555;
-      letter-spacing: 0.05em;
-      white-space: normal;
-      word-break: break-word;
+      margin-top: 6px;
+      font-size: 9px;
+      font-weight: 600;
+      color: #78787f;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      line-height: 1.35;
     }
-
-    /* RIGHT SCROLLABLE CONTENT */
+    /* ---------- RIGHT SCROLLABLE CONTENT ---------- */
     .right-panel {
       margin-left: 40%;
       width: 60%;
       height: 100vh;
       overflow-y: auto;
-      padding: 80px 72px;
+      overscroll-behavior: contain;
+      padding: 64px 72px 80px;
+      scrollbar-width: thin;
+      scrollbar-color: #2c2c31 transparent;
+      background-image:
+        radial-gradient(70% 38% at 85% 0%, rgba(110,168,255,.06), transparent 62%),
+        radial-gradient(55% 30% at 10% 100%, rgba(110,168,255,.035), transparent 60%);
+      background-attachment: local;
     }
-
-    h1 {
-      font-size: 48px;
-      font-weight: 600;
-      margin-bottom: 32px;
-      letter-spacing: -0.02em;
+    .right-panel::-webkit-scrollbar { width: 11px; }
+    .right-panel::-webkit-scrollbar-track { background: transparent; }
+    .right-panel::-webkit-scrollbar-thumb {
+      background: #2c2c31;
+      border-radius: 99px;
+      border: 3px solid var(--bg-main);
     }
-
-    h2 {
-      font-size: 28px;
-      font-weight: 500;
-      margin-top: 56px;
-      margin-bottom: 24px;
-      letter-spacing: -0.01em;
-    }
-
-    p {
-      font-size: 18px;
-      line-height: 1.7;
-      color: var(--text-secondary);
-      margin-bottom: 20px;
-      max-width: 820px;
-    }
-
-    /* TAGS */
-    .tags {
+    .right-panel::-webkit-scrollbar-thumb:hover { background: #3d3d44; }
+    .content { max-width: 860px; }
+    .lang-switch {
       display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 48px;
-      max-width: 900px;
+      justify-content: flex-end;
+      margin-bottom: 6px;
     }
-
+    .lang-switch a {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--text-muted);
+      padding: 5px 12px;
+      border: 1px solid var(--tag-border);
+      border-radius: 99px;
+      background: var(--tag-bg);
+      transition: color .3s var(--ease), border-color .3s var(--ease);
+    }
+    .lang-switch a:hover { color: var(--accent); border-color: var(--accent-border); }
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: -0.025em;
+      color: var(--text-primary);
+      margin: 60px 0 26px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--hairline);
+    }
+    h2::before {
+      content: "";
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex: none;
+      box-shadow: 0 0 8px rgba(110,168,255,.5);
+    }
+    section:first-of-type h2 { margin-top: 0; }
+    h3 {
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+    h3 a { text-decoration: none; border-bottom: 1px solid transparent; transition: border-color .3s var(--ease), color .3s var(--ease); }
+    h3 a:hover { border-bottom-color: var(--accent); color: var(--accent); }
+    p {
+      font-size: 16px;
+      line-height: 1.72;
+      color: var(--text-secondary);
+      margin-bottom: 18px;
+    }
+    .lead { font-size: 17.5px; color: #d6d6da; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
     .tag {
-      padding: 10px 16px;
-      font-size: 14px;
-      border-radius: 999px;
+      padding: 7px 13px;
+      font-size: 12.5px;
+      font-weight: 500;
+      border-radius: 8px;
       background-color: var(--tag-bg);
       border: 1px solid var(--tag-border);
+      color: var(--text-secondary);
+      transition: border-color .3s var(--ease), color .3s var(--ease), background-color .3s var(--ease);
+    }
+    .tag:hover { border-color: var(--accent-border); color: var(--text-primary); background-color: var(--bg-elev); }
+    .tag-featured {
+      border-color: var(--accent-border);
+      background: var(--accent-soft);
+      color: #cfe2ff;
+    }
+    /* productos destacados */
+    .product-card {
+      background-color: var(--bg-panel);
+      border: 1px solid var(--tag-border);
+      border-left: 3px solid var(--accent);
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 16px;
+      transition: border-color .35s var(--ease), background-color .35s var(--ease), transform .35s var(--ease);
+    }
+    .product-card:hover {
+      background-color: var(--bg-elev);
+      border-color: var(--accent-border);
+      border-left-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .product-card .product-meta {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
       color: var(--accent);
+      background: var(--accent-soft);
+      border-radius: 99px;
+      padding: 4px 11px;
+      margin-bottom: 12px;
+    }
+    .product-card h3 { margin-bottom: 10px; }
+    .product-card p:last-child, .product-card ul:last-child { margin-bottom: 0; }
+    /* competencias */
+    .competency { margin-bottom: 26px; }
+    .competency:last-child { margin-bottom: 0; }
+    .competency p { margin-bottom: 0; }
+    .competency h3 { color: #cfe2ff; }
+    /* experiencia — rail vertical */
+    .experience-item {
+      position: relative;
+      padding-left: 24px;
+      padding-bottom: 30px;
+    }
+    .experience-item::before {
+      content: "";
+      position: absolute;
+      left: 3px; top: 8px; bottom: 0;
+      width: 1px;
+      background: linear-gradient(to bottom, var(--accent-border), var(--hairline) 55%);
+    }
+    .experience-item:last-child { padding-bottom: 0; }
+    .experience-item:last-child::before { bottom: 8px; }
+    .experience-item::after {
+      content: "";
+      position: absolute;
+      left: 0; top: 6px;
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--bg-main);
+      border: 1.5px solid var(--accent);
+    }
+    .experience-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+    .experience-header h3 { margin-bottom: 0; }
+    .date {
+      font-size: 12px;
+      font-weight: 600;
+      color: #9dc2ff;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
       white-space: nowrap;
+      padding: 4px 10px;
+      border: 1px solid var(--accent-border);
+      border-radius: 99px;
+      background: var(--accent-soft);
     }
-
-    /* SECTION SPACING */
-    .section {
-      margin-bottom: 56px;
-    }
-
-    /* CERT GRID */
-    .cert-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      max-width: 900px;
-    }
-
+    ul { margin: 0 0 0 18px; color: var(--text-secondary); }
+    li { margin-bottom: 8px; font-size: 15.5px; line-height: 1.65; padding-left: 4px; }
+    li::marker { color: var(--accent); }
+    li:last-child { margin-bottom: 0; }
+    /* certificaciones */
+    .cert-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
     .cert-card {
+      position: relative;
       display: block;
       text-decoration: none;
-      padding: 24px;
+      padding: 18px 40px 18px 18px;
       background-color: var(--bg-panel);
       border: 1px solid var(--tag-border);
       border-radius: 12px;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      position: relative;
-      overflow: hidden;
+      transition: border-color .35s var(--ease), background-color .35s var(--ease), transform .35s var(--ease);
     }
-
-    .cert-card:hover {
-      border-color: var(--accent);
-      transform: translateY(-4px);
-      background-color: #1a1a1a;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    }
-
     .cert-card::after {
-      content: "View PDF ↗";
+      content: "";
       position: absolute;
-      bottom: 16px;
-      right: 20px;
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--text-secondary);
-      opacity: 0;
-      transition: opacity 0.3s ease;
+      right: 18px; top: 50%;
+      width: 7px; height: 7px;
+      border-top: 1.5px solid #4c4c55;
+      border-right: 1.5px solid #4c4c55;
+      transform: translateY(-50%) rotate(45deg);
+      transition: border-color .35s var(--ease), right .35s var(--ease);
     }
-
-    .cert-card:hover::after {
-      opacity: 1;
+    .cert-card:hover {
+      border-color: var(--accent-border);
+      background-color: var(--bg-elev);
+      transform: translateY(-2px);
     }
-
+    .cert-card:hover::after { border-color: var(--accent); right: 14px; }
     .cert-card-title {
       display: block;
-      font-size: 16px;
+      font-size: 13.5px;
       font-weight: 600;
+      letter-spacing: -0.01em;
       color: var(--text-primary);
+      margin-bottom: 5px;
       line-height: 1.4;
-      margin-bottom: 8px;
     }
-
-    .cert-card-subtitle {
-      display: block;
-      font-size: 13px;
-      color: var(--text-secondary);
-      font-weight: 400;
-    }
-
-    /* RESPONSIVE MOBILE FIX */
+    .cert-card-subtitle { font-size: 12px; color: var(--text-muted); }
+    /* ---------- RESPONSIVE ---------- */
     @media (max-width: 1024px) {
-      body {
-        height: auto;
-        overflow: auto;
-      }
-
-      .layout {
-        flex-direction: column;
-        height: auto;
-      }
-
+      body { height: auto; overflow: auto; }
+      .layout { flex-direction: column; height: auto; }
       .left-panel {
         width: 100%;
         position: relative;
         height: auto;
         display: block;
-        padding: 16px 0;
+        padding: 28px 0;
         overflow: visible;
+        border-right: 0;
+        border-bottom: 1px solid var(--hairline);
       }
-
-      .profile-card {
-        width: 90%;
-        max-width: 320px;
-        margin: 0 auto;
-        overflow: visible;
-      }
-
-      .profile-card img {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-      }
-
-      .right-panel {
-        margin-left: 0;
-        width: 100%;
-        height: auto;
-        padding: 48px 32px;
-      }
-
+      .profile-card { width: 90%; max-width: 330px; margin: 0 auto; overflow: visible; }
+      .profile-card img { width: 100%; height: auto; object-fit: contain; border-radius: 20px 20px 0 0; }
+      .right-panel { margin-left: 0; width: 100%; height: auto; padding: 48px 32px; overflow: visible; }
       .cert-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 520px) {
+      .right-panel { padding: 40px 22px; }
+      p { font-size: 15.5px; }
+      li { font-size: 15px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { transition-duration: .001ms !important; animation-duration: .001ms !important; }
     }
   </style>
 </head>
 <body>
   <div class="layout">
-    <!-- LEFT PANEL -->
     <aside class="left-panel">
       <div class="profile-card">
         <img src="gonzalomoscoso.jpg" alt="Gonzalo Moscoso Pacheco" />
-        <h1>Gonzalo Moscoso Pacheco</h1>
-        <p class="subtitle">Quantitative Financial Analyst & Solutions Architect | B2B Project Lead</p>
-        <div class="contact-info">
-          Arequipa, Perú | +51 959651415<br>
-          gonzalomoscoso@icloud.com
-        </div>
-        <a href="https://www.linkedin.com/in/gonzalomoscosoperu/" target="_blank" class="linkedin-link">
-          LinkedIn Profile ↗
-        </a>
-
-        <!-- STATS -->
-        <div class="stats">
-          <div class="stat">
-            <span class="stat-number">20+</span>
-            <span class="stat-label">YEARS OF<br>EXPERIENCE</span>
+        <div class="profile-body">
+          <h1>Gonzalo Moscoso Pacheco</h1>
+          <p class="subtitle">Senior iOS Engineer | AI-Driven Development · 20+ Years of Systems Engineering</p>
+          <div class="contact-info">
+            <span class="contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Arequipa, Peru · 100% Remote (Americas)
+            </span>
+            <a class="contact-row" href="tel:+51959651415">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 1.9.6 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.1a2 2 0 012.1-.5c.9.3 1.8.5 2.8.6a2 2 0 011.7 2z"/></svg>
+              +51 959 651 415
+            </a>
+            <a class="contact-row" href="mailto:gonzalomoscoso@icloud.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+              gonzalomoscoso@icloud.com
+            </a>
+            <a class="contact-row" href="https://www.myiosapps.org" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+              MyIOSApps.org
+            </a>
           </div>
-          <div class="stat">
-            <span class="stat-number">$60M+</span>
-            <span class="stat-label">FCV MANAGED<br>& AUDITED</span>
+          <a class="linkedin-btn" href="https://www.linkedin.com/in/gonzalomoscosoperu/" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05a3.74 3.74 0 013.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+            LinkedIn Profile
+          </a>
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-number">4</span>
+              <span class="stat-label">Apps on the<br>App Store</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">Years of<br>engineering</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">1.6k</span>
+              <span class="stat-label">Sites<br>deployed</span>
+            </div>
           </div>
         </div>
       </div>
     </aside>
-
-    <!-- RIGHT PANEL -->
     <main class="right-panel">
-      <section class="section">
-        <h2>Core Expertise</h2>
-        <div class="tags">
-          <span class="tag">Financial Statement Analysis</span>
-          <span class="tag">CAPEX/OPEX & OIBDA Modeling</span>
-          <span class="tag">Discounted Cash Flow (DCF)</span>
-          <span class="tag">Quantitative Risk Metrics (VWAP, ATR, Beta)</span>
-          <span class="tag">Portfolio Monitoring & Covenant Auditing</span>
-          <span class="tag">SQL (Oracle, PostgreSQL, MySQL)</span>
-          <span class="tag">Python & Data Pipelines</span>
-          <span class="tag">Multi-Tower IT/COM Infrastructure</span>
-          <span class="tag">ISO 9001 Audits & Compliance</span>
-          <span class="tag">B2B Project Leadership</span>
-          <span class="tag">Pre-Sales & Financial Modeling</span>
-          <span class="tag">Native iOS Systems Architecture (ApexTrade)</span>
-          <span class="tag">Agile (Jira, Asana, ITIL)</span>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>Strategic Profile</h2>
-        <p>Quantitative Financial Analyst and Electronic Engineer with over 20 years of experience driving project financial modeling (CAPEX/OPEX/OIBDA), B2B portfolio governance, and complex IT/COM infrastructure implementations across enterprise environments. Proven track record acting as a strategic bridge between financial modeling, quantitative software design, and executive stakeholder management.</p>
-        <p>I combine disciplined analytical research with an engineering approach to design automated financial pipelines, evaluate multi-million dollar contracts, and build custom financial analysis software (ApexTrade)—ensuring data auditability, risk mitigation, and operational scalability.</p>
-      </section>
-
-      <section class="section">
-        <h2>Financial Modeling, Valuation & Quantitative Research</h2>
-        <p>Extensive background in financial statement analysis, balance sheet evaluation, and dynamic cash flow projections. Expert in constructing CAPEX/OPEX structures, sensitivity scenarios, break-even analyses, and OIBDA margin optimizations for complex public and private sector tenders.</p>
-        <p>In addition, I engineer automated financial pipelines using Python and SQL to fetch live market data, calculate quantitative risk metrics (VWAP, RVOL, ATR, Beta, VIX volatility profiling), and execute systematic equity due diligence with zero-variance ledger accuracy.</p>
-      </section>
-
-      <section class="section">
-        <h2>Portfolio Governance & Covenant Compliance ($60M+ FCV)</h2>
-        <p>Proven tenure managing and auditing multi-year corporate contract portfolios exceeding US$ 60 Million in Total Contract Value (FCV). Responsible for enforcing SLA/covenant compliance, tracking key billing milestones, and building structured reporting frameworks to provide clear financial oversight to executive committees.</p>
-        <p>Leveraging SQL, Power BI, Python, and automated workflow triggers (n8n, ScriptRunner), I build auditable data tracking systems that transform operational metrics into actionable financial and risk management insights.</p>
-      </section>
-
-      <section class="section">
-        <h2>IT/COM Systems Architecture & Quantitative Software</h2>
-        <p>Architected resilient multi-region infrastructure over MPLS, SD-WAN, Fiber, LTE, and Starlink frameworks with advanced 7-level QoS prioritization and managed security protocols (Fortinet, Cisco). Simultaneously, I design native financial software solutions (ApexTrade) utilizing MVVM and Coordinator patterns in Swift/UIKit/SwiftUI to stream real-time market data, fair value estimations, and interactive liquidity heatmaps.</p>
-      </section>
-
-      <section class="section">
-        <h2>Quality, Compliance & Audit Readiness</h2>
-        <p>Extensive experience governing documentation and operational controls aligned with ISO 9001 and ISO 27001 standards. Actively led internal and external audit processes, embedding quality control, SLA tracking, and regulatory compliance directly into daily workflows rather than administrative overhead.</p>
-      </section>
-
-      <section class="section" style="margin-bottom: 120px;">
-        <h2>Education & Certifications</h2>
-        <div class="cert-grid">
-          <a href="2008 Titulo Universitario Gonzalo Moscoso compressed.pdf" target="_blank" class="cert-card">
-            <span class="cert-card-title">Bachelor’s Degree in Electronic Engineering</span>
-            <span class="cert-card-subtitle">Universidad Nacional de San Agustín</span>
-          </a>
-
-          <a href="2005 Gerencia Unidad de negocios.pdf" target="_blank" class="cert-card">
-            <span class="cert-card-title">Certification in Business Unit Management</span>
-            <span class="cert-card-subtitle">Universidad Católica San Pablo</span>
-          </a>
-
-          <a href="AXELOS-ITIL FOUNDATIONS CERTIFICATE.pdf" target="_blank" class="cert-card">
-            <span class="cert-card-title">Certification: ITIL Foundations</span>
-            <span class="cert-card-subtitle">AXELOS International</span>
-          </a>
-
-          <a href="2025 Agilidad Emocional y Equipo Resiliente - Universidad del Pacífico.pdf" target="_blank" class="cert-card">
-            <span class="cert-card-title">Emotional Agility and Resilient Teamwork</span>
-            <span class="cert-card-subtitle">Universidad del Pacífico</span>
-          </a>
-
-          <a href="2026 Project Management Agile Alison_Certificate-5661-55914136.pdf" target="_blank" class="cert-card">
-            <span class="cert-card-title">International Certification in Agile Project Management</span>
-            <span class="cert-card-subtitle">Alison.com · Training Facility UK</span>
-          </a>
-
-          <a href="Asana_Certificate-7448-55914136.pdf" target="_blank" class="cert-card">
-            <span class="cert-card-title">International Certification: ASANA - Managing Workflows & Projects Seamlessly</span>
-            <span class="cert-card-subtitle">Asana Academy</span>
-          </a>
-
-          <a href="2025 - Formalizacion y Flujo de Compras.pdf" target="_blank" class="cert-card">
-            <span class="cert-card-title">Procurement Process and Formalization</span>
-            <span class="cert-card-subtitle">Successfactors - Telefonica Internacional</span>
-          </a>
-
-          <a href="2026 Fortinet Certified Associate in Cybersecurity.pdf" target="_blank" class="cert-card">
-            <span class="cert-card-title">Fortinet Certified Associate in Cybersecurity</span>
-            <span class="cert-card-subtitle">Fortinet Training Institute</span>
-          </a>
-        </div>
-      </section>
+      <div class="content">
+        <div class="lang-switch"><a href="portafolio_es_web.html">Versión en español →</a></div>
+        <section>
+          <h2>About</h2>
+          <p class="lead">iOS engineer with 4+ years designing, building and shipping native apps end-to-end, on a 20-year foundation of software, backend and infrastructure engineering. Owner of the full product lifecycle: architecture, Swift/SwiftUI development, App Store release, subscriptions and post-launch health, with four apps live on the App Store.</p>
+          <p>I integrate AI where it produces real value: a daily agentic pipeline (Claude + Gemini LLM agents with multi-step reasoning, tool calling and integrity gates) runs my market analysis in production. Earlier career: secure APIs, SQL optimization and critical connectivity for corporate clients under 99.9% SLAs.</p>
+        </section>
+        <section>
+          <h2>Featured Products</h2>
+          <div class="product-card">
+            <span class="product-meta">App Store · 2024–2026</span>
+            <h3>ApexTrade — institutional-grade portfolio tracker</h3>
+            <ul>
+              <li><strong>Real-time portfolio:</strong> live pricing, P&amp;L and cost basis per holding, stop-loss tracking and an interactive value-over-time chart with live VIX.</li>
+              <li><strong>StockMap:</strong> Finviz-style market heat-maps (S&amp;P 100, top gainers, sector ETFs).</li>
+              <li><strong>Per-ticker fact sheets:</strong> candlestick charts, RVOL, ROC, ATR, RSC, fundamentals grid, analyst consensus, fair value and VWAP flow.</li>
+              <li><strong>Background alerts engine:</strong> price targets and VWAP bearish-break monitoring with the app closed; push notification the moment a condition triggers.</li>
+              <li><strong>Privacy-first:</strong> Sign in with Apple + private iCloud sync (CloudKit); zero data on external servers.</li>
+            </ul>
+          </div>
+          <div class="product-card">
+            <span class="product-meta">App Store</span>
+            <h3>SpotiActions · Automate for Apple Music · SoloWrite</h3>
+            <p>Automation and productivity apps, each shipped end-to-end: architecture, development, App Store review, subscription model (free trial + Pro) and promotional assets.</p>
+          </div>
+          <div class="product-card">
+            <span class="product-meta">In production · 2025–2026</span>
+            <h3>Agentic AI pipeline</h3>
+            <p>Daily automation where LLM agents (Anthropic Claude + Google Gemini) perform multi-step market analysis with tool calling, cross-validate each other's outputs through integrity gates, and generate auditable HTML/JSON reports. Orchestrated with Python and versioned end-to-end.</p>
+          </div>
+        </section>
+        <section>
+          <h2>Technical Skills &amp; Tools</h2>
+          <div class="tags">
+            <span class="tag tag-featured">Swift / SwiftUI / UIKit</span>
+            <span class="tag tag-featured">Swift Concurrency (async/await)</span>
+            <span class="tag tag-featured">MVVM · Clean Architecture · SPM</span>
+            <span class="tag tag-featured">CoreData · CloudKit · StoreKit</span>
+            <span class="tag tag-featured">AI-Driven Development (Claude · Gemini)</span>
+            <span class="tag">Agentic Workflows &amp; Tool Calling</span>
+            <span class="tag">Python</span>
+            <span class="tag">SQL (PostgreSQL / MySQL / Oracle)</span>
+            <span class="tag">API Security · JWT · Webhooks</span>
+            <span class="tag">n8n Automation · Docker</span>
+            <span class="tag">XCTest · CI/CD (GitHub Actions · Fastlane)</span>
+            <span class="tag">Microsoft Azure / AWS Mapping</span>
+            <span class="tag">SD-WAN, VPLS &amp; Fortinet</span>
+            <span class="tag">Clean Code &amp; Git</span>
+            <span class="tag">Agile (Scrum/Kanban) · ITIL</span>
+            <span class="tag">Asana / Jira / Notion</span>
+          </div>
+        </section>
+        <section>
+          <h2>Core Competencies</h2>
+          <div class="competency">
+            <h3>End-to-End iOS Engineering</h3>
+            <p>Design, development and release of complete native apps: Swift/SwiftUI architecture, real-time data, background processing, push notifications, subscriptions and App Store compliance. Four live products prove it.</p>
+          </div>
+          <div class="competency">
+            <h3>AI Integration &amp; Agentic Workflows</h3>
+            <p>LLM integration (Claude, Gemini) in real production flows: multi-step reasoning, tool calling, cross-validation through integrity gates and AI-assisted code audit to accelerate delivery cycles.</p>
+          </div>
+          <div class="competency">
+            <h3>Backend, Data &amp; Infrastructure</h3>
+            <p>Efficient server logic, SQL query optimization, secure APIs (tokens/JWT, webhooks), orchestration with n8n and Python, Docker environments and cloud/hybrid network mapping (Azure/AWS), on a foundation of critical connectivity under 99.9% SLAs.</p>
+          </div>
+        </section>
+        <section>
+          <h2>Professional Experience</h2>
+          <div class="experience-item">
+            <div class="experience-header">
+              <h3><a href="https://www.myiosapps.org/" target="_blank" rel="noopener noreferrer">MyIOSApps.org</a> – iOS Solutions Architect &amp; Developer</h3>
+              <span class="date">2022 – Present</span>
+            </div>
+            <ul>
+              <li>Designed, built and shipped four native iOS apps end-to-end (ApexTrade, SpotiActions, Automate for Apple Music, SoloWrite), owning architecture, development, App Store compliance and the subscription business model.</li>
+              <li>Engineered real-time financial features: live pricing feeds, quantitative metrics engines (VWAP, RVOL, ATR), interactive charting and a background alerts system.</li>
+              <li>Built and operate an AI-driven development and analysis workflow: LLM integration (Claude, Gemini), automation bridges with Python, n8n and Docker, and AI-assisted code audit to accelerate delivery cycles.</li>
+              <li>Rigorous engineering practice as a solo owner: Git versioning, Clean Code, SQL optimization and reproducible, versioned pipelines.</li>
+            </ul>
+          </div>
+          <div class="experience-item">
+            <div class="experience-header">
+              <h3>Telefónica – Senior B2B Solutions &amp; Infrastructure Engineer</h3>
+              <span class="date">2005 – February 2025</span>
+            </div>
+            <ul>
+              <li>Designed and deployed logical architecture, transparent connectivity (VPLS) and critical data transport for corporate clients, managing compliance on a B2B contract portfolio exceeding US$ 60M (SLAs, covenants).</li>
+              <li>Built the technical-financial case of complex bids (CAPEX/OPEX/OIBDA, break-even, sensitivity analysis), defended before executive committees and in public tenders.</li>
+              <li>Developed advanced scripts and automated flows for infrastructure monitoring, data processing and distributed network optimization, guaranteeing 99.9% SLA operational continuity.</li>
+              <li>Technical leadership integrating complex platforms, perimeter security and delivery quality control, coordinating multidisciplinary cells (engineering, operations, finance, legal).</li>
+            </ul>
+          </div>
+          <div class="experience-item">
+            <div class="experience-header">
+              <h3>Grupo Intercorp – Technology Infrastructure Coordinator</h3>
+              <span class="date">2003 – 2005</span>
+            </div>
+            <ul>
+              <li>Supervised the rollout of connectivity infrastructure and distributed systems for Retail and Banking across 1,600+ sites nationwide.</li>
+              <li>Logical network modeling, technical audit of implemented telecom services and operational optimization of the installed architecture.</li>
+            </ul>
+          </div>
+        </section>
+        <section style="margin-bottom: 80px;">
+          <h2>Education &amp; Certifications</h2>
+          <div class="cert-grid">
+            <a href="2008 Titulo Universitario Gonzalo Moscoso compressed.pdf" target="_blank" class="cert-card">
+              <span class="cert-card-title">Bachelor’s Degree in Electronic Engineering</span>
+              <span class="cert-card-subtitle">Universidad Nacional de San Agustín</span>
+            </a>
+            <a href="2026 Fortinet Certified Associate in Cybersecurity.pdf" target="_blank" class="cert-card">
+              <span class="cert-card-title">Fortinet Certified Associate in Cybersecurity</span>
+              <span class="cert-card-subtitle">Fortinet Training Institute</span>
+            </a>
+            <a href="2026 Project Management Agile Alison_Certificate-5661-55914136.pdf" target="_blank" class="cert-card">
+              <span class="cert-card-title">International Certification in Agile Project Management</span>
+              <span class="cert-card-subtitle">Alison.com · Training Facility UK</span>
+            </a>
+            <a href="AXELOS-ITIL FOUNDATIONS CERTIFICATE.pdf" target="_blank" class="cert-card">
+              <span class="cert-card-title">Certification: ITIL Foundations</span>
+              <span class="cert-card-subtitle">AXELOS International</span>
+            </a>
+            <a href="2016 Competencia Security Advanced.pdf" target="_blank" class="cert-card">
+              <span class="cert-card-title">Security Advanced Certification (Level: Advanced)</span>
+              <span class="cert-card-subtitle">Telefónica Educación Digital</span>
+            </a>
+            <a href="2017 Competencia Financial Services.pdf" target="_blank" class="cert-card">
+              <span class="cert-card-title">Financial Services Competency (Level: Proficiency)</span>
+              <span class="cert-card-subtitle">Telefónica Educación Digital</span>
+            </a>
+            <a href="2005 Gerencia Unidad de negocios.pdf" target="_blank" class="cert-card">
+              <span class="cert-card-title">Certification in Business Unit Management</span>
+              <span class="cert-card-subtitle">Universidad Católica San Pablo</span>
+            </a>
+            <a href="2025 Agilidad Emocional y Equipo Resiliente - Universidad del Pacífico.pdf" target="_blank" class="cert-card">
+              <span class="cert-card-title">Emotional Agility and Resilient Teamwork</span>
+              <span class="cert-card-subtitle">Universidad del Pacífico</span>
+            </a>
+            <a href="Asana_Certificate-7448-55914136.pdf" target="_blank" class="cert-card">
+              <span class="cert-card-title">International Certification: ASANA</span>
+              <span class="cert-card-subtitle">Asana Academy</span>
+            </a>
+            <a href="2025 - Formalizacion y Flujo de Compras.pdf" target="_blank" class="cert-card">
+              <span class="cert-card-title">Procurement Process and Formalization</span>
+              <span class="cert-card-subtitle">Successfactors - Telefonica Internacional</span>
+            </a>
+          </div>
+        </section>
+      </div>
     </main>
   </div>
 </body>
