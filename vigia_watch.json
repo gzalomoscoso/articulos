@@ -1,0 +1,49 @@
+{
+ "ABT": {
+  "tipo": "posicion",
+  "entrada": 111.98,
+  "acc": 2,
+  "stop": 104.78,
+  "obj": 116.46,
+  "sector": "salud",
+  "desde": "2026-09-03",
+  "vence": "2026-09-16"
+ },
+ "_cuenta": {
+  "caja": 807.55,
+  "en_liquidacion": 216.97,
+  "depositado": 3050.0,
+  "plazas_libres": 1,
+  "max_posiciones": 5
+ },
+ "JNJ": {
+  "tipo": "posicion",
+  "entrada": 274.58,
+  "acc": 2,
+  "stop": 258.1,
+  "obj": 285.56,
+  "sector": "salud",
+  "desde": "2026-09-02",
+  "vence": "2026-09-15"
+ },
+ "PGR": {
+  "tipo": "posicion",
+  "entrada": 224.5,
+  "acc": 4,
+  "stop": 211.03,
+  "obj": 233.47,
+  "sector": "seguros",
+  "desde": "2026-09-03",
+  "vence": "2026-09-16"
+ },
+ "CVX": {
+  "tipo": "posicion",
+  "entrada": 207.55,
+  "acc": 2,
+  "stop": 194.75,
+  "obj": 215.85,
+  "sector": "energia",
+  "desde": "2026-09-04",
+  "vence": "2026-09-17"
+ }
+}
