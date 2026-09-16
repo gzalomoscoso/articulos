@@ -165,10 +165,18 @@ def main():
     hoy = datetime.date.today()
     base = hoy if es_sesion(hoy) else hoy
     # la sesion a operar es la siguiente al cierre mas reciente que tengamos
-    cierre_efectivo = cierre_barras
-    if precios:
-        cierre_efectivo = max(cierre_barras, hoy - datetime.timedelta(days=1))
-    antiguedad = sesiones_entre(cierre_barras, hoy)
+    # La lista se etiqueta para la SIGUIENTE sesion real, no para la siguiente
+    # a la fecha de las barras. Si las barras son del viernes y esto corre el
+    # lunes por la noche, "siguiente a las barras" daria el lunes -- una sesion
+    # que ya opero. Lo util es decir "esto es para manana" y declarar aparte
+    # que las escaleras estan construidas sobre un cierre de hace N sesiones.
+    ult = hoy if (es_sesion(hoy) and datetime.datetime.now().hour >= 21) else None
+    if ult is None:
+        ult = hoy - datetime.timedelta(days=1)
+        while not es_sesion(ult):
+            ult -= datetime.timedelta(days=1)
+    cierre_efectivo = max(cierre_barras, ult)
+    antiguedad = sesiones_entre(cierre_barras, ult)
 
     filas = []
     for tk, b in B["barras"].items():
