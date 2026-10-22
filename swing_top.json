@@ -74,7 +74,12 @@
     "aviso": "SP100: sin capa fundamental",
     "sin_datos": true,
     "error": "SP100: sin capa fundamental"
-   }
+   },
+   "semaforo": "rojo",
+   "alerta": "Resultados 22-oct",
+   "bloquea_compra": true,
+   "vender_antes": null,
+   "motivo": "No comprar: resultados el 22-oct antes de la apertura (bmo). Ninguna de 9 sesiones utiles. El hueco de resultados salta el stop; la regla es vender antes de resultados."
   },
   {
    "ticker": "KKR",
@@ -135,7 +140,12 @@
     "aviso": "SP100: sin capa fundamental",
     "sin_datos": true,
     "error": "SP100: sin capa fundamental"
-   }
+   },
+   "semaforo": "verde",
+   "alerta": "Sin resultados en el plazo",
+   "bloquea_compra": false,
+   "vender_antes": null,
+   "motivo": "Sin resultados en las 9 sesiones de la operacion. Nota de noticias 4/10."
   },
   {
    "ticker": "TKO",
@@ -196,7 +206,12 @@
     "aviso": "SP100: sin capa fundamental",
     "sin_datos": true,
     "error": "SP100: sin capa fundamental"
-   }
+   },
+   "semaforo": "ambar",
+   "alerta": "Resultados 4-nov",
+   "bloquea_compra": false,
+   "vender_antes": "2026-11-03",
+   "motivo": "Resultados el 4-nov hora no confirmada: se asume antes de la apertura. Vender al cierre del 3-nov (sesion 8 de 9) si no toco antes el stop o el objetivo."
   },
   {
    "ticker": "BA",
@@ -257,7 +272,12 @@
     "aviso": "SP100: sin capa fundamental",
     "sin_datos": true,
     "error": "SP100: sin capa fundamental"
-   }
+   },
+   "semaforo": "rojo",
+   "alerta": "Resultados 27-oct",
+   "bloquea_compra": true,
+   "vender_antes": "2026-10-26",
+   "motivo": "No comprar: resultados el 27-oct antes de la apertura (bmo). Quedan 3 de 9 sesiones utiles (ultima: 26-oct). El hueco de resultados salta el stop; la regla es vender antes de resultados."
   },
   {
    "ticker": "LOW",
@@ -318,7 +338,12 @@
     "aviso": "SP100: sin capa fundamental",
     "sin_datos": true,
     "error": "SP100: sin capa fundamental"
-   }
+   },
+   "semaforo": "verde",
+   "alerta": "Sin resultados en el plazo",
+   "bloquea_compra": false,
+   "vender_antes": null,
+   "motivo": "Sin resultados en las 9 sesiones de la operacion. Nota de noticias 4/10."
   },
   {
    "ticker": "PLD",
@@ -379,7 +404,12 @@
     "aviso": "SP100: sin capa fundamental",
     "sin_datos": true,
     "error": "SP100: sin capa fundamental"
-   }
+   },
+   "semaforo": "ambar",
+   "alerta": "Dilucion",
+   "bloquea_compra": false,
+   "vender_antes": null,
+   "motivo": "Sin resultados en el plazo, pero nota de noticias 4/10: emision de acciones (dilucion): \"Prologis (PLD) Stock Slips After Q3 Earnings Expose Dilution Risk\". No es regla del protocolo: lee la noticia antes de comprar."
   },
   {
    "ticker": "NEE",
@@ -440,7 +470,12 @@
     "aviso": "SP100: sin capa fundamental",
     "sin_datos": true,
     "error": "SP100: sin capa fundamental"
-   }
+   },
+   "semaforo": "verde",
+   "alerta": "Sin resultados en el plazo",
+   "bloquea_compra": false,
+   "vender_antes": null,
+   "motivo": "Sin resultados en las 9 sesiones de la operacion. Nota de noticias 5/10."
   },
   {
    "ticker": "O",
@@ -501,7 +536,12 @@
     "aviso": "SP100: sin capa fundamental",
     "sin_datos": true,
     "error": "SP100: sin capa fundamental"
-   }
+   },
+   "semaforo": "ambar",
+   "alerta": "Resultados 2-nov",
+   "bloquea_compra": false,
+   "vender_antes": "2026-11-02",
+   "motivo": "Resultados el 2-nov despues del cierre (amc). Vender al cierre del 2-nov (sesion 7 de 9) si no toco antes el stop o el objetivo."
   }
  ],
  "vetadas": [],
@@ -529,5 +569,10 @@
  "listas": [
   "PISO_2F",
   "SP100"
- ]
+ ],
+ "semaforo_fuente": {
+  "noticias_para_sesion": "2026-10-22",
+  "generado": "2026-10-22T11:34:03Z",
+  "misma_sesion": true
+ }
 }
