@@ -1,76 +1,76 @@
 {
- "generado": "2026-11-05T15:00:16Z",
+ "generado": "2026-11-05T15:08:12Z",
  "sesion": "2026-11-05",
- "hora_ny": "10:00",
- "minuto_sesion": 30,
+ "hora_ny": "10:08",
+ "minuto_sesion": 38,
  "ventana": "abierta",
  "candidatas": [
   {
    "ticker": "AEHL",
    "veredicto": "FASE0",
-   "precio": 10.16,
-   "cambio_pct": 62.04,
-   "rvol_real": 34.37,
+   "precio": 11.09,
+   "cambio_pct": 76.87,
+   "rvol_real": 30.19,
    "atr14": 2.18,
    "fallas": [
-    "precio 10.21 bajo VWAP x0,997 (11.70)",
-    "pullback 92% > 35%"
+    "precio 11.10 bajo VWAP x0,997 (11.68)",
+    "pullback 57% > 35%"
    ]
   },
   {
    "ticker": "APP",
    "veredicto": "PASA",
-   "precio": 358.63,
-   "cambio_pct": 31.97,
-   "rvol_real": 11.41,
+   "precio": 359.04,
+   "cambio_pct": 32.12,
+   "rvol_real": 10.51,
    "atr14": 19.83
   },
   {
    "ticker": "XERS",
    "veredicto": "PASA",
-   "precio": 13.33,
-   "cambio_pct": 27.44,
+   "precio": 13.62,
+   "cambio_pct": 30.26,
    "rvol_real": 7.75,
    "atr14": 0.69
   },
   {
    "ticker": "MGNI",
    "veredicto": "FASE0",
-   "precio": 26.95,
-   "cambio_pct": 18.25,
-   "rvol_real": 7.64,
+   "precio": 26.72,
+   "cambio_pct": 17.26,
+   "rvol_real": 7.18,
    "atr14": 1.41,
    "fallas": [
-    "precio 26.97 bajo VWAP x0,997 (27.07)",
-    "pullback 50% > 35%"
+    "precio 26.73 bajo VWAP x0,997 (27.04)",
+    "pullback 60% > 35%"
    ]
   },
   {
    "ticker": "ADMA",
    "veredicto": "PASA",
-   "precio": 12.66,
-   "cambio_pct": 20.8,
-   "rvol_real": 6.01,
-   "atr14": 0.61
+   "precio": 13.02,
+   "cambio_pct": 24.19,
+   "rvol_real": 6.49,
+   "atr14": 0.63
   }
  ],
  "cerca": [
   {
-   "ticker": "U",
-   "precio": 46.83,
-   "cambio_pct": 10.27,
-   "rvol_real": 11.58,
+   "ticker": "DNUT",
+   "precio": 4.38,
+   "cambio_pct": 24.55,
+   "rvol_real": 11.48,
    "fallas": [
-    "sube +10.3% < 15%"
+    "precio/accion $4.38 < $5.00"
    ]
   },
   {
    "ticker": "WU",
-   "precio": 7.46,
-   "cambio_pct": 12.95,
-   "rvol_real": 5.73,
+   "precio": 7.28,
+   "cambio_pct": 10.47,
+   "rvol_real": 5.51,
    "fallas": [
-    "sube +12.9% < 15%"
+    "sube +10.5% < 15%"
    ]
   }
  ]
