@@ -1,0 +1,77 @@
+{
+ "generado": "2026-11-04T23:32:19Z",
+ "sesion": "2026-11-04",
+ "hora_ny": "18:32",
+ "minuto_sesion": 390,
+ "ventana": "cerrada",
+ "candidatas": [
+  {
+   "ticker": "KD",
+   "veredicto": "FASE0",
+   "precio": 16.84,
+   "cambio_pct": 30.14,
+   "rvol_real": 3.71,
+   "atr14": 0.95,
+   "fallas": [
+    "precio 16.87 bajo VWAP x0,997 (17.19)"
+   ]
+  },
+  {
+   "ticker": "XYZ",
+   "veredicto": "PASA",
+   "precio": 87.63,
+   "cambio_pct": 15.3,
+   "rvol_real": 4.53,
+   "atr14": 3.05
+  }
+ ],
+ "cerca": [
+  {
+   "ticker": "ARRY",
+   "precio": 5.33,
+   "cambio_pct": 14.87,
+   "rvol_real": 8.14,
+   "fallas": [
+    "sube +14.9% < 15%"
+   ]
+  },
+  {
+   "ticker": "MDLN",
+   "precio": 40.35,
+   "cambio_pct": 18.36,
+   "rvol_real": 2.92,
+   "fallas": [
+    "RVOL real 2.9x < 3.0x: sin interes"
+   ]
+  },
+  {
+   "ticker": "CNC",
+   "precio": 76.01,
+   "cambio_pct": 12.64,
+   "rvol_real": 3.34,
+   "fallas": [
+    "sube +12.6% < 15%"
+   ]
+  },
+  {
+   "ticker": "FLNC",
+   "precio": 6.06,
+   "cambio_pct": 10.18,
+   "rvol_real": 2.51,
+   "fallas": [
+    "sube +10.2% < 15%",
+    "RVOL real 2.5x < 3.0x: sin interes"
+   ]
+  },
+  {
+   "ticker": "VNET",
+   "precio": 3.52,
+   "cambio_pct": 18.12,
+   "rvol_real": 2.51,
+   "fallas": [
+    "precio/accion $3.52 < $5.00",
+    "RVOL real 2.5x < 3.0x: sin interes"
+   ]
+  }
+ ]
+}
