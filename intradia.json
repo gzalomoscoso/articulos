@@ -1,100 +1,102 @@
 {
- "generado": "2026-11-06T14:53:47Z",
+ "generado": "2026-11-06T15:01:42Z",
  "sesion": "2026-11-06",
- "hora_ny": "09:52",
- "minuto_sesion": 22,
+ "hora_ny": "10:00",
+ "minuto_sesion": 30,
  "ventana": "abierta",
  "candidatas": [
   {
    "ticker": "IREN",
-   "veredicto": "PASA",
-   "precio": 22.02,
-   "cambio_pct": 22.1,
-   "rvol_real": 6.33,
-   "atr14": 2.94
+   "veredicto": "FASE0",
+   "precio": 21.57,
+   "cambio_pct": 19.63,
+   "rvol_real": 5.72,
+   "atr14": 2.94,
+   "fallas": [
+    "pullback 42% > 35%"
+   ]
   },
   {
    "ticker": "FROG",
    "veredicto": "PASA",
-   "precio": 98.0,
-   "cambio_pct": 31.33,
-   "rvol_real": 6.02,
+   "precio": 97.64,
+   "cambio_pct": 30.85,
+   "rvol_real": 5.75,
    "atr14": 7.93
   },
   {
    "ticker": "EXTR",
    "veredicto": "FASE0",
-   "precio": 24.77,
-   "cambio_pct": 17.7,
-   "rvol_real": 8.41,
+   "precio": 25.12,
+   "cambio_pct": 19.33,
+   "rvol_real": 7.25,
    "atr14": 1.52,
    "fallas": [
-    "pullback 53% > 35%"
+    "pullback 47% > 35%"
    ]
   },
   {
    "ticker": "OKLO",
    "veredicto": "PASA",
-   "precio": 22.4,
-   "cambio_pct": 16.67,
-   "rvol_real": 3.82,
+   "precio": 22.13,
+   "cambio_pct": 15.26,
+   "rvol_real": 3.37,
    "atr14": 2.16
   },
   {
    "ticker": "FLY",
    "veredicto": "PASA",
-   "precio": 17.92,
-   "cambio_pct": 18.09,
-   "rvol_real": 5.4,
+   "precio": 17.77,
+   "cambio_pct": 17.1,
+   "rvol_real": 4.84,
    "atr14": 1.62
   }
  ],
  "cerca": [
   {
    "ticker": "NET",
-   "precio": 275.19,
-   "cambio_pct": 12.55,
-   "rvol_real": 6.48,
+   "precio": 277.07,
+   "cambio_pct": 13.32,
+   "rvol_real": 6.09,
    "fallas": [
-    "sube +12.6% < 15%"
+    "sube +13.3% < 15%"
    ]
   },
   {
    "ticker": "AMD",
-   "precio": 457.57,
-   "cambio_pct": 13.15,
-   "rvol_real": 5.35,
+   "precio": 455.73,
+   "cambio_pct": 12.69,
+   "rvol_real": 4.78,
    "fallas": [
-    "sube +13.2% < 15%"
+    "sube +12.7% < 15%"
    ]
   },
   {
-   "ticker": "SNDK",
-   "precio": 900.59,
-   "cambio_pct": 11.68,
-   "rvol_real": 4.39,
+   "ticker": "COHR",
+   "precio": 190.12,
+   "cambio_pct": 11.99,
+   "rvol_real": 3.58,
    "fallas": [
-    "sube +11.7% < 15%"
-   ]
-  },
-  {
-   "ticker": "NBIS",
-   "precio": 134.49,
-   "cambio_pct": 11.72,
-   "rvol_real": 2.91,
-   "fallas": [
-    "sube +11.7% < 15%",
-    "RVOL real 2.9x < 3.0x: sin interes"
+    "sube +12.0% < 15%"
    ]
   },
   {
    "ticker": "IONQ",
-   "precio": 29.39,
-   "cambio_pct": 11.2,
-   "rvol_real": 2.95,
+   "precio": 29.3,
+   "cambio_pct": 10.85,
+   "rvol_real": 2.63,
    "fallas": [
-    "sube +11.2% < 15%",
-    "RVOL real 2.9x < 3.0x: sin interes"
+    "sube +10.8% < 15%",
+    "RVOL real 2.6x < 3.0x: sin interes"
+   ]
+  },
+  {
+   "ticker": "SHAZ",
+   "precio": 21.64,
+   "cambio_pct": 10.66,
+   "rvol_real": 5.49,
+   "fallas": [
+    "sube +10.7% < 15%"
    ]
   }
  ]
