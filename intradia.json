@@ -1,100 +1,91 @@
 {
- "generado": "2026-11-06T15:01:42Z",
+ "generado": "2026-11-06T15:09:08Z",
  "sesion": "2026-11-06",
- "hora_ny": "10:00",
- "minuto_sesion": 30,
+ "hora_ny": "10:08",
+ "minuto_sesion": 38,
  "ventana": "abierta",
  "candidatas": [
   {
+   "ticker": "FROG",
+   "veredicto": "PASA",
+   "precio": 97.95,
+   "cambio_pct": 31.27,
+   "rvol_real": 6.31,
+   "atr14": 7.93
+  },
+  {
    "ticker": "IREN",
    "veredicto": "FASE0",
-   "precio": 21.57,
-   "cambio_pct": 19.63,
-   "rvol_real": 5.72,
+   "precio": 21.13,
+   "cambio_pct": 17.19,
+   "rvol_real": 5.39,
    "atr14": 2.94,
    "fallas": [
-    "pullback 42% > 35%"
+    "pullback 52% > 35%"
    ]
   },
   {
-   "ticker": "FROG",
+   "ticker": "OKLO",
    "veredicto": "PASA",
-   "precio": 97.64,
-   "cambio_pct": 30.85,
-   "rvol_real": 5.75,
-   "atr14": 7.93
+   "precio": 22.38,
+   "cambio_pct": 16.56,
+   "rvol_real": 3.24,
+   "atr14": 2.16
   },
   {
    "ticker": "EXTR",
    "veredicto": "FASE0",
    "precio": 25.12,
    "cambio_pct": 19.33,
-   "rvol_real": 7.25,
+   "rvol_real": 6.23,
    "atr14": 1.52,
    "fallas": [
-    "pullback 47% > 35%"
+    "precio 24.72 bajo VWAP x0,997 (24.77)",
+    "pullback 57% > 35%"
    ]
-  },
-  {
-   "ticker": "OKLO",
-   "veredicto": "PASA",
-   "precio": 22.13,
-   "cambio_pct": 15.26,
-   "rvol_real": 3.37,
-   "atr14": 2.16
   },
   {
    "ticker": "FLY",
    "veredicto": "PASA",
-   "precio": 17.77,
-   "cambio_pct": 17.1,
-   "rvol_real": 4.84,
+   "precio": 17.51,
+   "cambio_pct": 15.32,
+   "rvol_real": 4.4,
    "atr14": 1.62
   }
  ],
  "cerca": [
   {
    "ticker": "NET",
-   "precio": 277.07,
-   "cambio_pct": 13.32,
-   "rvol_real": 6.09,
+   "precio": 274.24,
+   "cambio_pct": 12.16,
+   "rvol_real": 5.89,
    "fallas": [
-    "sube +13.3% < 15%"
+    "sube +12.2% < 15%"
    ]
   },
   {
    "ticker": "AMD",
-   "precio": 455.73,
-   "cambio_pct": 12.69,
-   "rvol_real": 4.78,
+   "precio": 448.82,
+   "cambio_pct": 10.98,
+   "rvol_real": 4.49,
    "fallas": [
-    "sube +12.7% < 15%"
+    "sube +11.0% < 15%"
    ]
   },
   {
    "ticker": "COHR",
-   "precio": 190.12,
-   "cambio_pct": 11.99,
-   "rvol_real": 3.58,
+   "precio": 188.11,
+   "cambio_pct": 10.81,
+   "rvol_real": 3.43,
    "fallas": [
-    "sube +12.0% < 15%"
-   ]
-  },
-  {
-   "ticker": "IONQ",
-   "precio": 29.3,
-   "cambio_pct": 10.85,
-   "rvol_real": 2.63,
-   "fallas": [
-    "sube +10.8% < 15%",
-    "RVOL real 2.6x < 3.0x: sin interes"
+    "sube +10.8% < 15%"
    ]
   },
   {
    "ticker": "SHAZ",
    "precio": 21.64,
    "cambio_pct": 10.66,
-   "rvol_real": 5.49,
+   "rvol_real": 4.72,
    "fallas": [
     "sube +10.7% < 15%"
    ]
