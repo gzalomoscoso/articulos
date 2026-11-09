@@ -1,66 +1,88 @@
 {
- "generado": "2026-11-09T14:52:14Z",
+ "generado": "2026-11-09T15:00:07Z",
  "sesion": "2026-11-09",
- "hora_ny": "09:52",
- "minuto_sesion": 22,
+ "hora_ny": "10:00",
+ "minuto_sesion": 30,
  "ventana": "abierta",
  "candidatas": [
   {
    "ticker": "OMH",
-   "veredicto": "PASA",
-   "precio": 27.88,
-   "cambio_pct": 278.8,
-   "rvol_real": 49.27,
-   "atr14": 3.84
+   "veredicto": "FASE0",
+   "precio": 33.87,
+   "cambio_pct": 360.19,
+   "rvol_real": 41.89,
+   "atr14": 4.0,
+   "fallas": [
+    "extension 2.2 ATR > 2.0"
+   ]
   },
   {
    "ticker": "GFR",
    "veredicto": "FASE0",
    "precio": 7.74,
-   "cambio_pct": 38.24,
-   "rvol_real": 28.1,
+   "cambio_pct": 38.21,
+   "rvol_real": 23.8,
    "atr14": 0.44,
    "fallas": [
-    "pullback 74% > 35%"
+    "pullback 78% > 35%"
    ]
+  },
+  {
+   "ticker": "WRBY",
+   "veredicto": "PASA",
+   "precio": 29.57,
+   "cambio_pct": 16.07,
+   "rvol_real": 3.14,
+   "atr14": 2.08
   }
  ],
  "cerca": [
   {
    "ticker": "COHR",
-   "precio": 213.16,
-   "cambio_pct": 10.55,
-   "rvol_real": 2.83,
+   "precio": 214.0,
+   "cambio_pct": 10.96,
+   "rvol_real": 2.82,
    "fallas": [
-    "sube +10.6% < 15%",
+    "sube +11.0% < 15%",
     "RVOL real 2.8x < 3.0x: sin interes"
    ]
   },
   {
    "ticker": "VIR",
-   "precio": 13.97,
-   "cambio_pct": 14.41,
-   "rvol_real": 13.4,
+   "precio": 13.99,
+   "cambio_pct": 14.58,
+   "rvol_real": 12.05,
    "fallas": [
-    "sube +14.4% < 15%"
+    "sube +14.6% < 15%"
    ]
   },
   {
    "ticker": "SGRY",
-   "precio": 26.02,
-   "cambio_pct": 12.16,
-   "rvol_real": 8.57,
+   "precio": 26.03,
+   "cambio_pct": 12.2,
+   "rvol_real": 7.4,
    "fallas": [
     "sube +12.2% < 15%"
    ]
   },
   {
    "ticker": "TTD",
-   "precio": 14.27,
-   "cambio_pct": 10.32,
-   "rvol_real": 3.14,
+   "precio": 14.23,
+   "cambio_pct": 10.05,
+   "rvol_real": 2.9,
    "fallas": [
-    "sube +10.3% < 15%"
+    "sube +10.1% < 15%",
+    "RVOL real 2.9x < 3.0x: sin interes"
+   ]
+  },
+  {
+   "ticker": "QXO",
+   "precio": 13.15,
+   "cambio_pct": 13.74,
+   "rvol_real": 2.25,
+   "fallas": [
+    "sube +13.7% < 15%",
+    "RVOL real 2.2x < 3.0x: sin interes"
    ]
   }
  ]
