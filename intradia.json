@@ -1,88 +1,87 @@
 {
- "generado": "2026-11-09T15:00:07Z",
+ "generado": "2026-11-09T15:08:12Z",
  "sesion": "2026-11-09",
- "hora_ny": "10:00",
- "minuto_sesion": 30,
+ "hora_ny": "10:08",
+ "minuto_sesion": 38,
  "ventana": "abierta",
  "candidatas": [
   {
    "ticker": "OMH",
    "veredicto": "FASE0",
-   "precio": 33.87,
-   "cambio_pct": 360.19,
-   "rvol_real": 41.89,
-   "atr14": 4.0,
+   "precio": 34.65,
+   "cambio_pct": 370.79,
+   "rvol_real": 38.19,
+   "atr14": 4.08,
    "fallas": [
-    "extension 2.2 ATR > 2.0"
+    "extension 2.6 ATR > 2.0"
    ]
   },
   {
    "ticker": "GFR",
    "veredicto": "FASE0",
-   "precio": 7.74,
-   "cambio_pct": 38.21,
-   "rvol_real": 23.8,
+   "precio": 7.75,
+   "cambio_pct": 38.39,
+   "rvol_real": 21.79,
    "atr14": 0.44,
    "fallas": [
-    "pullback 78% > 35%"
+    "pullback 67% > 35%"
    ]
   },
   {
    "ticker": "WRBY",
    "veredicto": "PASA",
-   "precio": 29.57,
-   "cambio_pct": 16.07,
-   "rvol_real": 3.14,
+   "precio": 29.68,
+   "cambio_pct": 16.48,
+   "rvol_real": 3.09,
    "atr14": 2.08
   }
  ],
  "cerca": [
   {
    "ticker": "COHR",
-   "precio": 214.0,
-   "cambio_pct": 10.96,
-   "rvol_real": 2.82,
+   "precio": 214.81,
+   "cambio_pct": 11.41,
+   "rvol_real": 2.85,
    "fallas": [
-    "sube +11.0% < 15%",
+    "sube +11.4% < 15%",
     "RVOL real 2.8x < 3.0x: sin interes"
    ]
   },
   {
-   "ticker": "VIR",
-   "precio": 13.99,
-   "cambio_pct": 14.58,
-   "rvol_real": 12.05,
+   "ticker": "BE",
+   "precio": 194.88,
+   "cambio_pct": 12.49,
+   "rvol_real": 2.44,
    "fallas": [
-    "sube +14.6% < 15%"
+    "sube +12.5% < 15%",
+    "RVOL real 2.4x < 3.0x: sin interes"
+   ]
+  },
+  {
+   "ticker": "VIR",
+   "precio": 13.78,
+   "cambio_pct": 12.86,
+   "rvol_real": 10.91,
+   "fallas": [
+    "sube +12.9% < 15%"
    ]
   },
   {
    "ticker": "SGRY",
-   "precio": 26.03,
-   "cambio_pct": 12.2,
-   "rvol_real": 7.4,
+   "precio": 26.0,
+   "cambio_pct": 12.07,
+   "rvol_real": 6.88,
    "fallas": [
-    "sube +12.2% < 15%"
+    "sube +12.1% < 15%"
    ]
   },
   {
    "ticker": "TTD",
-   "precio": 14.23,
-   "cambio_pct": 10.05,
-   "rvol_real": 2.9,
+   "precio": 14.58,
+   "cambio_pct": 12.8,
+   "rvol_real": 3.22,
    "fallas": [
-    "sube +10.1% < 15%",
-    "RVOL real 2.9x < 3.0x: sin interes"
-   ]
-  },
-  {
-   "ticker": "QXO",
-   "precio": 13.15,
-   "cambio_pct": 13.74,
-   "rvol_real": 2.25,
-   "fallas": [
-    "sube +13.7% < 15%",
-    "RVOL real 2.2x < 3.0x: sin interes"
+    "sube +12.8% < 15%"
    ]
   }
  ]
