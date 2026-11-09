@@ -1,93 +1,66 @@
 {
- "generado": "2026-11-06T15:09:08Z",
- "sesion": "2026-11-06",
- "hora_ny": "10:08",
- "minuto_sesion": 38,
+ "generado": "2026-11-09T14:52:14Z",
+ "sesion": "2026-11-09",
+ "hora_ny": "09:52",
+ "minuto_sesion": 22,
  "ventana": "abierta",
  "candidatas": [
   {
-   "ticker": "FROG",
+   "ticker": "OMH",
    "veredicto": "PASA",
-   "precio": 97.95,
-   "cambio_pct": 31.27,
-   "rvol_real": 6.31,
-   "atr14": 7.93
+   "precio": 27.88,
+   "cambio_pct": 278.8,
+   "rvol_real": 49.27,
+   "atr14": 3.84
   },
   {
-   "ticker": "IREN",
+   "ticker": "GFR",
    "veredicto": "FASE0",
-   "precio": 21.13,
-   "cambio_pct": 17.19,
-   "rvol_real": 5.39,
-   "atr14": 2.94,
+   "precio": 7.74,
+   "cambio_pct": 38.24,
+   "rvol_real": 28.1,
+   "atr14": 0.44,
    "fallas": [
-    "pullback 52% > 35%"
+    "pullback 74% > 35%"
    ]
-  },
-  {
-   "ticker": "OKLO",
-   "veredicto": "PASA",
-   "precio": 22.38,
-   "cambio_pct": 16.56,
-   "rvol_real": 3.24,
-   "atr14": 2.16
-  },
-  {
-   "ticker": "EXTR",
-   "veredicto": "FASE0",
-   "precio": 25.12,
-   "cambio_pct": 19.33,
-   "rvol_real": 6.23,
-   "atr14": 1.52,
-   "fallas": [
-    "precio 24.72 bajo VWAP x0,997 (24.77)",
-    "pullback 57% > 35%"
-   ]
-  },
-  {
-   "ticker": "FLY",
-   "veredicto": "PASA",
-   "precio": 17.51,
-   "cambio_pct": 15.32,
-   "rvol_real": 4.4,
-   "atr14": 1.62
   }
  ],
  "cerca": [
   {
-   "ticker": "NET",
-   "precio": 274.24,
+   "ticker": "COHR",
+   "precio": 213.16,
+   "cambio_pct": 10.55,
+   "rvol_real": 2.83,
+   "fallas": [
+    "sube +10.6% < 15%",
+    "RVOL real 2.8x < 3.0x: sin interes"
+   ]
+  },
+  {
+   "ticker": "VIR",
+   "precio": 13.97,
+   "cambio_pct": 14.41,
+   "rvol_real": 13.4,
+   "fallas": [
+    "sube +14.4% < 15%"
+   ]
+  },
+  {
+   "ticker": "SGRY",
+   "precio": 26.02,
    "cambio_pct": 12.16,
-   "rvol_real": 5.89,
+   "rvol_real": 8.57,
    "fallas": [
     "sube +12.2% < 15%"
    ]
   },
   {
-   "ticker": "AMD",
-   "precio": 448.82,
-   "cambio_pct": 10.98,
-   "rvol_real": 4.49,
+   "ticker": "TTD",
+   "precio": 14.27,
+   "cambio_pct": 10.32,
+   "rvol_real": 3.14,
    "fallas": [
-    "sube +11.0% < 15%"
-   ]
-  },
-  {
-   "ticker": "COHR",
-   "precio": 188.11,
-   "cambio_pct": 10.81,
-   "rvol_real": 3.43,
-   "fallas": [
-    "sube +10.8% < 15%"
-   ]
-  },
-  {
-   "ticker": "SHAZ",
-   "precio": 21.64,
-   "cambio_pct": 10.66,
-   "rvol_real": 4.72,
-   "fallas": [
-    "sube +10.7% < 15%"
+    "sube +10.3% < 15%"
    ]
   }
  ]
