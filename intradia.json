@@ -1,8 +1,8 @@
 {
- "generado": "2026-11-11T14:59:39Z",
+ "generado": "2026-11-11T15:12:08Z",
  "sesion": "2026-11-11",
- "hora_ny": "09:59",
- "minuto_sesion": 29,
+ "hora_ny": "10:00",
+ "minuto_sesion": 30,
  "ventana": "abierta",
  "candidatas": [
   {
@@ -10,11 +10,11 @@
    "veredicto": "FASE0",
    "precio": 23.0,
    "cambio_pct": 38.43,
-   "rvol_real": 19.92,
+   "rvol_real": 19.4,
    "atr14": 13.02,
    "fallas": [
-    "precio 23.00 bajo VWAP x0,997 (26.07)",
-    "pullback 91% > 35%"
+    "precio 20.70 bajo VWAP x0,997 (26.00)",
+    "pullback 100% > 35%"
    ]
   },
   {
@@ -22,38 +22,38 @@
    "veredicto": "PASA",
    "precio": 56.77,
    "cambio_pct": 16.51,
-   "rvol_real": 8.9,
-   "atr14": 5.9
+   "rvol_real": 8.67,
+   "atr14": 5.98
   },
   {
    "ticker": "FOSL",
    "veredicto": "FASE0",
-   "precio": 9.96,
-   "cambio_pct": 26.64,
-   "rvol_real": 33.3,
+   "precio": 9.99,
+   "cambio_pct": 27.0,
+   "rvol_real": 32.92,
    "atr14": 0.6,
    "fallas": [
-    "pullback 42% > 35%"
+    "pullback 40% > 35%"
    ]
   },
   {
    "ticker": "PEPG",
    "veredicto": "FASE0",
-   "precio": 5.55,
-   "cambio_pct": 20.52,
-   "rvol_real": 15.77,
+   "precio": 5.5,
+   "cambio_pct": 19.22,
+   "rvol_real": 15.56,
    "atr14": 0.54,
    "fallas": [
-    "pullback 39% > 35%"
+    "pullback 45% > 35%"
    ]
   },
   {
    "ticker": "RSKD",
    "veredicto": "PASA",
-   "precio": 10.88,
-   "cambio_pct": 28.0,
-   "rvol_real": 9.54,
-   "atr14": 0.56
+   "precio": 10.86,
+   "cambio_pct": 28.06,
+   "rvol_real": 9.36,
+   "atr14": 0.57
   }
  ],
  "cerca": [
@@ -61,28 +61,28 @@
    "ticker": "NBIS",
    "precio": 152.37,
    "cambio_pct": 13.71,
-   "rvol_real": 4.17,
+   "rvol_real": 4.06,
    "fallas": [
     "sube +13.7% < 15%"
    ]
   },
   {
    "ticker": "SNDK",
-   "precio": 959.92,
-   "cambio_pct": 11.62,
-   "rvol_real": 2.87,
+   "precio": 959.05,
+   "cambio_pct": 11.52,
+   "rvol_real": 2.83,
    "fallas": [
-    "sube +11.6% < 15%",
-    "RVOL real 2.9x < 3.0x: sin interes"
+    "sube +11.5% < 15%",
+    "RVOL real 2.8x < 3.0x: sin interes"
    ]
   },
   {
    "ticker": "AXTI",
-   "precio": 44.78,
-   "cambio_pct": 13.92,
-   "rvol_real": 2.94,
+   "precio": 44.59,
+   "cambio_pct": 13.43,
+   "rvol_real": 2.89,
    "fallas": [
-    "sube +13.9% < 15%",
+    "sube +13.4% < 15%",
     "RVOL real 2.9x < 3.0x: sin interes"
    ]
   }
