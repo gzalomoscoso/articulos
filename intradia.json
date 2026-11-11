@@ -1,87 +1,89 @@
 {
- "generado": "2026-11-09T15:08:12Z",
- "sesion": "2026-11-09",
- "hora_ny": "10:08",
- "minuto_sesion": 38,
+ "generado": "2026-11-11T14:59:39Z",
+ "sesion": "2026-11-11",
+ "hora_ny": "09:59",
+ "minuto_sesion": 29,
  "ventana": "abierta",
  "candidatas": [
   {
    "ticker": "OMH",
    "veredicto": "FASE0",
-   "precio": 34.65,
-   "cambio_pct": 370.79,
-   "rvol_real": 38.19,
-   "atr14": 4.08,
+   "precio": 23.0,
+   "cambio_pct": 38.43,
+   "rvol_real": 19.92,
+   "atr14": 13.02,
    "fallas": [
-    "extension 2.6 ATR > 2.0"
+    "precio 23.00 bajo VWAP x0,997 (26.07)",
+    "pullback 91% > 35%"
    ]
   },
   {
-   "ticker": "GFR",
-   "veredicto": "FASE0",
-   "precio": 7.75,
-   "cambio_pct": 38.39,
-   "rvol_real": 21.79,
-   "atr14": 0.44,
-   "fallas": [
-    "pullback 67% > 35%"
-   ]
-  },
-  {
-   "ticker": "WRBY",
+   "ticker": "CRWV",
    "veredicto": "PASA",
-   "precio": 29.68,
-   "cambio_pct": 16.48,
-   "rvol_real": 3.09,
-   "atr14": 2.08
+   "precio": 56.77,
+   "cambio_pct": 16.51,
+   "rvol_real": 8.9,
+   "atr14": 5.9
+  },
+  {
+   "ticker": "FOSL",
+   "veredicto": "FASE0",
+   "precio": 9.96,
+   "cambio_pct": 26.64,
+   "rvol_real": 33.3,
+   "atr14": 0.6,
+   "fallas": [
+    "pullback 42% > 35%"
+   ]
+  },
+  {
+   "ticker": "PEPG",
+   "veredicto": "FASE0",
+   "precio": 5.55,
+   "cambio_pct": 20.52,
+   "rvol_real": 15.77,
+   "atr14": 0.54,
+   "fallas": [
+    "pullback 39% > 35%"
+   ]
+  },
+  {
+   "ticker": "RSKD",
+   "veredicto": "PASA",
+   "precio": 10.88,
+   "cambio_pct": 28.0,
+   "rvol_real": 9.54,
+   "atr14": 0.56
   }
  ],
  "cerca": [
   {
-   "ticker": "COHR",
-   "precio": 214.81,
-   "cambio_pct": 11.41,
-   "rvol_real": 2.85,
+   "ticker": "NBIS",
+   "precio": 152.37,
+   "cambio_pct": 13.71,
+   "rvol_real": 4.17,
    "fallas": [
-    "sube +11.4% < 15%",
-    "RVOL real 2.8x < 3.0x: sin interes"
+    "sube +13.7% < 15%"
    ]
   },
   {
-   "ticker": "BE",
-   "precio": 194.88,
-   "cambio_pct": 12.49,
-   "rvol_real": 2.44,
+   "ticker": "SNDK",
+   "precio": 959.92,
+   "cambio_pct": 11.62,
+   "rvol_real": 2.87,
    "fallas": [
-    "sube +12.5% < 15%",
-    "RVOL real 2.4x < 3.0x: sin interes"
+    "sube +11.6% < 15%",
+    "RVOL real 2.9x < 3.0x: sin interes"
    ]
   },
   {
-   "ticker": "VIR",
-   "precio": 13.78,
-   "cambio_pct": 12.86,
-   "rvol_real": 10.91,
+   "ticker": "AXTI",
+   "precio": 44.78,
+   "cambio_pct": 13.92,
+   "rvol_real": 2.94,
    "fallas": [
-    "sube +12.9% < 15%"
-   ]
-  },
-  {
-   "ticker": "SGRY",
-   "precio": 26.0,
-   "cambio_pct": 12.07,
-   "rvol_real": 6.88,
-   "fallas": [
-    "sube +12.1% < 15%"
-   ]
-  },
-  {
-   "ticker": "TTD",
-   "precio": 14.58,
-   "cambio_pct": 12.8,
-   "rvol_real": 3.22,
-   "fallas": [
-    "sube +12.8% < 15%"
+    "sube +13.9% < 15%",
+    "RVOL real 2.9x < 3.0x: sin interes"
    ]
   }
  ]
