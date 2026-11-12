@@ -1,0 +1,36 @@
+{
+ "lista": "BIGC",
+ "version": 1,
+ "generado": "2026-11-12T02:53:20Z",
+ "nombre": "BIGC · caja larga en el indice",
+ "nombre_en": "BIGC · long-term cash in the index",
+ "protocolo": "BIGC",
+ "horizonte": "anos",
+ "regla": "El dinero que no usa el swing se tiene en SPY. Compra entera, sin stop, sin objetivo, sin medias moviles. Sale solo para alimentar el swing o por necesidad de caja. Revision una vez al ano.",
+ "regla_en": "Cash not used by the swing protocol is held in SPY. Single buy, no stop, no target, no moving averages. Sold only to fund the swing lane or for cash needs. Reviewed once a year.",
+ "medido": "11-nov-2026: SPY tenido +66.0 / +58.9 / +32.3 (2017-20 / 2021-24 / 2025-26) con caidas -34 / -25 / -19; 5% fijo +21.5 / +21.5 / +10.2. Tendencia por SMA sobre top 50 o 507 tickers: pierde contra SPY tenido en 2025-26 y con caidas peores; cerrado.",
+ "instrumentos": [
+  {
+   "ticker": "SPY",
+   "nombre": "SPDR S&P 500 ETF",
+   "peso_pct": 100,
+   "accion": "TENER",
+   "accion_en": "HOLD",
+   "stop": null,
+   "objetivo": null,
+   "sesiones_max": null,
+   "nota": "Unico instrumento medido. No se opera: se tiene.",
+   "nota_en": "Only instrument measured. Not traded: held."
+  }
+ ],
+ "riesgo": {
+  "caida_max_medida_pct": -34.1,
+  "periodo_caida": "2020 (covid)",
+  "con_20000_usd": "-3.800 a -6.800 en papel en una caida normal del indice"
+ },
+ "no_es": [
+  "no es una lista de compra de acciones grandes",
+  "no tiene senal de entrada ni de salida",
+  "no usa riesgo_pct ni formula de acciones"
+ ]
+}
