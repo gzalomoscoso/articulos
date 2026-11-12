@@ -1,90 +1,21 @@
 {
- "generado": "2026-11-11T15:12:08Z",
- "sesion": "2026-11-11",
- "hora_ny": "10:00",
- "minuto_sesion": 30,
+ "generado": "2026-11-12T14:52:21Z",
+ "sesion": "2026-11-12",
+ "hora_ny": "09:52",
+ "minuto_sesion": 22,
  "ventana": "abierta",
  "candidatas": [
   {
-   "ticker": "OMH",
+   "ticker": "LUNR",
    "veredicto": "FASE0",
-   "precio": 23.0,
-   "cambio_pct": 38.43,
-   "rvol_real": 19.4,
-   "atr14": 13.02,
+   "precio": 14.16,
+   "cambio_pct": 16.26,
+   "rvol_real": 9.9,
+   "atr14": 1.15,
    "fallas": [
-    "precio 20.70 bajo VWAP x0,997 (26.00)",
-    "pullback 100% > 35%"
+    "pullback 47% > 35%"
    ]
-  },
-  {
-   "ticker": "CRWV",
-   "veredicto": "PASA",
-   "precio": 56.77,
-   "cambio_pct": 16.51,
-   "rvol_real": 8.67,
-   "atr14": 5.98
-  },
-  {
-   "ticker": "FOSL",
-   "veredicto": "FASE0",
-   "precio": 9.99,
-   "cambio_pct": 27.0,
-   "rvol_real": 32.92,
-   "atr14": 0.6,
-   "fallas": [
-    "pullback 40% > 35%"
-   ]
-  },
-  {
-   "ticker": "PEPG",
-   "veredicto": "FASE0",
-   "precio": 5.5,
-   "cambio_pct": 19.22,
-   "rvol_real": 15.56,
-   "atr14": 0.54,
-   "fallas": [
-    "pullback 45% > 35%"
-   ]
-  },
-  {
-   "ticker": "RSKD",
-   "veredicto": "PASA",
-   "precio": 10.86,
-   "cambio_pct": 28.06,
-   "rvol_real": 9.36,
-   "atr14": 0.57
   }
  ],
- "cerca": [
-  {
-   "ticker": "NBIS",
-   "precio": 152.37,
-   "cambio_pct": 13.71,
-   "rvol_real": 4.06,
-   "fallas": [
-    "sube +13.7% < 15%"
-   ]
-  },
-  {
-   "ticker": "SNDK",
-   "precio": 959.05,
-   "cambio_pct": 11.52,
-   "rvol_real": 2.83,
-   "fallas": [
-    "sube +11.5% < 15%",
-    "RVOL real 2.8x < 3.0x: sin interes"
-   ]
-  },
-  {
-   "ticker": "AXTI",
-   "precio": 44.59,
-   "cambio_pct": 13.43,
-   "rvol_real": 2.89,
-   "fallas": [
-    "sube +13.4% < 15%",
-    "RVOL real 2.9x < 3.0x: sin interes"
-   ]
-  }
- ]
+ "cerca": []
 }
