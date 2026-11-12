@@ -1,21 +1,19 @@
 {
- "generado": "2026-11-12T14:52:21Z",
+ "generado": "2026-11-12T15:00:14Z",
  "sesion": "2026-11-12",
- "hora_ny": "09:52",
- "minuto_sesion": 22,
+ "hora_ny": "10:00",
+ "minuto_sesion": 30,
  "ventana": "abierta",
- "candidatas": [
+ "candidatas": [],
+ "cerca": [
   {
    "ticker": "LUNR",
-   "veredicto": "FASE0",
-   "precio": 14.16,
-   "cambio_pct": 16.26,
-   "rvol_real": 9.9,
-   "atr14": 1.15,
+   "precio": 13.99,
+   "cambio_pct": 14.9,
+   "rvol_real": 8.37,
    "fallas": [
-    "pullback 47% > 35%"
+    "sube +14.9% < 15%"
    ]
   }
- ],
- "cerca": []
+ ]
 }
