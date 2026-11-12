@@ -1,7 +1,7 @@
 {
  "lista": "BIGC",
- "version": 2,
- "generado": "2026-11-12T03:10:42Z",
+ "version": 3,
+ "generado": "2026-11-12T03:12:18Z",
  "nombre": "BIGC · caja larga en el indice, 18 meses",
  "nombre_en": "BIGC · cash in the index, 18 months max",
  "protocolo": "BIGC",
@@ -12,7 +12,9 @@
  "instrumentos": [
   {
    "ticker": "SPY",
-   "nombre": "SPDR S&P 500 ETF",
+   "name": "SPDR S&P 500 ETF Trust",
+   "nombre": "SPDR S&P 500 ETF Trust",
+   "tipo": "ETF",
    "peso_pct": 100,
    "accion": "TENER",
    "accion_en": "HOLD",
@@ -22,7 +24,9 @@
    "nota": "Unico instrumento medido. No se opera: se tiene hasta fecha_tope (compra + 18 meses).",
    "nota_en": "Only instrument measured. Not traded: held until fecha_tope (buy date + 18 months).",
    "fecha_compra": null,
-   "fecha_tope": null
+   "fecha_tope": null,
+   "descripcion": "Fondo cotizado que replica el indice S&P 500 (las 500 empresas grandes de EE.UU.) con su peso real.",
+   "description": "Exchange-traded fund tracking the S&P 500 index (the 500 large U.S. companies) at their real weights."
   }
  ],
  "riesgo": {
