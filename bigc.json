@@ -1,14 +1,14 @@
 {
  "lista": "BIGC",
- "version": 4,
- "generado": "2026-11-13T20:38:23Z",
+ "version": 5,
+ "generado": "2026-11-13T21:05:33Z",
  "nombre": "BIGC · caja larga en el indice, 18 meses",
  "nombre_en": "BIGC · cash in the index, 18 months max",
  "protocolo": "BIGC",
  "horizonte": "18 meses maximo",
- "regla": "El dinero que no usa el swing se tiene en el indice (SPY; OEF en prueba). Una compra; sin stop, sin objetivo, sin medias moviles. Sale solo para alimentar el swing, por necesidad de caja, o al cumplir 18 meses (fecha_tope), donde se decide de nuevo con la misma tabla.",
- "regla_en": "Cash not used by the swing lane is held in SPY. One buy; no stop, no target, no moving averages. Sold only to fund the swing lane, for cash needs, or at 18 months (fecha_tope), when the decision is made again with the same table.",
- "medido": "11-nov-2026, ventanas de 18 meses de SPY 2015-2026 (n=2605, sin dividendos): mediana +22.5%, gana al 5% fijo (+7.6%) el 78%, termina negativa el 11% (2021-24: 26%), peor -23.4% (sep-2018), pierde >10% el 3%. Caida en papel dentro de la ventana: mediana -19%, peor -34%. Tendencia por SMA sobre top 50 o 507 tickers: pierde contra SPY tenido; cerrado.",
+ "regla": "El dinero que no usa el swing se tiene en OEF (S&P 100; medido 13-nov: gana a SPY en mediana con peor ventana mejor). El SPY comprado el 13-nov se queda hasta su tope. Una compra; sin stop, sin objetivo, sin medias moviles. Sale solo para alimentar el swing, por necesidad de caja, o al cumplir 18 meses (fecha_tope), donde se decide de nuevo con la misma tabla.",
+ "regla_en": "Cash not used by the swing lane is held in OEF (S&P 100; measured Nov 13: beats SPY on median with a better worst window). The SPY bought Nov 13 stays until its date. One buy; no stop, no target, no moving averages. Sold only to fund the swing lane, for cash needs, or at 18 months (fecha_tope), when the decision is made again with the same table.",
+ "medido": "11-nov-2026, ventanas de 18 meses de SPY 2015-2026 (n=2605, sin dividendos): mediana +22.5%, gana al 5% fijo (+7.6%) el 78%, termina negativa el 11% (2021-24: 26%), peor -23.4% (sep-2018), pierde >10% el 3%. Caida en papel dentro de la ventana: mediana -19%, peor -34%. Tendencia por SMA sobre top 50 o 507 tickers: pierde contra SPY tenido; cerrado. | 13-nov ETF 18m (2010-26, ajustado): OEF mediana 25.2 / peor -16.9; SPY 25.0 / -20.7; QQQ 31.5 / -26.8 (no pasa); RSP 19.3 / -31.0 (no).",
  "instrumentos": [
   {
    "ticker": "SPY",
@@ -41,8 +41,8 @@
    "stop": null,
    "objetivo": null,
    "sesiones_max": null,
-   "nota": "Las 100 mayores del S&P 500. Comprado el 13-nov sin medir; la medicion de ventanas de 18 meses decide la siguiente compra.",
-   "nota_en": "The 100 largest S&P 500 companies. Bought Nov 13 before measuring; the 18-month window test decides the next purchase.",
+   "nota": "Las 100 mayores del S&P 500. Instrumento de BIGC desde el 13-nov (medido).",
+   "nota_en": "The 100 largest S&P 500 companies. BIGC instrument since Nov 13 (measured).",
    "fecha_compra": "2026-11-13",
    "fecha_tope": "2028-05-13",
    "acciones": 1,
@@ -63,5 +63,6 @@
   "no tiene senal de entrada ni de salida",
   "no usa riesgo_pct ni formula de acciones"
  ],
- "horizonte_en": "18 months max"
+ "horizonte_en": "18 months max",
+ "siguiente_compra": "OEF"
 }
