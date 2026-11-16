@@ -1,18 +1,45 @@
 {
- "generado": "2026-11-12T15:08:16Z",
- "sesion": "2026-11-12",
- "hora_ny": "10:08",
- "minuto_sesion": 38,
+ "generado": "2026-11-16T14:52:46Z",
+ "sesion": "2026-11-16",
+ "hora_ny": "09:52",
+ "minuto_sesion": 22,
  "ventana": "abierta",
  "candidatas": [],
  "cerca": [
   {
-   "ticker": "LUNR",
-   "precio": 13.7,
-   "cambio_pct": 12.48,
-   "rvol_real": 7.86,
+   "ticker": "CLRO",
+   "precio": 4.7,
+   "cambio_pct": 39.47,
+   "rvol_real": 37.6,
+   "fallas": [
+    "precio/accion $4.70 < $5.00"
+   ]
+  },
+  {
+   "ticker": "TU",
+   "precio": 9.6,
+   "cambio_pct": 12.54,
+   "rvol_real": 16.29,
    "fallas": [
     "sube +12.5% < 15%"
+   ]
+  },
+  {
+   "ticker": "LXEO",
+   "precio": 3.93,
+   "cambio_pct": 36.93,
+   "rvol_real": 149.48,
+   "fallas": [
+    "precio/accion $3.93 < $5.00"
+   ]
+  },
+  {
+   "ticker": "TSN",
+   "precio": 65.1,
+   "cambio_pct": 10.68,
+   "rvol_real": 3.42,
+   "fallas": [
+    "sube +10.7% < 15%"
    ]
   }
  ]
