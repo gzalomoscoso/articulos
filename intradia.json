@@ -1,45 +1,45 @@
 {
- "generado": "2026-11-16T14:52:46Z",
+ "generado": "2026-11-16T15:09:00Z",
  "sesion": "2026-11-16",
- "hora_ny": "09:52",
- "minuto_sesion": 22,
+ "hora_ny": "10:08",
+ "minuto_sesion": 38,
  "ventana": "abierta",
  "candidatas": [],
  "cerca": [
   {
-   "ticker": "CLRO",
-   "precio": 4.7,
-   "cambio_pct": 39.47,
-   "rvol_real": 37.6,
+   "ticker": "CGON",
+   "precio": 82.3,
+   "cambio_pct": 10.62,
+   "rvol_real": 17.83,
    "fallas": [
-    "precio/accion $4.70 < $5.00"
+    "sube +10.6% < 15%"
+   ]
+  },
+  {
+   "ticker": "CLRO",
+   "precio": 4.49,
+   "cambio_pct": 33.33,
+   "rvol_real": 26.68,
+   "fallas": [
+    "precio/accion $4.49 < $5.00"
    ]
   },
   {
    "ticker": "TU",
-   "precio": 9.6,
-   "cambio_pct": 12.54,
-   "rvol_real": 16.29,
+   "precio": 9.65,
+   "cambio_pct": 13.12,
+   "rvol_real": 14.64,
    "fallas": [
-    "sube +12.5% < 15%"
+    "sube +13.1% < 15%"
    ]
   },
   {
    "ticker": "LXEO",
-   "precio": 3.93,
-   "cambio_pct": 36.93,
-   "rvol_real": 149.48,
+   "precio": 3.46,
+   "cambio_pct": 20.66,
+   "rvol_real": 116.96,
    "fallas": [
-    "precio/accion $3.93 < $5.00"
-   ]
-  },
-  {
-   "ticker": "TSN",
-   "precio": 65.1,
-   "cambio_pct": 10.68,
-   "rvol_real": 3.42,
-   "fallas": [
-    "sube +10.7% < 15%"
+    "precio/accion $3.46 < $5.00"
    ]
   }
  ]
