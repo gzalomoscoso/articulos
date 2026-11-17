@@ -1,46 +1,22 @@
 {
- "generado": "2026-11-16T15:09:00Z",
- "sesion": "2026-11-16",
- "hora_ny": "10:08",
- "minuto_sesion": 38,
+ "generado": "2026-11-17T14:54:01Z",
+ "sesion": "2026-11-17",
+ "hora_ny": "09:53",
+ "minuto_sesion": 23,
  "ventana": "abierta",
- "candidatas": [],
- "cerca": [
+ "candidatas": [
   {
-   "ticker": "CGON",
-   "precio": 82.3,
-   "cambio_pct": 10.62,
-   "rvol_real": 17.83,
+   "ticker": "SLS",
+   "veredicto": "FASE0",
+   "precio": 17.83,
+   "cambio_pct": 138.69,
+   "rvol_real": 59.82,
+   "atr14": 2.16,
    "fallas": [
-    "sube +10.6% < 15%"
-   ]
-  },
-  {
-   "ticker": "CLRO",
-   "precio": 4.49,
-   "cambio_pct": 33.33,
-   "rvol_real": 26.68,
-   "fallas": [
-    "precio/accion $4.49 < $5.00"
-   ]
-  },
-  {
-   "ticker": "TU",
-   "precio": 9.65,
-   "cambio_pct": 13.12,
-   "rvol_real": 14.64,
-   "fallas": [
-    "sube +13.1% < 15%"
-   ]
-  },
-  {
-   "ticker": "LXEO",
-   "precio": 3.46,
-   "cambio_pct": 20.66,
-   "rvol_real": 116.96,
-   "fallas": [
-    "precio/accion $3.46 < $5.00"
+    "precio 17.83 bajo VWAP x0,997 (21.92)",
+    "pullback 100% > 35%"
    ]
   }
- ]
+ ],
+ "cerca": []
 }
