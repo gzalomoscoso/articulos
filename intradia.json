@@ -1,20 +1,20 @@
 {
- "generado": "2026-11-17T14:54:01Z",
+ "generado": "2026-11-17T15:11:02Z",
  "sesion": "2026-11-17",
- "hora_ny": "09:53",
- "minuto_sesion": 23,
+ "hora_ny": "10:10",
+ "minuto_sesion": 40,
  "ventana": "abierta",
  "candidatas": [
   {
    "ticker": "SLS",
    "veredicto": "FASE0",
-   "precio": 17.83,
-   "cambio_pct": 138.69,
-   "rvol_real": 59.82,
+   "precio": 20.14,
+   "cambio_pct": 170.56,
+   "rvol_real": 53.42,
    "atr14": 2.16,
    "fallas": [
-    "precio 17.83 bajo VWAP x0,997 (21.92)",
-    "pullback 100% > 35%"
+    "precio 20.15 bajo VWAP x0,997 (21.21)",
+    "pullback 58% > 35%"
    ]
   }
  ],
