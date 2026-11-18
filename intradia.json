@@ -1,20 +1,19 @@
 {
- "generado": "2026-11-17T15:11:02Z",
- "sesion": "2026-11-17",
- "hora_ny": "10:10",
- "minuto_sesion": 40,
+ "generado": "2026-11-18T14:55:17Z",
+ "sesion": "2026-11-18",
+ "hora_ny": "09:55",
+ "minuto_sesion": 25,
  "ventana": "abierta",
  "candidatas": [
   {
-   "ticker": "SLS",
+   "ticker": "BRBR",
    "veredicto": "FASE0",
-   "precio": 20.14,
-   "cambio_pct": 170.56,
-   "rvol_real": 53.42,
-   "atr14": 2.16,
+   "precio": 13.57,
+   "cambio_pct": 23.24,
+   "rvol_real": 5.61,
+   "atr14": 0.73,
    "fallas": [
-    "precio 20.15 bajo VWAP x0,997 (21.21)",
-    "pullback 58% > 35%"
+    "pullback 39% > 35%"
    ]
   }
  ],
