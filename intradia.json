@@ -1,21 +1,28 @@
 {
- "generado": "2026-11-18T14:55:17Z",
- "sesion": "2026-11-18",
- "hora_ny": "09:55",
- "minuto_sesion": 25,
+ "generado": "2026-11-20T14:57:24Z",
+ "sesion": "2026-11-20",
+ "hora_ny": "09:57",
+ "minuto_sesion": 27,
  "ventana": "abierta",
  "candidatas": [
   {
-   "ticker": "BRBR",
-   "veredicto": "FASE0",
-   "precio": 13.57,
-   "cambio_pct": 23.24,
-   "rvol_real": 5.61,
-   "atr14": 0.73,
-   "fallas": [
-    "pullback 39% > 35%"
-   ]
+   "ticker": "GAP",
+   "veredicto": "PASA",
+   "precio": 21.83,
+   "cambio_pct": 16.19,
+   "rvol_real": 5.91,
+   "atr14": 1.06
   }
  ],
- "cerca": []
+ "cerca": [
+  {
+   "ticker": "AKAN",
+   "precio": 4.64,
+   "cambio_pct": 35.28,
+   "rvol_real": 32.97,
+   "fallas": [
+    "precio/accion $4.64 < $5.00"
+   ]
+  }
+ ]
 }
