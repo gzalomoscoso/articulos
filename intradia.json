@@ -1,55 +1,52 @@
 {
- "generado": "2026-11-24T15:00:07Z",
+ "generado": "2026-11-24T15:08:06Z",
  "sesion": "2026-11-24",
- "hora_ny": "10:00",
- "minuto_sesion": 30,
+ "hora_ny": "10:08",
+ "minuto_sesion": 38,
  "ventana": "abierta",
  "candidatas": [
   {
    "ticker": "AKAN",
-   "veredicto": "PASA",
-   "precio": 5.65,
-   "cambio_pct": 117.62,
-   "rvol_real": 30.85,
-   "atr14": 0.96
+   "veredicto": "FASE0",
+   "precio": 5.34,
+   "cambio_pct": 106.98,
+   "rvol_real": 30.89,
+   "atr14": 0.96,
+   "fallas": [
+    "precio 5.37 bajo VWAP x0,997 (5.40)",
+    "pullback 40% > 35%"
+   ]
   },
   {
    "ticker": "ANF",
    "veredicto": "PASA",
-   "precio": 171.62,
-   "cambio_pct": 22.2,
-   "rvol_real": 6.64,
-   "atr14": 9.16
-  },
-  {
-   "ticker": "DKS",
-   "veredicto": "PASA",
-   "precio": 154.28,
-   "cambio_pct": 15.42,
-   "rvol_real": 3.13,
-   "atr14": 7.16
-  },
-  {
-   "ticker": "COGT",
-   "veredicto": "FASE0",
-   "precio": 33.03,
-   "cambio_pct": 17.53,
-   "rvol_real": 7.42,
-   "atr14": 1.98,
-   "fallas": [
-    "precio 32.97 bajo VWAP x0,997 (32.99)",
-    "pullback 35% > 35%"
-   ]
+   "precio": 174.7,
+   "cambio_pct": 24.39,
+   "rvol_real": 6.6,
+   "atr14": 9.28
   },
   {
    "ticker": "AMTM",
    "veredicto": "FASE0",
-   "precio": 24.02,
-   "cambio_pct": 16.32,
-   "rvol_real": 8.91,
+   "precio": 23.76,
+   "cambio_pct": 15.04,
+   "rvol_real": 10.06,
    "atr14": 1.12,
    "fallas": [
-    "pullback 55% > 35%"
+    "precio 23.78 bajo VWAP x0,997 (23.79)",
+    "pullback 64% > 35%"
+   ]
+  },
+  {
+   "ticker": "COGT",
+   "veredicto": "FASE0",
+   "precio": 32.77,
+   "cambio_pct": 16.58,
+   "rvol_real": 6.68,
+   "atr14": 1.98,
+   "fallas": [
+    "precio 32.80 bajo VWAP x0,997 (32.98)",
+    "pullback 38% > 35%"
    ]
   }
  ],
@@ -58,37 +55,47 @@
    "ticker": "INSM",
    "precio": 170.46,
    "cambio_pct": 14.33,
-   "rvol_real": 78.14,
+   "rvol_real": 71.56,
    "fallas": [
     "sube +14.3% < 15%"
    ]
   },
   {
    "ticker": "KYMR",
-   "precio": 168.07,
-   "cambio_pct": 11.77,
-   "rvol_real": 10.04,
+   "precio": 165.81,
+   "cambio_pct": 10.27,
+   "rvol_real": 9.27,
    "fallas": [
-    "sube +11.8% < 15%"
+    "sube +10.3% < 15%"
    ]
   },
   {
-   "ticker": "FLNC",
-   "precio": 4.29,
-   "cambio_pct": 13.03,
-   "rvol_real": 14.79,
+   "ticker": "DLTR",
+   "precio": 154.76,
+   "cambio_pct": 11.26,
+   "rvol_real": 3.93,
    "fallas": [
-    "precio/accion $4.29 < $5.00",
-    "sube +13.0% < 15%"
+    "sube +11.3% < 15%"
    ]
   },
   {
-   "ticker": "KSS",
-   "precio": 23.86,
-   "cambio_pct": 12.55,
-   "rvol_real": 3.1,
+   "ticker": "DKS",
+   "precio": 152.0,
+   "cambio_pct": 13.71,
+   "rvol_real": 2.98,
    "fallas": [
-    "sube +12.6% < 15%"
+    "sube +13.7% < 15%",
+    "RVOL real 3.0x < 3.0x: sin interes"
+   ]
+  },
+  {
+   "ticker": "PINS",
+   "precio": 19.01,
+   "cambio_pct": 12.47,
+   "rvol_real": 2.81,
+   "fallas": [
+    "sube +12.5% < 15%",
+    "RVOL real 2.8x < 3.0x: sin interes"
    ]
   }
  ]
