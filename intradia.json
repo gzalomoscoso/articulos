@@ -1,27 +1,85 @@
 {
- "generado": "2026-11-20T14:57:24Z",
- "sesion": "2026-11-20",
- "hora_ny": "09:57",
- "minuto_sesion": 27,
+ "generado": "2026-11-24T14:52:10Z",
+ "sesion": "2026-11-24",
+ "hora_ny": "09:52",
+ "minuto_sesion": 22,
  "ventana": "abierta",
  "candidatas": [
   {
-   "ticker": "GAP",
+   "ticker": "AKAN",
+   "veredicto": "FASE0",
+   "precio": 5.32,
+   "cambio_pct": 106.2,
+   "rvol_real": 31.78,
+   "atr14": 0.96,
+   "fallas": [
+    "pullback 39% > 35%"
+   ]
+  },
+  {
+   "ticker": "ANF",
    "veredicto": "PASA",
-   "precio": 21.83,
-   "cambio_pct": 16.19,
-   "rvol_real": 5.91,
-   "atr14": 1.06
+   "precio": 171.75,
+   "cambio_pct": 22.35,
+   "rvol_real": 7.5,
+   "atr14": 9.16
+  },
+  {
+   "ticker": "AMTM",
+   "veredicto": "FASE0",
+   "precio": 24.0,
+   "cambio_pct": 16.39,
+   "rvol_real": 9.7,
+   "atr14": 1.12,
+   "fallas": [
+    "pullback 55% > 35%"
+   ]
   }
  ],
  "cerca": [
   {
-   "ticker": "AKAN",
-   "precio": 4.64,
-   "cambio_pct": 35.28,
-   "rvol_real": 32.97,
+   "ticker": "KYMR",
+   "precio": 168.14,
+   "cambio_pct": 11.82,
+   "rvol_real": 11.62,
    "fallas": [
-    "precio/accion $4.64 < $5.00"
+    "sube +11.8% < 15%"
+   ]
+  },
+  {
+   "ticker": "INSM",
+   "precio": 170.45,
+   "cambio_pct": 14.33,
+   "rvol_real": 91.65,
+   "fallas": [
+    "sube +14.3% < 15%"
+   ]
+  },
+  {
+   "ticker": "FLNC",
+   "precio": 4.37,
+   "cambio_pct": 15.13,
+   "rvol_real": 16.76,
+   "fallas": [
+    "precio/accion $4.37 < $5.00"
+   ]
+  },
+  {
+   "ticker": "DKS",
+   "precio": 152.15,
+   "cambio_pct": 14.0,
+   "rvol_real": 3.69,
+   "fallas": [
+    "sube +14.0% < 15%"
+   ]
+  },
+  {
+   "ticker": "DLTR",
+   "precio": 153.84,
+   "cambio_pct": 10.6,
+   "rvol_real": 4.6,
+   "fallas": [
+    "sube +10.6% < 15%"
    ]
   }
  ]
