@@ -1,40 +1,41 @@
 {
- "generado": "2026-11-25T14:52:05Z",
+ "generado": "2026-11-25T15:00:05Z",
  "sesion": "2026-11-25",
- "hora_ny": "09:52",
- "minuto_sesion": 22,
+ "hora_ny": "10:00",
+ "minuto_sesion": 30,
  "ventana": "abierta",
  "candidatas": [
   {
    "ticker": "BNAI",
    "veredicto": "FASE0",
-   "precio": 8.14,
-   "cambio_pct": 22.41,
-   "rvol_real": 50.02,
-   "atr14": 1.06,
+   "precio": 7.76,
+   "cambio_pct": 16.69,
+   "rvol_real": 52.94,
+   "atr14": 1.08,
    "fallas": [
-    "precio 8.14 bajo VWAP x0,997 (8.71)",
-    "pullback 100% > 35%"
+    "precio 7.70 bajo VWAP x0,997 (8.37)",
+    "pullback 59% > 35%"
    ]
   }
  ],
  "cerca": [
   {
    "ticker": "OMH",
-   "precio": 4.38,
-   "cambio_pct": 17.43,
-   "rvol_real": 22.48,
+   "precio": 4.26,
+   "cambio_pct": 14.36,
+   "rvol_real": 18.13,
    "fallas": [
-    "precio/accion $4.38 < $5.00"
+    "precio/accion $4.26 < $5.00",
+    "sube +14.4% < 15%"
    ]
   },
   {
    "ticker": "HPQ",
-   "precio": 30.84,
-   "cambio_pct": 10.38,
-   "rvol_real": 4.11,
+   "precio": 31.1,
+   "cambio_pct": 11.39,
+   "rvol_real": 3.93,
    "fallas": [
-    "sube +10.4% < 15%"
+    "sube +11.4% < 15%"
    ]
   }
  ]
