@@ -1,101 +1,40 @@
 {
- "generado": "2026-11-24T15:08:06Z",
- "sesion": "2026-11-24",
- "hora_ny": "10:08",
- "minuto_sesion": 38,
+ "generado": "2026-11-25T14:52:05Z",
+ "sesion": "2026-11-25",
+ "hora_ny": "09:52",
+ "minuto_sesion": 22,
  "ventana": "abierta",
  "candidatas": [
   {
-   "ticker": "AKAN",
+   "ticker": "BNAI",
    "veredicto": "FASE0",
-   "precio": 5.34,
-   "cambio_pct": 106.98,
-   "rvol_real": 30.89,
-   "atr14": 0.96,
+   "precio": 8.14,
+   "cambio_pct": 22.41,
+   "rvol_real": 50.02,
+   "atr14": 1.06,
    "fallas": [
-    "precio 5.37 bajo VWAP x0,997 (5.40)",
-    "pullback 40% > 35%"
-   ]
-  },
-  {
-   "ticker": "ANF",
-   "veredicto": "PASA",
-   "precio": 174.7,
-   "cambio_pct": 24.39,
-   "rvol_real": 6.6,
-   "atr14": 9.28
-  },
-  {
-   "ticker": "AMTM",
-   "veredicto": "FASE0",
-   "precio": 23.76,
-   "cambio_pct": 15.04,
-   "rvol_real": 10.06,
-   "atr14": 1.12,
-   "fallas": [
-    "precio 23.78 bajo VWAP x0,997 (23.79)",
-    "pullback 64% > 35%"
-   ]
-  },
-  {
-   "ticker": "COGT",
-   "veredicto": "FASE0",
-   "precio": 32.77,
-   "cambio_pct": 16.58,
-   "rvol_real": 6.68,
-   "atr14": 1.98,
-   "fallas": [
-    "precio 32.80 bajo VWAP x0,997 (32.98)",
-    "pullback 38% > 35%"
+    "precio 8.14 bajo VWAP x0,997 (8.71)",
+    "pullback 100% > 35%"
    ]
   }
  ],
  "cerca": [
   {
-   "ticker": "INSM",
-   "precio": 170.46,
-   "cambio_pct": 14.33,
-   "rvol_real": 71.56,
+   "ticker": "OMH",
+   "precio": 4.38,
+   "cambio_pct": 17.43,
+   "rvol_real": 22.48,
    "fallas": [
-    "sube +14.3% < 15%"
+    "precio/accion $4.38 < $5.00"
    ]
   },
   {
-   "ticker": "KYMR",
-   "precio": 165.81,
-   "cambio_pct": 10.27,
-   "rvol_real": 9.27,
+   "ticker": "HPQ",
+   "precio": 30.84,
+   "cambio_pct": 10.38,
+   "rvol_real": 4.11,
    "fallas": [
-    "sube +10.3% < 15%"
-   ]
-  },
-  {
-   "ticker": "DLTR",
-   "precio": 154.76,
-   "cambio_pct": 11.26,
-   "rvol_real": 3.93,
-   "fallas": [
-    "sube +11.3% < 15%"
-   ]
-  },
-  {
-   "ticker": "DKS",
-   "precio": 152.0,
-   "cambio_pct": 13.71,
-   "rvol_real": 2.98,
-   "fallas": [
-    "sube +13.7% < 15%",
-    "RVOL real 3.0x < 3.0x: sin interes"
-   ]
-  },
-  {
-   "ticker": "PINS",
-   "precio": 19.01,
-   "cambio_pct": 12.47,
-   "rvol_real": 2.81,
-   "fallas": [
-    "sube +12.5% < 15%",
-    "RVOL real 2.8x < 3.0x: sin interes"
+    "sube +10.4% < 15%"
    ]
   }
  ]
