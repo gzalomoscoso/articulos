@@ -1,28 +1,66 @@
 {
- "generado": "2026-11-25T15:08:04Z",
- "sesion": "2026-11-25",
- "hora_ny": "10:08",
- "minuto_sesion": 38,
+ "generado": "2026-11-27T14:52:11Z",
+ "sesion": "2026-11-27",
+ "hora_ny": "09:52",
+ "minuto_sesion": 22,
  "ventana": "abierta",
  "candidatas": [
   {
-   "ticker": "BNAI",
-   "veredicto": "PASA",
-   "precio": 8.49,
-   "cambio_pct": 27.74,
-   "rvol_real": 53.03,
-   "atr14": 1.08
+   "ticker": "XP",
+   "veredicto": "FASE0",
+   "precio": 17.02,
+   "cambio_pct": 18.32,
+   "rvol_real": 5.85,
+   "atr14": 1.25,
+   "fallas": [
+    "pullback 43% > 35%"
+   ]
   }
  ],
  "cerca": [
   {
-   "ticker": "OMH",
-   "precio": 4.28,
-   "cambio_pct": 14.72,
-   "rvol_real": 15.71,
+   "ticker": "RETO",
+   "precio": 4.87,
+   "cambio_pct": 27.49,
+   "rvol_real": 30.13,
    "fallas": [
-    "precio/accion $4.28 < $5.00",
-    "sube +14.7% < 15%"
+    "precio/accion $4.87 < $5.00"
+   ]
+  },
+  {
+   "ticker": "INTR",
+   "precio": 4.71,
+   "cambio_pct": 17.49,
+   "rvol_real": 7.61,
+   "fallas": [
+    "precio/accion $4.71 < $5.00"
+   ]
+  },
+  {
+   "ticker": "ITUB",
+   "precio": 7.79,
+   "cambio_pct": 13.31,
+   "rvol_real": 3.32,
+   "fallas": [
+    "sube +13.3% < 15%"
+   ]
+  },
+  {
+   "ticker": "VERA",
+   "precio": 33.62,
+   "cambio_pct": 13.95,
+   "rvol_real": 5.29,
+   "fallas": [
+    "sube +13.9% < 15%"
+   ]
+  },
+  {
+   "ticker": "SBS",
+   "precio": 5.45,
+   "cambio_pct": 12.15,
+   "rvol_real": 5.21,
+   "fallas": [
+    "sube +12.2% < 15%"
    ]
   }
  ]
