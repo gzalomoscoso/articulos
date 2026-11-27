@@ -142,12 +142,12 @@
    "racha_roja": 7,
    "prioridad_racha": true,
    "semaforo": "verde",
-   "alerta": "Ya reporto 27-oct",
-   "alerta_en": "Reported Oct 27",
+   "alerta": "Sin resultados en el plazo",
+   "alerta_en": "No earnings in window",
    "bloquea_compra": false,
    "vender_antes": null,
-   "motivo": "Ya reporto el 27-oct: sin resultados en las 12 sesiones de la operacion. Nota de noticias 6/10.",
-   "motivo_en": "Reported on Oct 27: no earnings within the 12 sessions of the trade. News score 6/10."
+   "motivo": "Sin resultados en las 12 sesiones de la operacion. Nota de noticias 6/10.",
+   "motivo_en": "No earnings within the 12 sessions of the trade. News score 6/10."
   },
   {
    "ticker": "PCAR",
@@ -187,12 +187,12 @@
    "racha_roja": 7,
    "prioridad_racha": true,
    "semaforo": "verde",
-   "alerta": "Ya reporto 27-oct",
-   "alerta_en": "Reported Oct 27",
+   "alerta": "Sin resultados en el plazo",
+   "alerta_en": "No earnings in window",
    "bloquea_compra": false,
    "vender_antes": null,
-   "motivo": "Ya reporto el 27-oct: sin resultados en las 12 sesiones de la operacion. Nota de noticias 5/10.",
-   "motivo_en": "Reported on Oct 27: no earnings within the 12 sessions of the trade. News score 5/10."
+   "motivo": "Sin resultados en las 12 sesiones de la operacion. Nota de noticias 5/10.",
+   "motivo_en": "No earnings within the 12 sessions of the trade. News score 5/10."
   },
   {
    "ticker": "BAC",
@@ -432,12 +432,12 @@
    "racha_roja": 3,
    "prioridad_racha": false,
    "semaforo": "verde",
-   "alerta": "Ya reporto 27-oct",
-   "alerta_en": "Reported Oct 27",
+   "alerta": "Sin resultados en el plazo",
+   "alerta_en": "No earnings in window",
    "bloquea_compra": false,
    "vender_antes": null,
-   "motivo": "Ya reporto el 27-oct: sin resultados en las 12 sesiones de la operacion. Nota de noticias 5/10.",
-   "motivo_en": "Reported on Oct 27: no earnings within the 12 sessions of the trade. News score 5/10."
+   "motivo": "Sin resultados en las 12 sesiones de la operacion. Nota de noticias 5/10.",
+   "motivo_en": "No earnings within the 12 sessions of the trade. News score 5/10."
   }
  ],
  "vetadas": [],
@@ -469,7 +469,7 @@
  },
  "semaforo_fuente": {
   "noticias_para_sesion": "2026-11-27",
-  "generado": "2026-11-26T11:34:11Z",
+  "generado": "2026-11-27T02:04:18Z",
   "misma_sesion": true
  }
 }
